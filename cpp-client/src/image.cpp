@@ -1,4 +1,4 @@
-#include "image.hpp"
+#include "../include/image.hpp"
 
 Image::Image( const Point & a ) :_origine( a), _nombre(0){
 

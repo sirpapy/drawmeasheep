@@ -1,4 +1,4 @@
-#include "ligne.hpp"
+#include "../include/ligne.hpp"
 
 Ligne::Ligne ( const Point & a, const Point & b )
 	:_origine( a.getX() , a.getY()), _extremite( b.getX(), b.getY()){

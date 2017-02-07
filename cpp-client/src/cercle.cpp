@@ -1,4 +1,4 @@
-#include "cercle.hpp"
+#include "../include/cercle.hpp"
 
 Cercle::Cercle(const Point & centre, int rayon ):_centre( centre ), _rayon( rayon ){
 

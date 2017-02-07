@@ -1,9 +1,9 @@
 #include <iostream>
 
-#include "image.hpp"
-#include "ligne.hpp"
-#include "cercle.hpp"
-#include "point.h"
+#include "../include/image.hpp"
+#include "../include/ligne.hpp"
+#include "../include/cercle.hpp"
+#include "../include/point.h"
 
 using namespace std;
 

@@ -5,29 +5,29 @@ BIN = ./bin
 
 all: main_figure
 
-main_figure : main.o cercle.hpp ligne.hpp figure.hpp point.h
-	g++ $(CFLAGS) main.o point.o figure.o ligne.o cercle.o image.o -o main_figure
+main_figure : main $(INC)/cercle.hpp $(INC)/ligne.hpp $(INC)/figure.hpp $(INC)/point.h
+	g++ $(CFLAGS) $(BIN)/main.o $(BIN)/point.o $(BIN)/figure.o $(BIN)/ligne.o $(BIN)/cercle.o $(BIN)/image.o -o main_figure
 
-main.o: image.o cercle.o ligne.o figure.o cercle.hpp ligne.hpp figure.hpp point.h
-	g++ -c $(CFLAGS) main.cpp
+main: image cercle ligne figure $(INC)/cercle.hpp $(INC)/ligne.hpp $(INC)/figure.hpp $(INC)/point.h
+	g++ -c $(CFLAGS) $(SRC)/main.cpp -o $(BIN)/main.o
 
-image.o: figure.o point.o point.h image.hpp
-	g++ -c $(CFLAGS) image.cpp
+image: figure point $(INC)/point.h $(INC)/image.hpp
+	g++ -c $(CFLAGS) $(SRC)/image.cpp -o $(BIN)/image.o
 
-cercle.o : figure.o point.o point.h cercle.hpp
-	g++ -c $(CFLAGS) cercle.cpp
+cercle : figure point $(INC)/point.h $(INC)/cercle.hpp
+	g++ -c $(CFLAGS) $(SRC)/cercle.cpp -o $(BIN)/cercle.o
 
-ligne.o : figure.o point.o point.h ligne.hpp
-	g++ -c $(CFLAGS) ligne.cpp
+ligne : figure point $(INC)/point.h $(INC)/ligne.hpp
+	g++ -c $(CFLAGS) $(SRC)/ligne.cpp -o $(BIN)/ligne.o
 
-figure.o : point.o figure.hpp
-	g++ -c $(CFLAGS) figure.cpp
+figure : point $(INC)/figure.hpp
+	g++ -c $(CFLAGS) $(SRC)/figure.cpp -o $(BIN)/figure.o
 
-point.o : point.h
-	g++ -c $(CFLAGS) point.cpp
+point : $(INC)/point.h
+	g++ -c $(CFLAGS) $(SRC)/point.cpp -o $(BIN)/point.o
 
 clean: 
-	rm *.o
+	rm $(BIN)/*.o
 	rm main_figure
 
 rebuild:
