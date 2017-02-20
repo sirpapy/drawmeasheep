@@ -8,42 +8,42 @@ module drawMeASheep{
 	typedef sequence <Point> PointSet;
 
 
-	interface Dessin {
+	interface Drawing {
 		double getSurface();
 		double getPerimeter();
 		void translate(in double x);
 		void homothetie(in double x);
 		void rotate(in double angle);
-		void centralSymetric(in Point point);
+		void centralSymetric(in Point p);
 		void axialSymetric(in Point p1, in Point p2);
 	 };
 
-	interface Polygone : Dessin {
+	interface Polygone : Drawing {
 		readonly attribute PointSet points;
 	};
-	interface Line : Dessin {
+	interface Line : Drawing {
 		readonly attribute Point a;
 		readonly attribute Point b;	
 	
 	};
-	interface Cercle : Dessin {
+	interface Cercle : Drawing {
 		readonly attribute double rayon;	
 
 	};
-	interface Ellipse : Dessin {
+	interface Ellipse : Drawing {
 		readonly attribute PointSet points;
 	};
 
-	typedef sequence <Dessin> DessinSet;
-	typedef sequence <Dessin> DessinMap;
+	typedef sequence <Drawing> DrawingSet;
+	typedef sequence <Drawing> DrawingMap;
 
-	interface DessinGroup:Dessin {
-		readonly attribute DessinSet dessins;
+	interface DrawingGroup:Drawing {
+		readonly attribute DrawingSet Drawings;
 		
 	 };
-	interface DessinManager {
-		readonly attribute DessinMap map;
-		boolean add( in Dessin dessin);
+	interface DrawingManager {
+		readonly attribute DrawingMap map;
+		boolean add( in Drawing d);
 		boolean isFull();
 		double getAvailableSurgace();
 
