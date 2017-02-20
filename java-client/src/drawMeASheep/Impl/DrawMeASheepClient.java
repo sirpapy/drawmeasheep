@@ -1,12 +1,9 @@
 package drawMeASheep.Impl;
 
-import java.awt.List;
 import java.util.Properties;
 
 import org.omg.CORBA.Any;
-import org.omg.CORBA.IntHolder;
 import org.omg.CORBA.ORB;
-import org.omg.CORBA.StringHolder;
 import org.omg.CosNaming.Binding;
 import org.omg.CosNaming.BindingHolder;
 import org.omg.CosNaming.BindingIterator;
@@ -20,13 +17,12 @@ import org.omg.CosNaming.NamingContextPackage.CannotProceed;
 import org.omg.CosNaming.NamingContextPackage.InvalidName;
 import org.omg.CosNaming.NamingContextPackage.NotFound;
 
-
-import drawMeASheep.generated.Cercle;
-import drawMeASheep.generated.CercleHelper;
-import drawMeASheep.generated.Drawing;
-import drawMeASheep.generated.DrawingManager;
-import drawMeASheep.generated.DrawingManagerHelper;
-import drawMeASheep.generated.Point;
+import drawMeASheep.generated.drawingEntity.Cercle;
+import drawMeASheep.generated.drawingEntity.CercleHelper;
+import drawMeASheep.generated.drawingEntity.Drawing;
+import drawMeASheep.generated.drawingEntity.Point;
+import drawMeASheep.generated.drawingManager.DrawingManager;
+import drawMeASheep.generated.drawingManager.DrawingManagerHelper;
 
 public class DrawMeASheepClient {
 
