@@ -1,53 +1,62 @@
 module drawMeASheep{
+	module generated{
 
-	struct Point {
-		double x;
-		double y;
-	};
+		module drawingEntity{
+			struct Point {
+			double x;
+			double y;	
+			};
+			
+			typedef sequence <Point> PointSet;
 
-	typedef sequence <Point> PointSet;
 
+			interface Drawing {
+				double getSurface();
+				double getPerimeter();
+				void translate(in double x);
+				void homothetie(in double x);
+				void rotate(in double angle);
+				void centralSymetric(in Point p);
+				void axialSymetric(in Point p1, in Point p2);
+			};
 
-	interface Dessin {
-		double getSurface();
-		double getPerimeter();
-		void translate(in double x);
-		void homothetie(in double x);
-		void rotate(in double angle);
-		void centralSymetric(in Point point);
-		void axialSymetric(in Point p1, in Point p2);
-	 };
-
-	interface Polygone : Dessin {
-		readonly attribute PointSet points;
-	};
-	interface Line : Dessin {
-		readonly attribute Point a;
-		readonly attribute Point b;	
+			interface Polygone : Drawing {
+				readonly attribute PointSet points;
+			};
+			interface Line : Drawing {
+				readonly attribute Point a;
+				readonly attribute Point b;	
 	
-	};
-	interface Cercle : Dessin {
-		readonly attribute double rayon;	
+			};
+			interface Cercle : Drawing {
+				readonly attribute double rayon;	
 
-	};
-	interface Ellipse : Dessin {
-		readonly attribute PointSet points;
-	};
+			};
+			interface Ellipse : Drawing {
+				readonly attribute PointSet points;
+			};
 
-	typedef sequence <Dessin> DessinSet;
-	typedef sequence <Dessin> DessinMap;
+			typedef sequence <Drawing> DrawingSet;
+			typedef sequence <Drawing> DrawingMap;
 
-	interface DessinGroup:Dessin {
-		readonly attribute DessinSet dessins;
-		
-	 };
-	interface DessinManager {
-		readonly attribute DessinMap map;
-		boolean add( in Dessin dessin);
-		boolean isFull();
-		double getAvailableSurgace();
+			interface DrawingGroup:Drawing {
+				readonly attribute DrawingSet Drawings;
+			
+			 };
+		};
 
-	};
-		
+		module manager{
+
+			interface DrawingManager {
+				readonly attribute drawingEntity::DrawingMap map;
+				any createDrawing( in string name , in drawingEntity::PointSet points , in double rayon);
+				boolean add( in any a);
+				boolean isFull();
+				double getAvailableSurface();
+
+			};
+
+		};
+	};	
 	
 };
