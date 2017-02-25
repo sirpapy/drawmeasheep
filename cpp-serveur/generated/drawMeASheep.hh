@@ -62,7 +62,7 @@ _CORBA_MODULE_BEG
 
   _CORBA_MODULE_BEG
 
-    _CORBA_MODULE drawingEntity
+    _CORBA_MODULE entity
 
     _CORBA_MODULE_BEG
 
@@ -197,8 +197,8 @@ _CORBA_MODULE_BEG
         PointSet_out& operator=(const PointSet_var&);
       };
 
-#ifndef __drawMeASheep_mgenerated_mdrawingEntity_mDrawing__
-#define __drawMeASheep_mgenerated_mdrawingEntity_mDrawing__
+#ifndef __drawMeASheep_mgenerated_mentity_mDrawing__
+#define __drawMeASheep_mgenerated_mentity_mDrawing__
 
       class Drawing;
       class _objref_Drawing;
@@ -263,8 +263,8 @@ _CORBA_MODULE_BEG
         void translate(::CORBA::Double x);
         void homothetie(::CORBA::Double x);
         void rotate(::CORBA::Double angle);
-        void centralSymetric(const ::drawMeASheep::generated::drawingEntity::Point& p);
-        void axialSymetric(const ::drawMeASheep::generated::drawingEntity::Point& p1, const ::drawMeASheep::generated::drawingEntity::Point& p2);
+        void centralSymmetry(const ::drawMeASheep::generated::entity::Point& p);
+        void axialSymmetry(const ::drawMeASheep::generated::entity::Point& p1, const ::drawMeASheep::generated::entity::Point& p2);
 
         inline _objref_Drawing()  { _PR_setobj(0); }  // nil
         _objref_Drawing(omniIOR*, omniIdentity*);
@@ -303,8 +303,8 @@ _CORBA_MODULE_BEG
         virtual void translate(::CORBA::Double x) = 0;
         virtual void homothetie(::CORBA::Double x) = 0;
         virtual void rotate(::CORBA::Double angle) = 0;
-        virtual void centralSymetric(const ::drawMeASheep::generated::drawingEntity::Point& p) = 0;
-        virtual void axialSymetric(const ::drawMeASheep::generated::drawingEntity::Point& p1, const ::drawMeASheep::generated::drawingEntity::Point& p2) = 0;
+        virtual void centralSymmetry(const ::drawMeASheep::generated::entity::Point& p) = 0;
+        virtual void axialSymmetry(const ::drawMeASheep::generated::entity::Point& p1, const ::drawMeASheep::generated::entity::Point& p2) = 0;
         
       public:  // Really protected, workaround for xlC
         virtual _CORBA_Boolean _dispatch(omniCallHandle&);
@@ -318,19 +318,19 @@ _CORBA_MODULE_BEG
 
       _CORBA_MODULE_VAR _dyn_attr const ::CORBA::TypeCode_ptr _tc_Drawing;
 
-#ifndef __drawMeASheep_mgenerated_mdrawingEntity_mPolygone__
-#define __drawMeASheep_mgenerated_mdrawingEntity_mPolygone__
+#ifndef __drawMeASheep_mgenerated_mentity_mPolygon__
+#define __drawMeASheep_mgenerated_mentity_mPolygon__
 
-      class Polygone;
-      class _objref_Polygone;
-      class _impl_Polygone;
+      class Polygon;
+      class _objref_Polygon;
+      class _impl_Polygon;
       
-      typedef _objref_Polygone* Polygone_ptr;
-      typedef Polygone_ptr PolygoneRef;
+      typedef _objref_Polygon* Polygon_ptr;
+      typedef Polygon_ptr PolygonRef;
 
-      class Polygone_Helper {
+      class Polygon_Helper {
       public:
-        typedef Polygone_ptr _ptr_type;
+        typedef Polygon_ptr _ptr_type;
 
         static _ptr_type _nil();
         static _CORBA_Boolean is_nil(_ptr_type);
@@ -340,17 +340,17 @@ _CORBA_MODULE_BEG
         static _ptr_type unmarshalObjRef(cdrStream&);
       };
 
-      typedef _CORBA_ObjRef_Var<_objref_Polygone, Polygone_Helper> Polygone_var;
-      typedef _CORBA_ObjRef_OUT_arg<_objref_Polygone,Polygone_Helper > Polygone_out;
+      typedef _CORBA_ObjRef_Var<_objref_Polygon, Polygon_Helper> Polygon_var;
+      typedef _CORBA_ObjRef_OUT_arg<_objref_Polygon,Polygon_Helper > Polygon_out;
 
 #endif
 
-      // interface Polygone
-      class Polygone {
+      // interface Polygon
+      class Polygon {
       public:
         // Declarations for this interface type.
-        typedef Polygone_ptr _ptr_type;
-        typedef Polygone_var _var_type;
+        typedef Polygon_ptr _ptr_type;
+        typedef Polygon_var _var_type;
 
         static _ptr_type _duplicate(_ptr_type);
         static _ptr_type _narrow(::CORBA::Object_ptr);
@@ -374,43 +374,43 @@ _CORBA_MODULE_BEG
         
       };
 
-      class _objref_Polygone :
+      class _objref_Polygon :
         public virtual _objref_Drawing
       {
       public:
         PointSet* points();
 
-        inline _objref_Polygone()  { _PR_setobj(0); }  // nil
-        _objref_Polygone(omniIOR*, omniIdentity*);
+        inline _objref_Polygon()  { _PR_setobj(0); }  // nil
+        _objref_Polygon(omniIOR*, omniIdentity*);
 
       protected:
-        virtual ~_objref_Polygone();
+        virtual ~_objref_Polygon();
 
         
       private:
         virtual void* _ptrToObjRef(const char*);
 
-        _objref_Polygone(const _objref_Polygone&);
-        _objref_Polygone& operator = (const _objref_Polygone&);
+        _objref_Polygon(const _objref_Polygon&);
+        _objref_Polygon& operator = (const _objref_Polygon&);
         // not implemented
 
-        friend class Polygone;
+        friend class Polygon;
       };
 
-      class _pof_Polygone : public _OMNI_NS(proxyObjectFactory) {
+      class _pof_Polygon : public _OMNI_NS(proxyObjectFactory) {
       public:
-        inline _pof_Polygone() : _OMNI_NS(proxyObjectFactory)(Polygone::_PD_repoId) {}
-        virtual ~_pof_Polygone();
+        inline _pof_Polygon() : _OMNI_NS(proxyObjectFactory)(Polygon::_PD_repoId) {}
+        virtual ~_pof_Polygon();
 
         virtual omniObjRef* newObjRef(omniIOR*,omniIdentity*);
         virtual _CORBA_Boolean is_a(const char*) const;
       };
 
-      class _impl_Polygone :
+      class _impl_Polygon :
         public virtual _impl_Drawing
       {
       public:
-        virtual ~_impl_Polygone();
+        virtual ~_impl_Polygon();
 
         virtual PointSet* points() = 0;
         
@@ -424,10 +424,10 @@ _CORBA_MODULE_BEG
       };
 
 
-      _CORBA_MODULE_VAR _dyn_attr const ::CORBA::TypeCode_ptr _tc_Polygone;
+      _CORBA_MODULE_VAR _dyn_attr const ::CORBA::TypeCode_ptr _tc_Polygon;
 
-#ifndef __drawMeASheep_mgenerated_mdrawingEntity_mLine__
-#define __drawMeASheep_mgenerated_mdrawingEntity_mLine__
+#ifndef __drawMeASheep_mgenerated_mentity_mLine__
+#define __drawMeASheep_mgenerated_mentity_mLine__
 
       class Line;
       class _objref_Line;
@@ -536,19 +536,19 @@ _CORBA_MODULE_BEG
 
       _CORBA_MODULE_VAR _dyn_attr const ::CORBA::TypeCode_ptr _tc_Line;
 
-#ifndef __drawMeASheep_mgenerated_mdrawingEntity_mCercle__
-#define __drawMeASheep_mgenerated_mdrawingEntity_mCercle__
+#ifndef __drawMeASheep_mgenerated_mentity_mCircle__
+#define __drawMeASheep_mgenerated_mentity_mCircle__
 
-      class Cercle;
-      class _objref_Cercle;
-      class _impl_Cercle;
+      class Circle;
+      class _objref_Circle;
+      class _impl_Circle;
       
-      typedef _objref_Cercle* Cercle_ptr;
-      typedef Cercle_ptr CercleRef;
+      typedef _objref_Circle* Circle_ptr;
+      typedef Circle_ptr CircleRef;
 
-      class Cercle_Helper {
+      class Circle_Helper {
       public:
-        typedef Cercle_ptr _ptr_type;
+        typedef Circle_ptr _ptr_type;
 
         static _ptr_type _nil();
         static _CORBA_Boolean is_nil(_ptr_type);
@@ -558,17 +558,17 @@ _CORBA_MODULE_BEG
         static _ptr_type unmarshalObjRef(cdrStream&);
       };
 
-      typedef _CORBA_ObjRef_Var<_objref_Cercle, Cercle_Helper> Cercle_var;
-      typedef _CORBA_ObjRef_OUT_arg<_objref_Cercle,Cercle_Helper > Cercle_out;
+      typedef _CORBA_ObjRef_Var<_objref_Circle, Circle_Helper> Circle_var;
+      typedef _CORBA_ObjRef_OUT_arg<_objref_Circle,Circle_Helper > Circle_out;
 
 #endif
 
-      // interface Cercle
-      class Cercle {
+      // interface Circle
+      class Circle {
       public:
         // Declarations for this interface type.
-        typedef Cercle_ptr _ptr_type;
-        typedef Cercle_var _var_type;
+        typedef Circle_ptr _ptr_type;
+        typedef Circle_var _var_type;
 
         static _ptr_type _duplicate(_ptr_type);
         static _ptr_type _narrow(::CORBA::Object_ptr);
@@ -592,45 +592,49 @@ _CORBA_MODULE_BEG
         
       };
 
-      class _objref_Cercle :
+      class _objref_Circle :
         public virtual _objref_Drawing
       {
       public:
-        ::CORBA::Double rayon();
+        ::CORBA::Double radius();
+        Point center();
+        void center(const ::drawMeASheep::generated::entity::Point& _v);
 
-        inline _objref_Cercle()  { _PR_setobj(0); }  // nil
-        _objref_Cercle(omniIOR*, omniIdentity*);
+        inline _objref_Circle()  { _PR_setobj(0); }  // nil
+        _objref_Circle(omniIOR*, omniIdentity*);
 
       protected:
-        virtual ~_objref_Cercle();
+        virtual ~_objref_Circle();
 
         
       private:
         virtual void* _ptrToObjRef(const char*);
 
-        _objref_Cercle(const _objref_Cercle&);
-        _objref_Cercle& operator = (const _objref_Cercle&);
+        _objref_Circle(const _objref_Circle&);
+        _objref_Circle& operator = (const _objref_Circle&);
         // not implemented
 
-        friend class Cercle;
+        friend class Circle;
       };
 
-      class _pof_Cercle : public _OMNI_NS(proxyObjectFactory) {
+      class _pof_Circle : public _OMNI_NS(proxyObjectFactory) {
       public:
-        inline _pof_Cercle() : _OMNI_NS(proxyObjectFactory)(Cercle::_PD_repoId) {}
-        virtual ~_pof_Cercle();
+        inline _pof_Circle() : _OMNI_NS(proxyObjectFactory)(Circle::_PD_repoId) {}
+        virtual ~_pof_Circle();
 
         virtual omniObjRef* newObjRef(omniIOR*,omniIdentity*);
         virtual _CORBA_Boolean is_a(const char*) const;
       };
 
-      class _impl_Cercle :
+      class _impl_Circle :
         public virtual _impl_Drawing
       {
       public:
-        virtual ~_impl_Cercle();
+        virtual ~_impl_Circle();
 
-        virtual ::CORBA::Double rayon() = 0;
+        virtual ::CORBA::Double radius() = 0;
+        virtual Point center() = 0;
+        virtual void center(const ::drawMeASheep::generated::entity::Point& _v) = 0;
         
       public:  // Really protected, workaround for xlC
         virtual _CORBA_Boolean _dispatch(omniCallHandle&);
@@ -642,10 +646,10 @@ _CORBA_MODULE_BEG
       };
 
 
-      _CORBA_MODULE_VAR _dyn_attr const ::CORBA::TypeCode_ptr _tc_Cercle;
+      _CORBA_MODULE_VAR _dyn_attr const ::CORBA::TypeCode_ptr _tc_Circle;
 
-#ifndef __drawMeASheep_mgenerated_mdrawingEntity_mEllipse__
-#define __drawMeASheep_mgenerated_mdrawingEntity_mEllipse__
+#ifndef __drawMeASheep_mgenerated_mentity_mEllipse__
+#define __drawMeASheep_mgenerated_mentity_mEllipse__
 
       class Ellipse;
       class _objref_Ellipse;
@@ -974,8 +978,8 @@ _CORBA_MODULE_BEG
         DrawingMap_out& operator=(const DrawingMap_var&);
       };
 
-#ifndef __drawMeASheep_mgenerated_mdrawingEntity_mDrawingGroup__
-#define __drawMeASheep_mgenerated_mdrawingEntity_mDrawingGroup__
+#ifndef __drawMeASheep_mgenerated_mentity_mDrawingGroup__
+#define __drawMeASheep_mgenerated_mentity_mDrawingGroup__
 
       class DrawingGroup;
       class _objref_DrawingGroup;
@@ -1149,11 +1153,11 @@ _CORBA_MODULE_BEG
         public virtual omniObjRef
       {
       public:
-        ::CORBA::Any* createDrawing(const char* name, const ::drawMeASheep::generated::drawingEntity::PointSet& points, ::CORBA::Double rayon);
+        ::CORBA::Any* createDrawing(const char* name, const ::drawMeASheep::generated::entity::PointSet& points, ::CORBA::Double rayon);
         ::CORBA::Boolean add(const ::CORBA::Any& a);
         ::CORBA::Boolean isFull();
         ::CORBA::Double getAvailableSurface();
-        drawingEntity::DrawingMap* map();
+        entity::DrawingMap* map();
 
         inline _objref_DrawingManager()  { _PR_setobj(0); }  // nil
         _objref_DrawingManager(omniIOR*, omniIdentity*);
@@ -1187,11 +1191,11 @@ _CORBA_MODULE_BEG
       public:
         virtual ~_impl_DrawingManager();
 
-        virtual ::CORBA::Any* createDrawing(const char* name, const ::drawMeASheep::generated::drawingEntity::PointSet& points, ::CORBA::Double rayon) = 0;
+        virtual ::CORBA::Any* createDrawing(const char* name, const ::drawMeASheep::generated::entity::PointSet& points, ::CORBA::Double rayon) = 0;
         virtual ::CORBA::Boolean add(const ::CORBA::Any& a) = 0;
         virtual ::CORBA::Boolean isFull() = 0;
         virtual ::CORBA::Double getAvailableSurface() = 0;
-        virtual drawingEntity::DrawingMap* map() = 0;
+        virtual entity::DrawingMap* map() = 0;
         
       public:  // Really protected, workaround for xlC
         virtual _CORBA_Boolean _dispatch(omniCallHandle&);
@@ -1219,78 +1223,78 @@ _CORBA_MODULE_BEG
   _CORBA_MODULE generated
   _CORBA_MODULE_BEG
 
-    _CORBA_MODULE drawingEntity
+    _CORBA_MODULE entity
     _CORBA_MODULE_BEG
 
       class Drawing :
-        public virtual drawMeASheep::generated::drawingEntity::_impl_Drawing,
+        public virtual drawMeASheep::generated::entity::_impl_Drawing,
         public virtual ::PortableServer::ServantBase
       {
       public:
         virtual ~Drawing();
 
-        inline ::drawMeASheep::generated::drawingEntity::Drawing_ptr _this() {
-          return (::drawMeASheep::generated::drawingEntity::Drawing_ptr) _do_this(::drawMeASheep::generated::drawingEntity::Drawing::_PD_repoId);
+        inline ::drawMeASheep::generated::entity::Drawing_ptr _this() {
+          return (::drawMeASheep::generated::entity::Drawing_ptr) _do_this(::drawMeASheep::generated::entity::Drawing::_PD_repoId);
         }
       };
 
-      class Polygone :
-        public virtual drawMeASheep::generated::drawingEntity::_impl_Polygone,
+      class Polygon :
+        public virtual drawMeASheep::generated::entity::_impl_Polygon,
         public virtual Drawing
       {
       public:
-        virtual ~Polygone();
+        virtual ~Polygon();
 
-        inline ::drawMeASheep::generated::drawingEntity::Polygone_ptr _this() {
-          return (::drawMeASheep::generated::drawingEntity::Polygone_ptr) _do_this(::drawMeASheep::generated::drawingEntity::Polygone::_PD_repoId);
+        inline ::drawMeASheep::generated::entity::Polygon_ptr _this() {
+          return (::drawMeASheep::generated::entity::Polygon_ptr) _do_this(::drawMeASheep::generated::entity::Polygon::_PD_repoId);
         }
       };
 
       class Line :
-        public virtual drawMeASheep::generated::drawingEntity::_impl_Line,
+        public virtual drawMeASheep::generated::entity::_impl_Line,
         public virtual Drawing
       {
       public:
         virtual ~Line();
 
-        inline ::drawMeASheep::generated::drawingEntity::Line_ptr _this() {
-          return (::drawMeASheep::generated::drawingEntity::Line_ptr) _do_this(::drawMeASheep::generated::drawingEntity::Line::_PD_repoId);
+        inline ::drawMeASheep::generated::entity::Line_ptr _this() {
+          return (::drawMeASheep::generated::entity::Line_ptr) _do_this(::drawMeASheep::generated::entity::Line::_PD_repoId);
         }
       };
 
-      class Cercle :
-        public virtual drawMeASheep::generated::drawingEntity::_impl_Cercle,
+      class Circle :
+        public virtual drawMeASheep::generated::entity::_impl_Circle,
         public virtual Drawing
       {
       public:
-        virtual ~Cercle();
+        virtual ~Circle();
 
-        inline ::drawMeASheep::generated::drawingEntity::Cercle_ptr _this() {
-          return (::drawMeASheep::generated::drawingEntity::Cercle_ptr) _do_this(::drawMeASheep::generated::drawingEntity::Cercle::_PD_repoId);
+        inline ::drawMeASheep::generated::entity::Circle_ptr _this() {
+          return (::drawMeASheep::generated::entity::Circle_ptr) _do_this(::drawMeASheep::generated::entity::Circle::_PD_repoId);
         }
       };
 
       class Ellipse :
-        public virtual drawMeASheep::generated::drawingEntity::_impl_Ellipse,
+        public virtual drawMeASheep::generated::entity::_impl_Ellipse,
         public virtual Drawing
       {
       public:
         virtual ~Ellipse();
 
-        inline ::drawMeASheep::generated::drawingEntity::Ellipse_ptr _this() {
-          return (::drawMeASheep::generated::drawingEntity::Ellipse_ptr) _do_this(::drawMeASheep::generated::drawingEntity::Ellipse::_PD_repoId);
+        inline ::drawMeASheep::generated::entity::Ellipse_ptr _this() {
+          return (::drawMeASheep::generated::entity::Ellipse_ptr) _do_this(::drawMeASheep::generated::entity::Ellipse::_PD_repoId);
         }
       };
 
       class DrawingGroup :
-        public virtual drawMeASheep::generated::drawingEntity::_impl_DrawingGroup,
+        public virtual drawMeASheep::generated::entity::_impl_DrawingGroup,
         public virtual Drawing
       {
       public:
         virtual ~DrawingGroup();
 
-        inline ::drawMeASheep::generated::drawingEntity::DrawingGroup_ptr _this() {
-          return (::drawMeASheep::generated::drawingEntity::DrawingGroup_ptr) _do_this(::drawMeASheep::generated::drawingEntity::DrawingGroup::_PD_repoId);
+        inline ::drawMeASheep::generated::entity::DrawingGroup_ptr _this() {
+          return (::drawMeASheep::generated::entity::DrawingGroup_ptr) _do_this(::drawMeASheep::generated::entity::DrawingGroup::_PD_repoId);
         }
       };
 
@@ -1325,7 +1329,7 @@ _CORBA_MODULE_BEG
   _CORBA_MODULE generated
   _CORBA_MODULE_BEG
 
-    _CORBA_MODULE drawingEntity
+    _CORBA_MODULE entity
     _CORBA_MODULE_BEG
 
     _CORBA_MODULE_END
@@ -1346,49 +1350,49 @@ _CORBA_MODULE_END
 #undef _core_attr
 #undef _dyn_attr
 
-extern void operator<<=(::CORBA::Any& _a, const drawMeASheep::generated::drawingEntity::Point& _s);
-extern void operator<<=(::CORBA::Any& _a, drawMeASheep::generated::drawingEntity::Point* _sp);
-extern _CORBA_Boolean operator>>=(const ::CORBA::Any& _a, drawMeASheep::generated::drawingEntity::Point*& _sp);
-extern _CORBA_Boolean operator>>=(const ::CORBA::Any& _a, const drawMeASheep::generated::drawingEntity::Point*& _sp);
+extern void operator<<=(::CORBA::Any& _a, const drawMeASheep::generated::entity::Point& _s);
+extern void operator<<=(::CORBA::Any& _a, drawMeASheep::generated::entity::Point* _sp);
+extern _CORBA_Boolean operator>>=(const ::CORBA::Any& _a, drawMeASheep::generated::entity::Point*& _sp);
+extern _CORBA_Boolean operator>>=(const ::CORBA::Any& _a, const drawMeASheep::generated::entity::Point*& _sp);
 
-void operator<<=(::CORBA::Any& _a, const drawMeASheep::generated::drawingEntity::PointSet& _s);
-void operator<<=(::CORBA::Any& _a, drawMeASheep::generated::drawingEntity::PointSet* _sp);
-_CORBA_Boolean operator>>=(const ::CORBA::Any& _a, drawMeASheep::generated::drawingEntity::PointSet*& _sp);
-_CORBA_Boolean operator>>=(const ::CORBA::Any& _a, const drawMeASheep::generated::drawingEntity::PointSet*& _sp);
+void operator<<=(::CORBA::Any& _a, const drawMeASheep::generated::entity::PointSet& _s);
+void operator<<=(::CORBA::Any& _a, drawMeASheep::generated::entity::PointSet* _sp);
+_CORBA_Boolean operator>>=(const ::CORBA::Any& _a, drawMeASheep::generated::entity::PointSet*& _sp);
+_CORBA_Boolean operator>>=(const ::CORBA::Any& _a, const drawMeASheep::generated::entity::PointSet*& _sp);
 
-void operator<<=(::CORBA::Any& _a, drawMeASheep::generated::drawingEntity::Drawing_ptr _s);
-void operator<<=(::CORBA::Any& _a, drawMeASheep::generated::drawingEntity::Drawing_ptr* _s);
-_CORBA_Boolean operator>>=(const ::CORBA::Any& _a, drawMeASheep::generated::drawingEntity::Drawing_ptr& _s);
+void operator<<=(::CORBA::Any& _a, drawMeASheep::generated::entity::Drawing_ptr _s);
+void operator<<=(::CORBA::Any& _a, drawMeASheep::generated::entity::Drawing_ptr* _s);
+_CORBA_Boolean operator>>=(const ::CORBA::Any& _a, drawMeASheep::generated::entity::Drawing_ptr& _s);
 
-void operator<<=(::CORBA::Any& _a, drawMeASheep::generated::drawingEntity::Polygone_ptr _s);
-void operator<<=(::CORBA::Any& _a, drawMeASheep::generated::drawingEntity::Polygone_ptr* _s);
-_CORBA_Boolean operator>>=(const ::CORBA::Any& _a, drawMeASheep::generated::drawingEntity::Polygone_ptr& _s);
+void operator<<=(::CORBA::Any& _a, drawMeASheep::generated::entity::Polygon_ptr _s);
+void operator<<=(::CORBA::Any& _a, drawMeASheep::generated::entity::Polygon_ptr* _s);
+_CORBA_Boolean operator>>=(const ::CORBA::Any& _a, drawMeASheep::generated::entity::Polygon_ptr& _s);
 
-void operator<<=(::CORBA::Any& _a, drawMeASheep::generated::drawingEntity::Line_ptr _s);
-void operator<<=(::CORBA::Any& _a, drawMeASheep::generated::drawingEntity::Line_ptr* _s);
-_CORBA_Boolean operator>>=(const ::CORBA::Any& _a, drawMeASheep::generated::drawingEntity::Line_ptr& _s);
+void operator<<=(::CORBA::Any& _a, drawMeASheep::generated::entity::Line_ptr _s);
+void operator<<=(::CORBA::Any& _a, drawMeASheep::generated::entity::Line_ptr* _s);
+_CORBA_Boolean operator>>=(const ::CORBA::Any& _a, drawMeASheep::generated::entity::Line_ptr& _s);
 
-void operator<<=(::CORBA::Any& _a, drawMeASheep::generated::drawingEntity::Cercle_ptr _s);
-void operator<<=(::CORBA::Any& _a, drawMeASheep::generated::drawingEntity::Cercle_ptr* _s);
-_CORBA_Boolean operator>>=(const ::CORBA::Any& _a, drawMeASheep::generated::drawingEntity::Cercle_ptr& _s);
+void operator<<=(::CORBA::Any& _a, drawMeASheep::generated::entity::Circle_ptr _s);
+void operator<<=(::CORBA::Any& _a, drawMeASheep::generated::entity::Circle_ptr* _s);
+_CORBA_Boolean operator>>=(const ::CORBA::Any& _a, drawMeASheep::generated::entity::Circle_ptr& _s);
 
-void operator<<=(::CORBA::Any& _a, drawMeASheep::generated::drawingEntity::Ellipse_ptr _s);
-void operator<<=(::CORBA::Any& _a, drawMeASheep::generated::drawingEntity::Ellipse_ptr* _s);
-_CORBA_Boolean operator>>=(const ::CORBA::Any& _a, drawMeASheep::generated::drawingEntity::Ellipse_ptr& _s);
+void operator<<=(::CORBA::Any& _a, drawMeASheep::generated::entity::Ellipse_ptr _s);
+void operator<<=(::CORBA::Any& _a, drawMeASheep::generated::entity::Ellipse_ptr* _s);
+_CORBA_Boolean operator>>=(const ::CORBA::Any& _a, drawMeASheep::generated::entity::Ellipse_ptr& _s);
 
-void operator<<=(::CORBA::Any& _a, const drawMeASheep::generated::drawingEntity::DrawingSet& _s);
-void operator<<=(::CORBA::Any& _a, drawMeASheep::generated::drawingEntity::DrawingSet* _sp);
-_CORBA_Boolean operator>>=(const ::CORBA::Any& _a, drawMeASheep::generated::drawingEntity::DrawingSet*& _sp);
-_CORBA_Boolean operator>>=(const ::CORBA::Any& _a, const drawMeASheep::generated::drawingEntity::DrawingSet*& _sp);
+void operator<<=(::CORBA::Any& _a, const drawMeASheep::generated::entity::DrawingSet& _s);
+void operator<<=(::CORBA::Any& _a, drawMeASheep::generated::entity::DrawingSet* _sp);
+_CORBA_Boolean operator>>=(const ::CORBA::Any& _a, drawMeASheep::generated::entity::DrawingSet*& _sp);
+_CORBA_Boolean operator>>=(const ::CORBA::Any& _a, const drawMeASheep::generated::entity::DrawingSet*& _sp);
 
-void operator<<=(::CORBA::Any& _a, const drawMeASheep::generated::drawingEntity::DrawingMap& _s);
-void operator<<=(::CORBA::Any& _a, drawMeASheep::generated::drawingEntity::DrawingMap* _sp);
-_CORBA_Boolean operator>>=(const ::CORBA::Any& _a, drawMeASheep::generated::drawingEntity::DrawingMap*& _sp);
-_CORBA_Boolean operator>>=(const ::CORBA::Any& _a, const drawMeASheep::generated::drawingEntity::DrawingMap*& _sp);
+void operator<<=(::CORBA::Any& _a, const drawMeASheep::generated::entity::DrawingMap& _s);
+void operator<<=(::CORBA::Any& _a, drawMeASheep::generated::entity::DrawingMap* _sp);
+_CORBA_Boolean operator>>=(const ::CORBA::Any& _a, drawMeASheep::generated::entity::DrawingMap*& _sp);
+_CORBA_Boolean operator>>=(const ::CORBA::Any& _a, const drawMeASheep::generated::entity::DrawingMap*& _sp);
 
-void operator<<=(::CORBA::Any& _a, drawMeASheep::generated::drawingEntity::DrawingGroup_ptr _s);
-void operator<<=(::CORBA::Any& _a, drawMeASheep::generated::drawingEntity::DrawingGroup_ptr* _s);
-_CORBA_Boolean operator>>=(const ::CORBA::Any& _a, drawMeASheep::generated::drawingEntity::DrawingGroup_ptr& _s);
+void operator<<=(::CORBA::Any& _a, drawMeASheep::generated::entity::DrawingGroup_ptr _s);
+void operator<<=(::CORBA::Any& _a, drawMeASheep::generated::entity::DrawingGroup_ptr* _s);
+_CORBA_Boolean operator>>=(const ::CORBA::Any& _a, drawMeASheep::generated::entity::DrawingGroup_ptr& _s);
 
 void operator<<=(::CORBA::Any& _a, drawMeASheep::generated::manager::DrawingManager_ptr _s);
 void operator<<=(::CORBA::Any& _a, drawMeASheep::generated::manager::DrawingManager_ptr* _s);
@@ -1397,37 +1401,37 @@ _CORBA_Boolean operator>>=(const ::CORBA::Any& _a, drawMeASheep::generated::mana
 
 
 inline void
-drawMeASheep::generated::drawingEntity::Drawing::_marshalObjRef(::drawMeASheep::generated::drawingEntity::Drawing_ptr obj, cdrStream& s) {
+drawMeASheep::generated::entity::Drawing::_marshalObjRef(::drawMeASheep::generated::entity::Drawing_ptr obj, cdrStream& s) {
   omniObjRef::_marshal(obj->_PR_getobj(),s);
 }
 
 
 inline void
-drawMeASheep::generated::drawingEntity::Polygone::_marshalObjRef(::drawMeASheep::generated::drawingEntity::Polygone_ptr obj, cdrStream& s) {
+drawMeASheep::generated::entity::Polygon::_marshalObjRef(::drawMeASheep::generated::entity::Polygon_ptr obj, cdrStream& s) {
   omniObjRef::_marshal(obj->_PR_getobj(),s);
 }
 
 
 inline void
-drawMeASheep::generated::drawingEntity::Line::_marshalObjRef(::drawMeASheep::generated::drawingEntity::Line_ptr obj, cdrStream& s) {
+drawMeASheep::generated::entity::Line::_marshalObjRef(::drawMeASheep::generated::entity::Line_ptr obj, cdrStream& s) {
   omniObjRef::_marshal(obj->_PR_getobj(),s);
 }
 
 
 inline void
-drawMeASheep::generated::drawingEntity::Cercle::_marshalObjRef(::drawMeASheep::generated::drawingEntity::Cercle_ptr obj, cdrStream& s) {
+drawMeASheep::generated::entity::Circle::_marshalObjRef(::drawMeASheep::generated::entity::Circle_ptr obj, cdrStream& s) {
   omniObjRef::_marshal(obj->_PR_getobj(),s);
 }
 
 
 inline void
-drawMeASheep::generated::drawingEntity::Ellipse::_marshalObjRef(::drawMeASheep::generated::drawingEntity::Ellipse_ptr obj, cdrStream& s) {
+drawMeASheep::generated::entity::Ellipse::_marshalObjRef(::drawMeASheep::generated::entity::Ellipse_ptr obj, cdrStream& s) {
   omniObjRef::_marshal(obj->_PR_getobj(),s);
 }
 
 
 inline void
-drawMeASheep::generated::drawingEntity::DrawingGroup::_marshalObjRef(::drawMeASheep::generated::drawingEntity::DrawingGroup_ptr obj, cdrStream& s) {
+drawMeASheep::generated::entity::DrawingGroup::_marshalObjRef(::drawMeASheep::generated::entity::DrawingGroup_ptr obj, cdrStream& s) {
   omniObjRef::_marshal(obj->_PR_getobj(),s);
 }
 

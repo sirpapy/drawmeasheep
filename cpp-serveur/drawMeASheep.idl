@@ -1,7 +1,7 @@
 module drawMeASheep{
 	module generated{
 
-		module drawingEntity{
+		module entity{
 			struct Point {
 			double x;
 			double y;	
@@ -16,11 +16,11 @@ module drawMeASheep{
 				void translate(in double x);
 				void homothetie(in double x);
 				void rotate(in double angle);
-				void centralSymetric(in Point p);
-				void axialSymetric(in Point p1, in Point p2);
+				void centralSymmetry(in Point p);
+				void axialSymmetry(in Point p1, in Point p2);
 			};
 
-			interface Polygone : Drawing {
+			interface Polygon : Drawing {
 				readonly attribute PointSet points;
 			};
 			interface Line : Drawing {
@@ -28,9 +28,9 @@ module drawMeASheep{
 				readonly attribute Point b;	
 	
 			};
-			interface Cercle : Drawing {
-				readonly attribute double rayon;	
-
+			interface Circle : Drawing {
+				readonly attribute double radius;	
+				attribute Point center;
 			};
 			interface Ellipse : Drawing {
 				readonly attribute PointSet points;
@@ -47,9 +47,9 @@ module drawMeASheep{
 
 		module manager{
 
-			interface DrawingManager {
-				readonly attribute drawingEntity::DrawingMap map;
-				any createDrawing( in string name , in drawingEntity::PointSet points , in double rayon);
+			interface DrawingManager{
+				readonly attribute entity::DrawingMap map;
+				any createDrawing( in string name , in entity::PointSet points , in double rayon);
 				boolean add( in any a);
 				boolean isFull();
 				double getAvailableSurface();

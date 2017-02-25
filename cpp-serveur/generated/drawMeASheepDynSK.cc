@@ -8,23 +8,23 @@ static const char* _0RL_dyn_library_version = omniORB_4_1_dyn;
 
 static ::CORBA::TypeCode::_Tracker _0RL_tcTrack(__FILE__);
 
-static CORBA::PR_structMember _0RL_structmember_drawMeASheep_mgenerated_mdrawingEntity_mPoint[] = {
+static CORBA::PR_structMember _0RL_structmember_drawMeASheep_mgenerated_mentity_mPoint[] = {
   {"x", CORBA::TypeCode::PR_double_tc()},
   {"y", CORBA::TypeCode::PR_double_tc()}
 };
 
-#ifdef _0RL_tc_drawMeASheep_mgenerated_mdrawingEntity_mPoint
-#  undef _0RL_tc_drawMeASheep_mgenerated_mdrawingEntity_mPoint
+#ifdef _0RL_tc_drawMeASheep_mgenerated_mentity_mPoint
+#  undef _0RL_tc_drawMeASheep_mgenerated_mentity_mPoint
 #endif
-static CORBA::TypeCode_ptr _0RL_tc_drawMeASheep_mgenerated_mdrawingEntity_mPoint = CORBA::TypeCode::PR_struct_tc("IDL:drawMeASheep/generated/drawingEntity/Point:1.0", "Point", _0RL_structmember_drawMeASheep_mgenerated_mdrawingEntity_mPoint, 2, &_0RL_tcTrack);
+static CORBA::TypeCode_ptr _0RL_tc_drawMeASheep_mgenerated_mentity_mPoint = CORBA::TypeCode::PR_struct_tc("IDL:drawMeASheep/generated/entity/Point:1.0", "Point", _0RL_structmember_drawMeASheep_mgenerated_mentity_mPoint, 2, &_0RL_tcTrack);
 
 #if defined(HAS_Cplusplus_Namespace) && defined(_MSC_VER)
 // MSVC++ does not give the constant external linkage otherwise.
-namespace drawMeASheep { namespace generated { namespace drawingEntity { 
-  const ::CORBA::TypeCode_ptr _tc_Point = _0RL_tc_drawMeASheep_mgenerated_mdrawingEntity_mPoint;
+namespace drawMeASheep { namespace generated { namespace entity { 
+  const ::CORBA::TypeCode_ptr _tc_Point = _0RL_tc_drawMeASheep_mgenerated_mentity_mPoint;
 } } } 
 #else
-const ::CORBA::TypeCode_ptr drawMeASheep::generated::drawingEntity::_tc_Point = _0RL_tc_drawMeASheep_mgenerated_mdrawingEntity_mPoint;
+const ::CORBA::TypeCode_ptr drawMeASheep::generated::entity::_tc_Point = _0RL_tc_drawMeASheep_mgenerated_mentity_mPoint;
 #endif
 
 
@@ -32,94 +32,94 @@ const ::CORBA::TypeCode_ptr drawMeASheep::generated::drawingEntity::_tc_Point = 
 
 
 
-static CORBA::TypeCode_ptr _0RL_tc_drawMeASheep_mgenerated_mdrawingEntity_mPointSet = CORBA::TypeCode::PR_alias_tc("IDL:drawMeASheep/generated/drawingEntity/PointSet:1.0", "PointSet", CORBA::TypeCode::PR_sequence_tc(0, _0RL_tc_drawMeASheep_mgenerated_mdrawingEntity_mPoint, &_0RL_tcTrack), &_0RL_tcTrack);
-
-
-#if defined(HAS_Cplusplus_Namespace) && defined(_MSC_VER)
-// MSVC++ does not give the constant external linkage otherwise.
-namespace drawMeASheep { namespace generated { namespace drawingEntity { 
-  const ::CORBA::TypeCode_ptr _tc_PointSet = _0RL_tc_drawMeASheep_mgenerated_mdrawingEntity_mPointSet;
-} } } 
-#else
-const ::CORBA::TypeCode_ptr drawMeASheep::generated::drawingEntity::_tc_PointSet = _0RL_tc_drawMeASheep_mgenerated_mdrawingEntity_mPointSet;
-#endif
-
-#if defined(HAS_Cplusplus_Namespace) && defined(_MSC_VER)
-// MSVC++ does not give the constant external linkage otherwise.
-namespace drawMeASheep { namespace generated { namespace drawingEntity { 
-  const ::CORBA::TypeCode_ptr _tc_Drawing = CORBA::TypeCode::PR_interface_tc("IDL:drawMeASheep/generated/drawingEntity/Drawing:1.0", "Drawing", &_0RL_tcTrack);
-} } } 
-#else
-const ::CORBA::TypeCode_ptr drawMeASheep::generated::drawingEntity::_tc_Drawing = CORBA::TypeCode::PR_interface_tc("IDL:drawMeASheep/generated/drawingEntity/Drawing:1.0", "Drawing", &_0RL_tcTrack);
-#endif
-
-#if defined(HAS_Cplusplus_Namespace) && defined(_MSC_VER)
-// MSVC++ does not give the constant external linkage otherwise.
-namespace drawMeASheep { namespace generated { namespace drawingEntity { 
-  const ::CORBA::TypeCode_ptr _tc_Polygone = CORBA::TypeCode::PR_interface_tc("IDL:drawMeASheep/generated/drawingEntity/Polygone:1.0", "Polygone", &_0RL_tcTrack);
-} } } 
-#else
-const ::CORBA::TypeCode_ptr drawMeASheep::generated::drawingEntity::_tc_Polygone = CORBA::TypeCode::PR_interface_tc("IDL:drawMeASheep/generated/drawingEntity/Polygone:1.0", "Polygone", &_0RL_tcTrack);
-#endif
-
-#if defined(HAS_Cplusplus_Namespace) && defined(_MSC_VER)
-// MSVC++ does not give the constant external linkage otherwise.
-namespace drawMeASheep { namespace generated { namespace drawingEntity { 
-  const ::CORBA::TypeCode_ptr _tc_Line = CORBA::TypeCode::PR_interface_tc("IDL:drawMeASheep/generated/drawingEntity/Line:1.0", "Line", &_0RL_tcTrack);
-} } } 
-#else
-const ::CORBA::TypeCode_ptr drawMeASheep::generated::drawingEntity::_tc_Line = CORBA::TypeCode::PR_interface_tc("IDL:drawMeASheep/generated/drawingEntity/Line:1.0", "Line", &_0RL_tcTrack);
-#endif
-
-#if defined(HAS_Cplusplus_Namespace) && defined(_MSC_VER)
-// MSVC++ does not give the constant external linkage otherwise.
-namespace drawMeASheep { namespace generated { namespace drawingEntity { 
-  const ::CORBA::TypeCode_ptr _tc_Cercle = CORBA::TypeCode::PR_interface_tc("IDL:drawMeASheep/generated/drawingEntity/Cercle:1.0", "Cercle", &_0RL_tcTrack);
-} } } 
-#else
-const ::CORBA::TypeCode_ptr drawMeASheep::generated::drawingEntity::_tc_Cercle = CORBA::TypeCode::PR_interface_tc("IDL:drawMeASheep/generated/drawingEntity/Cercle:1.0", "Cercle", &_0RL_tcTrack);
-#endif
-
-#if defined(HAS_Cplusplus_Namespace) && defined(_MSC_VER)
-// MSVC++ does not give the constant external linkage otherwise.
-namespace drawMeASheep { namespace generated { namespace drawingEntity { 
-  const ::CORBA::TypeCode_ptr _tc_Ellipse = CORBA::TypeCode::PR_interface_tc("IDL:drawMeASheep/generated/drawingEntity/Ellipse:1.0", "Ellipse", &_0RL_tcTrack);
-} } } 
-#else
-const ::CORBA::TypeCode_ptr drawMeASheep::generated::drawingEntity::_tc_Ellipse = CORBA::TypeCode::PR_interface_tc("IDL:drawMeASheep/generated/drawingEntity/Ellipse:1.0", "Ellipse", &_0RL_tcTrack);
-#endif
-
-static CORBA::TypeCode_ptr _0RL_tc_drawMeASheep_mgenerated_mdrawingEntity_mDrawingSet = CORBA::TypeCode::PR_alias_tc("IDL:drawMeASheep/generated/drawingEntity/DrawingSet:1.0", "DrawingSet", CORBA::TypeCode::PR_sequence_tc(0, CORBA::TypeCode::PR_interface_tc("IDL:drawMeASheep/generated/drawingEntity/Drawing:1.0", "Drawing", &_0RL_tcTrack), &_0RL_tcTrack), &_0RL_tcTrack);
+static CORBA::TypeCode_ptr _0RL_tc_drawMeASheep_mgenerated_mentity_mPointSet = CORBA::TypeCode::PR_alias_tc("IDL:drawMeASheep/generated/entity/PointSet:1.0", "PointSet", CORBA::TypeCode::PR_sequence_tc(0, _0RL_tc_drawMeASheep_mgenerated_mentity_mPoint, &_0RL_tcTrack), &_0RL_tcTrack);
 
 
 #if defined(HAS_Cplusplus_Namespace) && defined(_MSC_VER)
 // MSVC++ does not give the constant external linkage otherwise.
-namespace drawMeASheep { namespace generated { namespace drawingEntity { 
-  const ::CORBA::TypeCode_ptr _tc_DrawingSet = _0RL_tc_drawMeASheep_mgenerated_mdrawingEntity_mDrawingSet;
+namespace drawMeASheep { namespace generated { namespace entity { 
+  const ::CORBA::TypeCode_ptr _tc_PointSet = _0RL_tc_drawMeASheep_mgenerated_mentity_mPointSet;
 } } } 
 #else
-const ::CORBA::TypeCode_ptr drawMeASheep::generated::drawingEntity::_tc_DrawingSet = _0RL_tc_drawMeASheep_mgenerated_mdrawingEntity_mDrawingSet;
-#endif
-
-static CORBA::TypeCode_ptr _0RL_tc_drawMeASheep_mgenerated_mdrawingEntity_mDrawingMap = CORBA::TypeCode::PR_alias_tc("IDL:drawMeASheep/generated/drawingEntity/DrawingMap:1.0", "DrawingMap", CORBA::TypeCode::PR_sequence_tc(0, CORBA::TypeCode::PR_interface_tc("IDL:drawMeASheep/generated/drawingEntity/Drawing:1.0", "Drawing", &_0RL_tcTrack), &_0RL_tcTrack), &_0RL_tcTrack);
-
-
-#if defined(HAS_Cplusplus_Namespace) && defined(_MSC_VER)
-// MSVC++ does not give the constant external linkage otherwise.
-namespace drawMeASheep { namespace generated { namespace drawingEntity { 
-  const ::CORBA::TypeCode_ptr _tc_DrawingMap = _0RL_tc_drawMeASheep_mgenerated_mdrawingEntity_mDrawingMap;
-} } } 
-#else
-const ::CORBA::TypeCode_ptr drawMeASheep::generated::drawingEntity::_tc_DrawingMap = _0RL_tc_drawMeASheep_mgenerated_mdrawingEntity_mDrawingMap;
+const ::CORBA::TypeCode_ptr drawMeASheep::generated::entity::_tc_PointSet = _0RL_tc_drawMeASheep_mgenerated_mentity_mPointSet;
 #endif
 
 #if defined(HAS_Cplusplus_Namespace) && defined(_MSC_VER)
 // MSVC++ does not give the constant external linkage otherwise.
-namespace drawMeASheep { namespace generated { namespace drawingEntity { 
-  const ::CORBA::TypeCode_ptr _tc_DrawingGroup = CORBA::TypeCode::PR_interface_tc("IDL:drawMeASheep/generated/drawingEntity/DrawingGroup:1.0", "DrawingGroup", &_0RL_tcTrack);
+namespace drawMeASheep { namespace generated { namespace entity { 
+  const ::CORBA::TypeCode_ptr _tc_Drawing = CORBA::TypeCode::PR_interface_tc("IDL:drawMeASheep/generated/entity/Drawing:1.0", "Drawing", &_0RL_tcTrack);
 } } } 
 #else
-const ::CORBA::TypeCode_ptr drawMeASheep::generated::drawingEntity::_tc_DrawingGroup = CORBA::TypeCode::PR_interface_tc("IDL:drawMeASheep/generated/drawingEntity/DrawingGroup:1.0", "DrawingGroup", &_0RL_tcTrack);
+const ::CORBA::TypeCode_ptr drawMeASheep::generated::entity::_tc_Drawing = CORBA::TypeCode::PR_interface_tc("IDL:drawMeASheep/generated/entity/Drawing:1.0", "Drawing", &_0RL_tcTrack);
+#endif
+
+#if defined(HAS_Cplusplus_Namespace) && defined(_MSC_VER)
+// MSVC++ does not give the constant external linkage otherwise.
+namespace drawMeASheep { namespace generated { namespace entity { 
+  const ::CORBA::TypeCode_ptr _tc_Polygon = CORBA::TypeCode::PR_interface_tc("IDL:drawMeASheep/generated/entity/Polygon:1.0", "Polygon", &_0RL_tcTrack);
+} } } 
+#else
+const ::CORBA::TypeCode_ptr drawMeASheep::generated::entity::_tc_Polygon = CORBA::TypeCode::PR_interface_tc("IDL:drawMeASheep/generated/entity/Polygon:1.0", "Polygon", &_0RL_tcTrack);
+#endif
+
+#if defined(HAS_Cplusplus_Namespace) && defined(_MSC_VER)
+// MSVC++ does not give the constant external linkage otherwise.
+namespace drawMeASheep { namespace generated { namespace entity { 
+  const ::CORBA::TypeCode_ptr _tc_Line = CORBA::TypeCode::PR_interface_tc("IDL:drawMeASheep/generated/entity/Line:1.0", "Line", &_0RL_tcTrack);
+} } } 
+#else
+const ::CORBA::TypeCode_ptr drawMeASheep::generated::entity::_tc_Line = CORBA::TypeCode::PR_interface_tc("IDL:drawMeASheep/generated/entity/Line:1.0", "Line", &_0RL_tcTrack);
+#endif
+
+#if defined(HAS_Cplusplus_Namespace) && defined(_MSC_VER)
+// MSVC++ does not give the constant external linkage otherwise.
+namespace drawMeASheep { namespace generated { namespace entity { 
+  const ::CORBA::TypeCode_ptr _tc_Circle = CORBA::TypeCode::PR_interface_tc("IDL:drawMeASheep/generated/entity/Circle:1.0", "Circle", &_0RL_tcTrack);
+} } } 
+#else
+const ::CORBA::TypeCode_ptr drawMeASheep::generated::entity::_tc_Circle = CORBA::TypeCode::PR_interface_tc("IDL:drawMeASheep/generated/entity/Circle:1.0", "Circle", &_0RL_tcTrack);
+#endif
+
+#if defined(HAS_Cplusplus_Namespace) && defined(_MSC_VER)
+// MSVC++ does not give the constant external linkage otherwise.
+namespace drawMeASheep { namespace generated { namespace entity { 
+  const ::CORBA::TypeCode_ptr _tc_Ellipse = CORBA::TypeCode::PR_interface_tc("IDL:drawMeASheep/generated/entity/Ellipse:1.0", "Ellipse", &_0RL_tcTrack);
+} } } 
+#else
+const ::CORBA::TypeCode_ptr drawMeASheep::generated::entity::_tc_Ellipse = CORBA::TypeCode::PR_interface_tc("IDL:drawMeASheep/generated/entity/Ellipse:1.0", "Ellipse", &_0RL_tcTrack);
+#endif
+
+static CORBA::TypeCode_ptr _0RL_tc_drawMeASheep_mgenerated_mentity_mDrawingSet = CORBA::TypeCode::PR_alias_tc("IDL:drawMeASheep/generated/entity/DrawingSet:1.0", "DrawingSet", CORBA::TypeCode::PR_sequence_tc(0, CORBA::TypeCode::PR_interface_tc("IDL:drawMeASheep/generated/entity/Drawing:1.0", "Drawing", &_0RL_tcTrack), &_0RL_tcTrack), &_0RL_tcTrack);
+
+
+#if defined(HAS_Cplusplus_Namespace) && defined(_MSC_VER)
+// MSVC++ does not give the constant external linkage otherwise.
+namespace drawMeASheep { namespace generated { namespace entity { 
+  const ::CORBA::TypeCode_ptr _tc_DrawingSet = _0RL_tc_drawMeASheep_mgenerated_mentity_mDrawingSet;
+} } } 
+#else
+const ::CORBA::TypeCode_ptr drawMeASheep::generated::entity::_tc_DrawingSet = _0RL_tc_drawMeASheep_mgenerated_mentity_mDrawingSet;
+#endif
+
+static CORBA::TypeCode_ptr _0RL_tc_drawMeASheep_mgenerated_mentity_mDrawingMap = CORBA::TypeCode::PR_alias_tc("IDL:drawMeASheep/generated/entity/DrawingMap:1.0", "DrawingMap", CORBA::TypeCode::PR_sequence_tc(0, CORBA::TypeCode::PR_interface_tc("IDL:drawMeASheep/generated/entity/Drawing:1.0", "Drawing", &_0RL_tcTrack), &_0RL_tcTrack), &_0RL_tcTrack);
+
+
+#if defined(HAS_Cplusplus_Namespace) && defined(_MSC_VER)
+// MSVC++ does not give the constant external linkage otherwise.
+namespace drawMeASheep { namespace generated { namespace entity { 
+  const ::CORBA::TypeCode_ptr _tc_DrawingMap = _0RL_tc_drawMeASheep_mgenerated_mentity_mDrawingMap;
+} } } 
+#else
+const ::CORBA::TypeCode_ptr drawMeASheep::generated::entity::_tc_DrawingMap = _0RL_tc_drawMeASheep_mgenerated_mentity_mDrawingMap;
+#endif
+
+#if defined(HAS_Cplusplus_Namespace) && defined(_MSC_VER)
+// MSVC++ does not give the constant external linkage otherwise.
+namespace drawMeASheep { namespace generated { namespace entity { 
+  const ::CORBA::TypeCode_ptr _tc_DrawingGroup = CORBA::TypeCode::PR_interface_tc("IDL:drawMeASheep/generated/entity/DrawingGroup:1.0", "DrawingGroup", &_0RL_tcTrack);
+} } } 
+#else
+const ::CORBA::TypeCode_ptr drawMeASheep::generated::entity::_tc_DrawingGroup = CORBA::TypeCode::PR_interface_tc("IDL:drawMeASheep/generated/entity/DrawingGroup:1.0", "DrawingGroup", &_0RL_tcTrack);
 #endif
 
 #if defined(HAS_Cplusplus_Namespace) && defined(_MSC_VER)
@@ -131,517 +131,517 @@ namespace drawMeASheep { namespace generated { namespace manager {
 const ::CORBA::TypeCode_ptr drawMeASheep::generated::manager::_tc_DrawingManager = CORBA::TypeCode::PR_interface_tc("IDL:drawMeASheep/generated/manager/DrawingManager:1.0", "DrawingManager", &_0RL_tcTrack);
 #endif
 
-static void _0RL_drawMeASheep_mgenerated_mdrawingEntity_mPoint_marshal_fn(cdrStream& _s, void* _v)
+static void _0RL_drawMeASheep_mgenerated_mentity_mPoint_marshal_fn(cdrStream& _s, void* _v)
 {
-  drawMeASheep::generated::drawingEntity::Point* _p = (drawMeASheep::generated::drawingEntity::Point*)_v;
+  drawMeASheep::generated::entity::Point* _p = (drawMeASheep::generated::entity::Point*)_v;
   *_p >>= _s;
 }
-static void _0RL_drawMeASheep_mgenerated_mdrawingEntity_mPoint_unmarshal_fn(cdrStream& _s, void*& _v)
+static void _0RL_drawMeASheep_mgenerated_mentity_mPoint_unmarshal_fn(cdrStream& _s, void*& _v)
 {
-  drawMeASheep::generated::drawingEntity::Point* _p = new drawMeASheep::generated::drawingEntity::Point;
+  drawMeASheep::generated::entity::Point* _p = new drawMeASheep::generated::entity::Point;
   *_p <<= _s;
   _v = _p;
 }
-static void _0RL_drawMeASheep_mgenerated_mdrawingEntity_mPoint_destructor_fn(void* _v)
+static void _0RL_drawMeASheep_mgenerated_mentity_mPoint_destructor_fn(void* _v)
 {
-  drawMeASheep::generated::drawingEntity::Point* _p = (drawMeASheep::generated::drawingEntity::Point*)_v;
+  drawMeASheep::generated::entity::Point* _p = (drawMeASheep::generated::entity::Point*)_v;
   delete _p;
 }
 
-void operator<<=(::CORBA::Any& _a, const drawMeASheep::generated::drawingEntity::Point& _s)
+void operator<<=(::CORBA::Any& _a, const drawMeASheep::generated::entity::Point& _s)
 {
-  drawMeASheep::generated::drawingEntity::Point* _p = new drawMeASheep::generated::drawingEntity::Point(_s);
-  _a.PR_insert(_0RL_tc_drawMeASheep_mgenerated_mdrawingEntity_mPoint,
-               _0RL_drawMeASheep_mgenerated_mdrawingEntity_mPoint_marshal_fn,
-               _0RL_drawMeASheep_mgenerated_mdrawingEntity_mPoint_destructor_fn,
+  drawMeASheep::generated::entity::Point* _p = new drawMeASheep::generated::entity::Point(_s);
+  _a.PR_insert(_0RL_tc_drawMeASheep_mgenerated_mentity_mPoint,
+               _0RL_drawMeASheep_mgenerated_mentity_mPoint_marshal_fn,
+               _0RL_drawMeASheep_mgenerated_mentity_mPoint_destructor_fn,
                _p);
 }
-void operator<<=(::CORBA::Any& _a, drawMeASheep::generated::drawingEntity::Point* _sp)
+void operator<<=(::CORBA::Any& _a, drawMeASheep::generated::entity::Point* _sp)
 {
-  _a.PR_insert(_0RL_tc_drawMeASheep_mgenerated_mdrawingEntity_mPoint,
-               _0RL_drawMeASheep_mgenerated_mdrawingEntity_mPoint_marshal_fn,
-               _0RL_drawMeASheep_mgenerated_mdrawingEntity_mPoint_destructor_fn,
+  _a.PR_insert(_0RL_tc_drawMeASheep_mgenerated_mentity_mPoint,
+               _0RL_drawMeASheep_mgenerated_mentity_mPoint_marshal_fn,
+               _0RL_drawMeASheep_mgenerated_mentity_mPoint_destructor_fn,
                _sp);
 }
 
-::CORBA::Boolean operator>>=(const ::CORBA::Any& _a, drawMeASheep::generated::drawingEntity::Point*& _sp)
+::CORBA::Boolean operator>>=(const ::CORBA::Any& _a, drawMeASheep::generated::entity::Point*& _sp)
 {
-  return _a >>= (const drawMeASheep::generated::drawingEntity::Point*&) _sp;
+  return _a >>= (const drawMeASheep::generated::entity::Point*&) _sp;
 }
-::CORBA::Boolean operator>>=(const ::CORBA::Any& _a, const drawMeASheep::generated::drawingEntity::Point*& _sp)
+::CORBA::Boolean operator>>=(const ::CORBA::Any& _a, const drawMeASheep::generated::entity::Point*& _sp)
 {
   void* _v;
-  if (_a.PR_extract(_0RL_tc_drawMeASheep_mgenerated_mdrawingEntity_mPoint,
-                    _0RL_drawMeASheep_mgenerated_mdrawingEntity_mPoint_unmarshal_fn,
-                    _0RL_drawMeASheep_mgenerated_mdrawingEntity_mPoint_marshal_fn,
-                    _0RL_drawMeASheep_mgenerated_mdrawingEntity_mPoint_destructor_fn,
+  if (_a.PR_extract(_0RL_tc_drawMeASheep_mgenerated_mentity_mPoint,
+                    _0RL_drawMeASheep_mgenerated_mentity_mPoint_unmarshal_fn,
+                    _0RL_drawMeASheep_mgenerated_mentity_mPoint_marshal_fn,
+                    _0RL_drawMeASheep_mgenerated_mentity_mPoint_destructor_fn,
                     _v)) {
-    _sp = (const drawMeASheep::generated::drawingEntity::Point*)_v;
+    _sp = (const drawMeASheep::generated::entity::Point*)_v;
     return 1;
   }
   return 0;
 }
 
-static void _0RL_drawMeASheep_mgenerated_mdrawingEntity_mPointSet_marshal_fn(cdrStream& _s, void* _v)
+static void _0RL_drawMeASheep_mgenerated_mentity_mPointSet_marshal_fn(cdrStream& _s, void* _v)
 {
-  drawMeASheep::generated::drawingEntity::PointSet* _p = (drawMeASheep::generated::drawingEntity::PointSet*)_v;
+  drawMeASheep::generated::entity::PointSet* _p = (drawMeASheep::generated::entity::PointSet*)_v;
   *_p >>= _s;
 }
-static void _0RL_drawMeASheep_mgenerated_mdrawingEntity_mPointSet_unmarshal_fn(cdrStream& _s, void*& _v)
+static void _0RL_drawMeASheep_mgenerated_mentity_mPointSet_unmarshal_fn(cdrStream& _s, void*& _v)
 {
-  drawMeASheep::generated::drawingEntity::PointSet* _p = new drawMeASheep::generated::drawingEntity::PointSet;
+  drawMeASheep::generated::entity::PointSet* _p = new drawMeASheep::generated::entity::PointSet;
   *_p <<= _s;
   _v = _p;
 }
-static void _0RL_drawMeASheep_mgenerated_mdrawingEntity_mPointSet_destructor_fn(void* _v)
+static void _0RL_drawMeASheep_mgenerated_mentity_mPointSet_destructor_fn(void* _v)
 {
-  drawMeASheep::generated::drawingEntity::PointSet* _p = (drawMeASheep::generated::drawingEntity::PointSet*)_v;
+  drawMeASheep::generated::entity::PointSet* _p = (drawMeASheep::generated::entity::PointSet*)_v;
   delete _p;
 }
 
-void operator<<=(::CORBA::Any& _a, const drawMeASheep::generated::drawingEntity::PointSet& _s)
+void operator<<=(::CORBA::Any& _a, const drawMeASheep::generated::entity::PointSet& _s)
 {
-  drawMeASheep::generated::drawingEntity::PointSet* _p = new drawMeASheep::generated::drawingEntity::PointSet(_s);
-  _a.PR_insert(_0RL_tc_drawMeASheep_mgenerated_mdrawingEntity_mPointSet,
-               _0RL_drawMeASheep_mgenerated_mdrawingEntity_mPointSet_marshal_fn,
-               _0RL_drawMeASheep_mgenerated_mdrawingEntity_mPointSet_destructor_fn,
+  drawMeASheep::generated::entity::PointSet* _p = new drawMeASheep::generated::entity::PointSet(_s);
+  _a.PR_insert(_0RL_tc_drawMeASheep_mgenerated_mentity_mPointSet,
+               _0RL_drawMeASheep_mgenerated_mentity_mPointSet_marshal_fn,
+               _0RL_drawMeASheep_mgenerated_mentity_mPointSet_destructor_fn,
                _p);
 }
-void operator<<=(::CORBA::Any& _a, drawMeASheep::generated::drawingEntity::PointSet* _sp)
+void operator<<=(::CORBA::Any& _a, drawMeASheep::generated::entity::PointSet* _sp)
 {
-  _a.PR_insert(_0RL_tc_drawMeASheep_mgenerated_mdrawingEntity_mPointSet,
-               _0RL_drawMeASheep_mgenerated_mdrawingEntity_mPointSet_marshal_fn,
-               _0RL_drawMeASheep_mgenerated_mdrawingEntity_mPointSet_destructor_fn,
+  _a.PR_insert(_0RL_tc_drawMeASheep_mgenerated_mentity_mPointSet,
+               _0RL_drawMeASheep_mgenerated_mentity_mPointSet_marshal_fn,
+               _0RL_drawMeASheep_mgenerated_mentity_mPointSet_destructor_fn,
                _sp);
 }
 
-::CORBA::Boolean operator>>=(const ::CORBA::Any& _a, drawMeASheep::generated::drawingEntity::PointSet*& _sp)
+::CORBA::Boolean operator>>=(const ::CORBA::Any& _a, drawMeASheep::generated::entity::PointSet*& _sp)
 {
-  return _a >>= (const drawMeASheep::generated::drawingEntity::PointSet*&) _sp;
+  return _a >>= (const drawMeASheep::generated::entity::PointSet*&) _sp;
 }
-::CORBA::Boolean operator>>=(const ::CORBA::Any& _a, const drawMeASheep::generated::drawingEntity::PointSet*& _sp)
+::CORBA::Boolean operator>>=(const ::CORBA::Any& _a, const drawMeASheep::generated::entity::PointSet*& _sp)
 {
   void* _v;
-  if (_a.PR_extract(_0RL_tc_drawMeASheep_mgenerated_mdrawingEntity_mPointSet,
-                    _0RL_drawMeASheep_mgenerated_mdrawingEntity_mPointSet_unmarshal_fn,
-                    _0RL_drawMeASheep_mgenerated_mdrawingEntity_mPointSet_marshal_fn,
-                    _0RL_drawMeASheep_mgenerated_mdrawingEntity_mPointSet_destructor_fn,
+  if (_a.PR_extract(_0RL_tc_drawMeASheep_mgenerated_mentity_mPointSet,
+                    _0RL_drawMeASheep_mgenerated_mentity_mPointSet_unmarshal_fn,
+                    _0RL_drawMeASheep_mgenerated_mentity_mPointSet_marshal_fn,
+                    _0RL_drawMeASheep_mgenerated_mentity_mPointSet_destructor_fn,
                     _v)) {
-    _sp = (const drawMeASheep::generated::drawingEntity::PointSet*)_v;
+    _sp = (const drawMeASheep::generated::entity::PointSet*)_v;
     return 1;
   }
   return 0;
 }
 
-static void _0RL_drawMeASheep_mgenerated_mdrawingEntity_mDrawing_marshal_fn(cdrStream& _s, void* _v)
+static void _0RL_drawMeASheep_mgenerated_mentity_mDrawing_marshal_fn(cdrStream& _s, void* _v)
 {
   omniObjRef* _o = (omniObjRef*)_v;
   omniObjRef::_marshal(_o, _s);
 }
-static void _0RL_drawMeASheep_mgenerated_mdrawingEntity_mDrawing_unmarshal_fn(cdrStream& _s, void*& _v)
+static void _0RL_drawMeASheep_mgenerated_mentity_mDrawing_unmarshal_fn(cdrStream& _s, void*& _v)
 {
-  omniObjRef* _o = omniObjRef::_unMarshal(drawMeASheep::generated::drawingEntity::Drawing::_PD_repoId, _s);
+  omniObjRef* _o = omniObjRef::_unMarshal(drawMeASheep::generated::entity::Drawing::_PD_repoId, _s);
   _v = _o;
 }
-static void _0RL_drawMeASheep_mgenerated_mdrawingEntity_mDrawing_destructor_fn(void* _v)
+static void _0RL_drawMeASheep_mgenerated_mentity_mDrawing_destructor_fn(void* _v)
 {
   omniObjRef* _o = (omniObjRef*)_v;
   if (_o)
     omni::releaseObjRef(_o);
 }
 
-void operator<<=(::CORBA::Any& _a, drawMeASheep::generated::drawingEntity::Drawing_ptr _o)
+void operator<<=(::CORBA::Any& _a, drawMeASheep::generated::entity::Drawing_ptr _o)
 {
-  drawMeASheep::generated::drawingEntity::Drawing_ptr _no = drawMeASheep::generated::drawingEntity::Drawing::_duplicate(_o);
-  _a.PR_insert(drawMeASheep::generated::drawingEntity::_tc_Drawing,
-               _0RL_drawMeASheep_mgenerated_mdrawingEntity_mDrawing_marshal_fn,
-               _0RL_drawMeASheep_mgenerated_mdrawingEntity_mDrawing_destructor_fn,
+  drawMeASheep::generated::entity::Drawing_ptr _no = drawMeASheep::generated::entity::Drawing::_duplicate(_o);
+  _a.PR_insert(drawMeASheep::generated::entity::_tc_Drawing,
+               _0RL_drawMeASheep_mgenerated_mentity_mDrawing_marshal_fn,
+               _0RL_drawMeASheep_mgenerated_mentity_mDrawing_destructor_fn,
                _no->_PR_getobj());
 }
-void operator<<=(::CORBA::Any& _a, drawMeASheep::generated::drawingEntity::Drawing_ptr* _op)
+void operator<<=(::CORBA::Any& _a, drawMeASheep::generated::entity::Drawing_ptr* _op)
 {
-  _a.PR_insert(drawMeASheep::generated::drawingEntity::_tc_Drawing,
-               _0RL_drawMeASheep_mgenerated_mdrawingEntity_mDrawing_marshal_fn,
-               _0RL_drawMeASheep_mgenerated_mdrawingEntity_mDrawing_destructor_fn,
+  _a.PR_insert(drawMeASheep::generated::entity::_tc_Drawing,
+               _0RL_drawMeASheep_mgenerated_mentity_mDrawing_marshal_fn,
+               _0RL_drawMeASheep_mgenerated_mentity_mDrawing_destructor_fn,
                (*_op)->_PR_getobj());
-  *_op = drawMeASheep::generated::drawingEntity::Drawing::_nil();
+  *_op = drawMeASheep::generated::entity::Drawing::_nil();
 }
 
-::CORBA::Boolean operator>>=(const ::CORBA::Any& _a, drawMeASheep::generated::drawingEntity::Drawing_ptr& _o)
+::CORBA::Boolean operator>>=(const ::CORBA::Any& _a, drawMeASheep::generated::entity::Drawing_ptr& _o)
 {
   void* _v;
-  if (_a.PR_extract(drawMeASheep::generated::drawingEntity::_tc_Drawing,
-                    _0RL_drawMeASheep_mgenerated_mdrawingEntity_mDrawing_unmarshal_fn,
-                    _0RL_drawMeASheep_mgenerated_mdrawingEntity_mDrawing_marshal_fn,
-                    _0RL_drawMeASheep_mgenerated_mdrawingEntity_mDrawing_destructor_fn,
+  if (_a.PR_extract(drawMeASheep::generated::entity::_tc_Drawing,
+                    _0RL_drawMeASheep_mgenerated_mentity_mDrawing_unmarshal_fn,
+                    _0RL_drawMeASheep_mgenerated_mentity_mDrawing_marshal_fn,
+                    _0RL_drawMeASheep_mgenerated_mentity_mDrawing_destructor_fn,
                     _v)) {
     omniObjRef* _r = (omniObjRef*)_v;
     if (_r)
-      _o = (drawMeASheep::generated::drawingEntity::Drawing_ptr)_r->_ptrToObjRef(drawMeASheep::generated::drawingEntity::Drawing::_PD_repoId);
+      _o = (drawMeASheep::generated::entity::Drawing_ptr)_r->_ptrToObjRef(drawMeASheep::generated::entity::Drawing::_PD_repoId);
     else
-      _o = drawMeASheep::generated::drawingEntity::Drawing::_nil();
+      _o = drawMeASheep::generated::entity::Drawing::_nil();
     return 1;
   }
   return 0;
 }
 
-static void _0RL_drawMeASheep_mgenerated_mdrawingEntity_mPolygone_marshal_fn(cdrStream& _s, void* _v)
+static void _0RL_drawMeASheep_mgenerated_mentity_mPolygon_marshal_fn(cdrStream& _s, void* _v)
 {
   omniObjRef* _o = (omniObjRef*)_v;
   omniObjRef::_marshal(_o, _s);
 }
-static void _0RL_drawMeASheep_mgenerated_mdrawingEntity_mPolygone_unmarshal_fn(cdrStream& _s, void*& _v)
+static void _0RL_drawMeASheep_mgenerated_mentity_mPolygon_unmarshal_fn(cdrStream& _s, void*& _v)
 {
-  omniObjRef* _o = omniObjRef::_unMarshal(drawMeASheep::generated::drawingEntity::Polygone::_PD_repoId, _s);
+  omniObjRef* _o = omniObjRef::_unMarshal(drawMeASheep::generated::entity::Polygon::_PD_repoId, _s);
   _v = _o;
 }
-static void _0RL_drawMeASheep_mgenerated_mdrawingEntity_mPolygone_destructor_fn(void* _v)
+static void _0RL_drawMeASheep_mgenerated_mentity_mPolygon_destructor_fn(void* _v)
 {
   omniObjRef* _o = (omniObjRef*)_v;
   if (_o)
     omni::releaseObjRef(_o);
 }
 
-void operator<<=(::CORBA::Any& _a, drawMeASheep::generated::drawingEntity::Polygone_ptr _o)
+void operator<<=(::CORBA::Any& _a, drawMeASheep::generated::entity::Polygon_ptr _o)
 {
-  drawMeASheep::generated::drawingEntity::Polygone_ptr _no = drawMeASheep::generated::drawingEntity::Polygone::_duplicate(_o);
-  _a.PR_insert(drawMeASheep::generated::drawingEntity::_tc_Polygone,
-               _0RL_drawMeASheep_mgenerated_mdrawingEntity_mPolygone_marshal_fn,
-               _0RL_drawMeASheep_mgenerated_mdrawingEntity_mPolygone_destructor_fn,
+  drawMeASheep::generated::entity::Polygon_ptr _no = drawMeASheep::generated::entity::Polygon::_duplicate(_o);
+  _a.PR_insert(drawMeASheep::generated::entity::_tc_Polygon,
+               _0RL_drawMeASheep_mgenerated_mentity_mPolygon_marshal_fn,
+               _0RL_drawMeASheep_mgenerated_mentity_mPolygon_destructor_fn,
                _no->_PR_getobj());
 }
-void operator<<=(::CORBA::Any& _a, drawMeASheep::generated::drawingEntity::Polygone_ptr* _op)
+void operator<<=(::CORBA::Any& _a, drawMeASheep::generated::entity::Polygon_ptr* _op)
 {
-  _a.PR_insert(drawMeASheep::generated::drawingEntity::_tc_Polygone,
-               _0RL_drawMeASheep_mgenerated_mdrawingEntity_mPolygone_marshal_fn,
-               _0RL_drawMeASheep_mgenerated_mdrawingEntity_mPolygone_destructor_fn,
+  _a.PR_insert(drawMeASheep::generated::entity::_tc_Polygon,
+               _0RL_drawMeASheep_mgenerated_mentity_mPolygon_marshal_fn,
+               _0RL_drawMeASheep_mgenerated_mentity_mPolygon_destructor_fn,
                (*_op)->_PR_getobj());
-  *_op = drawMeASheep::generated::drawingEntity::Polygone::_nil();
+  *_op = drawMeASheep::generated::entity::Polygon::_nil();
 }
 
-::CORBA::Boolean operator>>=(const ::CORBA::Any& _a, drawMeASheep::generated::drawingEntity::Polygone_ptr& _o)
+::CORBA::Boolean operator>>=(const ::CORBA::Any& _a, drawMeASheep::generated::entity::Polygon_ptr& _o)
 {
   void* _v;
-  if (_a.PR_extract(drawMeASheep::generated::drawingEntity::_tc_Polygone,
-                    _0RL_drawMeASheep_mgenerated_mdrawingEntity_mPolygone_unmarshal_fn,
-                    _0RL_drawMeASheep_mgenerated_mdrawingEntity_mPolygone_marshal_fn,
-                    _0RL_drawMeASheep_mgenerated_mdrawingEntity_mPolygone_destructor_fn,
+  if (_a.PR_extract(drawMeASheep::generated::entity::_tc_Polygon,
+                    _0RL_drawMeASheep_mgenerated_mentity_mPolygon_unmarshal_fn,
+                    _0RL_drawMeASheep_mgenerated_mentity_mPolygon_marshal_fn,
+                    _0RL_drawMeASheep_mgenerated_mentity_mPolygon_destructor_fn,
                     _v)) {
     omniObjRef* _r = (omniObjRef*)_v;
     if (_r)
-      _o = (drawMeASheep::generated::drawingEntity::Polygone_ptr)_r->_ptrToObjRef(drawMeASheep::generated::drawingEntity::Polygone::_PD_repoId);
+      _o = (drawMeASheep::generated::entity::Polygon_ptr)_r->_ptrToObjRef(drawMeASheep::generated::entity::Polygon::_PD_repoId);
     else
-      _o = drawMeASheep::generated::drawingEntity::Polygone::_nil();
+      _o = drawMeASheep::generated::entity::Polygon::_nil();
     return 1;
   }
   return 0;
 }
 
-static void _0RL_drawMeASheep_mgenerated_mdrawingEntity_mLine_marshal_fn(cdrStream& _s, void* _v)
+static void _0RL_drawMeASheep_mgenerated_mentity_mLine_marshal_fn(cdrStream& _s, void* _v)
 {
   omniObjRef* _o = (omniObjRef*)_v;
   omniObjRef::_marshal(_o, _s);
 }
-static void _0RL_drawMeASheep_mgenerated_mdrawingEntity_mLine_unmarshal_fn(cdrStream& _s, void*& _v)
+static void _0RL_drawMeASheep_mgenerated_mentity_mLine_unmarshal_fn(cdrStream& _s, void*& _v)
 {
-  omniObjRef* _o = omniObjRef::_unMarshal(drawMeASheep::generated::drawingEntity::Line::_PD_repoId, _s);
+  omniObjRef* _o = omniObjRef::_unMarshal(drawMeASheep::generated::entity::Line::_PD_repoId, _s);
   _v = _o;
 }
-static void _0RL_drawMeASheep_mgenerated_mdrawingEntity_mLine_destructor_fn(void* _v)
+static void _0RL_drawMeASheep_mgenerated_mentity_mLine_destructor_fn(void* _v)
 {
   omniObjRef* _o = (omniObjRef*)_v;
   if (_o)
     omni::releaseObjRef(_o);
 }
 
-void operator<<=(::CORBA::Any& _a, drawMeASheep::generated::drawingEntity::Line_ptr _o)
+void operator<<=(::CORBA::Any& _a, drawMeASheep::generated::entity::Line_ptr _o)
 {
-  drawMeASheep::generated::drawingEntity::Line_ptr _no = drawMeASheep::generated::drawingEntity::Line::_duplicate(_o);
-  _a.PR_insert(drawMeASheep::generated::drawingEntity::_tc_Line,
-               _0RL_drawMeASheep_mgenerated_mdrawingEntity_mLine_marshal_fn,
-               _0RL_drawMeASheep_mgenerated_mdrawingEntity_mLine_destructor_fn,
+  drawMeASheep::generated::entity::Line_ptr _no = drawMeASheep::generated::entity::Line::_duplicate(_o);
+  _a.PR_insert(drawMeASheep::generated::entity::_tc_Line,
+               _0RL_drawMeASheep_mgenerated_mentity_mLine_marshal_fn,
+               _0RL_drawMeASheep_mgenerated_mentity_mLine_destructor_fn,
                _no->_PR_getobj());
 }
-void operator<<=(::CORBA::Any& _a, drawMeASheep::generated::drawingEntity::Line_ptr* _op)
+void operator<<=(::CORBA::Any& _a, drawMeASheep::generated::entity::Line_ptr* _op)
 {
-  _a.PR_insert(drawMeASheep::generated::drawingEntity::_tc_Line,
-               _0RL_drawMeASheep_mgenerated_mdrawingEntity_mLine_marshal_fn,
-               _0RL_drawMeASheep_mgenerated_mdrawingEntity_mLine_destructor_fn,
+  _a.PR_insert(drawMeASheep::generated::entity::_tc_Line,
+               _0RL_drawMeASheep_mgenerated_mentity_mLine_marshal_fn,
+               _0RL_drawMeASheep_mgenerated_mentity_mLine_destructor_fn,
                (*_op)->_PR_getobj());
-  *_op = drawMeASheep::generated::drawingEntity::Line::_nil();
+  *_op = drawMeASheep::generated::entity::Line::_nil();
 }
 
-::CORBA::Boolean operator>>=(const ::CORBA::Any& _a, drawMeASheep::generated::drawingEntity::Line_ptr& _o)
+::CORBA::Boolean operator>>=(const ::CORBA::Any& _a, drawMeASheep::generated::entity::Line_ptr& _o)
 {
   void* _v;
-  if (_a.PR_extract(drawMeASheep::generated::drawingEntity::_tc_Line,
-                    _0RL_drawMeASheep_mgenerated_mdrawingEntity_mLine_unmarshal_fn,
-                    _0RL_drawMeASheep_mgenerated_mdrawingEntity_mLine_marshal_fn,
-                    _0RL_drawMeASheep_mgenerated_mdrawingEntity_mLine_destructor_fn,
+  if (_a.PR_extract(drawMeASheep::generated::entity::_tc_Line,
+                    _0RL_drawMeASheep_mgenerated_mentity_mLine_unmarshal_fn,
+                    _0RL_drawMeASheep_mgenerated_mentity_mLine_marshal_fn,
+                    _0RL_drawMeASheep_mgenerated_mentity_mLine_destructor_fn,
                     _v)) {
     omniObjRef* _r = (omniObjRef*)_v;
     if (_r)
-      _o = (drawMeASheep::generated::drawingEntity::Line_ptr)_r->_ptrToObjRef(drawMeASheep::generated::drawingEntity::Line::_PD_repoId);
+      _o = (drawMeASheep::generated::entity::Line_ptr)_r->_ptrToObjRef(drawMeASheep::generated::entity::Line::_PD_repoId);
     else
-      _o = drawMeASheep::generated::drawingEntity::Line::_nil();
+      _o = drawMeASheep::generated::entity::Line::_nil();
     return 1;
   }
   return 0;
 }
 
-static void _0RL_drawMeASheep_mgenerated_mdrawingEntity_mCercle_marshal_fn(cdrStream& _s, void* _v)
+static void _0RL_drawMeASheep_mgenerated_mentity_mCircle_marshal_fn(cdrStream& _s, void* _v)
 {
   omniObjRef* _o = (omniObjRef*)_v;
   omniObjRef::_marshal(_o, _s);
 }
-static void _0RL_drawMeASheep_mgenerated_mdrawingEntity_mCercle_unmarshal_fn(cdrStream& _s, void*& _v)
+static void _0RL_drawMeASheep_mgenerated_mentity_mCircle_unmarshal_fn(cdrStream& _s, void*& _v)
 {
-  omniObjRef* _o = omniObjRef::_unMarshal(drawMeASheep::generated::drawingEntity::Cercle::_PD_repoId, _s);
+  omniObjRef* _o = omniObjRef::_unMarshal(drawMeASheep::generated::entity::Circle::_PD_repoId, _s);
   _v = _o;
 }
-static void _0RL_drawMeASheep_mgenerated_mdrawingEntity_mCercle_destructor_fn(void* _v)
+static void _0RL_drawMeASheep_mgenerated_mentity_mCircle_destructor_fn(void* _v)
 {
   omniObjRef* _o = (omniObjRef*)_v;
   if (_o)
     omni::releaseObjRef(_o);
 }
 
-void operator<<=(::CORBA::Any& _a, drawMeASheep::generated::drawingEntity::Cercle_ptr _o)
+void operator<<=(::CORBA::Any& _a, drawMeASheep::generated::entity::Circle_ptr _o)
 {
-  drawMeASheep::generated::drawingEntity::Cercle_ptr _no = drawMeASheep::generated::drawingEntity::Cercle::_duplicate(_o);
-  _a.PR_insert(drawMeASheep::generated::drawingEntity::_tc_Cercle,
-               _0RL_drawMeASheep_mgenerated_mdrawingEntity_mCercle_marshal_fn,
-               _0RL_drawMeASheep_mgenerated_mdrawingEntity_mCercle_destructor_fn,
+  drawMeASheep::generated::entity::Circle_ptr _no = drawMeASheep::generated::entity::Circle::_duplicate(_o);
+  _a.PR_insert(drawMeASheep::generated::entity::_tc_Circle,
+               _0RL_drawMeASheep_mgenerated_mentity_mCircle_marshal_fn,
+               _0RL_drawMeASheep_mgenerated_mentity_mCircle_destructor_fn,
                _no->_PR_getobj());
 }
-void operator<<=(::CORBA::Any& _a, drawMeASheep::generated::drawingEntity::Cercle_ptr* _op)
+void operator<<=(::CORBA::Any& _a, drawMeASheep::generated::entity::Circle_ptr* _op)
 {
-  _a.PR_insert(drawMeASheep::generated::drawingEntity::_tc_Cercle,
-               _0RL_drawMeASheep_mgenerated_mdrawingEntity_mCercle_marshal_fn,
-               _0RL_drawMeASheep_mgenerated_mdrawingEntity_mCercle_destructor_fn,
+  _a.PR_insert(drawMeASheep::generated::entity::_tc_Circle,
+               _0RL_drawMeASheep_mgenerated_mentity_mCircle_marshal_fn,
+               _0RL_drawMeASheep_mgenerated_mentity_mCircle_destructor_fn,
                (*_op)->_PR_getobj());
-  *_op = drawMeASheep::generated::drawingEntity::Cercle::_nil();
+  *_op = drawMeASheep::generated::entity::Circle::_nil();
 }
 
-::CORBA::Boolean operator>>=(const ::CORBA::Any& _a, drawMeASheep::generated::drawingEntity::Cercle_ptr& _o)
+::CORBA::Boolean operator>>=(const ::CORBA::Any& _a, drawMeASheep::generated::entity::Circle_ptr& _o)
 {
   void* _v;
-  if (_a.PR_extract(drawMeASheep::generated::drawingEntity::_tc_Cercle,
-                    _0RL_drawMeASheep_mgenerated_mdrawingEntity_mCercle_unmarshal_fn,
-                    _0RL_drawMeASheep_mgenerated_mdrawingEntity_mCercle_marshal_fn,
-                    _0RL_drawMeASheep_mgenerated_mdrawingEntity_mCercle_destructor_fn,
+  if (_a.PR_extract(drawMeASheep::generated::entity::_tc_Circle,
+                    _0RL_drawMeASheep_mgenerated_mentity_mCircle_unmarshal_fn,
+                    _0RL_drawMeASheep_mgenerated_mentity_mCircle_marshal_fn,
+                    _0RL_drawMeASheep_mgenerated_mentity_mCircle_destructor_fn,
                     _v)) {
     omniObjRef* _r = (omniObjRef*)_v;
     if (_r)
-      _o = (drawMeASheep::generated::drawingEntity::Cercle_ptr)_r->_ptrToObjRef(drawMeASheep::generated::drawingEntity::Cercle::_PD_repoId);
+      _o = (drawMeASheep::generated::entity::Circle_ptr)_r->_ptrToObjRef(drawMeASheep::generated::entity::Circle::_PD_repoId);
     else
-      _o = drawMeASheep::generated::drawingEntity::Cercle::_nil();
+      _o = drawMeASheep::generated::entity::Circle::_nil();
     return 1;
   }
   return 0;
 }
 
-static void _0RL_drawMeASheep_mgenerated_mdrawingEntity_mEllipse_marshal_fn(cdrStream& _s, void* _v)
+static void _0RL_drawMeASheep_mgenerated_mentity_mEllipse_marshal_fn(cdrStream& _s, void* _v)
 {
   omniObjRef* _o = (omniObjRef*)_v;
   omniObjRef::_marshal(_o, _s);
 }
-static void _0RL_drawMeASheep_mgenerated_mdrawingEntity_mEllipse_unmarshal_fn(cdrStream& _s, void*& _v)
+static void _0RL_drawMeASheep_mgenerated_mentity_mEllipse_unmarshal_fn(cdrStream& _s, void*& _v)
 {
-  omniObjRef* _o = omniObjRef::_unMarshal(drawMeASheep::generated::drawingEntity::Ellipse::_PD_repoId, _s);
+  omniObjRef* _o = omniObjRef::_unMarshal(drawMeASheep::generated::entity::Ellipse::_PD_repoId, _s);
   _v = _o;
 }
-static void _0RL_drawMeASheep_mgenerated_mdrawingEntity_mEllipse_destructor_fn(void* _v)
+static void _0RL_drawMeASheep_mgenerated_mentity_mEllipse_destructor_fn(void* _v)
 {
   omniObjRef* _o = (omniObjRef*)_v;
   if (_o)
     omni::releaseObjRef(_o);
 }
 
-void operator<<=(::CORBA::Any& _a, drawMeASheep::generated::drawingEntity::Ellipse_ptr _o)
+void operator<<=(::CORBA::Any& _a, drawMeASheep::generated::entity::Ellipse_ptr _o)
 {
-  drawMeASheep::generated::drawingEntity::Ellipse_ptr _no = drawMeASheep::generated::drawingEntity::Ellipse::_duplicate(_o);
-  _a.PR_insert(drawMeASheep::generated::drawingEntity::_tc_Ellipse,
-               _0RL_drawMeASheep_mgenerated_mdrawingEntity_mEllipse_marshal_fn,
-               _0RL_drawMeASheep_mgenerated_mdrawingEntity_mEllipse_destructor_fn,
+  drawMeASheep::generated::entity::Ellipse_ptr _no = drawMeASheep::generated::entity::Ellipse::_duplicate(_o);
+  _a.PR_insert(drawMeASheep::generated::entity::_tc_Ellipse,
+               _0RL_drawMeASheep_mgenerated_mentity_mEllipse_marshal_fn,
+               _0RL_drawMeASheep_mgenerated_mentity_mEllipse_destructor_fn,
                _no->_PR_getobj());
 }
-void operator<<=(::CORBA::Any& _a, drawMeASheep::generated::drawingEntity::Ellipse_ptr* _op)
+void operator<<=(::CORBA::Any& _a, drawMeASheep::generated::entity::Ellipse_ptr* _op)
 {
-  _a.PR_insert(drawMeASheep::generated::drawingEntity::_tc_Ellipse,
-               _0RL_drawMeASheep_mgenerated_mdrawingEntity_mEllipse_marshal_fn,
-               _0RL_drawMeASheep_mgenerated_mdrawingEntity_mEllipse_destructor_fn,
+  _a.PR_insert(drawMeASheep::generated::entity::_tc_Ellipse,
+               _0RL_drawMeASheep_mgenerated_mentity_mEllipse_marshal_fn,
+               _0RL_drawMeASheep_mgenerated_mentity_mEllipse_destructor_fn,
                (*_op)->_PR_getobj());
-  *_op = drawMeASheep::generated::drawingEntity::Ellipse::_nil();
+  *_op = drawMeASheep::generated::entity::Ellipse::_nil();
 }
 
-::CORBA::Boolean operator>>=(const ::CORBA::Any& _a, drawMeASheep::generated::drawingEntity::Ellipse_ptr& _o)
+::CORBA::Boolean operator>>=(const ::CORBA::Any& _a, drawMeASheep::generated::entity::Ellipse_ptr& _o)
 {
   void* _v;
-  if (_a.PR_extract(drawMeASheep::generated::drawingEntity::_tc_Ellipse,
-                    _0RL_drawMeASheep_mgenerated_mdrawingEntity_mEllipse_unmarshal_fn,
-                    _0RL_drawMeASheep_mgenerated_mdrawingEntity_mEllipse_marshal_fn,
-                    _0RL_drawMeASheep_mgenerated_mdrawingEntity_mEllipse_destructor_fn,
+  if (_a.PR_extract(drawMeASheep::generated::entity::_tc_Ellipse,
+                    _0RL_drawMeASheep_mgenerated_mentity_mEllipse_unmarshal_fn,
+                    _0RL_drawMeASheep_mgenerated_mentity_mEllipse_marshal_fn,
+                    _0RL_drawMeASheep_mgenerated_mentity_mEllipse_destructor_fn,
                     _v)) {
     omniObjRef* _r = (omniObjRef*)_v;
     if (_r)
-      _o = (drawMeASheep::generated::drawingEntity::Ellipse_ptr)_r->_ptrToObjRef(drawMeASheep::generated::drawingEntity::Ellipse::_PD_repoId);
+      _o = (drawMeASheep::generated::entity::Ellipse_ptr)_r->_ptrToObjRef(drawMeASheep::generated::entity::Ellipse::_PD_repoId);
     else
-      _o = drawMeASheep::generated::drawingEntity::Ellipse::_nil();
+      _o = drawMeASheep::generated::entity::Ellipse::_nil();
     return 1;
   }
   return 0;
 }
 
-static void _0RL_drawMeASheep_mgenerated_mdrawingEntity_mDrawingSet_marshal_fn(cdrStream& _s, void* _v)
+static void _0RL_drawMeASheep_mgenerated_mentity_mDrawingSet_marshal_fn(cdrStream& _s, void* _v)
 {
-  drawMeASheep::generated::drawingEntity::DrawingSet* _p = (drawMeASheep::generated::drawingEntity::DrawingSet*)_v;
+  drawMeASheep::generated::entity::DrawingSet* _p = (drawMeASheep::generated::entity::DrawingSet*)_v;
   *_p >>= _s;
 }
-static void _0RL_drawMeASheep_mgenerated_mdrawingEntity_mDrawingSet_unmarshal_fn(cdrStream& _s, void*& _v)
+static void _0RL_drawMeASheep_mgenerated_mentity_mDrawingSet_unmarshal_fn(cdrStream& _s, void*& _v)
 {
-  drawMeASheep::generated::drawingEntity::DrawingSet* _p = new drawMeASheep::generated::drawingEntity::DrawingSet;
+  drawMeASheep::generated::entity::DrawingSet* _p = new drawMeASheep::generated::entity::DrawingSet;
   *_p <<= _s;
   _v = _p;
 }
-static void _0RL_drawMeASheep_mgenerated_mdrawingEntity_mDrawingSet_destructor_fn(void* _v)
+static void _0RL_drawMeASheep_mgenerated_mentity_mDrawingSet_destructor_fn(void* _v)
 {
-  drawMeASheep::generated::drawingEntity::DrawingSet* _p = (drawMeASheep::generated::drawingEntity::DrawingSet*)_v;
+  drawMeASheep::generated::entity::DrawingSet* _p = (drawMeASheep::generated::entity::DrawingSet*)_v;
   delete _p;
 }
 
-void operator<<=(::CORBA::Any& _a, const drawMeASheep::generated::drawingEntity::DrawingSet& _s)
+void operator<<=(::CORBA::Any& _a, const drawMeASheep::generated::entity::DrawingSet& _s)
 {
-  drawMeASheep::generated::drawingEntity::DrawingSet* _p = new drawMeASheep::generated::drawingEntity::DrawingSet(_s);
-  _a.PR_insert(_0RL_tc_drawMeASheep_mgenerated_mdrawingEntity_mDrawingSet,
-               _0RL_drawMeASheep_mgenerated_mdrawingEntity_mDrawingSet_marshal_fn,
-               _0RL_drawMeASheep_mgenerated_mdrawingEntity_mDrawingSet_destructor_fn,
+  drawMeASheep::generated::entity::DrawingSet* _p = new drawMeASheep::generated::entity::DrawingSet(_s);
+  _a.PR_insert(_0RL_tc_drawMeASheep_mgenerated_mentity_mDrawingSet,
+               _0RL_drawMeASheep_mgenerated_mentity_mDrawingSet_marshal_fn,
+               _0RL_drawMeASheep_mgenerated_mentity_mDrawingSet_destructor_fn,
                _p);
 }
-void operator<<=(::CORBA::Any& _a, drawMeASheep::generated::drawingEntity::DrawingSet* _sp)
+void operator<<=(::CORBA::Any& _a, drawMeASheep::generated::entity::DrawingSet* _sp)
 {
-  _a.PR_insert(_0RL_tc_drawMeASheep_mgenerated_mdrawingEntity_mDrawingSet,
-               _0RL_drawMeASheep_mgenerated_mdrawingEntity_mDrawingSet_marshal_fn,
-               _0RL_drawMeASheep_mgenerated_mdrawingEntity_mDrawingSet_destructor_fn,
+  _a.PR_insert(_0RL_tc_drawMeASheep_mgenerated_mentity_mDrawingSet,
+               _0RL_drawMeASheep_mgenerated_mentity_mDrawingSet_marshal_fn,
+               _0RL_drawMeASheep_mgenerated_mentity_mDrawingSet_destructor_fn,
                _sp);
 }
 
-::CORBA::Boolean operator>>=(const ::CORBA::Any& _a, drawMeASheep::generated::drawingEntity::DrawingSet*& _sp)
+::CORBA::Boolean operator>>=(const ::CORBA::Any& _a, drawMeASheep::generated::entity::DrawingSet*& _sp)
 {
-  return _a >>= (const drawMeASheep::generated::drawingEntity::DrawingSet*&) _sp;
+  return _a >>= (const drawMeASheep::generated::entity::DrawingSet*&) _sp;
 }
-::CORBA::Boolean operator>>=(const ::CORBA::Any& _a, const drawMeASheep::generated::drawingEntity::DrawingSet*& _sp)
+::CORBA::Boolean operator>>=(const ::CORBA::Any& _a, const drawMeASheep::generated::entity::DrawingSet*& _sp)
 {
   void* _v;
-  if (_a.PR_extract(_0RL_tc_drawMeASheep_mgenerated_mdrawingEntity_mDrawingSet,
-                    _0RL_drawMeASheep_mgenerated_mdrawingEntity_mDrawingSet_unmarshal_fn,
-                    _0RL_drawMeASheep_mgenerated_mdrawingEntity_mDrawingSet_marshal_fn,
-                    _0RL_drawMeASheep_mgenerated_mdrawingEntity_mDrawingSet_destructor_fn,
+  if (_a.PR_extract(_0RL_tc_drawMeASheep_mgenerated_mentity_mDrawingSet,
+                    _0RL_drawMeASheep_mgenerated_mentity_mDrawingSet_unmarshal_fn,
+                    _0RL_drawMeASheep_mgenerated_mentity_mDrawingSet_marshal_fn,
+                    _0RL_drawMeASheep_mgenerated_mentity_mDrawingSet_destructor_fn,
                     _v)) {
-    _sp = (const drawMeASheep::generated::drawingEntity::DrawingSet*)_v;
+    _sp = (const drawMeASheep::generated::entity::DrawingSet*)_v;
     return 1;
   }
   return 0;
 }
 
-static void _0RL_drawMeASheep_mgenerated_mdrawingEntity_mDrawingMap_marshal_fn(cdrStream& _s, void* _v)
+static void _0RL_drawMeASheep_mgenerated_mentity_mDrawingMap_marshal_fn(cdrStream& _s, void* _v)
 {
-  drawMeASheep::generated::drawingEntity::DrawingMap* _p = (drawMeASheep::generated::drawingEntity::DrawingMap*)_v;
+  drawMeASheep::generated::entity::DrawingMap* _p = (drawMeASheep::generated::entity::DrawingMap*)_v;
   *_p >>= _s;
 }
-static void _0RL_drawMeASheep_mgenerated_mdrawingEntity_mDrawingMap_unmarshal_fn(cdrStream& _s, void*& _v)
+static void _0RL_drawMeASheep_mgenerated_mentity_mDrawingMap_unmarshal_fn(cdrStream& _s, void*& _v)
 {
-  drawMeASheep::generated::drawingEntity::DrawingMap* _p = new drawMeASheep::generated::drawingEntity::DrawingMap;
+  drawMeASheep::generated::entity::DrawingMap* _p = new drawMeASheep::generated::entity::DrawingMap;
   *_p <<= _s;
   _v = _p;
 }
-static void _0RL_drawMeASheep_mgenerated_mdrawingEntity_mDrawingMap_destructor_fn(void* _v)
+static void _0RL_drawMeASheep_mgenerated_mentity_mDrawingMap_destructor_fn(void* _v)
 {
-  drawMeASheep::generated::drawingEntity::DrawingMap* _p = (drawMeASheep::generated::drawingEntity::DrawingMap*)_v;
+  drawMeASheep::generated::entity::DrawingMap* _p = (drawMeASheep::generated::entity::DrawingMap*)_v;
   delete _p;
 }
 
-void operator<<=(::CORBA::Any& _a, const drawMeASheep::generated::drawingEntity::DrawingMap& _s)
+void operator<<=(::CORBA::Any& _a, const drawMeASheep::generated::entity::DrawingMap& _s)
 {
-  drawMeASheep::generated::drawingEntity::DrawingMap* _p = new drawMeASheep::generated::drawingEntity::DrawingMap(_s);
-  _a.PR_insert(_0RL_tc_drawMeASheep_mgenerated_mdrawingEntity_mDrawingMap,
-               _0RL_drawMeASheep_mgenerated_mdrawingEntity_mDrawingMap_marshal_fn,
-               _0RL_drawMeASheep_mgenerated_mdrawingEntity_mDrawingMap_destructor_fn,
+  drawMeASheep::generated::entity::DrawingMap* _p = new drawMeASheep::generated::entity::DrawingMap(_s);
+  _a.PR_insert(_0RL_tc_drawMeASheep_mgenerated_mentity_mDrawingMap,
+               _0RL_drawMeASheep_mgenerated_mentity_mDrawingMap_marshal_fn,
+               _0RL_drawMeASheep_mgenerated_mentity_mDrawingMap_destructor_fn,
                _p);
 }
-void operator<<=(::CORBA::Any& _a, drawMeASheep::generated::drawingEntity::DrawingMap* _sp)
+void operator<<=(::CORBA::Any& _a, drawMeASheep::generated::entity::DrawingMap* _sp)
 {
-  _a.PR_insert(_0RL_tc_drawMeASheep_mgenerated_mdrawingEntity_mDrawingMap,
-               _0RL_drawMeASheep_mgenerated_mdrawingEntity_mDrawingMap_marshal_fn,
-               _0RL_drawMeASheep_mgenerated_mdrawingEntity_mDrawingMap_destructor_fn,
+  _a.PR_insert(_0RL_tc_drawMeASheep_mgenerated_mentity_mDrawingMap,
+               _0RL_drawMeASheep_mgenerated_mentity_mDrawingMap_marshal_fn,
+               _0RL_drawMeASheep_mgenerated_mentity_mDrawingMap_destructor_fn,
                _sp);
 }
 
-::CORBA::Boolean operator>>=(const ::CORBA::Any& _a, drawMeASheep::generated::drawingEntity::DrawingMap*& _sp)
+::CORBA::Boolean operator>>=(const ::CORBA::Any& _a, drawMeASheep::generated::entity::DrawingMap*& _sp)
 {
-  return _a >>= (const drawMeASheep::generated::drawingEntity::DrawingMap*&) _sp;
+  return _a >>= (const drawMeASheep::generated::entity::DrawingMap*&) _sp;
 }
-::CORBA::Boolean operator>>=(const ::CORBA::Any& _a, const drawMeASheep::generated::drawingEntity::DrawingMap*& _sp)
+::CORBA::Boolean operator>>=(const ::CORBA::Any& _a, const drawMeASheep::generated::entity::DrawingMap*& _sp)
 {
   void* _v;
-  if (_a.PR_extract(_0RL_tc_drawMeASheep_mgenerated_mdrawingEntity_mDrawingMap,
-                    _0RL_drawMeASheep_mgenerated_mdrawingEntity_mDrawingMap_unmarshal_fn,
-                    _0RL_drawMeASheep_mgenerated_mdrawingEntity_mDrawingMap_marshal_fn,
-                    _0RL_drawMeASheep_mgenerated_mdrawingEntity_mDrawingMap_destructor_fn,
+  if (_a.PR_extract(_0RL_tc_drawMeASheep_mgenerated_mentity_mDrawingMap,
+                    _0RL_drawMeASheep_mgenerated_mentity_mDrawingMap_unmarshal_fn,
+                    _0RL_drawMeASheep_mgenerated_mentity_mDrawingMap_marshal_fn,
+                    _0RL_drawMeASheep_mgenerated_mentity_mDrawingMap_destructor_fn,
                     _v)) {
-    _sp = (const drawMeASheep::generated::drawingEntity::DrawingMap*)_v;
+    _sp = (const drawMeASheep::generated::entity::DrawingMap*)_v;
     return 1;
   }
   return 0;
 }
 
-static void _0RL_drawMeASheep_mgenerated_mdrawingEntity_mDrawingGroup_marshal_fn(cdrStream& _s, void* _v)
+static void _0RL_drawMeASheep_mgenerated_mentity_mDrawingGroup_marshal_fn(cdrStream& _s, void* _v)
 {
   omniObjRef* _o = (omniObjRef*)_v;
   omniObjRef::_marshal(_o, _s);
 }
-static void _0RL_drawMeASheep_mgenerated_mdrawingEntity_mDrawingGroup_unmarshal_fn(cdrStream& _s, void*& _v)
+static void _0RL_drawMeASheep_mgenerated_mentity_mDrawingGroup_unmarshal_fn(cdrStream& _s, void*& _v)
 {
-  omniObjRef* _o = omniObjRef::_unMarshal(drawMeASheep::generated::drawingEntity::DrawingGroup::_PD_repoId, _s);
+  omniObjRef* _o = omniObjRef::_unMarshal(drawMeASheep::generated::entity::DrawingGroup::_PD_repoId, _s);
   _v = _o;
 }
-static void _0RL_drawMeASheep_mgenerated_mdrawingEntity_mDrawingGroup_destructor_fn(void* _v)
+static void _0RL_drawMeASheep_mgenerated_mentity_mDrawingGroup_destructor_fn(void* _v)
 {
   omniObjRef* _o = (omniObjRef*)_v;
   if (_o)
     omni::releaseObjRef(_o);
 }
 
-void operator<<=(::CORBA::Any& _a, drawMeASheep::generated::drawingEntity::DrawingGroup_ptr _o)
+void operator<<=(::CORBA::Any& _a, drawMeASheep::generated::entity::DrawingGroup_ptr _o)
 {
-  drawMeASheep::generated::drawingEntity::DrawingGroup_ptr _no = drawMeASheep::generated::drawingEntity::DrawingGroup::_duplicate(_o);
-  _a.PR_insert(drawMeASheep::generated::drawingEntity::_tc_DrawingGroup,
-               _0RL_drawMeASheep_mgenerated_mdrawingEntity_mDrawingGroup_marshal_fn,
-               _0RL_drawMeASheep_mgenerated_mdrawingEntity_mDrawingGroup_destructor_fn,
+  drawMeASheep::generated::entity::DrawingGroup_ptr _no = drawMeASheep::generated::entity::DrawingGroup::_duplicate(_o);
+  _a.PR_insert(drawMeASheep::generated::entity::_tc_DrawingGroup,
+               _0RL_drawMeASheep_mgenerated_mentity_mDrawingGroup_marshal_fn,
+               _0RL_drawMeASheep_mgenerated_mentity_mDrawingGroup_destructor_fn,
                _no->_PR_getobj());
 }
-void operator<<=(::CORBA::Any& _a, drawMeASheep::generated::drawingEntity::DrawingGroup_ptr* _op)
+void operator<<=(::CORBA::Any& _a, drawMeASheep::generated::entity::DrawingGroup_ptr* _op)
 {
-  _a.PR_insert(drawMeASheep::generated::drawingEntity::_tc_DrawingGroup,
-               _0RL_drawMeASheep_mgenerated_mdrawingEntity_mDrawingGroup_marshal_fn,
-               _0RL_drawMeASheep_mgenerated_mdrawingEntity_mDrawingGroup_destructor_fn,
+  _a.PR_insert(drawMeASheep::generated::entity::_tc_DrawingGroup,
+               _0RL_drawMeASheep_mgenerated_mentity_mDrawingGroup_marshal_fn,
+               _0RL_drawMeASheep_mgenerated_mentity_mDrawingGroup_destructor_fn,
                (*_op)->_PR_getobj());
-  *_op = drawMeASheep::generated::drawingEntity::DrawingGroup::_nil();
+  *_op = drawMeASheep::generated::entity::DrawingGroup::_nil();
 }
 
-::CORBA::Boolean operator>>=(const ::CORBA::Any& _a, drawMeASheep::generated::drawingEntity::DrawingGroup_ptr& _o)
+::CORBA::Boolean operator>>=(const ::CORBA::Any& _a, drawMeASheep::generated::entity::DrawingGroup_ptr& _o)
 {
   void* _v;
-  if (_a.PR_extract(drawMeASheep::generated::drawingEntity::_tc_DrawingGroup,
-                    _0RL_drawMeASheep_mgenerated_mdrawingEntity_mDrawingGroup_unmarshal_fn,
-                    _0RL_drawMeASheep_mgenerated_mdrawingEntity_mDrawingGroup_marshal_fn,
-                    _0RL_drawMeASheep_mgenerated_mdrawingEntity_mDrawingGroup_destructor_fn,
+  if (_a.PR_extract(drawMeASheep::generated::entity::_tc_DrawingGroup,
+                    _0RL_drawMeASheep_mgenerated_mentity_mDrawingGroup_unmarshal_fn,
+                    _0RL_drawMeASheep_mgenerated_mentity_mDrawingGroup_marshal_fn,
+                    _0RL_drawMeASheep_mgenerated_mentity_mDrawingGroup_destructor_fn,
                     _v)) {
     omniObjRef* _r = (omniObjRef*)_v;
     if (_r)
-      _o = (drawMeASheep::generated::drawingEntity::DrawingGroup_ptr)_r->_ptrToObjRef(drawMeASheep::generated::drawingEntity::DrawingGroup::_PD_repoId);
+      _o = (drawMeASheep::generated::entity::DrawingGroup_ptr)_r->_ptrToObjRef(drawMeASheep::generated::entity::DrawingGroup::_PD_repoId);
     else
-      _o = drawMeASheep::generated::drawingEntity::DrawingGroup::_nil();
+      _o = drawMeASheep::generated::entity::DrawingGroup::_nil();
     return 1;
   }
   return 0;
