@@ -12,11 +12,15 @@ OBJECTS       = drawMeASheep.o
 																		
 drawMeASheepSK.o: drawMeASheepSK.cc drawMeASheep.hh
 		$(CC) $(CPPFLAGS) $(INCLUDES) drawMeASheepSK.cc
-																				
 
-																				
+main : drawMeASheep.hh
+	g++ -c $(CFLAGS) Serveur.cpp -o Serveur.o
+
+
 drawMeASheepSK.cc: drawMeASheep.idl
 		 $(OMNI_HOME) -bcxx -Wbexample -Wba drawMeASheep.idl
+
+
 																				
 clean clean_all:
 		rm -fr *.o
