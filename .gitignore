@@ -1,1 +1,2 @@
 cpp-client/bin/*.o
+.idea/*
