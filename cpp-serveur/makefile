@@ -1,5 +1,5 @@
 CC		    = /usr/bin/g++
-CPPFLAGS      = -g -c
+CPPFLAGS      = -g -c CFLAGS=-W -Wall -ansi -pedantic
 LDFLAGS       = -g
 OMNI_HOME     = /usr/bin/omniidl
 OMNI_INCLUDES = 
@@ -9,7 +9,8 @@ INCLUDES      = $(OMNI_INCLUDES)
 LIBS		  = -lomniORB4 -lomnithread -lomniDynamic4
 OBJECTS       = drawMeASheep.o 
 
-																		
+all : main
+
 drawMeASheepSK.o: drawMeASheepSK.cc drawMeASheep.hh
 		$(CC) $(CPPFLAGS) $(INCLUDES) drawMeASheepSK.cc
 

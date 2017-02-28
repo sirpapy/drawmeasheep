@@ -14,10 +14,11 @@
 #include <iostream>
 #include <string>
 
+
 //#include "OB/CORBA.h"
 using namespace std;
 
-class ManagerImpl{
+class ManagerImpl : public POA_PortableServer::RefCountServantBase{
 
     CORBA::ORB_var orb; // Reference to CORBA ORB
 
