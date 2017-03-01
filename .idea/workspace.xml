@@ -13,8 +13,10 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cpp-serveur/drawMeASheepSK.o" afterPath="$PROJECT_DIR$/cpp-serveur/drawMeASheepSK.o" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cpp-serveur/drawMeASheep.hh" afterPath="$PROJECT_DIR$/cpp-serveur/drawMeASheep.hh" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cpp-serveur/drawMeASheepDynSK.cc" afterPath="$PROJECT_DIR$/cpp-serveur/drawMeASheepDynSK.cc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cpp-serveur/drawMeASheepSK.cc" afterPath="$PROJECT_DIR$/cpp-serveur/drawMeASheepSK.cc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cpp-serveur/drawMeASheep_i.cc" afterPath="$PROJECT_DIR$/cpp-serveur/drawMeASheep_i.cc" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cpp-serveur/makefile" afterPath="$PROJECT_DIR$/cpp-serveur/makefile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cpp-serveur/managerImpl.cpp" afterPath="$PROJECT_DIR$/cpp-serveur/managerImpl.cpp" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -63,8 +65,8 @@
       <file leaf-file-name="makefile" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/cpp-serveur/makefile">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="12" lean-forward="false" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="12" />
+            <state relative-caret-position="85">
+              <caret line="5" column="47" lean-forward="false" selection-start-line="5" selection-start-column="47" selection-end-line="5" selection-end-column="47" />
               <folding />
             </state>
           </provider>
@@ -103,8 +105,8 @@
       <file leaf-file-name="drawMeASheep_i.cc" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cpp-serveur/drawMeASheep_i.cc">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="192">
-              <caret line="569" column="45" lean-forward="false" selection-start-line="569" selection-start-column="45" selection-end-line="569" selection-end-column="45" />
+            <state relative-caret-position="1246">
+              <caret line="631" column="45" lean-forward="false" selection-start-line="631" selection-start-column="45" selection-end-line="631" selection-end-column="45" />
               <folding />
             </state>
           </provider>
@@ -408,12 +410,12 @@
       <workItem from="1487605698319" duration="2692000" />
       <workItem from="1488195130711" duration="3335000" />
       <workItem from="1488311296584" duration="769000" />
-      <workItem from="1488321131985" duration="10861000" />
+      <workItem from="1488321131985" duration="14388000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23241000" />
+    <option name="totallyTimeSpent" value="26768000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1932" height="1056" extended-state="0" />
@@ -694,8 +696,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/cpp-serveur/drawMeASheep_i.cc">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="569" column="45" lean-forward="false" selection-start-line="569" selection-start-column="45" selection-end-line="569" selection-end-column="45" />
+        <state relative-caret-position="1246">
+          <caret line="631" column="45" lean-forward="false" selection-start-line="631" selection-start-column="45" selection-end-line="631" selection-end-column="45" />
           <folding />
         </state>
       </provider>
@@ -750,8 +752,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/cpp-serveur/makefile">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="12" lean-forward="false" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="12" />
+        <state relative-caret-position="85">
+          <caret line="5" column="47" lean-forward="false" selection-start-line="5" selection-start-column="47" selection-end-line="5" selection-end-column="47" />
           <folding />
         </state>
       </provider>
