@@ -84,10 +84,6 @@ _CORBA_MODULE_BEG
 
       typedef Point& Point_out;
 
-      _CORBA_MODULE_VAR _dyn_attr const ::CORBA::TypeCode_ptr _tc_Point;
-
-      _CORBA_MODULE_VAR _dyn_attr const ::CORBA::TypeCode_ptr _tc_PointSet;
-
       class PointSet_var;
 
       class PointSet : public _CORBA_Unbounded_Sequence< Point >  {
@@ -316,8 +312,6 @@ _CORBA_MODULE_BEG
       };
 
 
-      _CORBA_MODULE_VAR _dyn_attr const ::CORBA::TypeCode_ptr _tc_Drawing;
-
 #ifndef __drawMeASheep_mgenerated_mentity_mPolygon__
 #define __drawMeASheep_mgenerated_mentity_mPolygon__
 
@@ -423,8 +417,6 @@ _CORBA_MODULE_BEG
         
       };
 
-
-      _CORBA_MODULE_VAR _dyn_attr const ::CORBA::TypeCode_ptr _tc_Polygon;
 
 #ifndef __drawMeASheep_mgenerated_mentity_mLine__
 #define __drawMeASheep_mgenerated_mentity_mLine__
@@ -533,8 +525,6 @@ _CORBA_MODULE_BEG
         
       };
 
-
-      _CORBA_MODULE_VAR _dyn_attr const ::CORBA::TypeCode_ptr _tc_Line;
 
 #ifndef __drawMeASheep_mgenerated_mentity_mCircle__
 #define __drawMeASheep_mgenerated_mentity_mCircle__
@@ -646,8 +636,6 @@ _CORBA_MODULE_BEG
       };
 
 
-      _CORBA_MODULE_VAR _dyn_attr const ::CORBA::TypeCode_ptr _tc_Circle;
-
 #ifndef __drawMeASheep_mgenerated_mentity_mEllipse__
 #define __drawMeASheep_mgenerated_mentity_mEllipse__
 
@@ -753,10 +741,6 @@ _CORBA_MODULE_BEG
         
       };
 
-
-      _CORBA_MODULE_VAR _dyn_attr const ::CORBA::TypeCode_ptr _tc_Ellipse;
-
-      _CORBA_MODULE_VAR _dyn_attr const ::CORBA::TypeCode_ptr _tc_DrawingSet;
 
       class DrawingSet_var;
 
@@ -866,8 +850,6 @@ _CORBA_MODULE_BEG
         DrawingSet_out();
         DrawingSet_out& operator=(const DrawingSet_var&);
       };
-
-      _CORBA_MODULE_VAR _dyn_attr const ::CORBA::TypeCode_ptr _tc_DrawingMap;
 
       class DrawingMap_var;
 
@@ -1084,8 +1066,6 @@ _CORBA_MODULE_BEG
       };
 
 
-      _CORBA_MODULE_VAR _dyn_attr const ::CORBA::TypeCode_ptr _tc_DrawingGroup;
-
     _CORBA_MODULE_END
 
     _CORBA_MODULE manager
@@ -1206,8 +1186,6 @@ _CORBA_MODULE_BEG
         
       };
 
-
-      _CORBA_MODULE_VAR _dyn_attr const ::CORBA::TypeCode_ptr _tc_DrawingManager;
 
     _CORBA_MODULE_END
 
@@ -1349,54 +1327,6 @@ _CORBA_MODULE_END
 
 #undef _core_attr
 #undef _dyn_attr
-
-extern void operator<<=(::CORBA::Any& _a, const drawMeASheep::generated::entity::Point& _s);
-extern void operator<<=(::CORBA::Any& _a, drawMeASheep::generated::entity::Point* _sp);
-extern _CORBA_Boolean operator>>=(const ::CORBA::Any& _a, drawMeASheep::generated::entity::Point*& _sp);
-extern _CORBA_Boolean operator>>=(const ::CORBA::Any& _a, const drawMeASheep::generated::entity::Point*& _sp);
-
-void operator<<=(::CORBA::Any& _a, const drawMeASheep::generated::entity::PointSet& _s);
-void operator<<=(::CORBA::Any& _a, drawMeASheep::generated::entity::PointSet* _sp);
-_CORBA_Boolean operator>>=(const ::CORBA::Any& _a, drawMeASheep::generated::entity::PointSet*& _sp);
-_CORBA_Boolean operator>>=(const ::CORBA::Any& _a, const drawMeASheep::generated::entity::PointSet*& _sp);
-
-void operator<<=(::CORBA::Any& _a, drawMeASheep::generated::entity::Drawing_ptr _s);
-void operator<<=(::CORBA::Any& _a, drawMeASheep::generated::entity::Drawing_ptr* _s);
-_CORBA_Boolean operator>>=(const ::CORBA::Any& _a, drawMeASheep::generated::entity::Drawing_ptr& _s);
-
-void operator<<=(::CORBA::Any& _a, drawMeASheep::generated::entity::Polygon_ptr _s);
-void operator<<=(::CORBA::Any& _a, drawMeASheep::generated::entity::Polygon_ptr* _s);
-_CORBA_Boolean operator>>=(const ::CORBA::Any& _a, drawMeASheep::generated::entity::Polygon_ptr& _s);
-
-void operator<<=(::CORBA::Any& _a, drawMeASheep::generated::entity::Line_ptr _s);
-void operator<<=(::CORBA::Any& _a, drawMeASheep::generated::entity::Line_ptr* _s);
-_CORBA_Boolean operator>>=(const ::CORBA::Any& _a, drawMeASheep::generated::entity::Line_ptr& _s);
-
-void operator<<=(::CORBA::Any& _a, drawMeASheep::generated::entity::Circle_ptr _s);
-void operator<<=(::CORBA::Any& _a, drawMeASheep::generated::entity::Circle_ptr* _s);
-_CORBA_Boolean operator>>=(const ::CORBA::Any& _a, drawMeASheep::generated::entity::Circle_ptr& _s);
-
-void operator<<=(::CORBA::Any& _a, drawMeASheep::generated::entity::Ellipse_ptr _s);
-void operator<<=(::CORBA::Any& _a, drawMeASheep::generated::entity::Ellipse_ptr* _s);
-_CORBA_Boolean operator>>=(const ::CORBA::Any& _a, drawMeASheep::generated::entity::Ellipse_ptr& _s);
-
-void operator<<=(::CORBA::Any& _a, const drawMeASheep::generated::entity::DrawingSet& _s);
-void operator<<=(::CORBA::Any& _a, drawMeASheep::generated::entity::DrawingSet* _sp);
-_CORBA_Boolean operator>>=(const ::CORBA::Any& _a, drawMeASheep::generated::entity::DrawingSet*& _sp);
-_CORBA_Boolean operator>>=(const ::CORBA::Any& _a, const drawMeASheep::generated::entity::DrawingSet*& _sp);
-
-void operator<<=(::CORBA::Any& _a, const drawMeASheep::generated::entity::DrawingMap& _s);
-void operator<<=(::CORBA::Any& _a, drawMeASheep::generated::entity::DrawingMap* _sp);
-_CORBA_Boolean operator>>=(const ::CORBA::Any& _a, drawMeASheep::generated::entity::DrawingMap*& _sp);
-_CORBA_Boolean operator>>=(const ::CORBA::Any& _a, const drawMeASheep::generated::entity::DrawingMap*& _sp);
-
-void operator<<=(::CORBA::Any& _a, drawMeASheep::generated::entity::DrawingGroup_ptr _s);
-void operator<<=(::CORBA::Any& _a, drawMeASheep::generated::entity::DrawingGroup_ptr* _s);
-_CORBA_Boolean operator>>=(const ::CORBA::Any& _a, drawMeASheep::generated::entity::DrawingGroup_ptr& _s);
-
-void operator<<=(::CORBA::Any& _a, drawMeASheep::generated::manager::DrawingManager_ptr _s);
-void operator<<=(::CORBA::Any& _a, drawMeASheep::generated::manager::DrawingManager_ptr* _s);
-_CORBA_Boolean operator>>=(const ::CORBA::Any& _a, drawMeASheep::generated::manager::DrawingManager_ptr& _s);
 
 
 

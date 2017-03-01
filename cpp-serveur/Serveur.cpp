@@ -15,7 +15,7 @@ int main(int argc, char **argv) {
     // --------------------------------------------------------------------------
 // Declare ORB and servant object
     CORBA::ORB_var orb;
-    ManagerImpl* Manager = NULL;
+    ManagerImpl *managerImpl = NULL;
 
     try {
         //------------------------------------------------------------------------
@@ -64,16 +64,30 @@ int main(int argc, char **argv) {
                 CosNaming::NamingContext::_narrow(rootContextObj.in());
 
         // Create a reference to the servant
-        Manager = new ManagerImpl(orb);
+        managerImpl = new ManagerImpl(orb);
 
 
         // Activate object
-        PortableServer::ObjectId_var myObjID =
-                myPOA->activate_object(Manager);
+        PortableServer::ObjectId_var myObjID = myPOA->activate_object(managerImpl);
 
+        // Get a CORBA reference with the POA through the servant
+        CORBA::Object_var o = myPOA->servant_to_reference(managerImpl);
 
+        CORBA::String_var s = orb->object_to_string(o);
 
+        CosNaming::Name name;
+        name.length(1);
+        name[0].id = (const char *) "DrawMeASheepManagerService";
+        name[0].kind = (const char *) "";
 
+        // Bind the object into the name service
+        nc->rebind(name, o);
+
+        // Activate the POA
+        manager->activate();
+        cout << "The server is ready. Awaiting for incoming requests..." << endl;
+        // Start the ORB
+        orb->run();
 
 
     }

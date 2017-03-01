@@ -18,7 +18,7 @@
 //#include "OB/CORBA.h"
 using namespace std;
 
-class ManagerImpl : public POA_PortableServer::RefCountServantBase{
+class ManagerImpl : public virtual PortableServer::ServantBase{
 
     CORBA::ORB_var orb; // Reference to CORBA ORB
 

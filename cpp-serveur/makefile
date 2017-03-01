@@ -1,5 +1,5 @@
 CC		    = /usr/bin/g++
-CPPFLAGS      = -g -c CFLAGS=-W -Wall -ansi -pedantic
+CPPFLAGS      = -g -Wall -ansi -pedantic
 LDFLAGS       = -g
 OMNI_HOME     = /usr/bin/omniidl
 OMNI_INCLUDES = 
@@ -9,13 +9,13 @@ INCLUDES      = $(OMNI_INCLUDES)
 LIBS		  = -lomniORB4 -lomnithread -lomniDynamic4
 OBJECTS       = drawMeASheep.o 
 
-all : main
+all : drawMeASheepSK main
 
-drawMeASheepSK.o: drawMeASheepSK.cc drawMeASheep.hh
-		$(CC) $(CPPFLAGS) $(INCLUDES) drawMeASheepSK.cc
+drawMeASheepSK: drawMeASheepSK.cc drawMeASheep.hh
+		$(CC) -c $(CPPFLAGS) $(INCLUDES) drawMeASheepSK.cc
 
-main : drawMeASheep.hh
-	g++ -c $(CFLAGS) Serveur.cpp -o Serveur.o
+main : Serveur.cpp managerImpl.h managerImpl.cpp
+	g++  $(CFLAGS) Serveur.cpp -o Serveur.o
 
 
 drawMeASheepSK.cc: drawMeASheep.idl
