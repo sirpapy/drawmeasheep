@@ -2,9 +2,9 @@
 #include <iostream>
 #include <string>
 #include <iostream>
-#include "drawMeASheep.hh"
+#include "../generated/drawMeASheep.hh"
 
-#include "managerImpl.h"
+#include "../include/managerImpl.h"
 
 using namespace std;
 
