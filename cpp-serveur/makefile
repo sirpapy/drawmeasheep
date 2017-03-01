@@ -3,22 +3,26 @@ CPPFLAGS      = -g -Wall -ansi -pedantic
 LDFLAGS       = -g
 OMNI_HOME     = /usr/bin/omniidl
 OMNI_INCLUDES = 
-OMNI_LIB_DIR  = $/mnt/d/omniORB/lib
+OMNI_LIB_DIR  = /mnt/d/omniORB/lib
 OMNIIDL       = $(OMNI_HOME)
 INCLUDES      = $(OMNI_INCLUDES)
 LIBS		  = -lomniORB4 -lomnithread -lomniDynamic4
 OBJECTS       = drawMeASheep.o 
 
-all : drawMeASheepSK main
+all : clean drawMeASheepSK main
+		$(OMNI_LIB_DIR) $(LIBS)
 
-drawMeASheepSK: drawMeASheepSK.cc drawMeASheep.hh
-		$(CC) -c $(CPPFLAGS) $(INCLUDES) drawMeASheepSK.cc
+drawMeASheepSK.o: drawMeASheep.hh
+		$(CC) -c $(CPPFLAGS) $(INCLUDES) drawMeASheepSK.cc  -o drawMeASheepSK.o
 
-main : Serveur.cpp managerImpl.h managerImpl.cpp
-	g++  $(CFLAGS) Serveur.cpp -o Serveur.o
+manager.o : managerImpl.h
+		$(CC) -c $(CFLAGS) managerImpl.cpp -o managerImpl.o
+
+main : managerImpl.o drawMeASheepSK.o Serveur.cpp
+		$(CC)  $(CFLAGS) -o Serveur.o Serveur.cpp managerImpl.o drawMeASheepSK.o
 
 
-drawMeASheepSK.cc: drawMeASheep.idl
+drawMeASheepSK: drawMeASheep.idl
 		 $(OMNI_HOME) -bcxx -Wbexample -Wba drawMeASheep.idl
 
 
