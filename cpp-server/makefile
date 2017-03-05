@@ -11,8 +11,11 @@ OMNI_INCLUDES =
 OMNI_LIB_DIR  = $/mnt/d/omniORB/lib
 OMNIIDL       = /usr/lib/omniidl
 INCLUDES      = $(OMNI_INCLUDES)
-LIBS		  = -lomniORB4 -lomnithread -lomniDynamic4
+LIBS		  = -lomniORB4 -lomnithread -lomniDynamic4 -lomniCodeSets4 -lCOS4 -lCOSDynamic4
 OBJECTS       = drawMeASheep.o 
+
+
+
 
 all : drawMeASheepSK main
 # all: main_figure
