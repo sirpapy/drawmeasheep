@@ -24,12 +24,12 @@ class Manager : public POA_Account{
 
 public:
     virtual void send(::CORBA::Double amount);
-    ~Manager(){};
 };
 
 void Manager::send(::CORBA::Double amount) {
     cout << "hello" << endl;
 }
+
 #endif //DRAWMEASHEEP_MANAGERIMPL_H
 
 
