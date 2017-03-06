@@ -1,12 +1,12 @@
+#include "managerImpl.h"
+
 #include <stdlib.h>
 #include <iostream>
 #include <string>
 #include <iostream>
-#include "../drawMeASheep.hh"
-
-#include "../include/managerImpl.h"
-#include "../Corba/Server.h"
-#include "../drawMeASheep.hh"
+#include <omniORB4/CORBA.h>
+#include <omniORB4/Naming.hh>
+#include "Test.hh"
 #include <omniconfig.h>
 using namespace std;
 
@@ -17,7 +17,7 @@ int main(int argc, char **argv) {
     // --------------------------------------------------------------------------
 // Declare ORB and servant object
     CORBA::ORB_var orb;
-    Server *managerImpl = NULL;
+    Manager *managerImpl = NULL;
 
     try {
         //------------------------------------------------------------------------
@@ -66,7 +66,7 @@ int main(int argc, char **argv) {
                 CosNaming::NamingContext::_narrow(rootContextObj.in());
 
         // Create a reference to the servant
-        managerImpl = new Server(orb);
+        managerImpl = new Manager;
 
 
         // Activate object
@@ -113,3 +113,5 @@ int main(int argc, char **argv) {
 
     return 0;
 }
+
+

@@ -18,32 +18,6 @@ OBJECTS       = drawMeASheep.o
 
 
 all : drawMeASheepSK main
-# all: main_figure
-
-# main_figure : main $(INC)/circleImpl.hpp $(INC)/ligne.hpp $(INC)/figure.hpp $(INC)/point.h
-	# $(CC) $(CFLAGS) $(BIN)/main.o $(BIN)/point.o $(BIN)/figure.o $(BIN)/ligne.o $(BIN)/circleImpl.o $(BIN)/image.o -o main_figure
-
-# main: image circleImpl ligne figure $(INC)/circleImpl.hpp $(INC)/ligne.hpp $(INC)/figure.hpp $(INC)/point.h
-# 	$(CC) -c $(CFLAGS) $(SRC)/main.cpp -o $(BIN)/main.o
-
-# image: figure point $(INC)/point.h $(INC)/image.hpp
-# 	$(CC) -c $(CFLAGS) $(SRC)/image.cpp -o $(BIN)/image.o
-
-#circleImpl : point $(INC)/point.h $(INC)/circleImpl.hpp
-#	$(CC) -c $(CFLAGS) $(SRC)/circleImpl.cpp -o $(BIN)/circleImpl.o
-
-# ligne : figure point $(INC)/point.h $(INC)/ligne.hpp
-# 	$(CC) -c $(CFLAGS) $(SRC)/ligne.cpp -o $(BIN)/ligne.o
-
-# figure : point $(INC)/figure.hpp
-# 	$(CC) -c $(CFLAGS) $(SRC)/figure.cpp -o $(BIN)/figure.o
-
-# drawMeASheepSK.o : this dependency has to be put on point
-#point : $(INC)/point.h 
-#	$(CC) -c $(CFLAGS) $(SRC)/point.cpp -o $(BIN)/point.o
-
-# drawMeASheepSK.o: drawMeASheepSK.cc 
-# 	$(CC) $(CFLAGS) $(INCLUDES) $(GEN)/drawMeASheepSK.cc														
 
 main : managerImpl.o drawMeASheepSK.o
 	$(CC)  $(CFLAGS) -o Serveur.o $(SRC)/Serveur.cpp $(BIN)/managerImpl.o $(BIN)/drawMeASheepSK.o
@@ -57,7 +31,7 @@ managerImpl.o : $(INC)/managerImpl.h
 
 # compile l'idl et met les fichiers générés dans le dossier generated
 drawMeASheepSK: $(CORBA)/drawMeASheep.idl
-	$(OMNI_HOME) -bcxx -Wbexample $(CORBA)/drawMeASheep.idl && mv *.cc *.hh -t $(GEN)
+	$(OMNI_HOME) -bcxx $(CORBA)/drawMeASheep.idl #&& mv *.cc *.hh -t $(GEN)
 
 clean: 
 	rm $(BIN)/*.o

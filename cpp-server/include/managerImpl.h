@@ -23,15 +23,10 @@
 //#include "OB/CORBA.h"
 using namespace std;
 
-class ManagerImpl : public virtual PortableServer::ServantBase{
-
-    CORBA::ORB_var orb; // Reference to CORBA ORB
 
 
-public:ManagerImpl(CORBA::ORB_var orb):orb(orb){
+public:
 
-        cout << "Server initialised"<<endl;
-    }
 };
 
 

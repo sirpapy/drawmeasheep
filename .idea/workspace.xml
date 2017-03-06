@@ -10,23 +10,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dd76ae8c-c636-47e8-b0b6-93b83c460020" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cpp-server/include/cercle.hpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cpp-server/include/figure.hpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cpp-server/include/image.hpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cpp-server/include/ligne.hpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cpp-server/include/point.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cpp-server/src/cercle.cpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cpp-server/src/figure.cpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cpp-server/src/image.cpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cpp-server/src/ligne.cpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cpp-server/src/point.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cpp-server/bin/drawMeASheepSK.o" afterPath="$PROJECT_DIR$/cpp-server/bin/drawMeASheepSK.o" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cpp-server/Corba/Makefile" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cpp-server/Corba/Server.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cpp-server/TEST/Test.idl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cpp-server/TEST/makefile" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cpp-server/TEST/managerImpl.cpp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cpp-server/TEST/managerImpl.h" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cpp-server/generated/drawMeASheep.hh" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cpp-server/generated/drawMeASheepDynSK.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cpp-server/generated/drawMeASheepSK.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cpp-server/generated/drawMeASheepSK.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cpp-server/generated/drawMeASheep_i.cc" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cpp-server/generated/drawMeASheep.hh" afterPath="$PROJECT_DIR$/cpp-server/generated/drawMeASheep.hh" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cpp-server/generated/drawMeASheepSK.cc" afterPath="$PROJECT_DIR$/cpp-server/generated/drawMeASheepSK.cc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cpp-server/generated/drawMeASheep_i.cc" afterPath="$PROJECT_DIR$/cpp-server/generated/drawMeASheep_i.cc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cpp-server/Corba/drawMeASheep.idl" afterPath="$PROJECT_DIR$/cpp-server/Corba/drawMeASheep.idl" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cpp-server/include/managerImpl.h" afterPath="$PROJECT_DIR$/cpp-server/include/managerImpl.h" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cpp-server/makefile" afterPath="$PROJECT_DIR$/cpp-server/makefile" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cpp-server/src/Serveur.cpp" afterPath="$PROJECT_DIR$/cpp-server/src/Serveur.cpp" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -42,64 +41,52 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="managerImpl.h" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/cpp-server/include/managerImpl.h">
+      <file leaf-file-name="Test.idl" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cpp-server/TEST/Test.idl">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="504">
-              <caret line="42" column="0" lean-forward="true" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+            <state relative-caret-position="51">
+              <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="makefile" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cpp-server/makefile">
+      <file leaf-file-name="makefile" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/cpp-server/TEST/makefile">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-533">
-              <caret line="12" column="21" lean-forward="true" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
+            <state relative-caret-position="612">
+              <caret line="36" column="17" lean-forward="true" selection-start-line="36" selection-start-column="17" selection-end-line="36" selection-end-column="17" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="drawMeASheep.hh" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cpp-server/generated/drawMeASheep.hh">
+      <file leaf-file-name="managerImpl.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cpp-server/TEST/managerImpl.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-55">
-              <caret line="112" column="0" lean-forward="false" selection-start-line="112" selection-start-column="0" selection-end-line="115" selection-end-column="9" />
-              <folding>
-                <marker date="1488716124674" expanded="true" signature="3507:3562" ph="..." />
-                <marker date="1488716124674" expanded="true" signature="5395:5734" ph="{...}" />
-                <marker date="1488716124674" expanded="true" signature="7053:7958" ph="{...}" />
-                <marker date="1488716124674" expanded="true" signature="8357:9171" ph="{...}" />
-                <marker date="1488716124674" expanded="true" signature="9475:9814" ph="{...}" />
-                <marker date="1488716124674" expanded="true" signature="11098:11609" ph="{...}" />
-                <marker date="1488716124674" expanded="true" signature="12010:12358" ph="{...}" />
-                <marker date="1488716124674" expanded="true" signature="12632:12968" ph="{...}" />
-                <marker date="1488716124674" expanded="true" signature="14219:14716" ph="{...}" />
-                <marker date="1488716124674" expanded="true" signature="15102:15469" ph="{...}" />
-                <marker date="1488716124674" expanded="true" signature="15763:16101" ph="{...}" />
-                <marker date="1488716124674" expanded="true" signature="17374:17980" ph="{...}" />
-                <marker date="1488716124674" expanded="true" signature="18376:18850" ph="{...}" />
-                <marker date="1488716124674" expanded="true" signature="19154:19493" ph="{...}" />
-                <marker date="1488716124674" expanded="true" signature="20777:21288" ph="{...}" />
-                <marker date="1488716124674" expanded="true" signature="21689:22037" ph="{...}" />
-                <marker date="1488716124674" expanded="true" signature="24549:24606" ph="..." />
-                <marker date="1488716124674" expanded="true" signature="28753:28810" ph="..." />
-                <marker date="1488716124674" expanded="true" signature="30799:31143" ph="{...}" />
-                <marker date="1488716124674" expanded="true" signature="32482:33037" ph="{...}" />
-                <marker date="1488716124674" expanded="true" signature="33463:33820" ph="{...}" />
-                <marker date="1488716124674" expanded="true" signature="34269:34615" ph="{...}" />
-                <marker date="1488716124674" expanded="true" signature="36011:36857" ph="{...}" />
-                <marker date="1488716124674" expanded="true" signature="37291:37973" ph="{...}" />
-                <marker date="1488716124674" expanded="true" signature="38339:38605" ph="{...}" />
-                <marker date="1488716124674" expanded="true" signature="38738:39004" ph="{...}" />
-                <marker date="1488716124674" expanded="true" signature="39131:39385" ph="{...}" />
-                <marker date="1488716124674" expanded="true" signature="39516:39778" ph="{...}" />
-                <marker date="1488716124674" expanded="true" signature="39911:40177" ph="{...}" />
-                <marker date="1488716124674" expanded="true" signature="40320:40606" ph="{...}" />
-                <marker date="1488716124674" expanded="true" signature="40848:41145" ph="{...}" />
-              </folding>
+            <state relative-caret-position="323">
+              <caret line="19" column="29" lean-forward="false" selection-start-line="19" selection-start-column="29" selection-end-line="19" selection-end-column="29" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Test.hh" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cpp-server/TEST/Test.hh">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="398">
+              <caret line="183" column="0" lean-forward="false" selection-start-line="183" selection-start-column="0" selection-end-line="183" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="managerImpl.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cpp-server/TEST/managerImpl.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="7" selection-end-column="29" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -112,9 +99,13 @@
       <find>Manager</find>
       <find>~</find>
       <find>PointSet</find>
+      <find />
+      <find>Point</find>
+      <find>POA</find>
     </findStrings>
     <replaceStrings>
       <replace>managerImpl</replace>
+      <replace>\t</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -128,10 +119,19 @@
         <option value="$PROJECT_DIR$/cpp-serveur/Serveur.cpp" />
         <option value="$PROJECT_DIR$/cpp-serveur/managerImpl.cpp" />
         <option value="$PROJECT_DIR$/cpp-serveur/makefile" />
-        <option value="$PROJECT_DIR$/cpp-server/src/Serveur.cpp" />
         <option value="$PROJECT_DIR$/cpp-server/generated/drawMeASheep.hh" />
+        <option value="$PROJECT_DIR$/cpp-server/Corba/Makefile" />
+        <option value="$PROJECT_DIR$/cpp-server/Corba/drawMeASheep.idl" />
         <option value="$PROJECT_DIR$/cpp-server/makefile" />
+        <option value="$PROJECT_DIR$/cpp-server/TEST/drawMeASheep.idl" />
+        <option value="$PROJECT_DIR$/cpp-server/Corba/Server.h" />
         <option value="$PROJECT_DIR$/cpp-server/include/managerImpl.h" />
+        <option value="$PROJECT_DIR$/cpp-server/src/Serveur.cpp" />
+        <option value="$PROJECT_DIR$/cpp-server/TEST/Test.hh" />
+        <option value="$PROJECT_DIR$/cpp-server/TEST/Test.idl" />
+        <option value="$PROJECT_DIR$/cpp-server/TEST/managerImpl.cpp" />
+        <option value="$PROJECT_DIR$/cpp-server/TEST/managerImpl.h" />
+        <option value="$PROJECT_DIR$/cpp-server/TEST/makefile" />
       </list>
     </option>
   </component>
@@ -143,7 +143,6 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
-    <option name="y" value="-8" />
     <option name="width" value="1932" />
     <option name="height" value="1056" />
   </component>
@@ -202,6 +201,24 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="TEST" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="drawmeasheep" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.CidrFilesViewHelper$MyProjectTreeStructure$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="drawmeasheep" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cpp-server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -238,57 +255,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="generated" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="drawmeasheep" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.CidrFilesViewHelper$MyProjectTreeStructure$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="drawmeasheep" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cpp-client" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="drawmeasheep" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.CidrFilesViewHelper$MyProjectTreeStructure$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="drawmeasheep" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cpp-client" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="drawmeasheep" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.CidrFilesViewHelper$MyProjectTreeStructure$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="drawmeasheep" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cpp-client" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="include" />
+              <option name="myItemId" value="Corba" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -304,12 +271,13 @@
     <property name="last_opened_file_path" value="D:/omniORB-4.2.1-2" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\workspace\drawmeasheep\cpp-client\src" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\workspace\drawmeasheep\cpp-server\TEST" />
       <recent name="D:\workspace\drawmeasheep\cpp-server\src" />
       <recent name="D:\workspace\drawmeasheep\cpp-server\include" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\workspace\drawmeasheep\cpp-client\src" />
     </key>
   </component>
   <component name="RunManager">
@@ -495,33 +463,34 @@
       <workItem from="1488311296584" duration="769000" />
       <workItem from="1488321131985" duration="19610000" />
       <workItem from="1488712462625" duration="2991000" />
+      <workItem from="1488804638134" duration="11092000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="34981000" />
+    <option name="totallyTimeSpent" value="46073000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1932" height="1056" extended-state="0" />
+    <frame x="-8" y="0" width="1932" height="1056" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18006264" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32980973" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980973" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980973" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980973" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980973" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -531,42 +500,17 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/cpp-serveur/generated/drawMeASheep_i.cc" />
-    <entry file="file://$PROJECT_DIR$/cpp-serveur/Serveur.cpp" />
-    <entry file="file://$PROJECT_DIR$/cpp-serveur/makefile" />
-    <entry file="file://$PROJECT_DIR$/cpp-serveur/managerImpl.h" />
-    <entry file="file://$PROJECT_DIR$/cpp-serveur/managerImpl.cpp" />
-    <entry file="file://$PROJECT_DIR$/cpp-client/makefile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cpp-serveur/drawMeASheep_i.cc" />
-    <entry file="file://$PROJECT_DIR$/Corba/drawMeASheep.idl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="799">
-          <caret line="47" column="23" lean-forward="false" selection-start-line="47" selection-start-column="23" selection-end-line="47" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cpp-serveur/generated/drawMeASheep_i.cc" />
-    <entry file="file://$PROJECT_DIR$/cpp-serveur/Serveur.cpp" />
-    <entry file="file://$PROJECT_DIR$/cpp-serveur/makefile" />
-    <entry file="file://$PROJECT_DIR$/cpp-serveur/managerImpl.h" />
     <entry file="file://$PROJECT_DIR$/cpp-serveur/managerImpl.cpp" />
     <entry file="file://$PROJECT_DIR$/cpp-client/makefile">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -575,7 +519,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="799">
           <caret line="47" column="23" lean-forward="true" selection-start-line="47" selection-start-column="23" selection-end-line="47" selection-end-column="23" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -587,7 +530,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="8" column="39" lean-forward="false" selection-start-line="8" selection-start-column="39" selection-end-line="8" selection-end-column="39" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -595,7 +537,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -603,7 +544,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="442">
           <caret line="26" column="52" lean-forward="false" selection-start-line="26" selection-start-column="52" selection-end-line="26" selection-end-column="52" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -612,7 +552,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -620,7 +559,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -629,7 +567,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -637,7 +574,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -652,7 +588,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -662,7 +597,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="799">
           <caret line="47" column="23" lean-forward="false" selection-start-line="47" selection-start-column="23" selection-end-line="47" selection-end-column="23" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -670,7 +604,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -682,19 +615,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cpp-server/src/Serveur.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cpp-server/include/cercle.hpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -702,7 +626,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="5" selection-end-column="29" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -710,7 +633,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -718,7 +640,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -726,62 +647,133 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
           <caret line="20" column="49" lean-forward="true" selection-start-line="20" selection-start-column="49" selection-end-line="20" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cpp-client/include/figure.hpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cpp-server/Corba/drawMeASheepSK.cc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cpp-server/Corba/Makefile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="4" lean-forward="false" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cpp-server/Corba/drawMeASheep.hh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="24" lean-forward="false" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="24" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/cpp-server/generated/drawMeASheep.hh">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-55">
-          <caret line="112" column="0" lean-forward="false" selection-start-line="112" selection-start-column="0" selection-end-line="115" selection-end-column="9" />
-          <folding>
-            <marker date="1488716124674" expanded="true" signature="3507:3562" ph="..." />
-            <marker date="1488716124674" expanded="true" signature="5395:5734" ph="{...}" />
-            <marker date="1488716124674" expanded="true" signature="7053:7958" ph="{...}" />
-            <marker date="1488716124674" expanded="true" signature="8357:9171" ph="{...}" />
-            <marker date="1488716124674" expanded="true" signature="9475:9814" ph="{...}" />
-            <marker date="1488716124674" expanded="true" signature="11098:11609" ph="{...}" />
-            <marker date="1488716124674" expanded="true" signature="12010:12358" ph="{...}" />
-            <marker date="1488716124674" expanded="true" signature="12632:12968" ph="{...}" />
-            <marker date="1488716124674" expanded="true" signature="14219:14716" ph="{...}" />
-            <marker date="1488716124674" expanded="true" signature="15102:15469" ph="{...}" />
-            <marker date="1488716124674" expanded="true" signature="15763:16101" ph="{...}" />
-            <marker date="1488716124674" expanded="true" signature="17374:17980" ph="{...}" />
-            <marker date="1488716124674" expanded="true" signature="18376:18850" ph="{...}" />
-            <marker date="1488716124674" expanded="true" signature="19154:19493" ph="{...}" />
-            <marker date="1488716124674" expanded="true" signature="20777:21288" ph="{...}" />
-            <marker date="1488716124674" expanded="true" signature="21689:22037" ph="{...}" />
-            <marker date="1488716124674" expanded="true" signature="24549:24606" ph="..." />
-            <marker date="1488716124674" expanded="true" signature="28753:28810" ph="..." />
-            <marker date="1488716124674" expanded="true" signature="30799:31143" ph="{...}" />
-            <marker date="1488716124674" expanded="true" signature="32482:33037" ph="{...}" />
-            <marker date="1488716124674" expanded="true" signature="33463:33820" ph="{...}" />
-            <marker date="1488716124674" expanded="true" signature="34269:34615" ph="{...}" />
-            <marker date="1488716124674" expanded="true" signature="36011:36857" ph="{...}" />
-            <marker date="1488716124674" expanded="true" signature="37291:37973" ph="{...}" />
-            <marker date="1488716124674" expanded="true" signature="38339:38605" ph="{...}" />
-            <marker date="1488716124674" expanded="true" signature="38738:39004" ph="{...}" />
-            <marker date="1488716124674" expanded="true" signature="39131:39385" ph="{...}" />
-            <marker date="1488716124674" expanded="true" signature="39516:39778" ph="{...}" />
-            <marker date="1488716124674" expanded="true" signature="39911:40177" ph="{...}" />
-            <marker date="1488716124674" expanded="true" signature="40320:40606" ph="{...}" />
-            <marker date="1488716124674" expanded="true" signature="40848:41145" ph="{...}" />
-          </folding>
+        <state relative-caret-position="296">
+          <caret line="142" column="20" lean-forward="false" selection-start-line="142" selection-start-column="15" selection-end-line="142" selection-end-column="20" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/cpp-server/makefile">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-533">
-          <caret line="12" column="21" lean-forward="true" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
+        <state relative-caret-position="102">
+          <caret line="6" column="18" lean-forward="true" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cpp-server/Corba/drawMeASheep.idl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="11" lean-forward="false" selection-start-line="0" selection-start-column="7" selection-end-line="0" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cpp-server/TEST/TestSK.cc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/cpp-server/include/managerImpl.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="42" column="0" lean-forward="true" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+        <state relative-caret-position="459">
+          <caret line="27" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cpp-server/Corba/Server.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="29" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="25" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cpp-server/src/Serveur.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="114" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cpp-server/TEST/Test.hh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="398">
+          <caret line="183" column="0" lean-forward="false" selection-start-line="183" selection-start-column="0" selection-end-line="183" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cpp-server/TEST/Test.idl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cpp-server/TEST/managerImpl.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="7" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cpp-server/TEST/managerImpl.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="29" lean-forward="false" selection-start-line="19" selection-start-column="29" selection-end-line="19" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cpp-server/TEST/makefile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="612">
+          <caret line="36" column="17" lean-forward="true" selection-start-line="36" selection-start-column="17" selection-end-line="36" selection-end-column="17" />
           <folding />
         </state>
       </provider>
