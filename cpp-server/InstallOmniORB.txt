@@ -1,0 +1,13 @@
+Install Omniiidl
+
+
+opt-get install pk-config
+opt-get install python2.7-dev
+
+cd omniORB-4.2.0
+mkdir build
+$ cd build
+../configure --prefix=/mnt/c/Users/Lamine/cppCorba/omni_inst CXX=/usr/bin/g++ PYTHON=/usr/bin/python2.7 CC=/usr/bin/gcc --enable-threads --enable-shared
+
+make 
+make install

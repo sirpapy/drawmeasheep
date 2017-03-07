@@ -1,0 +1,11 @@
+prefix=/mnt/c/Users/Lamine/cppCorba/omni_inst
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: omniDynamic4
+Description: CORBA Object Request Broker - Dynamic Library.
+Version: 4.2.0
+Requires: omniORB4
+Libs: -L${libdir} -lomniDynamic4
+Cflags:
