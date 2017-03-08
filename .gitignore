@@ -1,4 +1,5 @@
 cpp-client/bin/*.o
+cpp-server/bin/*.o
 cpp-server/omni_*
 cpp-server/omniORB-4*
 .idea*
