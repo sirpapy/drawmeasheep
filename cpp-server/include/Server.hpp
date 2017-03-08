@@ -19,7 +19,10 @@ class Server : public drawMeASheep::generated::manager::DrawingManager,
 public:
     Server();
     virtual ~Server();
-	drawMeASheep::generated::manager::DrawingManager_ptr _this();
+	//drawMeASheep::generated::manager::DrawingManager_ptr _this();
+	inline ::drawMeASheep::generated::manager::DrawingManager_ptr _this() {
+          return (::drawMeASheep::generated::manager::DrawingManager_ptr) _do_this(::drawMeASheep::generated::manager::DrawingManager::_PD_repoId);
+        }
 	drawMeASheep::generated::entity::DrawingMap* map();
 	::CORBA::Any* createDrawing(const char* name, const drawMeASheep::generated::entity::PointSet& points, ::CORBA::Double rayon);
 	::CORBA::Boolean add(const ::CORBA::Any& a);
@@ -38,10 +41,6 @@ public:
 
     };
 
-drawMeASheep::generated::manager::DrawingManager_ptr Server::_this(){
-	return _this();
-}
-	
  drawMeASheep::generated::entity::DrawingMap* Server::map(){
     return NULL;
 }
