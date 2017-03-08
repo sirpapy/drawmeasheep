@@ -1219,7 +1219,7 @@ configure:6649: $? = 0
 configure:6649: result: yes
 configure:6649: checking for insinff
 configure:6649: /usr/bin/gcc -o conftest -O   conftest.c  >&5
-/tmp/cc3UTM5S.o: In function `main':
+/tmp/cc24yBJi.o: In function `main':
 conftest.c:(.text+0xa): undefined reference to `insinff'
 collect2: error: ld returned 1 exit status
 configure:6649: $? = 1
@@ -1393,7 +1393,7 @@ configure:6661: $? = 0
 configure:6661: result: yes
 configure:6661: checking for stricmp
 configure:6661: /usr/bin/gcc -o conftest -O   conftest.c  >&5
-/tmp/ccmb9H5B.o: In function `main':
+/tmp/ccClmFVY.o: In function `main':
 conftest.c:(.text+0xa): undefined reference to `stricmp'
 collect2: error: ld returned 1 exit status
 configure:6661: $? = 1
@@ -1955,7 +1955,6 @@ config.status:1010: creating contrib/pkgconfig/omniConnectionMgmt4.pc
 config.status:1010: creating contrib/pkgconfig/omniZIOP4.pc
 config.status:1010: creating contrib/pkgconfig/omniZIOPDynamic4.pc
 config.status:1010: creating include/omniORB4/acconfig.h
-config.status:1170: include/omniORB4/acconfig.h is unchanged
 configure:8883: WARNING: unrecognized options: --enable-threads, --enable-shared
 
 ## ---------------- ##

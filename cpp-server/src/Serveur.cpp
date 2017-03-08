@@ -20,7 +20,7 @@ int main(int argc, char **argv) {
 
 		// Servant must register with POA in order to be made available for client
         // Get a reference to the root POA
-        CORBA::Object_var obj = orb->resolve_initial_references("RootPOA");
+        CORBA::Object_var obj = orb->resolve_initial_references("NameService");
         PortableServer::POA_var _poa = PortableServer::POA::_narrow(obj.in());
        
 	   
