@@ -1,5 +1,5 @@
 CC		    = /usr/bin/g++
-CPPFLAGS      = -g -c
+CPPFLAGS      = -g
 LDFLAGS       = -g
 CFLAGS = -Werror -Wall -Weffc++ -std=c++11
 OMNI_HOME     = ./omni_inst
@@ -18,17 +18,17 @@ OBJECTS       = drawMeASheep.o
 
 
 
-all : drawMeASheepSK main
+all : server
 
-main : managerImpl.o drawMeASheepSK.o
-	$(CC)  $(CPPFLAGS) $(INCLUDES) -I$(GEN) -o Serveur.o $(SRC)/Serveur.cpp $(BIN)/managerImpl.o $(BIN)/drawMeASheepSK.o 
+server : managerImpl.o drawMeASheepSK.o
+	$(CC) -c $(CPPFLAGS) $(INCLUDES) -I$(GEN) -o Serveur.o $(SRC)/Serveur.cpp
 
 # compile le SK.cc généré
 drawMeASheepSK.o: drawMeASheepSK
-	$(CC) $(CPPFLAGS) $(INCLUDES) $(GEN)/drawMeASheepSK.cc -o $(BIN)/drawMeASheepSK.o
+	$(CC) -c $(CPPFLAGS) $(INCLUDES) $(GEN)/drawMeASheepSK.cc -o $(BIN)/drawMeASheepSK.o
 
 managerImpl.o : $(INC)/managerImpl.h
-	$(CC) $(CPPFLAGS) $(INCLUDES)  $(SRC)/managerImpl.cpp -o $(BIN)/managerImpl.o
+	$(CC) -c $(CPPFLAGS) $(INCLUDES)  $(SRC)/managerImpl.cpp -o $(BIN)/managerImpl.o
 
 # compile l'idl et met les fichiers générés dans le dossier generated
 drawMeASheepSK: $(CORBA)/drawMeASheep.idl

@@ -4,6 +4,7 @@
 #include <iostream>
 
 #include "../include/managerImpl.h"
+#include "../include/Server.hpp"
 #include "../generated/drawMeASheep.hh"
 #include <omniconfig.h>
 using namespace std;

@@ -11,7 +11,7 @@
 
 using namespace std;
 
-class Server: virtual public Test::_impl_Account {
+class Server: public Test::_impl_Account {
 public:
     Server(){
 
