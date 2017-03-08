@@ -10,204 +10,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dd76ae8c-c636-47e8-b0b6-93b83c460020" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cpp-server/Serveur.o" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cpp-server/omniORB-4.2.0/doc/omniNames.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cpp-server/omniORB-4.2.0/doc/omniNames.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cpp-server/omniORB-4.2.0/doc/omniORB.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cpp-server/omniORB-4.2.0/doc/omniORB/contents_motif.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cpp-server/omniORB-4.2.0/doc/omniORB/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cpp-server/omniORB-4.2.0/doc/omniORB/next_motif.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cpp-server/omniORB-4.2.0/doc/omniORB/omniORB.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cpp-server/omniORB-4.2.0/doc/omniORB/omniORB.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cpp-server/omniORB-4.2.0/doc/omniORB/omniORB001.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cpp-server/omniORB-4.2.0/doc/omniORB/omniORB002.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cpp-server/omniORB-4.2.0/doc/omniORB/omniORB003.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cpp-server/omniORB-4.2.0/doc/omniORB/omniORB004.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cpp-server/omniORB-4.2.0/doc/omniORB/omniORB005.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cpp-server/omniORB-4.2.0/doc/omniORB/omniORB006.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cpp-server/omniORB-4.2.0/doc/omniORB/omniORB007.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cpp-server/omniORB-4.2.0/doc/omniORB/omniORB008.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cpp-server/omniORB-4.2.0/doc/omniORB/omniORB009.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cpp-server/omniORB-4.2.0/doc/omniORB/omniORB010.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cpp-server/omniORB-4.2.0/doc/omniORB/omniORB011.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cpp-server/omniORB-4.2.0/doc/omniORB/omniORB012.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cpp-server/omniORB-4.2.0/doc/omniORB/omniORB013.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cpp-server/omniORB-4.2.0/doc/omniORB/omniORB014.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cpp-server/omniORB-4.2.0/doc/omniORB/omniORB015.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cpp-server/omniORB-4.2.0/doc/omniORB/omniORB016.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cpp-server/omniORB-4.2.0/doc/omniORB/previous_motif.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cpp-server/omniORB-4.2.0/doc/omniidl.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cpp-server/omniORB-4.2.0/doc/omniidl.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cpp-server/omniORB-4.2.0/doc/omnithread.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cpp-server/omniORB-4.2.0/doc/omnithread.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cpp-server/omniORB-4.2.0/doc/tex/cover.tex" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cpp-server/omniORB-4.2.0/doc/tex/ode.tex" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cpp-server/omniORB-4.2.0/doc/tex/omniNames.tex" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cpp-server/omniORB-4.2.0/doc/tex/omniORB.bib" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cpp-server/omniORB-4.2.0/doc/tex/omniORB.tex" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cpp-server/omniORB-4.2.0/doc/tex/omniidl.tex" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cpp-server/omniORB-4.2.0/doc/tex/omnithread.tex" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cpp-server/omniORB-4.2.0/doc/tex/utilities.tex" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cpp-server/omniORB-4.2.0/doc/utilities.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cpp-server/omniORB-4.2.0/doc/utilities.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cpp-server/omniORB-4.2.0/man/man1/catior.1" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cpp-server/omniORB-4.2.0/man/man1/convertior.1" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cpp-server/omniORB-4.2.0/man/man1/genior.1" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cpp-server/omniORB-4.2.0/man/man1/nameclt.1" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cpp-server/omniORB-4.2.0/man/man1/omnicpp.1" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cpp-server/omniORB-4.2.0/man/man1/omniidl.1" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cpp-server/omniORB-4.2.0/man/man8/omniMapper.8" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cpp-server/omniORB-4.2.0/man/man8/omniNames.8" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cpp-server/omniORB-4.2.0/readmes/CHANGES_240" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cpp-server/omniORB-4.2.0/readmes/CHANGES_250" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cpp-server/omniORB-4.2.0/readmes/CHANGES_261" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cpp-server/omniORB-4.2.0/readmes/CHANGES_271" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cpp-server/omniORB-4.2.0/readmes/CHANGES_280" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cpp-server/omniORB-4.2.0/readmes/PORTING" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cpp-server/omniORB-4.2.0/readmes/README.ETSKernel" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cpp-server/omniORB-4.2.0/readmes/README.SGI" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cpp-server/omniORB-4.2.0/readmes/README.SunC++5" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cpp-server/omniORB-4.2.0/readmes/README.dmc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cpp-server/omniORB-4.2.0/readmes/README.egcs" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cpp-server/omniORB-4.2.0/readmes/README.hpux11" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cpp-server/omniORB-4.2.0/readmes/README.macos" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cpp-server/omniORB-4.2.0/readmes/README.openvms" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cpp-server/omniORB-4.2.0/readmes/README.openvms_v6" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cpp-server/omniORB-4.2.0/readmes/README.rtems" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cpp-server/omniORB-4.2.0/src/examples/GNUmakefile" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cpp-server/omniORB-4.2.0/src/examples/GNUmakefile.in" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cpp-server/omniORB-4.2.0/src/examples/ami/GNUmakefile" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cpp-server/omniORB-4.2.0/src/examples/ami/GNUmakefile.in" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cpp-server/omniORB-4.2.0/src/examples/ami/dir.mk" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cpp-server/omniORB-4.2.0/src/examples/ami/echo_ami.idl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cpp-server/omniORB-4.2.0/src/examples/ami/echo_callback.cc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cpp-server/omniORB-4.2.0/src/examples/ami/echo_dii_pollable_set.cc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cpp-server/omniORB-4.2.0/src/examples/ami/echo_pollable_set.cc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cpp-server/omniORB-4.2.0/src/examples/ami/echo_poller.cc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cpp-server/omniORB-4.2.0/src/examples/anyExample/GNUmakefile" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cpp-server/omniORB-4.2.0/src/examples/anyExample/GNUmakefile.in" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cpp-server/omniORB-4.2.0/src/examples/anyExample/anyExample_clt.cc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cpp-server/omniORB-4.2.0/src/examples/anyExample/anyExample_impl.cc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cpp-server/omniORB-4.2.0/src/examples/anyExample/dir.mak" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cpp-server/omniORB-4.2.0/src/examples/anyExample/dir.mk" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cpp-server/omniORB-4.2.0/src/examples/bidir/GNUmakefile" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cpp-server/omniORB-4.2.0/src/examples/bidir/GNUmakefile.in" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cpp-server/omniORB-4.2.0/src/examples/bidir/README" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cpp-server/omniORB-4.2.0/src/examples/bidir/bd_client.cc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cpp-server/omniORB-4.2.0/src/examples/bidir/bd_server.cc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cpp-server/omniORB-4.2.0/src/examples/bidir/bd_shutdown.cc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cpp-server/omniORB-4.2.0/src/examples/bidir/dir.mak" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cpp-server/omniORB-4.2.0/src/examples/bidir/dir.mk" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cpp-server/omniORB-4.2.0/src/examples/bidir/echo_callback.idl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cpp-server/omniORB-4.2.0/src/examples/boa/GNUmakefile" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cpp-server/omniORB-4.2.0/src/examples/boa/GNUmakefile.in" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cpp-server/omniORB-4.2.0/src/examples/boa/becho.idl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cpp-server/omniORB-4.2.0/src/examples/boa/dir.mak" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cpp-server/omniORB-4.2.0/src/examples/boa/dir.mk" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cpp-server/omniORB-4.2.0/src/examples/boa/eg2_impl.cc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cpp-server/omniORB-4.2.0/src/examples/call_back/GNUmakefile" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cpp-server/omniORB-4.2.0/src/examples/call_back/GNUmakefile.in" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cpp-server/omniORB-4.2.0/src/examples/call_back/README" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cpp-server/omniORB-4.2.0/src/examples/call_back/cb_client.cc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cpp-server/omniORB-4.2.0/src/examples/call_back/cb_server.cc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cpp-server/omniORB-4.2.0/src/examples/call_back/cb_shutdown.cc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cpp-server/omniORB-4.2.0/src/examples/call_back/dir.mak" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cpp-server/omniORB-4.2.0/src/examples/call_back/dir.mk" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cpp-server/omniORB-4.2.0/src/examples/call_back/echo_callback.idl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cpp-server/omniORB-4.2.0/src/examples/dii/GNUmakefile" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cpp-server/omniORB-4.2.0/src/examples/dii/GNUmakefile.in" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cpp-server/omniORB-4.2.0/src/examples/dii/dir.mak" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cpp-server/omniORB-4.2.0/src/examples/dii/dir.mk" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cpp-server/omniORB-4.2.0/src/examples/dii/echo_diiclt.cc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cpp-server/omniORB-4.2.0/src/examples/dir.mak" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cpp-server/omniORB-4.2.0/src/examples/dir.mk" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cpp-server/omniORB-4.2.0/src/examples/dsi/GNUmakefile" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cpp-server/omniORB-4.2.0/src/examples/dsi/GNUmakefile.in" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cpp-server/omniORB-4.2.0/src/examples/dsi/dir.mak" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cpp-server/omniORB-4.2.0/src/examples/dsi/dir.mk" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cpp-server/omniORB-4.2.0/src/examples/dsi/echo_dsiimpl.cc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cpp-server/omniORB-4.2.0/src/examples/echo/GNUmakefile" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cpp-server/omniORB-4.2.0/src/examples/echo/GNUmakefile.in" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cpp-server/omniORB-4.2.0/src/examples/echo/README" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cpp-server/omniORB-4.2.0/src/examples/echo/dir.mak" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cpp-server/omniORB-4.2.0/src/examples/echo/dir.mk" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cpp-server/omniORB-4.2.0/src/examples/echo/eg1.cc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cpp-server/omniORB-4.2.0/src/examples/echo/eg2_clt.cc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cpp-server/omniORB-4.2.0/src/examples/echo/eg2_impl.cc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cpp-server/omniORB-4.2.0/src/examples/echo/eg3_clt.cc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cpp-server/omniORB-4.2.0/src/examples/echo/eg3_impl.cc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cpp-server/omniORB-4.2.0/src/examples/echo/eg3_tieimpl.cc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cpp-server/omniORB-4.2.0/src/examples/poa/GNUmakefile" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cpp-server/omniORB-4.2.0/src/examples/poa/GNUmakefile.in" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cpp-server/omniORB-4.2.0/src/examples/poa/README" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cpp-server/omniORB-4.2.0/src/examples/poa/dir.mak" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cpp-server/omniORB-4.2.0/src/examples/poa/dir.mk" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cpp-server/omniORB-4.2.0/src/examples/poa/implicit_activation/GNUmakefile" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cpp-server/omniORB-4.2.0/src/examples/poa/implicit_activation/GNUmakefile.in" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cpp-server/omniORB-4.2.0/src/examples/poa/implicit_activation/dir.mak" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cpp-server/omniORB-4.2.0/src/examples/poa/implicit_activation/dir.mk" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cpp-server/omniORB-4.2.0/src/examples/poa/implicit_activation/eg1.cc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cpp-server/omniORB-4.2.0/src/examples/poa/persistent_objref/GNUmakefile" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cpp-server/omniORB-4.2.0/src/examples/poa/persistent_objref/GNUmakefile.in" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cpp-server/omniORB-4.2.0/src/examples/poa/persistent_objref/dir.mak" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cpp-server/omniORB-4.2.0/src/examples/poa/persistent_objref/dir.mk" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cpp-server/omniORB-4.2.0/src/examples/poa/persistent_objref/eg2_impl.cc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cpp-server/omniORB-4.2.0/src/examples/poa/servant_manager/GNUmakefile" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cpp-server/omniORB-4.2.0/src/examples/poa/servant_manager/GNUmakefile.in" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cpp-server/omniORB-4.2.0/src/examples/poa/servant_manager/dir.mak" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cpp-server/omniORB-4.2.0/src/examples/poa/servant_manager/dir.mk" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cpp-server/omniORB-4.2.0/src/examples/poa/servant_manager/servant_activator.cc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cpp-server/omniORB-4.2.0/src/examples/poa/servant_manager/servant_locator.cc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cpp-server/omniORB-4.2.0/src/examples/poa/shortcut/GNUmakefile" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cpp-server/omniORB-4.2.0/src/examples/poa/shortcut/GNUmakefile.in" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cpp-server/omniORB-4.2.0/src/examples/poa/shortcut/dir.mak" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cpp-server/omniORB-4.2.0/src/examples/poa/shortcut/dir.mk" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cpp-server/omniORB-4.2.0/src/examples/poa/shortcut/shortcut.cc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cpp-server/omniORB-4.2.0/src/examples/poa/shortcut/shortcut.idl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cpp-server/omniORB-4.2.0/src/examples/poa/threading/GNUmakefile" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cpp-server/omniORB-4.2.0/src/examples/poa/threading/GNUmakefile.in" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cpp-server/omniORB-4.2.0/src/examples/poa/threading/dir.mak" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cpp-server/omniORB-4.2.0/src/examples/poa/threading/dir.mk" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cpp-server/omniORB-4.2.0/src/examples/poa/threading/mainthread.cc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cpp-server/omniORB-4.2.0/src/examples/ssl_echo/GNUmakefile" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cpp-server/omniORB-4.2.0/src/examples/ssl_echo/GNUmakefile.in" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cpp-server/omniORB-4.2.0/src/examples/ssl_echo/README" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cpp-server/omniORB-4.2.0/src/examples/ssl_echo/client.pem" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cpp-server/omniORB-4.2.0/src/examples/ssl_echo/dir.mak" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cpp-server/omniORB-4.2.0/src/examples/ssl_echo/dir.mk" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cpp-server/omniORB-4.2.0/src/examples/ssl_echo/echo.idl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cpp-server/omniORB-4.2.0/src/examples/ssl_echo/eg2_clt.cc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cpp-server/omniORB-4.2.0/src/examples/ssl_echo/eg2_impl.cc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cpp-server/omniORB-4.2.0/src/examples/ssl_echo/root.pem" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cpp-server/omniORB-4.2.0/src/examples/ssl_echo/server.pem" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cpp-server/omniORB-4.2.0/src/examples/thread/GNUmakefile" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cpp-server/omniORB-4.2.0/src/examples/thread/GNUmakefile.in" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cpp-server/omniORB-4.2.0/src/examples/thread/README" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cpp-server/omniORB-4.2.0/src/examples/thread/diner.cc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cpp-server/omniORB-4.2.0/src/examples/thread/dir.mak" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cpp-server/omniORB-4.2.0/src/examples/thread/dir.mk" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cpp-server/omniORB-4.2.0/src/examples/thread/prio.cc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cpp-server/omniORB-4.2.0/src/examples/thread/prodcons.cc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cpp-server/omniORB-4.2.0/src/examples/thread/thrspecdata.cc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cpp-server/omniORB-4.2.0/src/examples/valuetype/GNUmakefile" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cpp-server/omniORB-4.2.0/src/examples/valuetype/GNUmakefile.in" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cpp-server/omniORB-4.2.0/src/examples/valuetype/dir.mak" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cpp-server/omniORB-4.2.0/src/examples/valuetype/dir.mk" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cpp-server/omniORB-4.2.0/src/examples/valuetype/simple/GNUmakefile" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cpp-server/omniORB-4.2.0/src/examples/valuetype/simple/GNUmakefile.in" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cpp-server/omniORB-4.2.0/src/examples/valuetype/simple/dir.mak" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cpp-server/omniORB-4.2.0/src/examples/valuetype/simple/dir.mk" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cpp-server/omniORB-4.2.0/src/examples/valuetype/simple/valimpl.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cpp-server/omniORB-4.2.0/src/examples/valuetype/simple/value.idl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cpp-server/omniORB-4.2.0/src/examples/valuetype/simple/vclient.cc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cpp-server/omniORB-4.2.0/src/examples/valuetype/simple/vcoloc.cc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cpp-server/omniORB-4.2.0/src/examples/valuetype/simple/vserver.cc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cpp-server/omniORB-4.2.0/src/examples/ziop/GNUmakefile" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cpp-server/omniORB-4.2.0/src/examples/ziop/GNUmakefile.in" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cpp-server/omniORB-4.2.0/src/examples/ziop/README.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cpp-server/omniORB-4.2.0/src/examples/ziop/dir.mk" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cpp-server/omniORB-4.2.0/src/examples/ziop/ziop_clt.cc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cpp-server/omniORB-4.2.0/src/examples/ziop/ziop_impl.cc" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cpp-server/makefile" afterPath="$PROJECT_DIR$/cpp-server/makefile" />
     </list>
@@ -268,8 +70,8 @@
       <file leaf-file-name="makefile" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/cpp-server/makefile">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="20" column="20" lean-forward="false" selection-start-line="20" selection-start-column="20" selection-end-line="20" selection-end-column="20" />
+            <state relative-caret-position="34">
+              <caret line="6" column="32" lean-forward="true" selection-start-line="6" selection-start-column="32" selection-end-line="6" selection-end-column="32" />
               <folding />
             </state>
           </provider>
@@ -708,12 +510,12 @@
       <workItem from="1488321131985" duration="19610000" />
       <workItem from="1488712462625" duration="2991000" />
       <workItem from="1488804638134" duration="11092000" />
-      <workItem from="1488880595329" duration="10906000" />
+      <workItem from="1488880595329" duration="11726000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="56979000" />
+    <option name="totallyTimeSpent" value="57799000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -1009,8 +811,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/cpp-server/makefile">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="20" lean-forward="false" selection-start-line="20" selection-start-column="20" selection-end-line="20" selection-end-column="20" />
+        <state relative-caret-position="34">
+          <caret line="6" column="32" lean-forward="true" selection-start-line="6" selection-start-column="32" selection-end-line="6" selection-end-column="32" />
           <folding />
         </state>
       </provider>
