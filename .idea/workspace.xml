@@ -11,32 +11,7 @@
   <component name="ChangeListManager">
     <list default="true" id="dd76ae8c-c636-47e8-b0b6-93b83c460020" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cpp-server/Server" afterPath="$PROJECT_DIR$/cpp-server/Server" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cpp-server/omniORB-4.2.0/build/lib/libCOS4.a" afterPath="$PROJECT_DIR$/cpp-server/omniORB-4.2.0/build/lib/libCOS4.a" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cpp-server/omniORB-4.2.0/build/lib/libCOSDynamic4.a" afterPath="$PROJECT_DIR$/cpp-server/omniORB-4.2.0/build/lib/libCOSDynamic4.a" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cpp-server/omniORB-4.2.0/build/lib/libomniCodeSets4.a" afterPath="$PROJECT_DIR$/cpp-server/omniORB-4.2.0/build/lib/libomniCodeSets4.a" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cpp-server/omniORB-4.2.0/build/lib/libomniConnectionMgmt4.a" afterPath="$PROJECT_DIR$/cpp-server/omniORB-4.2.0/build/lib/libomniConnectionMgmt4.a" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cpp-server/omniORB-4.2.0/build/lib/libomniDynamic4.a" afterPath="$PROJECT_DIR$/cpp-server/omniORB-4.2.0/build/lib/libomniDynamic4.a" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cpp-server/omniORB-4.2.0/build/lib/libomniORB4.a" afterPath="$PROJECT_DIR$/cpp-server/omniORB-4.2.0/build/lib/libomniORB4.a" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cpp-server/omniORB-4.2.0/build/lib/libomnithread.a" afterPath="$PROJECT_DIR$/cpp-server/omniORB-4.2.0/build/lib/libomnithread.a" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cpp-server/omniORB-4.2.0/build/src/lib/omniORB/codesets/static/libomniCodeSets4.a" afterPath="$PROJECT_DIR$/cpp-server/omniORB-4.2.0/build/src/lib/omniORB/codesets/static/libomniCodeSets4.a" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cpp-server/omniORB-4.2.0/build/src/lib/omniORB/connections/static/libomniConnectionMgmt4.a" afterPath="$PROJECT_DIR$/cpp-server/omniORB-4.2.0/build/src/lib/omniORB/connections/static/libomniConnectionMgmt4.a" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cpp-server/omniORB-4.2.0/build/src/lib/omniORB/dynamic/static/libomniDynamic4.a" afterPath="$PROJECT_DIR$/cpp-server/omniORB-4.2.0/build/src/lib/omniORB/dynamic/static/libomniDynamic4.a" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cpp-server/omniORB-4.2.0/build/src/lib/omniORB/orbcore/static/libomniORB4.a" afterPath="$PROJECT_DIR$/cpp-server/omniORB-4.2.0/build/src/lib/omniORB/orbcore/static/libomniORB4.a" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cpp-server/omniORB-4.2.0/build/src/lib/omnithread/static/libomnithread.a" afterPath="$PROJECT_DIR$/cpp-server/omniORB-4.2.0/build/src/lib/omnithread/static/libomnithread.a" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cpp-server/omniORB-4.2.0/build/src/services/mklib/dynstublib/static/libCOSDynamic4.a" afterPath="$PROJECT_DIR$/cpp-server/omniORB-4.2.0/build/src/services/mklib/dynstublib/static/libCOSDynamic4.a" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cpp-server/omniORB-4.2.0/build/src/services/mklib/stublib/static/libCOS4.a" afterPath="$PROJECT_DIR$/cpp-server/omniORB-4.2.0/build/src/services/mklib/stublib/static/libCOS4.a" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cpp-server/omni_inst/lib/libCOS4.a" afterPath="$PROJECT_DIR$/cpp-server/omni_inst/lib/libCOS4.a" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cpp-server/omni_inst/lib/libCOSDynamic4.a" afterPath="$PROJECT_DIR$/cpp-server/omni_inst/lib/libCOSDynamic4.a" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cpp-server/omni_inst/lib/libomniCodeSets4.a" afterPath="$PROJECT_DIR$/cpp-server/omni_inst/lib/libomniCodeSets4.a" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cpp-server/omni_inst/lib/libomniConnectionMgmt4.a" afterPath="$PROJECT_DIR$/cpp-server/omni_inst/lib/libomniConnectionMgmt4.a" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cpp-server/omni_inst/lib/libomniDynamic4.a" afterPath="$PROJECT_DIR$/cpp-server/omni_inst/lib/libomniDynamic4.a" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cpp-server/omni_inst/lib/libomniORB4.a" afterPath="$PROJECT_DIR$/cpp-server/omni_inst/lib/libomniORB4.a" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cpp-server/omni_inst/lib/libomnithread.a" afterPath="$PROJECT_DIR$/cpp-server/omni_inst/lib/libomnithread.a" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cpp-server/generated/drawMeASheep.hh" afterPath="$PROJECT_DIR$/cpp-server/generated/drawMeASheep.hh" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cpp-server/generated/drawMeASheepSK.cc" afterPath="$PROJECT_DIR$/cpp-server/generated/drawMeASheepSK.cc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cpp-server/omniORB-4.2.0/build/config.log" afterPath="$PROJECT_DIR$/cpp-server/omniORB-4.2.0/build/config.log" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cpp-server/omniORB.cfg" afterPath="$PROJECT_DIR$/cpp-server/omniORB.cfg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cpp-server/src/Serveur.cpp" afterPath="$PROJECT_DIR$/cpp-server/src/Serveur.cpp" />
     </list>
@@ -127,8 +102,8 @@
       <file leaf-file-name="Serveur.cpp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/cpp-server/src/Serveur.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="22" column="64" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+            <state relative-caret-position="17">
+              <caret line="45" column="8" lean-forward="false" selection-start-line="45" selection-start-column="8" selection-end-line="45" selection-end-column="8" />
               <folding />
             </state>
           </provider>
@@ -537,12 +512,12 @@
       <workItem from="1488804638134" duration="11092000" />
       <workItem from="1488880595329" duration="11726000" />
       <workItem from="1489005591704" duration="16000" />
-      <workItem from="1489005612332" duration="2336000" />
+      <workItem from="1489005612332" duration="3823000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="60151000" />
+    <option name="totallyTimeSpent" value="61638000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -789,8 +764,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/cpp-server/src/Serveur.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="22" column="64" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+        <state relative-caret-position="17">
+          <caret line="45" column="8" lean-forward="false" selection-start-line="45" selection-start-column="8" selection-end-line="45" selection-end-column="8" />
           <folding />
         </state>
       </provider>
