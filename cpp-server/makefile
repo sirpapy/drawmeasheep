@@ -1,7 +1,6 @@
 CC		    = /usr/bin/g++
-CPPFLAGS      = -g
+CPPFLAGS      = -g -c
 LDFLAGS       = -g
-CFLAGS = -Werror -Wall -Weffc++ -std=c++11
 OMNI_HOME     = ./omni_inst
 OMNI_INCLUDES = -I$(OMNI_HOME)/include
 OMNI_LIB_DIR  = $(OMNI_HOME)/lib
@@ -13,32 +12,39 @@ INC = ./include
 BIN = ./bin
 CORBA = ./Corba
 GEN = ./generated
-OBJECTS       = drawMeASheep.o 
+OBJECTS       = serveur.o managerImpl.o drawMeASheepSK.o
+OBJECTS_PATH = $(BIN)/Serveur.o $(BIN)/managerImpl.o $(BIN)/drawMeASheepSK.o
+OMNIORB_CONFIG=./omniORB.cfg
+LD_LIBRARY_PATH=/mnt/c/Users/Lamine/cppCorba/omni_inst/lib:$LD_LIBRARY_PATH
 
 
+export LD_LIBRARY_PATH LD_LIBRARY_PATH
 
-
-all : server
-
-
-server : managerImpl.o drawMeASheepSK.o
-	$(CC) $(CPPFLAGS) $(INCLUDES) -I$(GEN) -o Serveur.o $(SRC)/Serveur.cpp $(LIBS)
+# genere l executable du serveur a besoin des librairy omniidl et des flags -lomniORB4 -lomnithread -lomniDynamic4
+all Server:$(OBJECTS)
+	$(CC) $(LDFLAGS) -L$(OMNI_LIB_DIR) $(OBJECTS_PATH) -o Server  $(LIBS)
+	
+# compile le Serveur.cpp 
+	
+serveur.o : managerImpl.o drawMeASheepSK.o
+	$(CC) $(CPPFLAGS) $(INCLUDES) $(SRC)/Serveur.cpp -I$(GEN) -o $(BIN)/Serveur.o
 
 # compile le SK.cc généré
 drawMeASheepSK.o: drawMeASheepSK
-	$(CC) -c $(CPPFLAGS) $(INCLUDES) $(GEN)/drawMeASheepSK.cc -o $(BIN)/drawMeASheepSK.o $(LIBS)
+	$(CC) $(CPPFLAGS) $(INCLUDES) $(GEN)/drawMeASheepSK.cc -o $(BIN)/drawMeASheepSK.o
 
+# compile le managerImpl.cpp
 managerImpl.o : $(INC)/managerImpl.h
-	$(CC) -c $(CPPFLAGS) $(INCLUDES)  $(SRC)/managerImpl.cpp -o $(BIN)/managerImpl.o $(LIBS)
+	$(CC) $(CPPFLAGS) $(INCLUDES)  $(SRC)/managerImpl.cpp -o $(BIN)/managerImpl.o
 
 # compile l'idl et met les fichiers générés dans le dossier generated
 drawMeASheepSK: $(CORBA)/drawMeASheep.idl
-	$(OMNI_HOME)/bin/omniidl -bcxx $(CORBA)/drawMeASheep.idl && mv *.cc *.hh -t $(GEN)
+	$(OMNI_HOME)/bin/omniidl -bcxx  $(CORBA)/drawMeASheep.idl && mv *.cc *.hh -t $(GEN)
 
 clean: 
 	rm $(BIN)/*.o
-	rm main
-	rm $(GEN)/* -f
+	rm $(GEN)/*.hh
+	rm $(GEN)/*.cc
 	rm -fr *.o
 	rm -fr core
 	rm -fr *.hh

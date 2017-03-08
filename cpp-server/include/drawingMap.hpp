@@ -3,8 +3,7 @@
 
 
 #include "../generated/drawMeASheep.hh"
-#include <omniconfig.h>
-#include "../omniORB-4.2.0/include/omniORB4/CORBA.h"
+
 using namespace std;
 
 class DrawingMap : public virtual ::CORBA::Object,

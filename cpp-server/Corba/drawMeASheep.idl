@@ -1,3 +1,5 @@
+module drawMeASheep{
+	module generated{
 
 		module entity{
 			struct Point {
@@ -44,7 +46,8 @@
 		};
 
 		module manager{
-				interface DrawingManager{
+
+			interface DrawingManager{
 				readonly attribute entity::DrawingMap map;
 				any createDrawing( in string name , in entity::PointSet points , in double rayon);
 				boolean add( in any a);
@@ -52,6 +55,8 @@
 				double getAvailableSurface();
 
 			};
-	};
-	
 
+		};
+	};	
+	
+};
