@@ -15,7 +15,7 @@ static const char* _0RL_library_version = omniORB_4_2;
 
 
 void
-entity::Point::operator>>= (cdrStream &_n) const
+drawMeASheep::generated::entity::Point::operator>>= (cdrStream &_n) const
 {
   x >>= _n;
   y >>= _n;
@@ -23,47 +23,47 @@ entity::Point::operator>>= (cdrStream &_n) const
 }
 
 void
-entity::Point::operator<<= (cdrStream &_n)
+drawMeASheep::generated::entity::Point::operator<<= (cdrStream &_n)
 {
   (::CORBA::Double&)x <<= _n;
   (::CORBA::Double&)y <<= _n;
 
 }
 
-entity::Drawing_ptr entity::Drawing_Helper::_nil() {
-  return ::entity::Drawing::_nil();
+drawMeASheep::generated::entity::Drawing_ptr drawMeASheep::generated::entity::Drawing_Helper::_nil() {
+  return ::drawMeASheep::generated::entity::Drawing::_nil();
 }
 
-::CORBA::Boolean entity::Drawing_Helper::is_nil(::entity::Drawing_ptr p) {
+::CORBA::Boolean drawMeASheep::generated::entity::Drawing_Helper::is_nil(::drawMeASheep::generated::entity::Drawing_ptr p) {
   return ::CORBA::is_nil(p);
 
 }
 
-void entity::Drawing_Helper::release(::entity::Drawing_ptr p) {
+void drawMeASheep::generated::entity::Drawing_Helper::release(::drawMeASheep::generated::entity::Drawing_ptr p) {
   ::CORBA::release(p);
 }
 
-void entity::Drawing_Helper::marshalObjRef(::entity::Drawing_ptr obj, cdrStream& s) {
-  ::entity::Drawing::_marshalObjRef(obj, s);
+void drawMeASheep::generated::entity::Drawing_Helper::marshalObjRef(::drawMeASheep::generated::entity::Drawing_ptr obj, cdrStream& s) {
+  ::drawMeASheep::generated::entity::Drawing::_marshalObjRef(obj, s);
 }
 
-entity::Drawing_ptr entity::Drawing_Helper::unmarshalObjRef(cdrStream& s) {
-  return ::entity::Drawing::_unmarshalObjRef(s);
+drawMeASheep::generated::entity::Drawing_ptr drawMeASheep::generated::entity::Drawing_Helper::unmarshalObjRef(cdrStream& s) {
+  return ::drawMeASheep::generated::entity::Drawing::_unmarshalObjRef(s);
 }
 
-void entity::Drawing_Helper::duplicate(::entity::Drawing_ptr obj) {
+void drawMeASheep::generated::entity::Drawing_Helper::duplicate(::drawMeASheep::generated::entity::Drawing_ptr obj) {
   if (obj && !obj->_NP_is_nil())  omni::duplicateObjRef(obj);
 }
 
-entity::Drawing_ptr
-entity::Drawing::_duplicate(::entity::Drawing_ptr obj)
+drawMeASheep::generated::entity::Drawing_ptr
+drawMeASheep::generated::entity::Drawing::_duplicate(::drawMeASheep::generated::entity::Drawing_ptr obj)
 {
   if (obj && !obj->_NP_is_nil())  omni::duplicateObjRef(obj);
   return obj;
 }
 
-entity::Drawing_ptr
-entity::Drawing::_narrow(::CORBA::Object_ptr obj)
+drawMeASheep::generated::entity::Drawing_ptr
+drawMeASheep::generated::entity::Drawing::_narrow(::CORBA::Object_ptr obj)
 {
   if (!obj || obj->_NP_is_nil() || obj->_NP_is_pseudo()) return _nil();
   _ptr_type e = (_ptr_type) obj->_PR_getobj()->_realNarrow(_PD_repoId);
@@ -71,16 +71,16 @@ entity::Drawing::_narrow(::CORBA::Object_ptr obj)
 }
 
 
-entity::Drawing_ptr
-entity::Drawing::_unchecked_narrow(::CORBA::Object_ptr obj)
+drawMeASheep::generated::entity::Drawing_ptr
+drawMeASheep::generated::entity::Drawing::_unchecked_narrow(::CORBA::Object_ptr obj)
 {
   if (!obj || obj->_NP_is_nil() || obj->_NP_is_pseudo()) return _nil();
   _ptr_type e = (_ptr_type) obj->_PR_getobj()->_uncheckedNarrow(_PD_repoId);
   return e ? e : _nil();
 }
 
-entity::Drawing_ptr
-entity::Drawing::_nil()
+drawMeASheep::generated::entity::Drawing_ptr
+drawMeASheep::generated::entity::Drawing::_nil()
 {
 #ifdef OMNI_UNLOADABLE_STUBS
   static _objref_Drawing _the_nil_obj;
@@ -99,16 +99,16 @@ entity::Drawing::_nil()
 #endif
 }
 
-const char* entity::Drawing::_PD_repoId = "IDL:entity/Drawing:1.0";
+const char* drawMeASheep::generated::entity::Drawing::_PD_repoId = "IDL:drawMeASheep/generated/entity/Drawing:1.0";
 
 
-entity::_objref_Drawing::~_objref_Drawing() {
+drawMeASheep::generated::entity::_objref_Drawing::~_objref_Drawing() {
   
 }
 
 
-entity::_objref_Drawing::_objref_Drawing(omniIOR* ior, omniIdentity* id) :
-   omniObjRef(::entity::Drawing::_PD_repoId, ior, id, 1)
+drawMeASheep::generated::entity::_objref_Drawing::_objref_Drawing(omniIOR* ior, omniIdentity* id) :
+   omniObjRef(::drawMeASheep::generated::entity::Drawing::_PD_repoId, ior, id, 1)
    
    
 {
@@ -116,16 +116,16 @@ entity::_objref_Drawing::_objref_Drawing(omniIOR* ior, omniIdentity* id) :
 }
 
 void*
-entity::_objref_Drawing::_ptrToObjRef(const char* id)
+drawMeASheep::generated::entity::_objref_Drawing::_ptrToObjRef(const char* id)
 {
-  if (id == ::entity::Drawing::_PD_repoId)
-    return (::entity::Drawing_ptr) this;
+  if (id == ::drawMeASheep::generated::entity::Drawing::_PD_repoId)
+    return (::drawMeASheep::generated::entity::Drawing_ptr) this;
   
   if (id == ::CORBA::Object::_PD_repoId)
     return (::CORBA::Object_ptr) this;
 
-  if (omni::strMatch(id, ::entity::Drawing::_PD_repoId))
-    return (::entity::Drawing_ptr) this;
+  if (omni::strMatch(id, ::drawMeASheep::generated::entity::Drawing::_PD_repoId))
+    return (::drawMeASheep::generated::entity::Drawing_ptr) this;
   
   if (omni::strMatch(id, ::CORBA::Object::_PD_repoId))
     return (::CORBA::Object_ptr) this;
@@ -135,15 +135,15 @@ entity::_objref_Drawing::_ptrToObjRef(const char* id)
 
 
 //
-// Code for entity::Drawing::getSurface
+// Code for drawMeASheep::generated::entity::Drawing::getSurface
 
 // Proxy call descriptor class. Mangled signature:
 //  _cdouble
-class _0RL_cd_bd4dff5c7277e698_00000000
+class _0RL_cd_458bb15327e71b02_00000000
   : public omniCallDescriptor
 {
 public:
-  inline _0RL_cd_bd4dff5c7277e698_00000000(LocalCallFn lcfn, const char* op_, size_t oplen, _CORBA_Boolean upcall=0)
+  inline _0RL_cd_458bb15327e71b02_00000000(LocalCallFn lcfn, const char* op_, size_t oplen, _CORBA_Boolean upcall=0)
     : omniCallDescriptor(lcfn, op_, oplen, 0, _user_exns, 0, upcall)
   {
     
@@ -159,36 +159,36 @@ public:
   ::CORBA::Double result;
 };
 
-void _0RL_cd_bd4dff5c7277e698_00000000::marshalReturnedValues(cdrStream& _n)
+void _0RL_cd_458bb15327e71b02_00000000::marshalReturnedValues(cdrStream& _n)
 {
   result >>= _n;
 
 }
 
-void _0RL_cd_bd4dff5c7277e698_00000000::unmarshalReturnedValues(cdrStream& _n)
+void _0RL_cd_458bb15327e71b02_00000000::unmarshalReturnedValues(cdrStream& _n)
 {
   (::CORBA::Double&)result <<= _n;
 
 }
 
-const char* const _0RL_cd_bd4dff5c7277e698_00000000::_user_exns[] = {
+const char* const _0RL_cd_458bb15327e71b02_00000000::_user_exns[] = {
   0
 };
 
 // Local call call-back function.
 static void
-_0RL_lcfn_bd4dff5c7277e698_10000000(omniCallDescriptor* cd, omniServant* svnt)
+_0RL_lcfn_458bb15327e71b02_10000000(omniCallDescriptor* cd, omniServant* svnt)
 {
-  _0RL_cd_bd4dff5c7277e698_00000000* tcd = (_0RL_cd_bd4dff5c7277e698_00000000*)cd;
-  entity::_impl_Drawing* impl = (entity::_impl_Drawing*) svnt->_ptrToInterface(entity::Drawing::_PD_repoId);
+  _0RL_cd_458bb15327e71b02_00000000* tcd = (_0RL_cd_458bb15327e71b02_00000000*)cd;
+  drawMeASheep::generated::entity::_impl_Drawing* impl = (drawMeASheep::generated::entity::_impl_Drawing*) svnt->_ptrToInterface(drawMeASheep::generated::entity::Drawing::_PD_repoId);
   tcd->result = impl->getSurface();
 
 
 }
 
-::CORBA::Double entity::_objref_Drawing::getSurface()
+::CORBA::Double drawMeASheep::generated::entity::_objref_Drawing::getSurface()
 {
-  _0RL_cd_bd4dff5c7277e698_00000000 _call_desc(_0RL_lcfn_bd4dff5c7277e698_10000000, "getSurface", 11);
+  _0RL_cd_458bb15327e71b02_00000000 _call_desc(_0RL_lcfn_458bb15327e71b02_10000000, "getSurface", 11);
 
 
   _invoke(_call_desc);
@@ -199,22 +199,22 @@ _0RL_lcfn_bd4dff5c7277e698_10000000(omniCallDescriptor* cd, omniServant* svnt)
 
 
 //
-// Code for entity::Drawing::getPerimeter
+// Code for drawMeASheep::generated::entity::Drawing::getPerimeter
 
 // Local call call-back function.
 static void
-_0RL_lcfn_bd4dff5c7277e698_20000000(omniCallDescriptor* cd, omniServant* svnt)
+_0RL_lcfn_458bb15327e71b02_20000000(omniCallDescriptor* cd, omniServant* svnt)
 {
-  _0RL_cd_bd4dff5c7277e698_00000000* tcd = (_0RL_cd_bd4dff5c7277e698_00000000*)cd;
-  entity::_impl_Drawing* impl = (entity::_impl_Drawing*) svnt->_ptrToInterface(entity::Drawing::_PD_repoId);
+  _0RL_cd_458bb15327e71b02_00000000* tcd = (_0RL_cd_458bb15327e71b02_00000000*)cd;
+  drawMeASheep::generated::entity::_impl_Drawing* impl = (drawMeASheep::generated::entity::_impl_Drawing*) svnt->_ptrToInterface(drawMeASheep::generated::entity::Drawing::_PD_repoId);
   tcd->result = impl->getPerimeter();
 
 
 }
 
-::CORBA::Double entity::_objref_Drawing::getPerimeter()
+::CORBA::Double drawMeASheep::generated::entity::_objref_Drawing::getPerimeter()
 {
-  _0RL_cd_bd4dff5c7277e698_00000000 _call_desc(_0RL_lcfn_bd4dff5c7277e698_20000000, "getPerimeter", 13);
+  _0RL_cd_458bb15327e71b02_00000000 _call_desc(_0RL_lcfn_458bb15327e71b02_20000000, "getPerimeter", 13);
 
 
   _invoke(_call_desc);
@@ -225,15 +225,15 @@ _0RL_lcfn_bd4dff5c7277e698_20000000(omniCallDescriptor* cd, omniServant* svnt)
 
 
 //
-// Code for entity::Drawing::translate
+// Code for drawMeASheep::generated::entity::Drawing::translate
 
 // Proxy call descriptor class. Mangled signature:
 //  void_i_cdouble
-class _0RL_cd_bd4dff5c7277e698_30000000
+class _0RL_cd_458bb15327e71b02_30000000
   : public omniCallDescriptor
 {
 public:
-  inline _0RL_cd_bd4dff5c7277e698_30000000(LocalCallFn lcfn, const char* op_, size_t oplen, _CORBA_Boolean upcall=0)
+  inline _0RL_cd_458bb15327e71b02_30000000(LocalCallFn lcfn, const char* op_, size_t oplen, _CORBA_Boolean upcall=0)
     : omniCallDescriptor(lcfn, op_, oplen, 0, _user_exns, 0, upcall)
   {
     
@@ -249,36 +249,36 @@ public:
   ::CORBA::Double arg_0;
 };
 
-void _0RL_cd_bd4dff5c7277e698_30000000::marshalArguments(cdrStream& _n)
+void _0RL_cd_458bb15327e71b02_30000000::marshalArguments(cdrStream& _n)
 {
   arg_0 >>= _n;
 
 }
 
-void _0RL_cd_bd4dff5c7277e698_30000000::unmarshalArguments(cdrStream& _n)
+void _0RL_cd_458bb15327e71b02_30000000::unmarshalArguments(cdrStream& _n)
 {
   (::CORBA::Double&)arg_0 <<= _n;
 
 }
 
-const char* const _0RL_cd_bd4dff5c7277e698_30000000::_user_exns[] = {
+const char* const _0RL_cd_458bb15327e71b02_30000000::_user_exns[] = {
   0
 };
 
 // Local call call-back function.
 static void
-_0RL_lcfn_bd4dff5c7277e698_40000000(omniCallDescriptor* cd, omniServant* svnt)
+_0RL_lcfn_458bb15327e71b02_40000000(omniCallDescriptor* cd, omniServant* svnt)
 {
-  _0RL_cd_bd4dff5c7277e698_30000000* tcd = (_0RL_cd_bd4dff5c7277e698_30000000*)cd;
-  entity::_impl_Drawing* impl = (entity::_impl_Drawing*) svnt->_ptrToInterface(entity::Drawing::_PD_repoId);
+  _0RL_cd_458bb15327e71b02_30000000* tcd = (_0RL_cd_458bb15327e71b02_30000000*)cd;
+  drawMeASheep::generated::entity::_impl_Drawing* impl = (drawMeASheep::generated::entity::_impl_Drawing*) svnt->_ptrToInterface(drawMeASheep::generated::entity::Drawing::_PD_repoId);
   impl->translate(tcd->arg_0);
 
 
 }
 
-void entity::_objref_Drawing::translate(::CORBA::Double x)
+void drawMeASheep::generated::entity::_objref_Drawing::translate(::CORBA::Double x)
 {
-  _0RL_cd_bd4dff5c7277e698_30000000 _call_desc(_0RL_lcfn_bd4dff5c7277e698_40000000, "translate", 10);
+  _0RL_cd_458bb15327e71b02_30000000 _call_desc(_0RL_lcfn_458bb15327e71b02_40000000, "translate", 10);
   _call_desc.arg_0 = x;
 
   _invoke(_call_desc);
@@ -289,22 +289,22 @@ void entity::_objref_Drawing::translate(::CORBA::Double x)
 
 
 //
-// Code for entity::Drawing::homothetie
+// Code for drawMeASheep::generated::entity::Drawing::homothetie
 
 // Local call call-back function.
 static void
-_0RL_lcfn_bd4dff5c7277e698_50000000(omniCallDescriptor* cd, omniServant* svnt)
+_0RL_lcfn_458bb15327e71b02_50000000(omniCallDescriptor* cd, omniServant* svnt)
 {
-  _0RL_cd_bd4dff5c7277e698_30000000* tcd = (_0RL_cd_bd4dff5c7277e698_30000000*)cd;
-  entity::_impl_Drawing* impl = (entity::_impl_Drawing*) svnt->_ptrToInterface(entity::Drawing::_PD_repoId);
+  _0RL_cd_458bb15327e71b02_30000000* tcd = (_0RL_cd_458bb15327e71b02_30000000*)cd;
+  drawMeASheep::generated::entity::_impl_Drawing* impl = (drawMeASheep::generated::entity::_impl_Drawing*) svnt->_ptrToInterface(drawMeASheep::generated::entity::Drawing::_PD_repoId);
   impl->homothetie(tcd->arg_0);
 
 
 }
 
-void entity::_objref_Drawing::homothetie(::CORBA::Double x)
+void drawMeASheep::generated::entity::_objref_Drawing::homothetie(::CORBA::Double x)
 {
-  _0RL_cd_bd4dff5c7277e698_30000000 _call_desc(_0RL_lcfn_bd4dff5c7277e698_50000000, "homothetie", 11);
+  _0RL_cd_458bb15327e71b02_30000000 _call_desc(_0RL_lcfn_458bb15327e71b02_50000000, "homothetie", 11);
   _call_desc.arg_0 = x;
 
   _invoke(_call_desc);
@@ -315,22 +315,22 @@ void entity::_objref_Drawing::homothetie(::CORBA::Double x)
 
 
 //
-// Code for entity::Drawing::rotate
+// Code for drawMeASheep::generated::entity::Drawing::rotate
 
 // Local call call-back function.
 static void
-_0RL_lcfn_bd4dff5c7277e698_60000000(omniCallDescriptor* cd, omniServant* svnt)
+_0RL_lcfn_458bb15327e71b02_60000000(omniCallDescriptor* cd, omniServant* svnt)
 {
-  _0RL_cd_bd4dff5c7277e698_30000000* tcd = (_0RL_cd_bd4dff5c7277e698_30000000*)cd;
-  entity::_impl_Drawing* impl = (entity::_impl_Drawing*) svnt->_ptrToInterface(entity::Drawing::_PD_repoId);
+  _0RL_cd_458bb15327e71b02_30000000* tcd = (_0RL_cd_458bb15327e71b02_30000000*)cd;
+  drawMeASheep::generated::entity::_impl_Drawing* impl = (drawMeASheep::generated::entity::_impl_Drawing*) svnt->_ptrToInterface(drawMeASheep::generated::entity::Drawing::_PD_repoId);
   impl->rotate(tcd->arg_0);
 
 
 }
 
-void entity::_objref_Drawing::rotate(::CORBA::Double angle)
+void drawMeASheep::generated::entity::_objref_Drawing::rotate(::CORBA::Double angle)
 {
-  _0RL_cd_bd4dff5c7277e698_30000000 _call_desc(_0RL_lcfn_bd4dff5c7277e698_60000000, "rotate", 7);
+  _0RL_cd_458bb15327e71b02_30000000 _call_desc(_0RL_lcfn_458bb15327e71b02_60000000, "rotate", 7);
   _call_desc.arg_0 = angle;
 
   _invoke(_call_desc);
@@ -341,15 +341,15 @@ void entity::_objref_Drawing::rotate(::CORBA::Double angle)
 
 
 //
-// Code for entity::Drawing::centralSymetric
+// Code for drawMeASheep::generated::entity::Drawing::centralSymetric
 
 // Proxy call descriptor class. Mangled signature:
-//  void_i_centity_mPoint
-class _0RL_cd_bd4dff5c7277e698_70000000
+//  void_i_cdrawMeASheep_mgenerated_mentity_mPoint
+class _0RL_cd_458bb15327e71b02_70000000
   : public omniCallDescriptor
 {
 public:
-  inline _0RL_cd_bd4dff5c7277e698_70000000(LocalCallFn lcfn, const char* op_, size_t oplen, _CORBA_Boolean upcall=0)
+  inline _0RL_cd_458bb15327e71b02_70000000(LocalCallFn lcfn, const char* op_, size_t oplen, _CORBA_Boolean upcall=0)
     : omniCallDescriptor(lcfn, op_, oplen, 0, _user_exns, 0, upcall)
   {
     
@@ -362,42 +362,42 @@ public:
   
   static const char* const _user_exns[];
 
-  entity::Point arg_0_;
-  const entity::Point* arg_0;
+  drawMeASheep::generated::entity::Point arg_0_;
+  const drawMeASheep::generated::entity::Point* arg_0;
 };
 
-void _0RL_cd_bd4dff5c7277e698_70000000::marshalArguments(cdrStream& _n)
+void _0RL_cd_458bb15327e71b02_70000000::marshalArguments(cdrStream& _n)
 {
-  (const entity::Point&) *arg_0 >>= _n;
+  (const drawMeASheep::generated::entity::Point&) *arg_0 >>= _n;
 
 }
 
-void _0RL_cd_bd4dff5c7277e698_70000000::unmarshalArguments(cdrStream& _n)
+void _0RL_cd_458bb15327e71b02_70000000::unmarshalArguments(cdrStream& _n)
 {
-  (entity::Point&)arg_0_ <<= _n;
+  (drawMeASheep::generated::entity::Point&)arg_0_ <<= _n;
   arg_0 = &arg_0_;
 
 }
 
-const char* const _0RL_cd_bd4dff5c7277e698_70000000::_user_exns[] = {
+const char* const _0RL_cd_458bb15327e71b02_70000000::_user_exns[] = {
   0
 };
 
 // Local call call-back function.
 static void
-_0RL_lcfn_bd4dff5c7277e698_80000000(omniCallDescriptor* cd, omniServant* svnt)
+_0RL_lcfn_458bb15327e71b02_80000000(omniCallDescriptor* cd, omniServant* svnt)
 {
-  _0RL_cd_bd4dff5c7277e698_70000000* tcd = (_0RL_cd_bd4dff5c7277e698_70000000*)cd;
-  entity::_impl_Drawing* impl = (entity::_impl_Drawing*) svnt->_ptrToInterface(entity::Drawing::_PD_repoId);
+  _0RL_cd_458bb15327e71b02_70000000* tcd = (_0RL_cd_458bb15327e71b02_70000000*)cd;
+  drawMeASheep::generated::entity::_impl_Drawing* impl = (drawMeASheep::generated::entity::_impl_Drawing*) svnt->_ptrToInterface(drawMeASheep::generated::entity::Drawing::_PD_repoId);
   impl->centralSymetric(*tcd->arg_0);
 
 
 }
 
-void entity::_objref_Drawing::centralSymetric(const ::entity::Point& p)
+void drawMeASheep::generated::entity::_objref_Drawing::centralSymetric(const ::drawMeASheep::generated::entity::Point& p)
 {
-  _0RL_cd_bd4dff5c7277e698_70000000 _call_desc(_0RL_lcfn_bd4dff5c7277e698_80000000, "centralSymetric", 16);
-  _call_desc.arg_0 = &(::entity::Point&) p;
+  _0RL_cd_458bb15327e71b02_70000000 _call_desc(_0RL_lcfn_458bb15327e71b02_80000000, "centralSymetric", 16);
+  _call_desc.arg_0 = &(::drawMeASheep::generated::entity::Point&) p;
 
   _invoke(_call_desc);
 
@@ -407,15 +407,15 @@ void entity::_objref_Drawing::centralSymetric(const ::entity::Point& p)
 
 
 //
-// Code for entity::Drawing::axialSymetric
+// Code for drawMeASheep::generated::entity::Drawing::axialSymetric
 
 // Proxy call descriptor class. Mangled signature:
-//  void_i_centity_mPoint_i_centity_mPoint
-class _0RL_cd_bd4dff5c7277e698_90000000
+//  void_i_cdrawMeASheep_mgenerated_mentity_mPoint_i_cdrawMeASheep_mgenerated_mentity_mPoint
+class _0RL_cd_458bb15327e71b02_90000000
   : public omniCallDescriptor
 {
 public:
-  inline _0RL_cd_bd4dff5c7277e698_90000000(LocalCallFn lcfn, const char* op_, size_t oplen, _CORBA_Boolean upcall=0)
+  inline _0RL_cd_458bb15327e71b02_90000000(LocalCallFn lcfn, const char* op_, size_t oplen, _CORBA_Boolean upcall=0)
     : omniCallDescriptor(lcfn, op_, oplen, 0, _user_exns, 0, upcall)
   {
     
@@ -428,48 +428,48 @@ public:
   
   static const char* const _user_exns[];
 
-  entity::Point arg_0_;
-  const entity::Point* arg_0;
-  entity::Point arg_1_;
-  const entity::Point* arg_1;
+  drawMeASheep::generated::entity::Point arg_0_;
+  const drawMeASheep::generated::entity::Point* arg_0;
+  drawMeASheep::generated::entity::Point arg_1_;
+  const drawMeASheep::generated::entity::Point* arg_1;
 };
 
-void _0RL_cd_bd4dff5c7277e698_90000000::marshalArguments(cdrStream& _n)
+void _0RL_cd_458bb15327e71b02_90000000::marshalArguments(cdrStream& _n)
 {
-  (const entity::Point&) *arg_0 >>= _n;
-  (const entity::Point&) *arg_1 >>= _n;
+  (const drawMeASheep::generated::entity::Point&) *arg_0 >>= _n;
+  (const drawMeASheep::generated::entity::Point&) *arg_1 >>= _n;
 
 }
 
-void _0RL_cd_bd4dff5c7277e698_90000000::unmarshalArguments(cdrStream& _n)
+void _0RL_cd_458bb15327e71b02_90000000::unmarshalArguments(cdrStream& _n)
 {
-  (entity::Point&)arg_0_ <<= _n;
+  (drawMeASheep::generated::entity::Point&)arg_0_ <<= _n;
   arg_0 = &arg_0_;
-  (entity::Point&)arg_1_ <<= _n;
+  (drawMeASheep::generated::entity::Point&)arg_1_ <<= _n;
   arg_1 = &arg_1_;
 
 }
 
-const char* const _0RL_cd_bd4dff5c7277e698_90000000::_user_exns[] = {
+const char* const _0RL_cd_458bb15327e71b02_90000000::_user_exns[] = {
   0
 };
 
 // Local call call-back function.
 static void
-_0RL_lcfn_bd4dff5c7277e698_a0000000(omniCallDescriptor* cd, omniServant* svnt)
+_0RL_lcfn_458bb15327e71b02_a0000000(omniCallDescriptor* cd, omniServant* svnt)
 {
-  _0RL_cd_bd4dff5c7277e698_90000000* tcd = (_0RL_cd_bd4dff5c7277e698_90000000*)cd;
-  entity::_impl_Drawing* impl = (entity::_impl_Drawing*) svnt->_ptrToInterface(entity::Drawing::_PD_repoId);
+  _0RL_cd_458bb15327e71b02_90000000* tcd = (_0RL_cd_458bb15327e71b02_90000000*)cd;
+  drawMeASheep::generated::entity::_impl_Drawing* impl = (drawMeASheep::generated::entity::_impl_Drawing*) svnt->_ptrToInterface(drawMeASheep::generated::entity::Drawing::_PD_repoId);
   impl->axialSymetric(*tcd->arg_0, *tcd->arg_1);
 
 
 }
 
-void entity::_objref_Drawing::axialSymetric(const ::entity::Point& p1, const ::entity::Point& p2)
+void drawMeASheep::generated::entity::_objref_Drawing::axialSymetric(const ::drawMeASheep::generated::entity::Point& p1, const ::drawMeASheep::generated::entity::Point& p2)
 {
-  _0RL_cd_bd4dff5c7277e698_90000000 _call_desc(_0RL_lcfn_bd4dff5c7277e698_a0000000, "axialSymetric", 14);
-  _call_desc.arg_0 = &(::entity::Point&) p1;
-  _call_desc.arg_1 = &(::entity::Point&) p2;
+  _0RL_cd_458bb15327e71b02_90000000 _call_desc(_0RL_lcfn_458bb15327e71b02_a0000000, "axialSymetric", 14);
+  _call_desc.arg_0 = &(::drawMeASheep::generated::entity::Point&) p1;
+  _call_desc.arg_1 = &(::drawMeASheep::generated::entity::Point&) p2;
 
   _invoke(_call_desc);
 
@@ -477,38 +477,38 @@ void entity::_objref_Drawing::axialSymetric(const ::entity::Point& p1, const ::e
 
 }
 
-entity::_pof_Drawing::~_pof_Drawing() {}
+drawMeASheep::generated::entity::_pof_Drawing::~_pof_Drawing() {}
 
 
 omniObjRef*
-entity::_pof_Drawing::newObjRef(omniIOR* ior, omniIdentity* id)
+drawMeASheep::generated::entity::_pof_Drawing::newObjRef(omniIOR* ior, omniIdentity* id)
 {
-  return new ::entity::_objref_Drawing(ior, id);
+  return new ::drawMeASheep::generated::entity::_objref_Drawing(ior, id);
 }
 
 
 ::CORBA::Boolean
-entity::_pof_Drawing::is_a(const char* id) const
+drawMeASheep::generated::entity::_pof_Drawing::is_a(const char* id) const
 {
-  if (omni::ptrStrMatch(id, ::entity::Drawing::_PD_repoId))
+  if (omni::ptrStrMatch(id, ::drawMeASheep::generated::entity::Drawing::_PD_repoId))
     return 1;
   
   return 0;
 }
 
-const entity::_pof_Drawing _the_pof_entity_mDrawing;
+const drawMeASheep::generated::entity::_pof_Drawing _the_pof_drawMeASheep_mgenerated_mentity_mDrawing;
 
-entity::_impl_Drawing::~_impl_Drawing() {}
+drawMeASheep::generated::entity::_impl_Drawing::~_impl_Drawing() {}
 
 
 ::CORBA::Boolean
-entity::_impl_Drawing::_dispatch(omniCallHandle& _handle)
+drawMeASheep::generated::entity::_impl_Drawing::_dispatch(omniCallHandle& _handle)
 {
   const char* op = _handle.operation_name();
 
   if (omni::strMatch(op, "getSurface")) {
 
-    _0RL_cd_bd4dff5c7277e698_00000000 _call_desc(_0RL_lcfn_bd4dff5c7277e698_10000000, "getSurface", 11, 1);
+    _0RL_cd_458bb15327e71b02_00000000 _call_desc(_0RL_lcfn_458bb15327e71b02_10000000, "getSurface", 11, 1);
     
     _handle.upcall(this,_call_desc);
     return 1;
@@ -516,7 +516,7 @@ entity::_impl_Drawing::_dispatch(omniCallHandle& _handle)
 
   if (omni::strMatch(op, "getPerimeter")) {
 
-    _0RL_cd_bd4dff5c7277e698_00000000 _call_desc(_0RL_lcfn_bd4dff5c7277e698_20000000, "getPerimeter", 13, 1);
+    _0RL_cd_458bb15327e71b02_00000000 _call_desc(_0RL_lcfn_458bb15327e71b02_20000000, "getPerimeter", 13, 1);
     
     _handle.upcall(this,_call_desc);
     return 1;
@@ -524,7 +524,7 @@ entity::_impl_Drawing::_dispatch(omniCallHandle& _handle)
 
   if (omni::strMatch(op, "translate")) {
 
-    _0RL_cd_bd4dff5c7277e698_30000000 _call_desc(_0RL_lcfn_bd4dff5c7277e698_40000000, "translate", 10, 1);
+    _0RL_cd_458bb15327e71b02_30000000 _call_desc(_0RL_lcfn_458bb15327e71b02_40000000, "translate", 10, 1);
     
     _handle.upcall(this,_call_desc);
     return 1;
@@ -532,7 +532,7 @@ entity::_impl_Drawing::_dispatch(omniCallHandle& _handle)
 
   if (omni::strMatch(op, "homothetie")) {
 
-    _0RL_cd_bd4dff5c7277e698_30000000 _call_desc(_0RL_lcfn_bd4dff5c7277e698_50000000, "homothetie", 11, 1);
+    _0RL_cd_458bb15327e71b02_30000000 _call_desc(_0RL_lcfn_458bb15327e71b02_50000000, "homothetie", 11, 1);
     
     _handle.upcall(this,_call_desc);
     return 1;
@@ -540,7 +540,7 @@ entity::_impl_Drawing::_dispatch(omniCallHandle& _handle)
 
   if (omni::strMatch(op, "rotate")) {
 
-    _0RL_cd_bd4dff5c7277e698_30000000 _call_desc(_0RL_lcfn_bd4dff5c7277e698_60000000, "rotate", 7, 1);
+    _0RL_cd_458bb15327e71b02_30000000 _call_desc(_0RL_lcfn_458bb15327e71b02_60000000, "rotate", 7, 1);
     
     _handle.upcall(this,_call_desc);
     return 1;
@@ -548,7 +548,7 @@ entity::_impl_Drawing::_dispatch(omniCallHandle& _handle)
 
   if (omni::strMatch(op, "centralSymetric")) {
 
-    _0RL_cd_bd4dff5c7277e698_70000000 _call_desc(_0RL_lcfn_bd4dff5c7277e698_80000000, "centralSymetric", 16, 1);
+    _0RL_cd_458bb15327e71b02_70000000 _call_desc(_0RL_lcfn_458bb15327e71b02_80000000, "centralSymetric", 16, 1);
     
     _handle.upcall(this,_call_desc);
     return 1;
@@ -556,7 +556,7 @@ entity::_impl_Drawing::_dispatch(omniCallHandle& _handle)
 
   if (omni::strMatch(op, "axialSymetric")) {
 
-    _0RL_cd_bd4dff5c7277e698_90000000 _call_desc(_0RL_lcfn_bd4dff5c7277e698_a0000000, "axialSymetric", 14, 1);
+    _0RL_cd_458bb15327e71b02_90000000 _call_desc(_0RL_lcfn_458bb15327e71b02_a0000000, "axialSymetric", 14, 1);
     
     _handle.upcall(this,_call_desc);
     return 1;
@@ -567,16 +567,16 @@ entity::_impl_Drawing::_dispatch(omniCallHandle& _handle)
 }
 
 void*
-entity::_impl_Drawing::_ptrToInterface(const char* id)
+drawMeASheep::generated::entity::_impl_Drawing::_ptrToInterface(const char* id)
 {
-  if (id == ::entity::Drawing::_PD_repoId)
-    return (::entity::_impl_Drawing*) this;
+  if (id == ::drawMeASheep::generated::entity::Drawing::_PD_repoId)
+    return (::drawMeASheep::generated::entity::_impl_Drawing*) this;
   
   if (id == ::CORBA::Object::_PD_repoId)
     return (void*) 1;
 
-  if (omni::strMatch(id, ::entity::Drawing::_PD_repoId))
-    return (::entity::_impl_Drawing*) this;
+  if (omni::strMatch(id, ::drawMeASheep::generated::entity::Drawing::_PD_repoId))
+    return (::drawMeASheep::generated::entity::_impl_Drawing*) this;
   
   if (omni::strMatch(id, ::CORBA::Object::_PD_repoId))
     return (void*) 1;
@@ -584,45 +584,45 @@ entity::_impl_Drawing::_ptrToInterface(const char* id)
 }
 
 const char*
-entity::_impl_Drawing::_mostDerivedRepoId()
+drawMeASheep::generated::entity::_impl_Drawing::_mostDerivedRepoId()
 {
-  return ::entity::Drawing::_PD_repoId;
+  return ::drawMeASheep::generated::entity::Drawing::_PD_repoId;
 }
 
-entity::Polygone_ptr entity::Polygone_Helper::_nil() {
-  return ::entity::Polygone::_nil();
+drawMeASheep::generated::entity::Polygone_ptr drawMeASheep::generated::entity::Polygone_Helper::_nil() {
+  return ::drawMeASheep::generated::entity::Polygone::_nil();
 }
 
-::CORBA::Boolean entity::Polygone_Helper::is_nil(::entity::Polygone_ptr p) {
+::CORBA::Boolean drawMeASheep::generated::entity::Polygone_Helper::is_nil(::drawMeASheep::generated::entity::Polygone_ptr p) {
   return ::CORBA::is_nil(p);
 
 }
 
-void entity::Polygone_Helper::release(::entity::Polygone_ptr p) {
+void drawMeASheep::generated::entity::Polygone_Helper::release(::drawMeASheep::generated::entity::Polygone_ptr p) {
   ::CORBA::release(p);
 }
 
-void entity::Polygone_Helper::marshalObjRef(::entity::Polygone_ptr obj, cdrStream& s) {
-  ::entity::Polygone::_marshalObjRef(obj, s);
+void drawMeASheep::generated::entity::Polygone_Helper::marshalObjRef(::drawMeASheep::generated::entity::Polygone_ptr obj, cdrStream& s) {
+  ::drawMeASheep::generated::entity::Polygone::_marshalObjRef(obj, s);
 }
 
-entity::Polygone_ptr entity::Polygone_Helper::unmarshalObjRef(cdrStream& s) {
-  return ::entity::Polygone::_unmarshalObjRef(s);
+drawMeASheep::generated::entity::Polygone_ptr drawMeASheep::generated::entity::Polygone_Helper::unmarshalObjRef(cdrStream& s) {
+  return ::drawMeASheep::generated::entity::Polygone::_unmarshalObjRef(s);
 }
 
-void entity::Polygone_Helper::duplicate(::entity::Polygone_ptr obj) {
+void drawMeASheep::generated::entity::Polygone_Helper::duplicate(::drawMeASheep::generated::entity::Polygone_ptr obj) {
   if (obj && !obj->_NP_is_nil())  omni::duplicateObjRef(obj);
 }
 
-entity::Polygone_ptr
-entity::Polygone::_duplicate(::entity::Polygone_ptr obj)
+drawMeASheep::generated::entity::Polygone_ptr
+drawMeASheep::generated::entity::Polygone::_duplicate(::drawMeASheep::generated::entity::Polygone_ptr obj)
 {
   if (obj && !obj->_NP_is_nil())  omni::duplicateObjRef(obj);
   return obj;
 }
 
-entity::Polygone_ptr
-entity::Polygone::_narrow(::CORBA::Object_ptr obj)
+drawMeASheep::generated::entity::Polygone_ptr
+drawMeASheep::generated::entity::Polygone::_narrow(::CORBA::Object_ptr obj)
 {
   if (!obj || obj->_NP_is_nil() || obj->_NP_is_pseudo()) return _nil();
   _ptr_type e = (_ptr_type) obj->_PR_getobj()->_realNarrow(_PD_repoId);
@@ -630,16 +630,16 @@ entity::Polygone::_narrow(::CORBA::Object_ptr obj)
 }
 
 
-entity::Polygone_ptr
-entity::Polygone::_unchecked_narrow(::CORBA::Object_ptr obj)
+drawMeASheep::generated::entity::Polygone_ptr
+drawMeASheep::generated::entity::Polygone::_unchecked_narrow(::CORBA::Object_ptr obj)
 {
   if (!obj || obj->_NP_is_nil() || obj->_NP_is_pseudo()) return _nil();
   _ptr_type e = (_ptr_type) obj->_PR_getobj()->_uncheckedNarrow(_PD_repoId);
   return e ? e : _nil();
 }
 
-entity::Polygone_ptr
-entity::Polygone::_nil()
+drawMeASheep::generated::entity::Polygone_ptr
+drawMeASheep::generated::entity::Polygone::_nil()
 {
 #ifdef OMNI_UNLOADABLE_STUBS
   static _objref_Polygone _the_nil_obj;
@@ -658,16 +658,16 @@ entity::Polygone::_nil()
 #endif
 }
 
-const char* entity::Polygone::_PD_repoId = "IDL:entity/Polygone:1.0";
+const char* drawMeASheep::generated::entity::Polygone::_PD_repoId = "IDL:drawMeASheep/generated/entity/Polygone:1.0";
 
 
-entity::_objref_Polygone::~_objref_Polygone() {
+drawMeASheep::generated::entity::_objref_Polygone::~_objref_Polygone() {
   
 }
 
 
-entity::_objref_Polygone::_objref_Polygone(omniIOR* ior, omniIdentity* id) :
-   omniObjRef(::entity::Polygone::_PD_repoId, ior, id, 1),
+drawMeASheep::generated::entity::_objref_Polygone::_objref_Polygone(omniIOR* ior, omniIdentity* id) :
+   omniObjRef(::drawMeASheep::generated::entity::Polygone::_PD_repoId, ior, id, 1),
    _objref_Drawing(ior, id)
    
 {
@@ -675,21 +675,21 @@ entity::_objref_Polygone::_objref_Polygone(omniIOR* ior, omniIdentity* id) :
 }
 
 void*
-entity::_objref_Polygone::_ptrToObjRef(const char* id)
+drawMeASheep::generated::entity::_objref_Polygone::_ptrToObjRef(const char* id)
 {
-  if (id == ::entity::Polygone::_PD_repoId)
-    return (::entity::Polygone_ptr) this;
-  if (id == ::entity::Drawing::_PD_repoId)
-    return (::entity::Drawing_ptr) this;
+  if (id == ::drawMeASheep::generated::entity::Polygone::_PD_repoId)
+    return (::drawMeASheep::generated::entity::Polygone_ptr) this;
+  if (id == ::drawMeASheep::generated::entity::Drawing::_PD_repoId)
+    return (::drawMeASheep::generated::entity::Drawing_ptr) this;
 
 
   if (id == ::CORBA::Object::_PD_repoId)
     return (::CORBA::Object_ptr) this;
 
-  if (omni::strMatch(id, ::entity::Polygone::_PD_repoId))
-    return (::entity::Polygone_ptr) this;
-  if (omni::strMatch(id, ::entity::Drawing::_PD_repoId))
-    return (::entity::Drawing_ptr) this;
+  if (omni::strMatch(id, ::drawMeASheep::generated::entity::Polygone::_PD_repoId))
+    return (::drawMeASheep::generated::entity::Polygone_ptr) this;
+  if (omni::strMatch(id, ::drawMeASheep::generated::entity::Drawing::_PD_repoId))
+    return (::drawMeASheep::generated::entity::Drawing_ptr) this;
 
 
   if (omni::strMatch(id, ::CORBA::Object::_PD_repoId))
@@ -700,15 +700,15 @@ entity::_objref_Polygone::_ptrToObjRef(const char* id)
 
 
 //
-// Code for entity::Polygone::_get_points
+// Code for drawMeASheep::generated::entity::Polygone::_get_points
 
 // Proxy call descriptor class. Mangled signature:
-//  _centity_mPointSet
-class _0RL_cd_bd4dff5c7277e698_b0000000
+//  _cdrawMeASheep_mgenerated_mentity_mPointSet
+class _0RL_cd_458bb15327e71b02_b0000000
   : public omniCallDescriptor
 {
 public:
-  inline _0RL_cd_bd4dff5c7277e698_b0000000(LocalCallFn lcfn, const char* op_, size_t oplen, _CORBA_Boolean upcall=0)
+  inline _0RL_cd_458bb15327e71b02_b0000000(LocalCallFn lcfn, const char* op_, size_t oplen, _CORBA_Boolean upcall=0)
     : omniCallDescriptor(lcfn, op_, oplen, 0, _user_exns, 0, upcall)
   {
     
@@ -721,40 +721,40 @@ public:
   
   static const char* const _user_exns[];
 
-  entity::PointSet_var result;
+  drawMeASheep::generated::entity::PointSet_var result;
 };
 
-void _0RL_cd_bd4dff5c7277e698_b0000000::marshalReturnedValues(cdrStream& _n)
+void _0RL_cd_458bb15327e71b02_b0000000::marshalReturnedValues(cdrStream& _n)
 {
-  (const entity::PointSet&) result >>= _n;
+  (const drawMeASheep::generated::entity::PointSet&) result >>= _n;
 
 }
 
-void _0RL_cd_bd4dff5c7277e698_b0000000::unmarshalReturnedValues(cdrStream& _n)
+void _0RL_cd_458bb15327e71b02_b0000000::unmarshalReturnedValues(cdrStream& _n)
 {
-  result = new entity::PointSet;
-  (entity::PointSet&)result <<= _n;
+  result = new drawMeASheep::generated::entity::PointSet;
+  (drawMeASheep::generated::entity::PointSet&)result <<= _n;
 
 }
 
-const char* const _0RL_cd_bd4dff5c7277e698_b0000000::_user_exns[] = {
+const char* const _0RL_cd_458bb15327e71b02_b0000000::_user_exns[] = {
   0
 };
 
 // Local call call-back function.
 static void
-_0RL_lcfn_bd4dff5c7277e698_c0000000(omniCallDescriptor* cd, omniServant* svnt)
+_0RL_lcfn_458bb15327e71b02_c0000000(omniCallDescriptor* cd, omniServant* svnt)
 {
-  _0RL_cd_bd4dff5c7277e698_b0000000* tcd = (_0RL_cd_bd4dff5c7277e698_b0000000*)cd;
-  entity::_impl_Polygone* impl = (entity::_impl_Polygone*) svnt->_ptrToInterface(entity::Polygone::_PD_repoId);
+  _0RL_cd_458bb15327e71b02_b0000000* tcd = (_0RL_cd_458bb15327e71b02_b0000000*)cd;
+  drawMeASheep::generated::entity::_impl_Polygone* impl = (drawMeASheep::generated::entity::_impl_Polygone*) svnt->_ptrToInterface(drawMeASheep::generated::entity::Polygone::_PD_repoId);
   tcd->result = impl->points();
 
 
 }
 
-entity::PointSet* entity::_objref_Polygone::points()
+drawMeASheep::generated::entity::PointSet* drawMeASheep::generated::entity::_objref_Polygone::points()
 {
-  _0RL_cd_bd4dff5c7277e698_b0000000 _call_desc(_0RL_lcfn_bd4dff5c7277e698_c0000000, "_get_points", 12);
+  _0RL_cd_458bb15327e71b02_b0000000 _call_desc(_0RL_lcfn_458bb15327e71b02_c0000000, "_get_points", 12);
 
 
   _invoke(_call_desc);
@@ -763,41 +763,41 @@ entity::PointSet* entity::_objref_Polygone::points()
 
 }
 
-entity::_pof_Polygone::~_pof_Polygone() {}
+drawMeASheep::generated::entity::_pof_Polygone::~_pof_Polygone() {}
 
 
 omniObjRef*
-entity::_pof_Polygone::newObjRef(omniIOR* ior, omniIdentity* id)
+drawMeASheep::generated::entity::_pof_Polygone::newObjRef(omniIOR* ior, omniIdentity* id)
 {
-  return new ::entity::_objref_Polygone(ior, id);
+  return new ::drawMeASheep::generated::entity::_objref_Polygone(ior, id);
 }
 
 
 ::CORBA::Boolean
-entity::_pof_Polygone::is_a(const char* id) const
+drawMeASheep::generated::entity::_pof_Polygone::is_a(const char* id) const
 {
-  if (omni::ptrStrMatch(id, ::entity::Polygone::_PD_repoId))
+  if (omni::ptrStrMatch(id, ::drawMeASheep::generated::entity::Polygone::_PD_repoId))
     return 1;
-  if (omni::ptrStrMatch(id, entity::Drawing::_PD_repoId))
+  if (omni::ptrStrMatch(id, drawMeASheep::generated::entity::Drawing::_PD_repoId))
     return 1;
 
 
   return 0;
 }
 
-const entity::_pof_Polygone _the_pof_entity_mPolygone;
+const drawMeASheep::generated::entity::_pof_Polygone _the_pof_drawMeASheep_mgenerated_mentity_mPolygone;
 
-entity::_impl_Polygone::~_impl_Polygone() {}
+drawMeASheep::generated::entity::_impl_Polygone::~_impl_Polygone() {}
 
 
 ::CORBA::Boolean
-entity::_impl_Polygone::_dispatch(omniCallHandle& _handle)
+drawMeASheep::generated::entity::_impl_Polygone::_dispatch(omniCallHandle& _handle)
 {
   const char* op = _handle.operation_name();
 
   if (omni::strMatch(op, "_get_points")) {
 
-    _0RL_cd_bd4dff5c7277e698_b0000000 _call_desc(_0RL_lcfn_bd4dff5c7277e698_c0000000, "_get_points", 12, 1);
+    _0RL_cd_458bb15327e71b02_b0000000 _call_desc(_0RL_lcfn_458bb15327e71b02_c0000000, "_get_points", 12, 1);
     
     _handle.upcall(this,_call_desc);
     return 1;
@@ -821,21 +821,21 @@ entity::_impl_Polygone::_dispatch(omniCallHandle& _handle)
 }
 
 void*
-entity::_impl_Polygone::_ptrToInterface(const char* id)
+drawMeASheep::generated::entity::_impl_Polygone::_ptrToInterface(const char* id)
 {
-  if (id == ::entity::Polygone::_PD_repoId)
-    return (::entity::_impl_Polygone*) this;
-  if (id == ::entity::Drawing::_PD_repoId)
-    return (::entity::_impl_Drawing*) this;
+  if (id == ::drawMeASheep::generated::entity::Polygone::_PD_repoId)
+    return (::drawMeASheep::generated::entity::_impl_Polygone*) this;
+  if (id == ::drawMeASheep::generated::entity::Drawing::_PD_repoId)
+    return (::drawMeASheep::generated::entity::_impl_Drawing*) this;
 
 
   if (id == ::CORBA::Object::_PD_repoId)
     return (void*) 1;
 
-  if (omni::strMatch(id, ::entity::Polygone::_PD_repoId))
-    return (::entity::_impl_Polygone*) this;
-  if (omni::strMatch(id, ::entity::Drawing::_PD_repoId))
-    return (::entity::_impl_Drawing*) this;
+  if (omni::strMatch(id, ::drawMeASheep::generated::entity::Polygone::_PD_repoId))
+    return (::drawMeASheep::generated::entity::_impl_Polygone*) this;
+  if (omni::strMatch(id, ::drawMeASheep::generated::entity::Drawing::_PD_repoId))
+    return (::drawMeASheep::generated::entity::_impl_Drawing*) this;
 
 
   if (omni::strMatch(id, ::CORBA::Object::_PD_repoId))
@@ -844,45 +844,45 @@ entity::_impl_Polygone::_ptrToInterface(const char* id)
 }
 
 const char*
-entity::_impl_Polygone::_mostDerivedRepoId()
+drawMeASheep::generated::entity::_impl_Polygone::_mostDerivedRepoId()
 {
-  return ::entity::Polygone::_PD_repoId;
+  return ::drawMeASheep::generated::entity::Polygone::_PD_repoId;
 }
 
-entity::Line_ptr entity::Line_Helper::_nil() {
-  return ::entity::Line::_nil();
+drawMeASheep::generated::entity::Line_ptr drawMeASheep::generated::entity::Line_Helper::_nil() {
+  return ::drawMeASheep::generated::entity::Line::_nil();
 }
 
-::CORBA::Boolean entity::Line_Helper::is_nil(::entity::Line_ptr p) {
+::CORBA::Boolean drawMeASheep::generated::entity::Line_Helper::is_nil(::drawMeASheep::generated::entity::Line_ptr p) {
   return ::CORBA::is_nil(p);
 
 }
 
-void entity::Line_Helper::release(::entity::Line_ptr p) {
+void drawMeASheep::generated::entity::Line_Helper::release(::drawMeASheep::generated::entity::Line_ptr p) {
   ::CORBA::release(p);
 }
 
-void entity::Line_Helper::marshalObjRef(::entity::Line_ptr obj, cdrStream& s) {
-  ::entity::Line::_marshalObjRef(obj, s);
+void drawMeASheep::generated::entity::Line_Helper::marshalObjRef(::drawMeASheep::generated::entity::Line_ptr obj, cdrStream& s) {
+  ::drawMeASheep::generated::entity::Line::_marshalObjRef(obj, s);
 }
 
-entity::Line_ptr entity::Line_Helper::unmarshalObjRef(cdrStream& s) {
-  return ::entity::Line::_unmarshalObjRef(s);
+drawMeASheep::generated::entity::Line_ptr drawMeASheep::generated::entity::Line_Helper::unmarshalObjRef(cdrStream& s) {
+  return ::drawMeASheep::generated::entity::Line::_unmarshalObjRef(s);
 }
 
-void entity::Line_Helper::duplicate(::entity::Line_ptr obj) {
+void drawMeASheep::generated::entity::Line_Helper::duplicate(::drawMeASheep::generated::entity::Line_ptr obj) {
   if (obj && !obj->_NP_is_nil())  omni::duplicateObjRef(obj);
 }
 
-entity::Line_ptr
-entity::Line::_duplicate(::entity::Line_ptr obj)
+drawMeASheep::generated::entity::Line_ptr
+drawMeASheep::generated::entity::Line::_duplicate(::drawMeASheep::generated::entity::Line_ptr obj)
 {
   if (obj && !obj->_NP_is_nil())  omni::duplicateObjRef(obj);
   return obj;
 }
 
-entity::Line_ptr
-entity::Line::_narrow(::CORBA::Object_ptr obj)
+drawMeASheep::generated::entity::Line_ptr
+drawMeASheep::generated::entity::Line::_narrow(::CORBA::Object_ptr obj)
 {
   if (!obj || obj->_NP_is_nil() || obj->_NP_is_pseudo()) return _nil();
   _ptr_type e = (_ptr_type) obj->_PR_getobj()->_realNarrow(_PD_repoId);
@@ -890,16 +890,16 @@ entity::Line::_narrow(::CORBA::Object_ptr obj)
 }
 
 
-entity::Line_ptr
-entity::Line::_unchecked_narrow(::CORBA::Object_ptr obj)
+drawMeASheep::generated::entity::Line_ptr
+drawMeASheep::generated::entity::Line::_unchecked_narrow(::CORBA::Object_ptr obj)
 {
   if (!obj || obj->_NP_is_nil() || obj->_NP_is_pseudo()) return _nil();
   _ptr_type e = (_ptr_type) obj->_PR_getobj()->_uncheckedNarrow(_PD_repoId);
   return e ? e : _nil();
 }
 
-entity::Line_ptr
-entity::Line::_nil()
+drawMeASheep::generated::entity::Line_ptr
+drawMeASheep::generated::entity::Line::_nil()
 {
 #ifdef OMNI_UNLOADABLE_STUBS
   static _objref_Line _the_nil_obj;
@@ -918,16 +918,16 @@ entity::Line::_nil()
 #endif
 }
 
-const char* entity::Line::_PD_repoId = "IDL:entity/Line:1.0";
+const char* drawMeASheep::generated::entity::Line::_PD_repoId = "IDL:drawMeASheep/generated/entity/Line:1.0";
 
 
-entity::_objref_Line::~_objref_Line() {
+drawMeASheep::generated::entity::_objref_Line::~_objref_Line() {
   
 }
 
 
-entity::_objref_Line::_objref_Line(omniIOR* ior, omniIdentity* id) :
-   omniObjRef(::entity::Line::_PD_repoId, ior, id, 1),
+drawMeASheep::generated::entity::_objref_Line::_objref_Line(omniIOR* ior, omniIdentity* id) :
+   omniObjRef(::drawMeASheep::generated::entity::Line::_PD_repoId, ior, id, 1),
    _objref_Drawing(ior, id)
    
 {
@@ -935,21 +935,21 @@ entity::_objref_Line::_objref_Line(omniIOR* ior, omniIdentity* id) :
 }
 
 void*
-entity::_objref_Line::_ptrToObjRef(const char* id)
+drawMeASheep::generated::entity::_objref_Line::_ptrToObjRef(const char* id)
 {
-  if (id == ::entity::Line::_PD_repoId)
-    return (::entity::Line_ptr) this;
-  if (id == ::entity::Drawing::_PD_repoId)
-    return (::entity::Drawing_ptr) this;
+  if (id == ::drawMeASheep::generated::entity::Line::_PD_repoId)
+    return (::drawMeASheep::generated::entity::Line_ptr) this;
+  if (id == ::drawMeASheep::generated::entity::Drawing::_PD_repoId)
+    return (::drawMeASheep::generated::entity::Drawing_ptr) this;
 
 
   if (id == ::CORBA::Object::_PD_repoId)
     return (::CORBA::Object_ptr) this;
 
-  if (omni::strMatch(id, ::entity::Line::_PD_repoId))
-    return (::entity::Line_ptr) this;
-  if (omni::strMatch(id, ::entity::Drawing::_PD_repoId))
-    return (::entity::Drawing_ptr) this;
+  if (omni::strMatch(id, ::drawMeASheep::generated::entity::Line::_PD_repoId))
+    return (::drawMeASheep::generated::entity::Line_ptr) this;
+  if (omni::strMatch(id, ::drawMeASheep::generated::entity::Drawing::_PD_repoId))
+    return (::drawMeASheep::generated::entity::Drawing_ptr) this;
 
 
   if (omni::strMatch(id, ::CORBA::Object::_PD_repoId))
@@ -960,15 +960,15 @@ entity::_objref_Line::_ptrToObjRef(const char* id)
 
 
 //
-// Code for entity::Line::_get_a
+// Code for drawMeASheep::generated::entity::Line::_get_a
 
 // Proxy call descriptor class. Mangled signature:
-//  _centity_mPoint
-class _0RL_cd_bd4dff5c7277e698_d0000000
+//  _cdrawMeASheep_mgenerated_mentity_mPoint
+class _0RL_cd_458bb15327e71b02_d0000000
   : public omniCallDescriptor
 {
 public:
-  inline _0RL_cd_bd4dff5c7277e698_d0000000(LocalCallFn lcfn, const char* op_, size_t oplen, _CORBA_Boolean upcall=0)
+  inline _0RL_cd_458bb15327e71b02_d0000000(LocalCallFn lcfn, const char* op_, size_t oplen, _CORBA_Boolean upcall=0)
     : omniCallDescriptor(lcfn, op_, oplen, 0, _user_exns, 0, upcall)
   {
     
@@ -981,39 +981,39 @@ public:
   
   static const char* const _user_exns[];
 
-  entity::Point result;
+  drawMeASheep::generated::entity::Point result;
 };
 
-void _0RL_cd_bd4dff5c7277e698_d0000000::marshalReturnedValues(cdrStream& _n)
+void _0RL_cd_458bb15327e71b02_d0000000::marshalReturnedValues(cdrStream& _n)
 {
-  (const entity::Point&) result >>= _n;
+  (const drawMeASheep::generated::entity::Point&) result >>= _n;
 
 }
 
-void _0RL_cd_bd4dff5c7277e698_d0000000::unmarshalReturnedValues(cdrStream& _n)
+void _0RL_cd_458bb15327e71b02_d0000000::unmarshalReturnedValues(cdrStream& _n)
 {
-  (entity::Point&)result <<= _n;
+  (drawMeASheep::generated::entity::Point&)result <<= _n;
 
 }
 
-const char* const _0RL_cd_bd4dff5c7277e698_d0000000::_user_exns[] = {
+const char* const _0RL_cd_458bb15327e71b02_d0000000::_user_exns[] = {
   0
 };
 
 // Local call call-back function.
 static void
-_0RL_lcfn_bd4dff5c7277e698_e0000000(omniCallDescriptor* cd, omniServant* svnt)
+_0RL_lcfn_458bb15327e71b02_e0000000(omniCallDescriptor* cd, omniServant* svnt)
 {
-  _0RL_cd_bd4dff5c7277e698_d0000000* tcd = (_0RL_cd_bd4dff5c7277e698_d0000000*)cd;
-  entity::_impl_Line* impl = (entity::_impl_Line*) svnt->_ptrToInterface(entity::Line::_PD_repoId);
+  _0RL_cd_458bb15327e71b02_d0000000* tcd = (_0RL_cd_458bb15327e71b02_d0000000*)cd;
+  drawMeASheep::generated::entity::_impl_Line* impl = (drawMeASheep::generated::entity::_impl_Line*) svnt->_ptrToInterface(drawMeASheep::generated::entity::Line::_PD_repoId);
   tcd->result = impl->a();
 
 
 }
 
-entity::Point entity::_objref_Line::a()
+drawMeASheep::generated::entity::Point drawMeASheep::generated::entity::_objref_Line::a()
 {
-  _0RL_cd_bd4dff5c7277e698_d0000000 _call_desc(_0RL_lcfn_bd4dff5c7277e698_e0000000, "_get_a", 7);
+  _0RL_cd_458bb15327e71b02_d0000000 _call_desc(_0RL_lcfn_458bb15327e71b02_e0000000, "_get_a", 7);
 
 
   _invoke(_call_desc);
@@ -1024,22 +1024,22 @@ entity::Point entity::_objref_Line::a()
 
 
 //
-// Code for entity::Line::_get_b
+// Code for drawMeASheep::generated::entity::Line::_get_b
 
 // Local call call-back function.
 static void
-_0RL_lcfn_bd4dff5c7277e698_f0000000(omniCallDescriptor* cd, omniServant* svnt)
+_0RL_lcfn_458bb15327e71b02_f0000000(omniCallDescriptor* cd, omniServant* svnt)
 {
-  _0RL_cd_bd4dff5c7277e698_d0000000* tcd = (_0RL_cd_bd4dff5c7277e698_d0000000*)cd;
-  entity::_impl_Line* impl = (entity::_impl_Line*) svnt->_ptrToInterface(entity::Line::_PD_repoId);
+  _0RL_cd_458bb15327e71b02_d0000000* tcd = (_0RL_cd_458bb15327e71b02_d0000000*)cd;
+  drawMeASheep::generated::entity::_impl_Line* impl = (drawMeASheep::generated::entity::_impl_Line*) svnt->_ptrToInterface(drawMeASheep::generated::entity::Line::_PD_repoId);
   tcd->result = impl->b();
 
 
 }
 
-entity::Point entity::_objref_Line::b()
+drawMeASheep::generated::entity::Point drawMeASheep::generated::entity::_objref_Line::b()
 {
-  _0RL_cd_bd4dff5c7277e698_d0000000 _call_desc(_0RL_lcfn_bd4dff5c7277e698_f0000000, "_get_b", 7);
+  _0RL_cd_458bb15327e71b02_d0000000 _call_desc(_0RL_lcfn_458bb15327e71b02_f0000000, "_get_b", 7);
 
 
   _invoke(_call_desc);
@@ -1048,41 +1048,41 @@ entity::Point entity::_objref_Line::b()
 
 }
 
-entity::_pof_Line::~_pof_Line() {}
+drawMeASheep::generated::entity::_pof_Line::~_pof_Line() {}
 
 
 omniObjRef*
-entity::_pof_Line::newObjRef(omniIOR* ior, omniIdentity* id)
+drawMeASheep::generated::entity::_pof_Line::newObjRef(omniIOR* ior, omniIdentity* id)
 {
-  return new ::entity::_objref_Line(ior, id);
+  return new ::drawMeASheep::generated::entity::_objref_Line(ior, id);
 }
 
 
 ::CORBA::Boolean
-entity::_pof_Line::is_a(const char* id) const
+drawMeASheep::generated::entity::_pof_Line::is_a(const char* id) const
 {
-  if (omni::ptrStrMatch(id, ::entity::Line::_PD_repoId))
+  if (omni::ptrStrMatch(id, ::drawMeASheep::generated::entity::Line::_PD_repoId))
     return 1;
-  if (omni::ptrStrMatch(id, entity::Drawing::_PD_repoId))
+  if (omni::ptrStrMatch(id, drawMeASheep::generated::entity::Drawing::_PD_repoId))
     return 1;
 
 
   return 0;
 }
 
-const entity::_pof_Line _the_pof_entity_mLine;
+const drawMeASheep::generated::entity::_pof_Line _the_pof_drawMeASheep_mgenerated_mentity_mLine;
 
-entity::_impl_Line::~_impl_Line() {}
+drawMeASheep::generated::entity::_impl_Line::~_impl_Line() {}
 
 
 ::CORBA::Boolean
-entity::_impl_Line::_dispatch(omniCallHandle& _handle)
+drawMeASheep::generated::entity::_impl_Line::_dispatch(omniCallHandle& _handle)
 {
   const char* op = _handle.operation_name();
 
   if (omni::strMatch(op, "_get_a")) {
 
-    _0RL_cd_bd4dff5c7277e698_d0000000 _call_desc(_0RL_lcfn_bd4dff5c7277e698_e0000000, "_get_a", 7, 1);
+    _0RL_cd_458bb15327e71b02_d0000000 _call_desc(_0RL_lcfn_458bb15327e71b02_e0000000, "_get_a", 7, 1);
     
     _handle.upcall(this,_call_desc);
     return 1;
@@ -1090,7 +1090,7 @@ entity::_impl_Line::_dispatch(omniCallHandle& _handle)
 
   if (omni::strMatch(op, "_get_b")) {
 
-    _0RL_cd_bd4dff5c7277e698_d0000000 _call_desc(_0RL_lcfn_bd4dff5c7277e698_f0000000, "_get_b", 7, 1);
+    _0RL_cd_458bb15327e71b02_d0000000 _call_desc(_0RL_lcfn_458bb15327e71b02_f0000000, "_get_b", 7, 1);
     
     _handle.upcall(this,_call_desc);
     return 1;
@@ -1114,21 +1114,21 @@ entity::_impl_Line::_dispatch(omniCallHandle& _handle)
 }
 
 void*
-entity::_impl_Line::_ptrToInterface(const char* id)
+drawMeASheep::generated::entity::_impl_Line::_ptrToInterface(const char* id)
 {
-  if (id == ::entity::Line::_PD_repoId)
-    return (::entity::_impl_Line*) this;
-  if (id == ::entity::Drawing::_PD_repoId)
-    return (::entity::_impl_Drawing*) this;
+  if (id == ::drawMeASheep::generated::entity::Line::_PD_repoId)
+    return (::drawMeASheep::generated::entity::_impl_Line*) this;
+  if (id == ::drawMeASheep::generated::entity::Drawing::_PD_repoId)
+    return (::drawMeASheep::generated::entity::_impl_Drawing*) this;
 
 
   if (id == ::CORBA::Object::_PD_repoId)
     return (void*) 1;
 
-  if (omni::strMatch(id, ::entity::Line::_PD_repoId))
-    return (::entity::_impl_Line*) this;
-  if (omni::strMatch(id, ::entity::Drawing::_PD_repoId))
-    return (::entity::_impl_Drawing*) this;
+  if (omni::strMatch(id, ::drawMeASheep::generated::entity::Line::_PD_repoId))
+    return (::drawMeASheep::generated::entity::_impl_Line*) this;
+  if (omni::strMatch(id, ::drawMeASheep::generated::entity::Drawing::_PD_repoId))
+    return (::drawMeASheep::generated::entity::_impl_Drawing*) this;
 
 
   if (omni::strMatch(id, ::CORBA::Object::_PD_repoId))
@@ -1137,45 +1137,45 @@ entity::_impl_Line::_ptrToInterface(const char* id)
 }
 
 const char*
-entity::_impl_Line::_mostDerivedRepoId()
+drawMeASheep::generated::entity::_impl_Line::_mostDerivedRepoId()
 {
-  return ::entity::Line::_PD_repoId;
+  return ::drawMeASheep::generated::entity::Line::_PD_repoId;
 }
 
-entity::Cercle_ptr entity::Cercle_Helper::_nil() {
-  return ::entity::Cercle::_nil();
+drawMeASheep::generated::entity::Cercle_ptr drawMeASheep::generated::entity::Cercle_Helper::_nil() {
+  return ::drawMeASheep::generated::entity::Cercle::_nil();
 }
 
-::CORBA::Boolean entity::Cercle_Helper::is_nil(::entity::Cercle_ptr p) {
+::CORBA::Boolean drawMeASheep::generated::entity::Cercle_Helper::is_nil(::drawMeASheep::generated::entity::Cercle_ptr p) {
   return ::CORBA::is_nil(p);
 
 }
 
-void entity::Cercle_Helper::release(::entity::Cercle_ptr p) {
+void drawMeASheep::generated::entity::Cercle_Helper::release(::drawMeASheep::generated::entity::Cercle_ptr p) {
   ::CORBA::release(p);
 }
 
-void entity::Cercle_Helper::marshalObjRef(::entity::Cercle_ptr obj, cdrStream& s) {
-  ::entity::Cercle::_marshalObjRef(obj, s);
+void drawMeASheep::generated::entity::Cercle_Helper::marshalObjRef(::drawMeASheep::generated::entity::Cercle_ptr obj, cdrStream& s) {
+  ::drawMeASheep::generated::entity::Cercle::_marshalObjRef(obj, s);
 }
 
-entity::Cercle_ptr entity::Cercle_Helper::unmarshalObjRef(cdrStream& s) {
-  return ::entity::Cercle::_unmarshalObjRef(s);
+drawMeASheep::generated::entity::Cercle_ptr drawMeASheep::generated::entity::Cercle_Helper::unmarshalObjRef(cdrStream& s) {
+  return ::drawMeASheep::generated::entity::Cercle::_unmarshalObjRef(s);
 }
 
-void entity::Cercle_Helper::duplicate(::entity::Cercle_ptr obj) {
+void drawMeASheep::generated::entity::Cercle_Helper::duplicate(::drawMeASheep::generated::entity::Cercle_ptr obj) {
   if (obj && !obj->_NP_is_nil())  omni::duplicateObjRef(obj);
 }
 
-entity::Cercle_ptr
-entity::Cercle::_duplicate(::entity::Cercle_ptr obj)
+drawMeASheep::generated::entity::Cercle_ptr
+drawMeASheep::generated::entity::Cercle::_duplicate(::drawMeASheep::generated::entity::Cercle_ptr obj)
 {
   if (obj && !obj->_NP_is_nil())  omni::duplicateObjRef(obj);
   return obj;
 }
 
-entity::Cercle_ptr
-entity::Cercle::_narrow(::CORBA::Object_ptr obj)
+drawMeASheep::generated::entity::Cercle_ptr
+drawMeASheep::generated::entity::Cercle::_narrow(::CORBA::Object_ptr obj)
 {
   if (!obj || obj->_NP_is_nil() || obj->_NP_is_pseudo()) return _nil();
   _ptr_type e = (_ptr_type) obj->_PR_getobj()->_realNarrow(_PD_repoId);
@@ -1183,16 +1183,16 @@ entity::Cercle::_narrow(::CORBA::Object_ptr obj)
 }
 
 
-entity::Cercle_ptr
-entity::Cercle::_unchecked_narrow(::CORBA::Object_ptr obj)
+drawMeASheep::generated::entity::Cercle_ptr
+drawMeASheep::generated::entity::Cercle::_unchecked_narrow(::CORBA::Object_ptr obj)
 {
   if (!obj || obj->_NP_is_nil() || obj->_NP_is_pseudo()) return _nil();
   _ptr_type e = (_ptr_type) obj->_PR_getobj()->_uncheckedNarrow(_PD_repoId);
   return e ? e : _nil();
 }
 
-entity::Cercle_ptr
-entity::Cercle::_nil()
+drawMeASheep::generated::entity::Cercle_ptr
+drawMeASheep::generated::entity::Cercle::_nil()
 {
 #ifdef OMNI_UNLOADABLE_STUBS
   static _objref_Cercle _the_nil_obj;
@@ -1211,16 +1211,16 @@ entity::Cercle::_nil()
 #endif
 }
 
-const char* entity::Cercle::_PD_repoId = "IDL:entity/Cercle:1.0";
+const char* drawMeASheep::generated::entity::Cercle::_PD_repoId = "IDL:drawMeASheep/generated/entity/Cercle:1.0";
 
 
-entity::_objref_Cercle::~_objref_Cercle() {
+drawMeASheep::generated::entity::_objref_Cercle::~_objref_Cercle() {
   
 }
 
 
-entity::_objref_Cercle::_objref_Cercle(omniIOR* ior, omniIdentity* id) :
-   omniObjRef(::entity::Cercle::_PD_repoId, ior, id, 1),
+drawMeASheep::generated::entity::_objref_Cercle::_objref_Cercle(omniIOR* ior, omniIdentity* id) :
+   omniObjRef(::drawMeASheep::generated::entity::Cercle::_PD_repoId, ior, id, 1),
    _objref_Drawing(ior, id)
    
 {
@@ -1228,21 +1228,21 @@ entity::_objref_Cercle::_objref_Cercle(omniIOR* ior, omniIdentity* id) :
 }
 
 void*
-entity::_objref_Cercle::_ptrToObjRef(const char* id)
+drawMeASheep::generated::entity::_objref_Cercle::_ptrToObjRef(const char* id)
 {
-  if (id == ::entity::Cercle::_PD_repoId)
-    return (::entity::Cercle_ptr) this;
-  if (id == ::entity::Drawing::_PD_repoId)
-    return (::entity::Drawing_ptr) this;
+  if (id == ::drawMeASheep::generated::entity::Cercle::_PD_repoId)
+    return (::drawMeASheep::generated::entity::Cercle_ptr) this;
+  if (id == ::drawMeASheep::generated::entity::Drawing::_PD_repoId)
+    return (::drawMeASheep::generated::entity::Drawing_ptr) this;
 
 
   if (id == ::CORBA::Object::_PD_repoId)
     return (::CORBA::Object_ptr) this;
 
-  if (omni::strMatch(id, ::entity::Cercle::_PD_repoId))
-    return (::entity::Cercle_ptr) this;
-  if (omni::strMatch(id, ::entity::Drawing::_PD_repoId))
-    return (::entity::Drawing_ptr) this;
+  if (omni::strMatch(id, ::drawMeASheep::generated::entity::Cercle::_PD_repoId))
+    return (::drawMeASheep::generated::entity::Cercle_ptr) this;
+  if (omni::strMatch(id, ::drawMeASheep::generated::entity::Drawing::_PD_repoId))
+    return (::drawMeASheep::generated::entity::Drawing_ptr) this;
 
 
   if (omni::strMatch(id, ::CORBA::Object::_PD_repoId))
@@ -1253,22 +1253,22 @@ entity::_objref_Cercle::_ptrToObjRef(const char* id)
 
 
 //
-// Code for entity::Cercle::_get_rayon
+// Code for drawMeASheep::generated::entity::Cercle::_get_rayon
 
 // Local call call-back function.
 static void
-_0RL_lcfn_bd4dff5c7277e698_01000000(omniCallDescriptor* cd, omniServant* svnt)
+_0RL_lcfn_458bb15327e71b02_01000000(omniCallDescriptor* cd, omniServant* svnt)
 {
-  _0RL_cd_bd4dff5c7277e698_00000000* tcd = (_0RL_cd_bd4dff5c7277e698_00000000*)cd;
-  entity::_impl_Cercle* impl = (entity::_impl_Cercle*) svnt->_ptrToInterface(entity::Cercle::_PD_repoId);
+  _0RL_cd_458bb15327e71b02_00000000* tcd = (_0RL_cd_458bb15327e71b02_00000000*)cd;
+  drawMeASheep::generated::entity::_impl_Cercle* impl = (drawMeASheep::generated::entity::_impl_Cercle*) svnt->_ptrToInterface(drawMeASheep::generated::entity::Cercle::_PD_repoId);
   tcd->result = impl->rayon();
 
 
 }
 
-::CORBA::Double entity::_objref_Cercle::rayon()
+::CORBA::Double drawMeASheep::generated::entity::_objref_Cercle::rayon()
 {
-  _0RL_cd_bd4dff5c7277e698_00000000 _call_desc(_0RL_lcfn_bd4dff5c7277e698_01000000, "_get_rayon", 11);
+  _0RL_cd_458bb15327e71b02_00000000 _call_desc(_0RL_lcfn_458bb15327e71b02_01000000, "_get_rayon", 11);
 
 
   _invoke(_call_desc);
@@ -1277,41 +1277,41 @@ _0RL_lcfn_bd4dff5c7277e698_01000000(omniCallDescriptor* cd, omniServant* svnt)
 
 }
 
-entity::_pof_Cercle::~_pof_Cercle() {}
+drawMeASheep::generated::entity::_pof_Cercle::~_pof_Cercle() {}
 
 
 omniObjRef*
-entity::_pof_Cercle::newObjRef(omniIOR* ior, omniIdentity* id)
+drawMeASheep::generated::entity::_pof_Cercle::newObjRef(omniIOR* ior, omniIdentity* id)
 {
-  return new ::entity::_objref_Cercle(ior, id);
+  return new ::drawMeASheep::generated::entity::_objref_Cercle(ior, id);
 }
 
 
 ::CORBA::Boolean
-entity::_pof_Cercle::is_a(const char* id) const
+drawMeASheep::generated::entity::_pof_Cercle::is_a(const char* id) const
 {
-  if (omni::ptrStrMatch(id, ::entity::Cercle::_PD_repoId))
+  if (omni::ptrStrMatch(id, ::drawMeASheep::generated::entity::Cercle::_PD_repoId))
     return 1;
-  if (omni::ptrStrMatch(id, entity::Drawing::_PD_repoId))
+  if (omni::ptrStrMatch(id, drawMeASheep::generated::entity::Drawing::_PD_repoId))
     return 1;
 
 
   return 0;
 }
 
-const entity::_pof_Cercle _the_pof_entity_mCercle;
+const drawMeASheep::generated::entity::_pof_Cercle _the_pof_drawMeASheep_mgenerated_mentity_mCercle;
 
-entity::_impl_Cercle::~_impl_Cercle() {}
+drawMeASheep::generated::entity::_impl_Cercle::~_impl_Cercle() {}
 
 
 ::CORBA::Boolean
-entity::_impl_Cercle::_dispatch(omniCallHandle& _handle)
+drawMeASheep::generated::entity::_impl_Cercle::_dispatch(omniCallHandle& _handle)
 {
   const char* op = _handle.operation_name();
 
   if (omni::strMatch(op, "_get_rayon")) {
 
-    _0RL_cd_bd4dff5c7277e698_00000000 _call_desc(_0RL_lcfn_bd4dff5c7277e698_01000000, "_get_rayon", 11, 1);
+    _0RL_cd_458bb15327e71b02_00000000 _call_desc(_0RL_lcfn_458bb15327e71b02_01000000, "_get_rayon", 11, 1);
     
     _handle.upcall(this,_call_desc);
     return 1;
@@ -1335,21 +1335,21 @@ entity::_impl_Cercle::_dispatch(omniCallHandle& _handle)
 }
 
 void*
-entity::_impl_Cercle::_ptrToInterface(const char* id)
+drawMeASheep::generated::entity::_impl_Cercle::_ptrToInterface(const char* id)
 {
-  if (id == ::entity::Cercle::_PD_repoId)
-    return (::entity::_impl_Cercle*) this;
-  if (id == ::entity::Drawing::_PD_repoId)
-    return (::entity::_impl_Drawing*) this;
+  if (id == ::drawMeASheep::generated::entity::Cercle::_PD_repoId)
+    return (::drawMeASheep::generated::entity::_impl_Cercle*) this;
+  if (id == ::drawMeASheep::generated::entity::Drawing::_PD_repoId)
+    return (::drawMeASheep::generated::entity::_impl_Drawing*) this;
 
 
   if (id == ::CORBA::Object::_PD_repoId)
     return (void*) 1;
 
-  if (omni::strMatch(id, ::entity::Cercle::_PD_repoId))
-    return (::entity::_impl_Cercle*) this;
-  if (omni::strMatch(id, ::entity::Drawing::_PD_repoId))
-    return (::entity::_impl_Drawing*) this;
+  if (omni::strMatch(id, ::drawMeASheep::generated::entity::Cercle::_PD_repoId))
+    return (::drawMeASheep::generated::entity::_impl_Cercle*) this;
+  if (omni::strMatch(id, ::drawMeASheep::generated::entity::Drawing::_PD_repoId))
+    return (::drawMeASheep::generated::entity::_impl_Drawing*) this;
 
 
   if (omni::strMatch(id, ::CORBA::Object::_PD_repoId))
@@ -1358,45 +1358,45 @@ entity::_impl_Cercle::_ptrToInterface(const char* id)
 }
 
 const char*
-entity::_impl_Cercle::_mostDerivedRepoId()
+drawMeASheep::generated::entity::_impl_Cercle::_mostDerivedRepoId()
 {
-  return ::entity::Cercle::_PD_repoId;
+  return ::drawMeASheep::generated::entity::Cercle::_PD_repoId;
 }
 
-entity::Ellipse_ptr entity::Ellipse_Helper::_nil() {
-  return ::entity::Ellipse::_nil();
+drawMeASheep::generated::entity::Ellipse_ptr drawMeASheep::generated::entity::Ellipse_Helper::_nil() {
+  return ::drawMeASheep::generated::entity::Ellipse::_nil();
 }
 
-::CORBA::Boolean entity::Ellipse_Helper::is_nil(::entity::Ellipse_ptr p) {
+::CORBA::Boolean drawMeASheep::generated::entity::Ellipse_Helper::is_nil(::drawMeASheep::generated::entity::Ellipse_ptr p) {
   return ::CORBA::is_nil(p);
 
 }
 
-void entity::Ellipse_Helper::release(::entity::Ellipse_ptr p) {
+void drawMeASheep::generated::entity::Ellipse_Helper::release(::drawMeASheep::generated::entity::Ellipse_ptr p) {
   ::CORBA::release(p);
 }
 
-void entity::Ellipse_Helper::marshalObjRef(::entity::Ellipse_ptr obj, cdrStream& s) {
-  ::entity::Ellipse::_marshalObjRef(obj, s);
+void drawMeASheep::generated::entity::Ellipse_Helper::marshalObjRef(::drawMeASheep::generated::entity::Ellipse_ptr obj, cdrStream& s) {
+  ::drawMeASheep::generated::entity::Ellipse::_marshalObjRef(obj, s);
 }
 
-entity::Ellipse_ptr entity::Ellipse_Helper::unmarshalObjRef(cdrStream& s) {
-  return ::entity::Ellipse::_unmarshalObjRef(s);
+drawMeASheep::generated::entity::Ellipse_ptr drawMeASheep::generated::entity::Ellipse_Helper::unmarshalObjRef(cdrStream& s) {
+  return ::drawMeASheep::generated::entity::Ellipse::_unmarshalObjRef(s);
 }
 
-void entity::Ellipse_Helper::duplicate(::entity::Ellipse_ptr obj) {
+void drawMeASheep::generated::entity::Ellipse_Helper::duplicate(::drawMeASheep::generated::entity::Ellipse_ptr obj) {
   if (obj && !obj->_NP_is_nil())  omni::duplicateObjRef(obj);
 }
 
-entity::Ellipse_ptr
-entity::Ellipse::_duplicate(::entity::Ellipse_ptr obj)
+drawMeASheep::generated::entity::Ellipse_ptr
+drawMeASheep::generated::entity::Ellipse::_duplicate(::drawMeASheep::generated::entity::Ellipse_ptr obj)
 {
   if (obj && !obj->_NP_is_nil())  omni::duplicateObjRef(obj);
   return obj;
 }
 
-entity::Ellipse_ptr
-entity::Ellipse::_narrow(::CORBA::Object_ptr obj)
+drawMeASheep::generated::entity::Ellipse_ptr
+drawMeASheep::generated::entity::Ellipse::_narrow(::CORBA::Object_ptr obj)
 {
   if (!obj || obj->_NP_is_nil() || obj->_NP_is_pseudo()) return _nil();
   _ptr_type e = (_ptr_type) obj->_PR_getobj()->_realNarrow(_PD_repoId);
@@ -1404,16 +1404,16 @@ entity::Ellipse::_narrow(::CORBA::Object_ptr obj)
 }
 
 
-entity::Ellipse_ptr
-entity::Ellipse::_unchecked_narrow(::CORBA::Object_ptr obj)
+drawMeASheep::generated::entity::Ellipse_ptr
+drawMeASheep::generated::entity::Ellipse::_unchecked_narrow(::CORBA::Object_ptr obj)
 {
   if (!obj || obj->_NP_is_nil() || obj->_NP_is_pseudo()) return _nil();
   _ptr_type e = (_ptr_type) obj->_PR_getobj()->_uncheckedNarrow(_PD_repoId);
   return e ? e : _nil();
 }
 
-entity::Ellipse_ptr
-entity::Ellipse::_nil()
+drawMeASheep::generated::entity::Ellipse_ptr
+drawMeASheep::generated::entity::Ellipse::_nil()
 {
 #ifdef OMNI_UNLOADABLE_STUBS
   static _objref_Ellipse _the_nil_obj;
@@ -1432,16 +1432,16 @@ entity::Ellipse::_nil()
 #endif
 }
 
-const char* entity::Ellipse::_PD_repoId = "IDL:entity/Ellipse:1.0";
+const char* drawMeASheep::generated::entity::Ellipse::_PD_repoId = "IDL:drawMeASheep/generated/entity/Ellipse:1.0";
 
 
-entity::_objref_Ellipse::~_objref_Ellipse() {
+drawMeASheep::generated::entity::_objref_Ellipse::~_objref_Ellipse() {
   
 }
 
 
-entity::_objref_Ellipse::_objref_Ellipse(omniIOR* ior, omniIdentity* id) :
-   omniObjRef(::entity::Ellipse::_PD_repoId, ior, id, 1),
+drawMeASheep::generated::entity::_objref_Ellipse::_objref_Ellipse(omniIOR* ior, omniIdentity* id) :
+   omniObjRef(::drawMeASheep::generated::entity::Ellipse::_PD_repoId, ior, id, 1),
    _objref_Drawing(ior, id)
    
 {
@@ -1449,21 +1449,21 @@ entity::_objref_Ellipse::_objref_Ellipse(omniIOR* ior, omniIdentity* id) :
 }
 
 void*
-entity::_objref_Ellipse::_ptrToObjRef(const char* id)
+drawMeASheep::generated::entity::_objref_Ellipse::_ptrToObjRef(const char* id)
 {
-  if (id == ::entity::Ellipse::_PD_repoId)
-    return (::entity::Ellipse_ptr) this;
-  if (id == ::entity::Drawing::_PD_repoId)
-    return (::entity::Drawing_ptr) this;
+  if (id == ::drawMeASheep::generated::entity::Ellipse::_PD_repoId)
+    return (::drawMeASheep::generated::entity::Ellipse_ptr) this;
+  if (id == ::drawMeASheep::generated::entity::Drawing::_PD_repoId)
+    return (::drawMeASheep::generated::entity::Drawing_ptr) this;
 
 
   if (id == ::CORBA::Object::_PD_repoId)
     return (::CORBA::Object_ptr) this;
 
-  if (omni::strMatch(id, ::entity::Ellipse::_PD_repoId))
-    return (::entity::Ellipse_ptr) this;
-  if (omni::strMatch(id, ::entity::Drawing::_PD_repoId))
-    return (::entity::Drawing_ptr) this;
+  if (omni::strMatch(id, ::drawMeASheep::generated::entity::Ellipse::_PD_repoId))
+    return (::drawMeASheep::generated::entity::Ellipse_ptr) this;
+  if (omni::strMatch(id, ::drawMeASheep::generated::entity::Drawing::_PD_repoId))
+    return (::drawMeASheep::generated::entity::Drawing_ptr) this;
 
 
   if (omni::strMatch(id, ::CORBA::Object::_PD_repoId))
@@ -1474,22 +1474,22 @@ entity::_objref_Ellipse::_ptrToObjRef(const char* id)
 
 
 //
-// Code for entity::Ellipse::_get_points
+// Code for drawMeASheep::generated::entity::Ellipse::_get_points
 
 // Local call call-back function.
 static void
-_0RL_lcfn_bd4dff5c7277e698_11000000(omniCallDescriptor* cd, omniServant* svnt)
+_0RL_lcfn_458bb15327e71b02_11000000(omniCallDescriptor* cd, omniServant* svnt)
 {
-  _0RL_cd_bd4dff5c7277e698_b0000000* tcd = (_0RL_cd_bd4dff5c7277e698_b0000000*)cd;
-  entity::_impl_Ellipse* impl = (entity::_impl_Ellipse*) svnt->_ptrToInterface(entity::Ellipse::_PD_repoId);
+  _0RL_cd_458bb15327e71b02_b0000000* tcd = (_0RL_cd_458bb15327e71b02_b0000000*)cd;
+  drawMeASheep::generated::entity::_impl_Ellipse* impl = (drawMeASheep::generated::entity::_impl_Ellipse*) svnt->_ptrToInterface(drawMeASheep::generated::entity::Ellipse::_PD_repoId);
   tcd->result = impl->points();
 
 
 }
 
-entity::PointSet* entity::_objref_Ellipse::points()
+drawMeASheep::generated::entity::PointSet* drawMeASheep::generated::entity::_objref_Ellipse::points()
 {
-  _0RL_cd_bd4dff5c7277e698_b0000000 _call_desc(_0RL_lcfn_bd4dff5c7277e698_11000000, "_get_points", 12);
+  _0RL_cd_458bb15327e71b02_b0000000 _call_desc(_0RL_lcfn_458bb15327e71b02_11000000, "_get_points", 12);
 
 
   _invoke(_call_desc);
@@ -1498,41 +1498,41 @@ entity::PointSet* entity::_objref_Ellipse::points()
 
 }
 
-entity::_pof_Ellipse::~_pof_Ellipse() {}
+drawMeASheep::generated::entity::_pof_Ellipse::~_pof_Ellipse() {}
 
 
 omniObjRef*
-entity::_pof_Ellipse::newObjRef(omniIOR* ior, omniIdentity* id)
+drawMeASheep::generated::entity::_pof_Ellipse::newObjRef(omniIOR* ior, omniIdentity* id)
 {
-  return new ::entity::_objref_Ellipse(ior, id);
+  return new ::drawMeASheep::generated::entity::_objref_Ellipse(ior, id);
 }
 
 
 ::CORBA::Boolean
-entity::_pof_Ellipse::is_a(const char* id) const
+drawMeASheep::generated::entity::_pof_Ellipse::is_a(const char* id) const
 {
-  if (omni::ptrStrMatch(id, ::entity::Ellipse::_PD_repoId))
+  if (omni::ptrStrMatch(id, ::drawMeASheep::generated::entity::Ellipse::_PD_repoId))
     return 1;
-  if (omni::ptrStrMatch(id, entity::Drawing::_PD_repoId))
+  if (omni::ptrStrMatch(id, drawMeASheep::generated::entity::Drawing::_PD_repoId))
     return 1;
 
 
   return 0;
 }
 
-const entity::_pof_Ellipse _the_pof_entity_mEllipse;
+const drawMeASheep::generated::entity::_pof_Ellipse _the_pof_drawMeASheep_mgenerated_mentity_mEllipse;
 
-entity::_impl_Ellipse::~_impl_Ellipse() {}
+drawMeASheep::generated::entity::_impl_Ellipse::~_impl_Ellipse() {}
 
 
 ::CORBA::Boolean
-entity::_impl_Ellipse::_dispatch(omniCallHandle& _handle)
+drawMeASheep::generated::entity::_impl_Ellipse::_dispatch(omniCallHandle& _handle)
 {
   const char* op = _handle.operation_name();
 
   if (omni::strMatch(op, "_get_points")) {
 
-    _0RL_cd_bd4dff5c7277e698_b0000000 _call_desc(_0RL_lcfn_bd4dff5c7277e698_11000000, "_get_points", 12, 1);
+    _0RL_cd_458bb15327e71b02_b0000000 _call_desc(_0RL_lcfn_458bb15327e71b02_11000000, "_get_points", 12, 1);
     
     _handle.upcall(this,_call_desc);
     return 1;
@@ -1556,21 +1556,21 @@ entity::_impl_Ellipse::_dispatch(omniCallHandle& _handle)
 }
 
 void*
-entity::_impl_Ellipse::_ptrToInterface(const char* id)
+drawMeASheep::generated::entity::_impl_Ellipse::_ptrToInterface(const char* id)
 {
-  if (id == ::entity::Ellipse::_PD_repoId)
-    return (::entity::_impl_Ellipse*) this;
-  if (id == ::entity::Drawing::_PD_repoId)
-    return (::entity::_impl_Drawing*) this;
+  if (id == ::drawMeASheep::generated::entity::Ellipse::_PD_repoId)
+    return (::drawMeASheep::generated::entity::_impl_Ellipse*) this;
+  if (id == ::drawMeASheep::generated::entity::Drawing::_PD_repoId)
+    return (::drawMeASheep::generated::entity::_impl_Drawing*) this;
 
 
   if (id == ::CORBA::Object::_PD_repoId)
     return (void*) 1;
 
-  if (omni::strMatch(id, ::entity::Ellipse::_PD_repoId))
-    return (::entity::_impl_Ellipse*) this;
-  if (omni::strMatch(id, ::entity::Drawing::_PD_repoId))
-    return (::entity::_impl_Drawing*) this;
+  if (omni::strMatch(id, ::drawMeASheep::generated::entity::Ellipse::_PD_repoId))
+    return (::drawMeASheep::generated::entity::_impl_Ellipse*) this;
+  if (omni::strMatch(id, ::drawMeASheep::generated::entity::Drawing::_PD_repoId))
+    return (::drawMeASheep::generated::entity::_impl_Drawing*) this;
 
 
   if (omni::strMatch(id, ::CORBA::Object::_PD_repoId))
@@ -1579,45 +1579,45 @@ entity::_impl_Ellipse::_ptrToInterface(const char* id)
 }
 
 const char*
-entity::_impl_Ellipse::_mostDerivedRepoId()
+drawMeASheep::generated::entity::_impl_Ellipse::_mostDerivedRepoId()
 {
-  return ::entity::Ellipse::_PD_repoId;
+  return ::drawMeASheep::generated::entity::Ellipse::_PD_repoId;
 }
 
-entity::DrawingGroup_ptr entity::DrawingGroup_Helper::_nil() {
-  return ::entity::DrawingGroup::_nil();
+drawMeASheep::generated::entity::DrawingGroup_ptr drawMeASheep::generated::entity::DrawingGroup_Helper::_nil() {
+  return ::drawMeASheep::generated::entity::DrawingGroup::_nil();
 }
 
-::CORBA::Boolean entity::DrawingGroup_Helper::is_nil(::entity::DrawingGroup_ptr p) {
+::CORBA::Boolean drawMeASheep::generated::entity::DrawingGroup_Helper::is_nil(::drawMeASheep::generated::entity::DrawingGroup_ptr p) {
   return ::CORBA::is_nil(p);
 
 }
 
-void entity::DrawingGroup_Helper::release(::entity::DrawingGroup_ptr p) {
+void drawMeASheep::generated::entity::DrawingGroup_Helper::release(::drawMeASheep::generated::entity::DrawingGroup_ptr p) {
   ::CORBA::release(p);
 }
 
-void entity::DrawingGroup_Helper::marshalObjRef(::entity::DrawingGroup_ptr obj, cdrStream& s) {
-  ::entity::DrawingGroup::_marshalObjRef(obj, s);
+void drawMeASheep::generated::entity::DrawingGroup_Helper::marshalObjRef(::drawMeASheep::generated::entity::DrawingGroup_ptr obj, cdrStream& s) {
+  ::drawMeASheep::generated::entity::DrawingGroup::_marshalObjRef(obj, s);
 }
 
-entity::DrawingGroup_ptr entity::DrawingGroup_Helper::unmarshalObjRef(cdrStream& s) {
-  return ::entity::DrawingGroup::_unmarshalObjRef(s);
+drawMeASheep::generated::entity::DrawingGroup_ptr drawMeASheep::generated::entity::DrawingGroup_Helper::unmarshalObjRef(cdrStream& s) {
+  return ::drawMeASheep::generated::entity::DrawingGroup::_unmarshalObjRef(s);
 }
 
-void entity::DrawingGroup_Helper::duplicate(::entity::DrawingGroup_ptr obj) {
+void drawMeASheep::generated::entity::DrawingGroup_Helper::duplicate(::drawMeASheep::generated::entity::DrawingGroup_ptr obj) {
   if (obj && !obj->_NP_is_nil())  omni::duplicateObjRef(obj);
 }
 
-entity::DrawingGroup_ptr
-entity::DrawingGroup::_duplicate(::entity::DrawingGroup_ptr obj)
+drawMeASheep::generated::entity::DrawingGroup_ptr
+drawMeASheep::generated::entity::DrawingGroup::_duplicate(::drawMeASheep::generated::entity::DrawingGroup_ptr obj)
 {
   if (obj && !obj->_NP_is_nil())  omni::duplicateObjRef(obj);
   return obj;
 }
 
-entity::DrawingGroup_ptr
-entity::DrawingGroup::_narrow(::CORBA::Object_ptr obj)
+drawMeASheep::generated::entity::DrawingGroup_ptr
+drawMeASheep::generated::entity::DrawingGroup::_narrow(::CORBA::Object_ptr obj)
 {
   if (!obj || obj->_NP_is_nil() || obj->_NP_is_pseudo()) return _nil();
   _ptr_type e = (_ptr_type) obj->_PR_getobj()->_realNarrow(_PD_repoId);
@@ -1625,16 +1625,16 @@ entity::DrawingGroup::_narrow(::CORBA::Object_ptr obj)
 }
 
 
-entity::DrawingGroup_ptr
-entity::DrawingGroup::_unchecked_narrow(::CORBA::Object_ptr obj)
+drawMeASheep::generated::entity::DrawingGroup_ptr
+drawMeASheep::generated::entity::DrawingGroup::_unchecked_narrow(::CORBA::Object_ptr obj)
 {
   if (!obj || obj->_NP_is_nil() || obj->_NP_is_pseudo()) return _nil();
   _ptr_type e = (_ptr_type) obj->_PR_getobj()->_uncheckedNarrow(_PD_repoId);
   return e ? e : _nil();
 }
 
-entity::DrawingGroup_ptr
-entity::DrawingGroup::_nil()
+drawMeASheep::generated::entity::DrawingGroup_ptr
+drawMeASheep::generated::entity::DrawingGroup::_nil()
 {
 #ifdef OMNI_UNLOADABLE_STUBS
   static _objref_DrawingGroup _the_nil_obj;
@@ -1653,16 +1653,16 @@ entity::DrawingGroup::_nil()
 #endif
 }
 
-const char* entity::DrawingGroup::_PD_repoId = "IDL:entity/DrawingGroup:1.0";
+const char* drawMeASheep::generated::entity::DrawingGroup::_PD_repoId = "IDL:drawMeASheep/generated/entity/DrawingGroup:1.0";
 
 
-entity::_objref_DrawingGroup::~_objref_DrawingGroup() {
+drawMeASheep::generated::entity::_objref_DrawingGroup::~_objref_DrawingGroup() {
   
 }
 
 
-entity::_objref_DrawingGroup::_objref_DrawingGroup(omniIOR* ior, omniIdentity* id) :
-   omniObjRef(::entity::DrawingGroup::_PD_repoId, ior, id, 1),
+drawMeASheep::generated::entity::_objref_DrawingGroup::_objref_DrawingGroup(omniIOR* ior, omniIdentity* id) :
+   omniObjRef(::drawMeASheep::generated::entity::DrawingGroup::_PD_repoId, ior, id, 1),
    _objref_Drawing(ior, id)
    
 {
@@ -1670,21 +1670,21 @@ entity::_objref_DrawingGroup::_objref_DrawingGroup(omniIOR* ior, omniIdentity* i
 }
 
 void*
-entity::_objref_DrawingGroup::_ptrToObjRef(const char* id)
+drawMeASheep::generated::entity::_objref_DrawingGroup::_ptrToObjRef(const char* id)
 {
-  if (id == ::entity::DrawingGroup::_PD_repoId)
-    return (::entity::DrawingGroup_ptr) this;
-  if (id == ::entity::Drawing::_PD_repoId)
-    return (::entity::Drawing_ptr) this;
+  if (id == ::drawMeASheep::generated::entity::DrawingGroup::_PD_repoId)
+    return (::drawMeASheep::generated::entity::DrawingGroup_ptr) this;
+  if (id == ::drawMeASheep::generated::entity::Drawing::_PD_repoId)
+    return (::drawMeASheep::generated::entity::Drawing_ptr) this;
 
 
   if (id == ::CORBA::Object::_PD_repoId)
     return (::CORBA::Object_ptr) this;
 
-  if (omni::strMatch(id, ::entity::DrawingGroup::_PD_repoId))
-    return (::entity::DrawingGroup_ptr) this;
-  if (omni::strMatch(id, ::entity::Drawing::_PD_repoId))
-    return (::entity::Drawing_ptr) this;
+  if (omni::strMatch(id, ::drawMeASheep::generated::entity::DrawingGroup::_PD_repoId))
+    return (::drawMeASheep::generated::entity::DrawingGroup_ptr) this;
+  if (omni::strMatch(id, ::drawMeASheep::generated::entity::Drawing::_PD_repoId))
+    return (::drawMeASheep::generated::entity::Drawing_ptr) this;
 
 
   if (omni::strMatch(id, ::CORBA::Object::_PD_repoId))
@@ -1695,15 +1695,15 @@ entity::_objref_DrawingGroup::_ptrToObjRef(const char* id)
 
 
 //
-// Code for entity::DrawingGroup::_get_Drawings
+// Code for drawMeASheep::generated::entity::DrawingGroup::_get_Drawings
 
 // Proxy call descriptor class. Mangled signature:
-//  _centity_mDrawingSet
-class _0RL_cd_bd4dff5c7277e698_21000000
+//  _cdrawMeASheep_mgenerated_mentity_mDrawingSet
+class _0RL_cd_458bb15327e71b02_21000000
   : public omniCallDescriptor
 {
 public:
-  inline _0RL_cd_bd4dff5c7277e698_21000000(LocalCallFn lcfn, const char* op_, size_t oplen, _CORBA_Boolean upcall=0)
+  inline _0RL_cd_458bb15327e71b02_21000000(LocalCallFn lcfn, const char* op_, size_t oplen, _CORBA_Boolean upcall=0)
     : omniCallDescriptor(lcfn, op_, oplen, 0, _user_exns, 0, upcall)
   {
     
@@ -1716,40 +1716,40 @@ public:
   
   static const char* const _user_exns[];
 
-  entity::DrawingSet_var result;
+  drawMeASheep::generated::entity::DrawingSet_var result;
 };
 
-void _0RL_cd_bd4dff5c7277e698_21000000::marshalReturnedValues(cdrStream& _n)
+void _0RL_cd_458bb15327e71b02_21000000::marshalReturnedValues(cdrStream& _n)
 {
-  (const entity::DrawingSet&) result >>= _n;
+  (const drawMeASheep::generated::entity::DrawingSet&) result >>= _n;
 
 }
 
-void _0RL_cd_bd4dff5c7277e698_21000000::unmarshalReturnedValues(cdrStream& _n)
+void _0RL_cd_458bb15327e71b02_21000000::unmarshalReturnedValues(cdrStream& _n)
 {
-  result = new entity::DrawingSet;
-  (entity::DrawingSet&)result <<= _n;
+  result = new drawMeASheep::generated::entity::DrawingSet;
+  (drawMeASheep::generated::entity::DrawingSet&)result <<= _n;
 
 }
 
-const char* const _0RL_cd_bd4dff5c7277e698_21000000::_user_exns[] = {
+const char* const _0RL_cd_458bb15327e71b02_21000000::_user_exns[] = {
   0
 };
 
 // Local call call-back function.
 static void
-_0RL_lcfn_bd4dff5c7277e698_31000000(omniCallDescriptor* cd, omniServant* svnt)
+_0RL_lcfn_458bb15327e71b02_31000000(omniCallDescriptor* cd, omniServant* svnt)
 {
-  _0RL_cd_bd4dff5c7277e698_21000000* tcd = (_0RL_cd_bd4dff5c7277e698_21000000*)cd;
-  entity::_impl_DrawingGroup* impl = (entity::_impl_DrawingGroup*) svnt->_ptrToInterface(entity::DrawingGroup::_PD_repoId);
+  _0RL_cd_458bb15327e71b02_21000000* tcd = (_0RL_cd_458bb15327e71b02_21000000*)cd;
+  drawMeASheep::generated::entity::_impl_DrawingGroup* impl = (drawMeASheep::generated::entity::_impl_DrawingGroup*) svnt->_ptrToInterface(drawMeASheep::generated::entity::DrawingGroup::_PD_repoId);
   tcd->result = impl->Drawings();
 
 
 }
 
-entity::DrawingSet* entity::_objref_DrawingGroup::Drawings()
+drawMeASheep::generated::entity::DrawingSet* drawMeASheep::generated::entity::_objref_DrawingGroup::Drawings()
 {
-  _0RL_cd_bd4dff5c7277e698_21000000 _call_desc(_0RL_lcfn_bd4dff5c7277e698_31000000, "_get_Drawings", 14);
+  _0RL_cd_458bb15327e71b02_21000000 _call_desc(_0RL_lcfn_458bb15327e71b02_31000000, "_get_Drawings", 14);
 
 
   _invoke(_call_desc);
@@ -1758,41 +1758,41 @@ entity::DrawingSet* entity::_objref_DrawingGroup::Drawings()
 
 }
 
-entity::_pof_DrawingGroup::~_pof_DrawingGroup() {}
+drawMeASheep::generated::entity::_pof_DrawingGroup::~_pof_DrawingGroup() {}
 
 
 omniObjRef*
-entity::_pof_DrawingGroup::newObjRef(omniIOR* ior, omniIdentity* id)
+drawMeASheep::generated::entity::_pof_DrawingGroup::newObjRef(omniIOR* ior, omniIdentity* id)
 {
-  return new ::entity::_objref_DrawingGroup(ior, id);
+  return new ::drawMeASheep::generated::entity::_objref_DrawingGroup(ior, id);
 }
 
 
 ::CORBA::Boolean
-entity::_pof_DrawingGroup::is_a(const char* id) const
+drawMeASheep::generated::entity::_pof_DrawingGroup::is_a(const char* id) const
 {
-  if (omni::ptrStrMatch(id, ::entity::DrawingGroup::_PD_repoId))
+  if (omni::ptrStrMatch(id, ::drawMeASheep::generated::entity::DrawingGroup::_PD_repoId))
     return 1;
-  if (omni::ptrStrMatch(id, entity::Drawing::_PD_repoId))
+  if (omni::ptrStrMatch(id, drawMeASheep::generated::entity::Drawing::_PD_repoId))
     return 1;
 
 
   return 0;
 }
 
-const entity::_pof_DrawingGroup _the_pof_entity_mDrawingGroup;
+const drawMeASheep::generated::entity::_pof_DrawingGroup _the_pof_drawMeASheep_mgenerated_mentity_mDrawingGroup;
 
-entity::_impl_DrawingGroup::~_impl_DrawingGroup() {}
+drawMeASheep::generated::entity::_impl_DrawingGroup::~_impl_DrawingGroup() {}
 
 
 ::CORBA::Boolean
-entity::_impl_DrawingGroup::_dispatch(omniCallHandle& _handle)
+drawMeASheep::generated::entity::_impl_DrawingGroup::_dispatch(omniCallHandle& _handle)
 {
   const char* op = _handle.operation_name();
 
   if (omni::strMatch(op, "_get_Drawings")) {
 
-    _0RL_cd_bd4dff5c7277e698_21000000 _call_desc(_0RL_lcfn_bd4dff5c7277e698_31000000, "_get_Drawings", 14, 1);
+    _0RL_cd_458bb15327e71b02_21000000 _call_desc(_0RL_lcfn_458bb15327e71b02_31000000, "_get_Drawings", 14, 1);
     
     _handle.upcall(this,_call_desc);
     return 1;
@@ -1816,21 +1816,21 @@ entity::_impl_DrawingGroup::_dispatch(omniCallHandle& _handle)
 }
 
 void*
-entity::_impl_DrawingGroup::_ptrToInterface(const char* id)
+drawMeASheep::generated::entity::_impl_DrawingGroup::_ptrToInterface(const char* id)
 {
-  if (id == ::entity::DrawingGroup::_PD_repoId)
-    return (::entity::_impl_DrawingGroup*) this;
-  if (id == ::entity::Drawing::_PD_repoId)
-    return (::entity::_impl_Drawing*) this;
+  if (id == ::drawMeASheep::generated::entity::DrawingGroup::_PD_repoId)
+    return (::drawMeASheep::generated::entity::_impl_DrawingGroup*) this;
+  if (id == ::drawMeASheep::generated::entity::Drawing::_PD_repoId)
+    return (::drawMeASheep::generated::entity::_impl_Drawing*) this;
 
 
   if (id == ::CORBA::Object::_PD_repoId)
     return (void*) 1;
 
-  if (omni::strMatch(id, ::entity::DrawingGroup::_PD_repoId))
-    return (::entity::_impl_DrawingGroup*) this;
-  if (omni::strMatch(id, ::entity::Drawing::_PD_repoId))
-    return (::entity::_impl_Drawing*) this;
+  if (omni::strMatch(id, ::drawMeASheep::generated::entity::DrawingGroup::_PD_repoId))
+    return (::drawMeASheep::generated::entity::_impl_DrawingGroup*) this;
+  if (omni::strMatch(id, ::drawMeASheep::generated::entity::Drawing::_PD_repoId))
+    return (::drawMeASheep::generated::entity::_impl_Drawing*) this;
 
 
   if (omni::strMatch(id, ::CORBA::Object::_PD_repoId))
@@ -1839,45 +1839,45 @@ entity::_impl_DrawingGroup::_ptrToInterface(const char* id)
 }
 
 const char*
-entity::_impl_DrawingGroup::_mostDerivedRepoId()
+drawMeASheep::generated::entity::_impl_DrawingGroup::_mostDerivedRepoId()
 {
-  return ::entity::DrawingGroup::_PD_repoId;
+  return ::drawMeASheep::generated::entity::DrawingGroup::_PD_repoId;
 }
 
-manager::DrawingManager_ptr manager::DrawingManager_Helper::_nil() {
-  return ::manager::DrawingManager::_nil();
+drawMeASheep::generated::manager::DrawingManager_ptr drawMeASheep::generated::manager::DrawingManager_Helper::_nil() {
+  return ::drawMeASheep::generated::manager::DrawingManager::_nil();
 }
 
-::CORBA::Boolean manager::DrawingManager_Helper::is_nil(::manager::DrawingManager_ptr p) {
+::CORBA::Boolean drawMeASheep::generated::manager::DrawingManager_Helper::is_nil(::drawMeASheep::generated::manager::DrawingManager_ptr p) {
   return ::CORBA::is_nil(p);
 
 }
 
-void manager::DrawingManager_Helper::release(::manager::DrawingManager_ptr p) {
+void drawMeASheep::generated::manager::DrawingManager_Helper::release(::drawMeASheep::generated::manager::DrawingManager_ptr p) {
   ::CORBA::release(p);
 }
 
-void manager::DrawingManager_Helper::marshalObjRef(::manager::DrawingManager_ptr obj, cdrStream& s) {
-  ::manager::DrawingManager::_marshalObjRef(obj, s);
+void drawMeASheep::generated::manager::DrawingManager_Helper::marshalObjRef(::drawMeASheep::generated::manager::DrawingManager_ptr obj, cdrStream& s) {
+  ::drawMeASheep::generated::manager::DrawingManager::_marshalObjRef(obj, s);
 }
 
-manager::DrawingManager_ptr manager::DrawingManager_Helper::unmarshalObjRef(cdrStream& s) {
-  return ::manager::DrawingManager::_unmarshalObjRef(s);
+drawMeASheep::generated::manager::DrawingManager_ptr drawMeASheep::generated::manager::DrawingManager_Helper::unmarshalObjRef(cdrStream& s) {
+  return ::drawMeASheep::generated::manager::DrawingManager::_unmarshalObjRef(s);
 }
 
-void manager::DrawingManager_Helper::duplicate(::manager::DrawingManager_ptr obj) {
+void drawMeASheep::generated::manager::DrawingManager_Helper::duplicate(::drawMeASheep::generated::manager::DrawingManager_ptr obj) {
   if (obj && !obj->_NP_is_nil())  omni::duplicateObjRef(obj);
 }
 
-manager::DrawingManager_ptr
-manager::DrawingManager::_duplicate(::manager::DrawingManager_ptr obj)
+drawMeASheep::generated::manager::DrawingManager_ptr
+drawMeASheep::generated::manager::DrawingManager::_duplicate(::drawMeASheep::generated::manager::DrawingManager_ptr obj)
 {
   if (obj && !obj->_NP_is_nil())  omni::duplicateObjRef(obj);
   return obj;
 }
 
-manager::DrawingManager_ptr
-manager::DrawingManager::_narrow(::CORBA::Object_ptr obj)
+drawMeASheep::generated::manager::DrawingManager_ptr
+drawMeASheep::generated::manager::DrawingManager::_narrow(::CORBA::Object_ptr obj)
 {
   if (!obj || obj->_NP_is_nil() || obj->_NP_is_pseudo()) return _nil();
   _ptr_type e = (_ptr_type) obj->_PR_getobj()->_realNarrow(_PD_repoId);
@@ -1885,16 +1885,16 @@ manager::DrawingManager::_narrow(::CORBA::Object_ptr obj)
 }
 
 
-manager::DrawingManager_ptr
-manager::DrawingManager::_unchecked_narrow(::CORBA::Object_ptr obj)
+drawMeASheep::generated::manager::DrawingManager_ptr
+drawMeASheep::generated::manager::DrawingManager::_unchecked_narrow(::CORBA::Object_ptr obj)
 {
   if (!obj || obj->_NP_is_nil() || obj->_NP_is_pseudo()) return _nil();
   _ptr_type e = (_ptr_type) obj->_PR_getobj()->_uncheckedNarrow(_PD_repoId);
   return e ? e : _nil();
 }
 
-manager::DrawingManager_ptr
-manager::DrawingManager::_nil()
+drawMeASheep::generated::manager::DrawingManager_ptr
+drawMeASheep::generated::manager::DrawingManager::_nil()
 {
 #ifdef OMNI_UNLOADABLE_STUBS
   static _objref_DrawingManager _the_nil_obj;
@@ -1913,16 +1913,16 @@ manager::DrawingManager::_nil()
 #endif
 }
 
-const char* manager::DrawingManager::_PD_repoId = "IDL:manager/DrawingManager:1.0";
+const char* drawMeASheep::generated::manager::DrawingManager::_PD_repoId = "IDL:drawMeASheep/generated/manager/DrawingManager:1.0";
 
 
-manager::_objref_DrawingManager::~_objref_DrawingManager() {
+drawMeASheep::generated::manager::_objref_DrawingManager::~_objref_DrawingManager() {
   
 }
 
 
-manager::_objref_DrawingManager::_objref_DrawingManager(omniIOR* ior, omniIdentity* id) :
-   omniObjRef(::manager::DrawingManager::_PD_repoId, ior, id, 1)
+drawMeASheep::generated::manager::_objref_DrawingManager::_objref_DrawingManager(omniIOR* ior, omniIdentity* id) :
+   omniObjRef(::drawMeASheep::generated::manager::DrawingManager::_PD_repoId, ior, id, 1)
    
    
 {
@@ -1930,16 +1930,16 @@ manager::_objref_DrawingManager::_objref_DrawingManager(omniIOR* ior, omniIdenti
 }
 
 void*
-manager::_objref_DrawingManager::_ptrToObjRef(const char* id)
+drawMeASheep::generated::manager::_objref_DrawingManager::_ptrToObjRef(const char* id)
 {
-  if (id == ::manager::DrawingManager::_PD_repoId)
-    return (::manager::DrawingManager_ptr) this;
+  if (id == ::drawMeASheep::generated::manager::DrawingManager::_PD_repoId)
+    return (::drawMeASheep::generated::manager::DrawingManager_ptr) this;
   
   if (id == ::CORBA::Object::_PD_repoId)
     return (::CORBA::Object_ptr) this;
 
-  if (omni::strMatch(id, ::manager::DrawingManager::_PD_repoId))
-    return (::manager::DrawingManager_ptr) this;
+  if (omni::strMatch(id, ::drawMeASheep::generated::manager::DrawingManager::_PD_repoId))
+    return (::drawMeASheep::generated::manager::DrawingManager_ptr) this;
   
   if (omni::strMatch(id, ::CORBA::Object::_PD_repoId))
     return (::CORBA::Object_ptr) this;
@@ -1949,15 +1949,15 @@ manager::_objref_DrawingManager::_ptrToObjRef(const char* id)
 
 
 //
-// Code for manager::DrawingManager::_get_map
+// Code for drawMeASheep::generated::manager::DrawingManager::_get_map
 
 // Proxy call descriptor class. Mangled signature:
-//  _centity_mDrawingMap
-class _0RL_cd_bd4dff5c7277e698_41000000
+//  _cdrawMeASheep_mgenerated_mentity_mDrawingMap
+class _0RL_cd_458bb15327e71b02_41000000
   : public omniCallDescriptor
 {
 public:
-  inline _0RL_cd_bd4dff5c7277e698_41000000(LocalCallFn lcfn, const char* op_, size_t oplen, _CORBA_Boolean upcall=0)
+  inline _0RL_cd_458bb15327e71b02_41000000(LocalCallFn lcfn, const char* op_, size_t oplen, _CORBA_Boolean upcall=0)
     : omniCallDescriptor(lcfn, op_, oplen, 0, _user_exns, 0, upcall)
   {
     
@@ -1970,40 +1970,40 @@ public:
   
   static const char* const _user_exns[];
 
-  entity::DrawingMap_var result;
+  drawMeASheep::generated::entity::DrawingMap_var result;
 };
 
-void _0RL_cd_bd4dff5c7277e698_41000000::marshalReturnedValues(cdrStream& _n)
+void _0RL_cd_458bb15327e71b02_41000000::marshalReturnedValues(cdrStream& _n)
 {
-  (const entity::DrawingMap&) result >>= _n;
+  (const drawMeASheep::generated::entity::DrawingMap&) result >>= _n;
 
 }
 
-void _0RL_cd_bd4dff5c7277e698_41000000::unmarshalReturnedValues(cdrStream& _n)
+void _0RL_cd_458bb15327e71b02_41000000::unmarshalReturnedValues(cdrStream& _n)
 {
-  result = new entity::DrawingMap;
-  (entity::DrawingMap&)result <<= _n;
+  result = new drawMeASheep::generated::entity::DrawingMap;
+  (drawMeASheep::generated::entity::DrawingMap&)result <<= _n;
 
 }
 
-const char* const _0RL_cd_bd4dff5c7277e698_41000000::_user_exns[] = {
+const char* const _0RL_cd_458bb15327e71b02_41000000::_user_exns[] = {
   0
 };
 
 // Local call call-back function.
 static void
-_0RL_lcfn_bd4dff5c7277e698_51000000(omniCallDescriptor* cd, omniServant* svnt)
+_0RL_lcfn_458bb15327e71b02_51000000(omniCallDescriptor* cd, omniServant* svnt)
 {
-  _0RL_cd_bd4dff5c7277e698_41000000* tcd = (_0RL_cd_bd4dff5c7277e698_41000000*)cd;
-  manager::_impl_DrawingManager* impl = (manager::_impl_DrawingManager*) svnt->_ptrToInterface(manager::DrawingManager::_PD_repoId);
+  _0RL_cd_458bb15327e71b02_41000000* tcd = (_0RL_cd_458bb15327e71b02_41000000*)cd;
+  drawMeASheep::generated::manager::_impl_DrawingManager* impl = (drawMeASheep::generated::manager::_impl_DrawingManager*) svnt->_ptrToInterface(drawMeASheep::generated::manager::DrawingManager::_PD_repoId);
   tcd->result = impl->map();
 
 
 }
 
-entity::DrawingMap* manager::_objref_DrawingManager::map()
+drawMeASheep::generated::entity::DrawingMap* drawMeASheep::generated::manager::_objref_DrawingManager::map()
 {
-  _0RL_cd_bd4dff5c7277e698_41000000 _call_desc(_0RL_lcfn_bd4dff5c7277e698_51000000, "_get_map", 9);
+  _0RL_cd_458bb15327e71b02_41000000 _call_desc(_0RL_lcfn_458bb15327e71b02_51000000, "_get_map", 9);
 
 
   _invoke(_call_desc);
@@ -2014,15 +2014,15 @@ entity::DrawingMap* manager::_objref_DrawingManager::map()
 
 
 //
-// Code for manager::DrawingManager::createDrawing
+// Code for drawMeASheep::generated::manager::DrawingManager::createDrawing
 
 // Proxy call descriptor class. Mangled signature:
-//  _cany_i_cstring_i_centity_mPointSet_i_cdouble
-class _0RL_cd_bd4dff5c7277e698_61000000
+//  _cany_i_cstring_i_cdrawMeASheep_mgenerated_mentity_mPointSet_i_cdouble
+class _0RL_cd_458bb15327e71b02_61000000
   : public omniCallDescriptor
 {
 public:
-  inline _0RL_cd_bd4dff5c7277e698_61000000(LocalCallFn lcfn, const char* op_, size_t oplen, _CORBA_Boolean upcall=0)
+  inline _0RL_cd_458bb15327e71b02_61000000(LocalCallFn lcfn, const char* op_, size_t oplen, _CORBA_Boolean upcall=0)
     : omniCallDescriptor(lcfn, op_, oplen, 0, _user_exns, 0, upcall)
   {
     
@@ -2039,64 +2039,64 @@ public:
 
   ::CORBA::String_var arg_0_;
   const char* arg_0;
-  entity::PointSet_var arg_1_;
-  const entity::PointSet* arg_1;
+  drawMeASheep::generated::entity::PointSet_var arg_1_;
+  const drawMeASheep::generated::entity::PointSet* arg_1;
   ::CORBA::Double arg_2;
   ::CORBA::Any_var result;
 };
 
-void _0RL_cd_bd4dff5c7277e698_61000000::marshalArguments(cdrStream& _n)
+void _0RL_cd_458bb15327e71b02_61000000::marshalArguments(cdrStream& _n)
 {
   _n.marshalString(arg_0,0);
-  (const entity::PointSet&) *arg_1 >>= _n;
+  (const drawMeASheep::generated::entity::PointSet&) *arg_1 >>= _n;
   arg_2 >>= _n;
 
 }
 
-void _0RL_cd_bd4dff5c7277e698_61000000::unmarshalArguments(cdrStream& _n)
+void _0RL_cd_458bb15327e71b02_61000000::unmarshalArguments(cdrStream& _n)
 {
   arg_0_ = _n.unmarshalString(0);
   arg_0 = arg_0_.in();
-  arg_1_ = new entity::PointSet;
-  (entity::PointSet&)arg_1_ <<= _n;
+  arg_1_ = new drawMeASheep::generated::entity::PointSet;
+  (drawMeASheep::generated::entity::PointSet&)arg_1_ <<= _n;
   arg_1 = &arg_1_.in();
   (::CORBA::Double&)arg_2 <<= _n;
 
 }
 
-void _0RL_cd_bd4dff5c7277e698_61000000::marshalReturnedValues(cdrStream& _n)
+void _0RL_cd_458bb15327e71b02_61000000::marshalReturnedValues(cdrStream& _n)
 {
   (const ::CORBA::Any&) result >>= _n;
 
 }
 
-void _0RL_cd_bd4dff5c7277e698_61000000::unmarshalReturnedValues(cdrStream& _n)
+void _0RL_cd_458bb15327e71b02_61000000::unmarshalReturnedValues(cdrStream& _n)
 {
   result = new ::CORBA::Any;
   (::CORBA::Any&)result <<= _n;
 
 }
 
-const char* const _0RL_cd_bd4dff5c7277e698_61000000::_user_exns[] = {
+const char* const _0RL_cd_458bb15327e71b02_61000000::_user_exns[] = {
   0
 };
 
 // Local call call-back function.
 static void
-_0RL_lcfn_bd4dff5c7277e698_71000000(omniCallDescriptor* cd, omniServant* svnt)
+_0RL_lcfn_458bb15327e71b02_71000000(omniCallDescriptor* cd, omniServant* svnt)
 {
-  _0RL_cd_bd4dff5c7277e698_61000000* tcd = (_0RL_cd_bd4dff5c7277e698_61000000*)cd;
-  manager::_impl_DrawingManager* impl = (manager::_impl_DrawingManager*) svnt->_ptrToInterface(manager::DrawingManager::_PD_repoId);
+  _0RL_cd_458bb15327e71b02_61000000* tcd = (_0RL_cd_458bb15327e71b02_61000000*)cd;
+  drawMeASheep::generated::manager::_impl_DrawingManager* impl = (drawMeASheep::generated::manager::_impl_DrawingManager*) svnt->_ptrToInterface(drawMeASheep::generated::manager::DrawingManager::_PD_repoId);
   tcd->result = impl->createDrawing(tcd->arg_0, *tcd->arg_1, tcd->arg_2);
 
 
 }
 
-::CORBA::Any* manager::_objref_DrawingManager::createDrawing(const char* name, const ::entity::PointSet& points, ::CORBA::Double rayon)
+::CORBA::Any* drawMeASheep::generated::manager::_objref_DrawingManager::createDrawing(const char* name, const ::drawMeASheep::generated::entity::PointSet& points, ::CORBA::Double rayon)
 {
-  _0RL_cd_bd4dff5c7277e698_61000000 _call_desc(_0RL_lcfn_bd4dff5c7277e698_71000000, "createDrawing", 14);
+  _0RL_cd_458bb15327e71b02_61000000 _call_desc(_0RL_lcfn_458bb15327e71b02_71000000, "createDrawing", 14);
   _call_desc.arg_0 = name;
-  _call_desc.arg_1 = &(::entity::PointSet&) points;
+  _call_desc.arg_1 = &(::drawMeASheep::generated::entity::PointSet&) points;
   _call_desc.arg_2 = rayon;
 
   _invoke(_call_desc);
@@ -2107,15 +2107,15 @@ _0RL_lcfn_bd4dff5c7277e698_71000000(omniCallDescriptor* cd, omniServant* svnt)
 
 
 //
-// Code for manager::DrawingManager::add
+// Code for drawMeASheep::generated::manager::DrawingManager::add
 
 // Proxy call descriptor class. Mangled signature:
 //  _cboolean_i_cany
-class _0RL_cd_bd4dff5c7277e698_81000000
+class _0RL_cd_458bb15327e71b02_81000000
   : public omniCallDescriptor
 {
 public:
-  inline _0RL_cd_bd4dff5c7277e698_81000000(LocalCallFn lcfn, const char* op_, size_t oplen, _CORBA_Boolean upcall=0)
+  inline _0RL_cd_458bb15327e71b02_81000000(LocalCallFn lcfn, const char* op_, size_t oplen, _CORBA_Boolean upcall=0)
     : omniCallDescriptor(lcfn, op_, oplen, 0, _user_exns, 0, upcall)
   {
     
@@ -2135,13 +2135,13 @@ public:
   ::CORBA::Boolean result;
 };
 
-void _0RL_cd_bd4dff5c7277e698_81000000::marshalArguments(cdrStream& _n)
+void _0RL_cd_458bb15327e71b02_81000000::marshalArguments(cdrStream& _n)
 {
   (const ::CORBA::Any&) *arg_0 >>= _n;
 
 }
 
-void _0RL_cd_bd4dff5c7277e698_81000000::unmarshalArguments(cdrStream& _n)
+void _0RL_cd_458bb15327e71b02_81000000::unmarshalArguments(cdrStream& _n)
 {
   arg_0_ = new ::CORBA::Any;
   (::CORBA::Any&)arg_0_ <<= _n;
@@ -2149,36 +2149,36 @@ void _0RL_cd_bd4dff5c7277e698_81000000::unmarshalArguments(cdrStream& _n)
 
 }
 
-void _0RL_cd_bd4dff5c7277e698_81000000::marshalReturnedValues(cdrStream& _n)
+void _0RL_cd_458bb15327e71b02_81000000::marshalReturnedValues(cdrStream& _n)
 {
   _n.marshalBoolean(result);
 
 }
 
-void _0RL_cd_bd4dff5c7277e698_81000000::unmarshalReturnedValues(cdrStream& _n)
+void _0RL_cd_458bb15327e71b02_81000000::unmarshalReturnedValues(cdrStream& _n)
 {
   result = _n.unmarshalBoolean();
 
 }
 
-const char* const _0RL_cd_bd4dff5c7277e698_81000000::_user_exns[] = {
+const char* const _0RL_cd_458bb15327e71b02_81000000::_user_exns[] = {
   0
 };
 
 // Local call call-back function.
 static void
-_0RL_lcfn_bd4dff5c7277e698_91000000(omniCallDescriptor* cd, omniServant* svnt)
+_0RL_lcfn_458bb15327e71b02_91000000(omniCallDescriptor* cd, omniServant* svnt)
 {
-  _0RL_cd_bd4dff5c7277e698_81000000* tcd = (_0RL_cd_bd4dff5c7277e698_81000000*)cd;
-  manager::_impl_DrawingManager* impl = (manager::_impl_DrawingManager*) svnt->_ptrToInterface(manager::DrawingManager::_PD_repoId);
+  _0RL_cd_458bb15327e71b02_81000000* tcd = (_0RL_cd_458bb15327e71b02_81000000*)cd;
+  drawMeASheep::generated::manager::_impl_DrawingManager* impl = (drawMeASheep::generated::manager::_impl_DrawingManager*) svnt->_ptrToInterface(drawMeASheep::generated::manager::DrawingManager::_PD_repoId);
   tcd->result = impl->add(*tcd->arg_0);
 
 
 }
 
-::CORBA::Boolean manager::_objref_DrawingManager::add(const ::CORBA::Any& a)
+::CORBA::Boolean drawMeASheep::generated::manager::_objref_DrawingManager::add(const ::CORBA::Any& a)
 {
-  _0RL_cd_bd4dff5c7277e698_81000000 _call_desc(_0RL_lcfn_bd4dff5c7277e698_91000000, "add", 4);
+  _0RL_cd_458bb15327e71b02_81000000 _call_desc(_0RL_lcfn_458bb15327e71b02_91000000, "add", 4);
   _call_desc.arg_0 = &(::CORBA::Any&) a;
 
   _invoke(_call_desc);
@@ -2189,15 +2189,15 @@ _0RL_lcfn_bd4dff5c7277e698_91000000(omniCallDescriptor* cd, omniServant* svnt)
 
 
 //
-// Code for manager::DrawingManager::isFull
+// Code for drawMeASheep::generated::manager::DrawingManager::isFull
 
 // Proxy call descriptor class. Mangled signature:
 //  _cboolean
-class _0RL_cd_bd4dff5c7277e698_a1000000
+class _0RL_cd_458bb15327e71b02_a1000000
   : public omniCallDescriptor
 {
 public:
-  inline _0RL_cd_bd4dff5c7277e698_a1000000(LocalCallFn lcfn, const char* op_, size_t oplen, _CORBA_Boolean upcall=0)
+  inline _0RL_cd_458bb15327e71b02_a1000000(LocalCallFn lcfn, const char* op_, size_t oplen, _CORBA_Boolean upcall=0)
     : omniCallDescriptor(lcfn, op_, oplen, 0, _user_exns, 0, upcall)
   {
     
@@ -2213,36 +2213,36 @@ public:
   ::CORBA::Boolean result;
 };
 
-void _0RL_cd_bd4dff5c7277e698_a1000000::marshalReturnedValues(cdrStream& _n)
+void _0RL_cd_458bb15327e71b02_a1000000::marshalReturnedValues(cdrStream& _n)
 {
   _n.marshalBoolean(result);
 
 }
 
-void _0RL_cd_bd4dff5c7277e698_a1000000::unmarshalReturnedValues(cdrStream& _n)
+void _0RL_cd_458bb15327e71b02_a1000000::unmarshalReturnedValues(cdrStream& _n)
 {
   result = _n.unmarshalBoolean();
 
 }
 
-const char* const _0RL_cd_bd4dff5c7277e698_a1000000::_user_exns[] = {
+const char* const _0RL_cd_458bb15327e71b02_a1000000::_user_exns[] = {
   0
 };
 
 // Local call call-back function.
 static void
-_0RL_lcfn_bd4dff5c7277e698_b1000000(omniCallDescriptor* cd, omniServant* svnt)
+_0RL_lcfn_458bb15327e71b02_b1000000(omniCallDescriptor* cd, omniServant* svnt)
 {
-  _0RL_cd_bd4dff5c7277e698_a1000000* tcd = (_0RL_cd_bd4dff5c7277e698_a1000000*)cd;
-  manager::_impl_DrawingManager* impl = (manager::_impl_DrawingManager*) svnt->_ptrToInterface(manager::DrawingManager::_PD_repoId);
+  _0RL_cd_458bb15327e71b02_a1000000* tcd = (_0RL_cd_458bb15327e71b02_a1000000*)cd;
+  drawMeASheep::generated::manager::_impl_DrawingManager* impl = (drawMeASheep::generated::manager::_impl_DrawingManager*) svnt->_ptrToInterface(drawMeASheep::generated::manager::DrawingManager::_PD_repoId);
   tcd->result = impl->isFull();
 
 
 }
 
-::CORBA::Boolean manager::_objref_DrawingManager::isFull()
+::CORBA::Boolean drawMeASheep::generated::manager::_objref_DrawingManager::isFull()
 {
-  _0RL_cd_bd4dff5c7277e698_a1000000 _call_desc(_0RL_lcfn_bd4dff5c7277e698_b1000000, "isFull", 7);
+  _0RL_cd_458bb15327e71b02_a1000000 _call_desc(_0RL_lcfn_458bb15327e71b02_b1000000, "isFull", 7);
 
 
   _invoke(_call_desc);
@@ -2253,22 +2253,22 @@ _0RL_lcfn_bd4dff5c7277e698_b1000000(omniCallDescriptor* cd, omniServant* svnt)
 
 
 //
-// Code for manager::DrawingManager::getAvailableSurface
+// Code for drawMeASheep::generated::manager::DrawingManager::getAvailableSurface
 
 // Local call call-back function.
 static void
-_0RL_lcfn_bd4dff5c7277e698_c1000000(omniCallDescriptor* cd, omniServant* svnt)
+_0RL_lcfn_458bb15327e71b02_c1000000(omniCallDescriptor* cd, omniServant* svnt)
 {
-  _0RL_cd_bd4dff5c7277e698_00000000* tcd = (_0RL_cd_bd4dff5c7277e698_00000000*)cd;
-  manager::_impl_DrawingManager* impl = (manager::_impl_DrawingManager*) svnt->_ptrToInterface(manager::DrawingManager::_PD_repoId);
+  _0RL_cd_458bb15327e71b02_00000000* tcd = (_0RL_cd_458bb15327e71b02_00000000*)cd;
+  drawMeASheep::generated::manager::_impl_DrawingManager* impl = (drawMeASheep::generated::manager::_impl_DrawingManager*) svnt->_ptrToInterface(drawMeASheep::generated::manager::DrawingManager::_PD_repoId);
   tcd->result = impl->getAvailableSurface();
 
 
 }
 
-::CORBA::Double manager::_objref_DrawingManager::getAvailableSurface()
+::CORBA::Double drawMeASheep::generated::manager::_objref_DrawingManager::getAvailableSurface()
 {
-  _0RL_cd_bd4dff5c7277e698_00000000 _call_desc(_0RL_lcfn_bd4dff5c7277e698_c1000000, "getAvailableSurface", 20);
+  _0RL_cd_458bb15327e71b02_00000000 _call_desc(_0RL_lcfn_458bb15327e71b02_c1000000, "getAvailableSurface", 20);
 
 
   _invoke(_call_desc);
@@ -2277,38 +2277,38 @@ _0RL_lcfn_bd4dff5c7277e698_c1000000(omniCallDescriptor* cd, omniServant* svnt)
 
 }
 
-manager::_pof_DrawingManager::~_pof_DrawingManager() {}
+drawMeASheep::generated::manager::_pof_DrawingManager::~_pof_DrawingManager() {}
 
 
 omniObjRef*
-manager::_pof_DrawingManager::newObjRef(omniIOR* ior, omniIdentity* id)
+drawMeASheep::generated::manager::_pof_DrawingManager::newObjRef(omniIOR* ior, omniIdentity* id)
 {
-  return new ::manager::_objref_DrawingManager(ior, id);
+  return new ::drawMeASheep::generated::manager::_objref_DrawingManager(ior, id);
 }
 
 
 ::CORBA::Boolean
-manager::_pof_DrawingManager::is_a(const char* id) const
+drawMeASheep::generated::manager::_pof_DrawingManager::is_a(const char* id) const
 {
-  if (omni::ptrStrMatch(id, ::manager::DrawingManager::_PD_repoId))
+  if (omni::ptrStrMatch(id, ::drawMeASheep::generated::manager::DrawingManager::_PD_repoId))
     return 1;
   
   return 0;
 }
 
-const manager::_pof_DrawingManager _the_pof_manager_mDrawingManager;
+const drawMeASheep::generated::manager::_pof_DrawingManager _the_pof_drawMeASheep_mgenerated_mmanager_mDrawingManager;
 
-manager::_impl_DrawingManager::~_impl_DrawingManager() {}
+drawMeASheep::generated::manager::_impl_DrawingManager::~_impl_DrawingManager() {}
 
 
 ::CORBA::Boolean
-manager::_impl_DrawingManager::_dispatch(omniCallHandle& _handle)
+drawMeASheep::generated::manager::_impl_DrawingManager::_dispatch(omniCallHandle& _handle)
 {
   const char* op = _handle.operation_name();
 
   if (omni::strMatch(op, "_get_map")) {
 
-    _0RL_cd_bd4dff5c7277e698_41000000 _call_desc(_0RL_lcfn_bd4dff5c7277e698_51000000, "_get_map", 9, 1);
+    _0RL_cd_458bb15327e71b02_41000000 _call_desc(_0RL_lcfn_458bb15327e71b02_51000000, "_get_map", 9, 1);
     
     _handle.upcall(this,_call_desc);
     return 1;
@@ -2316,7 +2316,7 @@ manager::_impl_DrawingManager::_dispatch(omniCallHandle& _handle)
 
   if (omni::strMatch(op, "createDrawing")) {
 
-    _0RL_cd_bd4dff5c7277e698_61000000 _call_desc(_0RL_lcfn_bd4dff5c7277e698_71000000, "createDrawing", 14, 1);
+    _0RL_cd_458bb15327e71b02_61000000 _call_desc(_0RL_lcfn_458bb15327e71b02_71000000, "createDrawing", 14, 1);
     
     _handle.upcall(this,_call_desc);
     return 1;
@@ -2324,7 +2324,7 @@ manager::_impl_DrawingManager::_dispatch(omniCallHandle& _handle)
 
   if (omni::strMatch(op, "add")) {
 
-    _0RL_cd_bd4dff5c7277e698_81000000 _call_desc(_0RL_lcfn_bd4dff5c7277e698_91000000, "add", 4, 1);
+    _0RL_cd_458bb15327e71b02_81000000 _call_desc(_0RL_lcfn_458bb15327e71b02_91000000, "add", 4, 1);
     
     _handle.upcall(this,_call_desc);
     return 1;
@@ -2332,7 +2332,7 @@ manager::_impl_DrawingManager::_dispatch(omniCallHandle& _handle)
 
   if (omni::strMatch(op, "isFull")) {
 
-    _0RL_cd_bd4dff5c7277e698_a1000000 _call_desc(_0RL_lcfn_bd4dff5c7277e698_b1000000, "isFull", 7, 1);
+    _0RL_cd_458bb15327e71b02_a1000000 _call_desc(_0RL_lcfn_458bb15327e71b02_b1000000, "isFull", 7, 1);
     
     _handle.upcall(this,_call_desc);
     return 1;
@@ -2340,7 +2340,7 @@ manager::_impl_DrawingManager::_dispatch(omniCallHandle& _handle)
 
   if (omni::strMatch(op, "getAvailableSurface")) {
 
-    _0RL_cd_bd4dff5c7277e698_00000000 _call_desc(_0RL_lcfn_bd4dff5c7277e698_c1000000, "getAvailableSurface", 20, 1);
+    _0RL_cd_458bb15327e71b02_00000000 _call_desc(_0RL_lcfn_458bb15327e71b02_c1000000, "getAvailableSurface", 20, 1);
     
     _handle.upcall(this,_call_desc);
     return 1;
@@ -2351,16 +2351,16 @@ manager::_impl_DrawingManager::_dispatch(omniCallHandle& _handle)
 }
 
 void*
-manager::_impl_DrawingManager::_ptrToInterface(const char* id)
+drawMeASheep::generated::manager::_impl_DrawingManager::_ptrToInterface(const char* id)
 {
-  if (id == ::manager::DrawingManager::_PD_repoId)
-    return (::manager::_impl_DrawingManager*) this;
+  if (id == ::drawMeASheep::generated::manager::DrawingManager::_PD_repoId)
+    return (::drawMeASheep::generated::manager::_impl_DrawingManager*) this;
   
   if (id == ::CORBA::Object::_PD_repoId)
     return (void*) 1;
 
-  if (omni::strMatch(id, ::manager::DrawingManager::_PD_repoId))
-    return (::manager::_impl_DrawingManager*) this;
+  if (omni::strMatch(id, ::drawMeASheep::generated::manager::DrawingManager::_PD_repoId))
+    return (::drawMeASheep::generated::manager::_impl_DrawingManager*) this;
   
   if (omni::strMatch(id, ::CORBA::Object::_PD_repoId))
     return (void*) 1;
@@ -2368,22 +2368,22 @@ manager::_impl_DrawingManager::_ptrToInterface(const char* id)
 }
 
 const char*
-manager::_impl_DrawingManager::_mostDerivedRepoId()
+drawMeASheep::generated::manager::_impl_DrawingManager::_mostDerivedRepoId()
 {
-  return ::manager::DrawingManager::_PD_repoId;
+  return ::drawMeASheep::generated::manager::DrawingManager::_PD_repoId;
 }
 
-POA_entity::Drawing::~Drawing() {}
+POA_drawMeASheep::generated::entity::Drawing::~Drawing() {}
 
-POA_entity::Polygone::~Polygone() {}
+POA_drawMeASheep::generated::entity::Polygone::~Polygone() {}
 
-POA_entity::Line::~Line() {}
+POA_drawMeASheep::generated::entity::Line::~Line() {}
 
-POA_entity::Cercle::~Cercle() {}
+POA_drawMeASheep::generated::entity::Cercle::~Cercle() {}
 
-POA_entity::Ellipse::~Ellipse() {}
+POA_drawMeASheep::generated::entity::Ellipse::~Ellipse() {}
 
-POA_entity::DrawingGroup::~DrawingGroup() {}
+POA_drawMeASheep::generated::entity::DrawingGroup::~DrawingGroup() {}
 
-POA_manager::DrawingManager::~DrawingManager() {}
+POA_drawMeASheep::generated::manager::DrawingManager::~DrawingManager() {}
 

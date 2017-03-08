@@ -34,7 +34,7 @@ BINDIR  = bin
 # Directories for installation
 #
 
-prefix        	 := /mnt/c/Users/Lamine/cppCorba/omni_inst
+prefix        	 := /mnt/d/workspace/drawmeasheep/cpp-server/omni_inst
 exec_prefix   	 := ${prefix}
 INSTALLTARGET 	 := 1
 INSTALLINCDIR 	 := $(DESTDIR)${prefix}/include
@@ -741,7 +741,7 @@ endif
 # Enable ZIOP?
 #
 
-ifeq (no,yes)
+ifeq (yes,yes)
 EnableZIOP = 1
 endif
 

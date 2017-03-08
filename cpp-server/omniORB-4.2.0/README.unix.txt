@@ -75,14 +75,14 @@ options are standard Autoconf ones. The most commonly required is
 --prefix, used to select the install location. The default is
 /usr/local. To change it, use, for example
 
-  ../configure --prefix=/mnt/c/Users/Lamine/cppCorba/omni_inst CXX=/usr/bin/g++ PYTHON=/usr/bin/python2.7 CC=/usr/bin/gcc 
+  ../configure --prefix=/home/fred/omni_inst
 
 The configure script tries to figure out the location of the C and C++
 compilers and Python. It will always choose gcc over the platform's
 native compiler if it is available. To change the choices it makes,
 use variables CC, CXX and PYTHON, e.g.:
 
-  ../configure CXX=/usr/bin/g++ PYTHON=/usr/bin/python2.7
+  ../configure CXX=/usr/bin/platform_c++ PYTHON=/usr/local/bin/python2.7
 
 There are various omniORB specific options:
 

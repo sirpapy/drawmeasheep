@@ -10,11 +10,11 @@ idlc.o idlc.d: /usr/include/stdlib.h \
  ../../../../../src/tool/omniidl/cxx/idlutil.h \
  /usr/include/assert.h \
  ../../../../../src/tool/omniidl/cxx/idlsysdep.h \
- ../../../../../include/omniORB4/CORBA_sysdep.h \
- ../../../../../include/omniORB4/local_config.h \
- ../../../../include/omniconfig.h \
- ../../../../include/omniORB4/acconfig.h \
- ../../../../../include/omniORB4/CORBA_sysdep_auto.h \
+ /usr/include/omniORB4/CORBA_sysdep.h \
+ /usr/include/omniORB4/local_config.h \
+ /usr/include/omniconfig.h \
+ /usr/include/omniORB4/acconfig.h \
+ /usr/include/omniORB4/CORBA_sysdep_auto.h \
  /usr/include/strings.h \
  ../../../../../src/tool/omniidl/cxx/idlrepoId.h \
  ../../../../../src/tool/omniidl/cxx/idlast.h \

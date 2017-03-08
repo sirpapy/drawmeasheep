@@ -46,7 +46,7 @@ pylibdir   = archlibdir = None
 binarchdir = os.path.abspath(os.path.dirname(sys.argv[0]))
 
 # Try a path based on the installation prefix
-sppath = "/mnt/c/Users/Lamine/cppCorba/omni_inst/lib/python" + sys.version[:3] + "/site-packages"
+sppath = "/mnt/d/workspace/drawmeasheep/cpp-server/omni_inst/lib/python" + sys.version[:3] + "/site-packages"
 
 if os.path.isdir(sppath):
     sys.path.append(sppath)
@@ -95,7 +95,7 @@ if binarchdir != "":
             sys.path.insert(0, archlibdir)
 
 # Last chance, try a path based on the installation prefixes
-sys.path.append("/mnt/c/Users/Lamine/cppCorba/omni_inst/lib/python" + sys.version[:3] + "/site-packages")
+sys.path.append("/mnt/d/workspace/drawmeasheep/cpp-server/omni_inst/lib/python" + sys.version[:3] + "/site-packages")
 
 paths = [ "${prefix}/lib/python" + sys.version[:3] + "/site-packages",
           "${prefix}/lib/python2.7/site-packages",
@@ -105,7 +105,7 @@ paths = [ "${prefix}/lib/python" + sys.version[:3] + "/site-packages",
 # Autoconf insists on making our life difficult...
 for path in paths:
     path = path.replace("${exec_prefix}", "${prefix}")
-    path = path.replace("${prefix}", "/mnt/c/Users/Lamine/cppCorba/omni_inst")
+    path = path.replace("${prefix}", "/mnt/d/workspace/drawmeasheep/cpp-server/omni_inst")
     sys.path.append(path)
 
 try:

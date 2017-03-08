@@ -1,4 +1,4 @@
-prefix=/mnt/c/Users/Lamine/cppCorba/omni_inst
+prefix=/mnt/d/workspace/drawmeasheep/cpp-server/omni_inst
 exec_prefix=${prefix}
 libdir=${exec_prefix}/lib
 includedir=${prefix}/include

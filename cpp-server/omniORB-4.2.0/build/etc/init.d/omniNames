@@ -19,13 +19,13 @@
 . /etc/rc.d/init.d/functions
 
 # Program options
-OMNINAMES=/mnt/c/Users/Lamine/cppCorba/omni_inst/bin/omniNames
+OMNINAMES=/mnt/d/workspace/drawmeasheep/cpp-server/omni_inst/bin/omniNames
 OMNINAMES_DIR=/var/omniNames
 OMNINAMES_LOG_DIR=/var/log/omniNames
 OMNINAMES_DEBUG_LOG=$OMNINAMES_LOG_DIR/omniNames.log
 
 # Make sure libraries are found if we're installed in a non-standard location
-prefix=/mnt/c/Users/Lamine/cppCorba/omni_inst
+prefix=/mnt/d/workspace/drawmeasheep/cpp-server/omni_inst
 exec_prefix=${prefix}
 export LD_LIBRARY_PATH=${exec_prefix}/lib:$LD_LIBRARY_PATH
 
