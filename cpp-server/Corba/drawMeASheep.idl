@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 module Test {
   struct Toto {
     string     name;
@@ -6,3 +7,67 @@ module Test {
     void send(in double amount);
   };
 };
+=======
+module drawMeASheep{
+	module generated{
+
+		module entity{
+			struct Point {
+			double x;
+			double y;	
+			};
+			
+			typedef sequence <Point> PointSet;
+
+
+			interface Drawing {
+				double getSurface();
+				double getPerimeter();
+				void translate(in double x);
+				void homothetie(in double x);
+				void rotate(in double angle);
+				void centralSymetric(in Point p);
+				void axialSymetric(in Point p1, in Point p2);
+			};
+
+			interface Polygone : Drawing {
+				readonly attribute PointSet points;
+			};
+			interface Line : Drawing {
+				readonly attribute Point a;
+				readonly attribute Point b;	
+	
+			};
+			interface Cercle : Drawing {
+				readonly attribute double rayon;	
+
+			};
+			interface Ellipse : Drawing {
+				readonly attribute PointSet points;
+			};
+
+			typedef sequence <Drawing> DrawingSet;
+			typedef sequence <Drawing> DrawingMap;
+
+			interface DrawingGroup:Drawing {
+				readonly attribute DrawingSet Drawings;
+			
+			 };
+		};
+
+		module manager{
+
+			interface DrawingManager{
+				readonly attribute entity::DrawingMap map;
+				any createDrawing( in string name , in entity::PointSet points , in double rayon);
+				boolean add( in any a);
+				boolean isFull();
+				double getAvailableSurface();
+
+			};
+
+		};
+	};	
+	
+};
+>>>>>>> 6e2734af8c0c26f05c632bb8817aa451b15b12dc
