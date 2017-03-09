@@ -1,3 +1,0 @@
-  interface Account {
-    void send(in double amount);
-  };
