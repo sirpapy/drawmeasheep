@@ -1,0 +1,24 @@
+Create by NDOYE Amadou Lamine
+Quick Guide :
+	run the server makefile : make createDir
+	
+	then :
+	
+	apt-get install pk-config
+	apt-get install python2.7-dev
+
+	cd omniORB-4.2.0
+	mkdir build
+	$cd build
+	../configure --prefix=/mnt/c/Users/Lamine/cppCorba/omni_inst CXX=/usr/bin/g++ PYTHON=/usr/bin/python2.7 CC=/usr/bin/gcc --enable-threads --enable-shared
+
+	make 
+	make install
+
+	apt-get install omniorb-nameserver
+	export OMNIORB_CONFIG=./omniORB.cfg
+	omniNames -start -logdir /mnt/c/Users/Lamine/cppCorba/omni_inst/omniNamesLogdir -errlog /mnt/c/Users/Lamine/cppCorba/omni_inst/omniNamesError.txt
+
+
+	open a shell 
+	run the server makefile
