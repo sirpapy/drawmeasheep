@@ -11,6 +11,7 @@
 #include "../generated/drawMeASheep.hh"
 #include "../include/drawingMap.hpp"
 
+//NDOYE Amadou Lamine
 using namespace std;
 
 class Server : public drawMeASheep::generated::manager::DrawingManager,
@@ -42,17 +43,26 @@ public:
     };
 
  drawMeASheep::generated::entity::DrawingMap* Server::map(){
+	 		cout << "map " << endl;
+
     return NULL;
 }
 ::CORBA::Any* Server::createDrawing(const char* name, const drawMeASheep::generated::entity::PointSet& points, ::CORBA::Double rayon){
-    return NULL;
+   		cout << "createDrawing " << endl;
+   return NULL;
 }
 ::CORBA::Boolean Server::add(const ::CORBA::Any& a){
-    return false;
+    cout << "add " << endl;
+
+	return false;
 }
 ::CORBA::Boolean Server::isFull(){
+	cout << "isFull " << endl;
+
     return false;
 }
 ::CORBA::Double Server::getAvailableSurface(){
+	cout << "getAvailableSurface " << endl;
+
     return 0.0;
 }

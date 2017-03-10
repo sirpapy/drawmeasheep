@@ -1,29 +1,24 @@
-Install Omniiidl
+Create by NDOYE Amadou Lamine
+Quick Guide :
+	run the server makefile : make createDir
+	
+	then :
+	
+	apt-get install pk-config
+	apt-get install python2.7-dev
+
+	cd omniORB-4.2.0
+	mkdir build
+	$cd build
+	../configure --prefix=/mnt/c/Users/Lamine/cppCorba/omni_inst CXX=/usr/bin/g++ PYTHON=/usr/bin/python2.7 CC=/usr/bin/gcc --enable-threads --enable-shared
+
+	make 
+	make install
+
+	apt-get install omniorb-nameserver
+	export OMNIORB_CONFIG=./omniORB.cfg
+	omniNames -start -logdir /mnt/c/Users/Lamine/cppCorba/omni_inst/omniNamesLogdir -errlog /mnt/c/Users/Lamine/cppCorba/omni_inst/omniNamesError.txt
 
 
-apt-get install pk-config
-apt-get install python2.7-dev
-
-cd omniORB-4.2.0
-mkdir build
-$ cd build
-../configure --prefix=/mnt/d/workspace/drawmeasheep/cpp-server/omni_inst CXX=/usr/bin/g++ PYTHON=/usr/bin/python2.7 CC=/usr/bin/gcc --enable-threads --enable-shared
-
-make 
-make install
-
-
-Edit config file: /etc/omniORB.cfg
-	On Linux and Cygwin platforms comment out the following two directives:
-	supportPerThreadTimeOut
-	poaUniquePersistentSystemIds
-
-apt-get install omniorb-nameserver
-
-export LD_LIBRARY_PATH=/mnt/d/workspace/drawmeasheep/cpp-server/omni_inst/lib:$LD_LIBRARY_PATH
-
-mkdir /mnt/d/workspace/drawmeasheep/cpp-server/omni_inst/omniNamesLogdir
-omniNames -start -logdir /mnt/d/workspace/drawmeasheep/cpp-server/omni_inst/omniNamesLogdir -errlog /mnt/d/workspace/drawmeasheep/cpp-server/omni_inst/omniNamesError.txt
-cp ./omniORB.cfg ./
-	then add the oir and do this the oir is in file  omniNamesError
-export OMNIORB_CONFIG=./omniORB.cfg
+	open a shell 
+	run the server makefile

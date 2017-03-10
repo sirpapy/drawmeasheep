@@ -24,11 +24,9 @@
 using namespace std;
 
 
-
-<<<<<<< HEAD
 public:
 
-};
+}
 
 
 #endif //DRAWMEASHEEP_MANAGERIMPL_H

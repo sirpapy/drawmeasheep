@@ -17,26 +17,27 @@ import org.omg.CosNaming.NamingContextPackage.CannotProceed;
 import org.omg.CosNaming.NamingContextPackage.InvalidName;
 import org.omg.CosNaming.NamingContextPackage.NotFound;
 
-import drawMeASheep.generated.drawingEntity.Cercle;
-import drawMeASheep.generated.drawingEntity.CercleHelper;
-import drawMeASheep.generated.drawingEntity.Drawing;
-import drawMeASheep.generated.drawingEntity.Point;
-import drawMeASheep.generated.drawingManager.DrawingManager;
-import drawMeASheep.generated.drawingManager.DrawingManagerHelper;
+import drawMeASheep.generated.entity.Cercle;
+import drawMeASheep.generated.entity.CercleHelper;
+import drawMeASheep.generated.entity.Drawing;
+import drawMeASheep.generated.entity.Point;
+import drawMeASheep.generated.manager.DrawingManager;
+import drawMeASheep.generated.manager.DrawingManagerHelper;
+
+
 
 public class DrawMeASheepClient {
 
-	
 	public static void main(String[] args) {
 		try {
 			Properties props = new Properties(); 
-			props.put("org.omg.PortableInterceptor.ORBInitializerClass.teacher.MyInterceptorInitializer","teacher.MyInterceptorInitializer"); 
+		//	props.put("org.omg.PortableInterceptor.ORBInitializerClass.teacher.MyInterceptorInitializer","teacher.MyInterceptorInitializer"); 
 			ORB orb = ORB.init(args, props);
 			NamingContextExt namingContext = NamingContextExtHelper.narrow(orb.resolve_initial_references("NameService"));
-	
+			explore(args,namingContext);
+
 			normalClient(args,namingContext, orb);
 			
-			explore(args,namingContext);
 			
 		} catch (org.omg.CORBA.ORBPackage.InvalidName e) {
 			// TODO Auto-generated catch block
@@ -48,10 +49,18 @@ public class DrawMeASheepClient {
 	
 	public static void normalClient(String[] args,NamingContextExt namingContext,ORB orb){
 		try{
+			System.out.println("NormalClient");
 			Any any = orb.create_any();
-			NameComponent[] name = namingContext.to_name("teacher");
-			DrawingManager serverProxy = DrawingManagerHelper.narrow(namingContext.resolve(name));
+			System.out.println("create Any");
 
+			NameComponent[] name = namingContext.to_name("Serveur");
+			System.out.println("name  id= " + name[0].id + " kind = " +name[0].kind);
+
+			DrawingManager serverProxy = DrawingManagerHelper.narrow(namingContext.resolve(name));
+			System.out.println("serverProxy narrow ");
+
+			System.out.println("isFull " +serverProxy.isFull());
+			
 			Point[] listOfPoint = new Point[0];
 			Cercle cercle = CercleHelper.extract(serverProxy.createDrawing("Cercle", listOfPoint, 0));
 			
@@ -68,6 +77,7 @@ public class DrawMeASheepClient {
 				System.out.println("interface = "+draw._get_interface_def()+ " value = "+draw.getSurface());
 				
 			}
+			
 				
 		} catch (InvalidName e) {
 			// TODO Auto-generated catch block
@@ -97,7 +107,12 @@ public class DrawMeASheepClient {
 			
 			if(it != null){
 				BindingIterator bIt = BindingIteratorHelper.narrow(it.value);
-				recIt(bIt,namingContext);
+				if(bIt !=null) {
+					recIt(bIt,namingContext);
+
+				}else{
+					System.out.println("null it.value = " + it.value);
+				}
 					
 			}
 			
