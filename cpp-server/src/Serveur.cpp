@@ -1,3 +1,10 @@
+#include <assert.h>
+//#include <CORBA.h>
+#include "../omni_inst/include/omniORB4/CORBA.h"
+#include <iostream>
+#include <stdlib.h>
+#include <string>
+#include "../include/drawingManagerImpl.hpp"
 
 //NDOYE Amadou Lamine
 using namespace std;
