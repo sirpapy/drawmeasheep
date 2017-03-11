@@ -16,7 +16,6 @@ GEN = ./generated
 OBJECTS       = serveur.o managerImpl.o drawMeASheepSK.o
 OBJECTS_PATH = $(BIN)/Serveur.o $(BIN)/managerImpl.o $(BIN)/drawMeASheepSK.o
 OMNIORB_CONFIG=./omniORB.cfg
-LD_LIBRARY_PATH=$(OMNI_LIB_DIR):$LD_LIBRARY_PATH
 
 # genere l executable du serveur a besoin des librairy omniidl et des flags -lomniORB4 -lomnithread -lomniDynamic4
 all: createDir export $(OBJECTS)
@@ -42,7 +41,6 @@ drawMeASheepSK: $(CORBA)/drawMeASheep.idl
 	
 export :
 		export OMNIORB_CONFIG=$(OMNIORB_CONFIG)
-		export LD_LIBRARY_PATH=$(LD_LIBRARY_PATH)
 
 clean: 
 	rm $(BIN)/*.o -f
