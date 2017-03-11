@@ -31,10 +31,11 @@ module drawMeASheep{
 			};
 			interface Cercle : Drawing {
 				readonly attribute double rayon;	
+				readonly attribute Point center;
 
 			};
-			interface Ellipse : Drawing {
-				readonly attribute PointSet points;
+			interface Ellipse : Cercle {
+				readonly attribute double largeur;
 			};
 
 			typedef sequence <Drawing> DrawingSet;

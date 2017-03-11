@@ -3,7 +3,7 @@
 
 
 inline Cercle::Cercle(const drawMeASheep::generated::entity::Point & centre, ::CORBA::Double rayon ){
-		_centre = centre ;
+		_center = centre ;
 		_rayon = rayon;
 
 }
@@ -11,11 +11,16 @@ inline Cercle::Cercle(const drawMeASheep::generated::entity::Point & centre, ::C
 ::CORBA::Double Cercle::rayon(){
 	return _rayon;
 }
+
+  drawMeASheep::generated::entity::Point Cercle::center(){
+	  return _center;
+  }
+
 ::CORBA::Double Cercle::getSurface(){
 	return M_PI * pow( _rayon , 2 );
 }
 ::CORBA::Double Cercle::getPerimeter(){
-	return M_PI * pow( _rayon , 2 );
+	return M_PI *  _rayon  * 2;
 }
 
 void Cercle::translate(const drawMeASheep::generated::entity::Point& translationPoint){
