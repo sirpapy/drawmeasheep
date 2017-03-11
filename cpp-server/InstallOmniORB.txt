@@ -1,9 +1,8 @@
 Create by NDOYE Amadou Lamine
 Quick Guide :
 
-	Installation : 
+	Installation : from cpp-server directory
 		sudo apt-get install g++
-
 		sudo apt-get install pk-config
 		sudo apt-get install python2.7-dev
 		unzip omni_inst.zip
@@ -11,8 +10,8 @@ Quick Guide :
 				unzip  omniORB-4.2.0.zip
 				cd omniORB-4.2.0
 				mkdir build
-				$cd build
-				../configure --prefix=/mnt/c/Users/Lamine/cppCorba/omni_inst CXX=/usr/bin/g++ PYTHON=/usr/bin/python2.7 CC=/usr/bin/gcc --enable-threads --enable-shared
+				cd build
+				../configure --prefix=../../omni_inst CXX=/usr/bin/g++ PYTHON=/usr/bin/python2.7 CC=/usr/bin/gcc --enable-threads --enable-shared
 				make 
 				make install
 			else not tryed :
@@ -21,15 +20,14 @@ Quick Guide :
 		sudo apt-get install omniorb-nameserver
 
 		
-	Build the server makefile : 
+	Build the server makefile : from cpp-server directory
 		use the server makeFile : make 
 	
 	
-	run omniNames:
+	run omniNames:from cpp-server directory
 		export OMNIORB_CONFIG=./omniORB.cfg
-		omniNames -start 4333 -logdir /mnt/c/Users/Lamine/cppCorba/omni_inst/omniNamesLogdir -errlog /mnt/c/Users/Lamine/cppCorba/omni_inst/omniNamesError.txt
+		omniNames -start 4333 -logdir ./omni_inst/omniNamesLogdir -errlog ./omni_inst/omniNamesError.txt
 
-	run the server : 
-		export OMNIORB_CONFIG=./omniORB.cfg
+	run the server :  from cpp-server directory
 		export LD_LIBRARY_PATH=./omni_inst/lib:$LD_LIBRARY_PATH
-		./server -ORBInitRef NameService=corbaloc::localhost:4333/NameService
+		./Server -ORBInitRef NameService=corbaloc::localhost:4333/NameService
