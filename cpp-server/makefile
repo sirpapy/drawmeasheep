@@ -27,8 +27,14 @@ all: createDir export $(OBJECTS)
 	$(CC) $(LDFLAGS) -L$(OMNI_LIB_DIR) $(BIN)/*.o -o Server  $(LIBS)
 	
 # compile le Serveur.cpp 
-serveur.o : drawMeASheepSK.o drawMeASheepDynSK.o drawingManagerImpl.o 
+serveur.o : drawingManagerImpl.o  cercle.o ligne.o
 	$(CC) $(CPPFLAGS) $(INCLUDES) $(SRC)/Serveur.cpp -I$(GEN) -o $(BIN)/Serveur.o
+# compile le Serveur.cpp 
+cercle.o : 
+	$(CC) $(CPPFLAGS) $(INCLUDES) $(SRC)/cercle.cpp -I$(GEN) -o $(BIN)/Cercle.o
+# compile le Serveur.cpp 
+ligne.o : 
+	$(CC) $(CPPFLAGS) $(INCLUDES) $(SRC)/ligne.cpp -I$(GEN) -o $(BIN)/Ligne.o
 
 # compile le drawingManagerImpl.cpp
 drawingManagerImpl.o : drawMeASheepSK.o drawMeASheepDynSK.o
@@ -44,7 +50,7 @@ drawMeASheepDynSK.o: drawMeASheepSK
 
 # compile l'idl et met les fichiers générés dans le dossier generated
 drawMeASheepSK: $(CORBA)/drawMeASheep.idl
-	$(OMNIIDL) -bcxx -Wba -Wbexample $(CORBA)/drawMeASheep.idl && mv *.cc *.hh -t $(GEN)
+	$(OMNIIDL) -bcxx -Wba -Wbtp -Wbexample $(CORBA)/drawMeASheep.idl && mv *.cc *.hh -t $(GEN)
 
 
 	
