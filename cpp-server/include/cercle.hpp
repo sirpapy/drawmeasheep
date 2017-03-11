@@ -11,6 +11,7 @@ public:
     virtual ~Cercle();
 
   ::CORBA::Double rayon();
+  drawMeASheep::generated::entity::Point center();
   ::CORBA::Double getSurface();
   ::CORBA::Double getPerimeter();
   void translate(const drawMeASheep::generated::entity::Point& translationPoint);
@@ -20,7 +21,7 @@ public:
   void axialSymetric(const drawMeASheep::generated::entity::Point& p1, const drawMeASheep::generated::entity::Point& p2);
 
 private:
-    drawMeASheep::generated::entity::Point _centre;
+    drawMeASheep::generated::entity::Point _center;
     ::CORBA::Double _rayon;
 };
 #endif
