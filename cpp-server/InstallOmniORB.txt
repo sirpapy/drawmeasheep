@@ -17,8 +17,6 @@ Quick Guide :
 			else not tryed :
 				sudo apt-get install omniidl omniorb omniorb-nameserver omniorb-idl libomniorb4-dev libomniorb4-1
 
-		sudo apt-get install omniorb-nameserver
-
 		
 	Build the server makefile : from cpp-server directory
 		use the server makeFile : make 
