@@ -1,6 +1,4 @@
 
-#include "../include/Server.hpp"
-#include <assert.h>
 //NDOYE Amadou Lamine
 using namespace std;
 
@@ -11,6 +9,8 @@ int main(int argc, char **argv) {
     // --------------------------------------------------------------------------
 // Declare ORB and servant object
     try {
+
+
 		cout << "Initialisation of ORB " << endl;
         // Initialize the ORB
          CORBA::ORB_var orb = CORBA::ORB_init(argc, argv);
@@ -18,26 +18,39 @@ int main(int argc, char **argv) {
 		 // Get a reference to the root POA
         CORBA::Object_var obj = orb->resolve_initial_references("RootPOA");
 		PortableServer::POA_var _poa = PortableServer::POA::_narrow(obj.in());
-		
+		PortableServer::POAManager_var pmgr = _poa->the_POAManager();
+		CORBA::PolicyList policies;
+		policies.length(1);
+
+		policies[0] =
+			_poa->create_thread_policy
+			(PortableServer::SINGLE_THREAD_MODEL);
+
+		PortableServer::POA_var myPOA = _poa->create_POA("myPOA", pmgr, policies);
 		 cout << "Initialisation of ORB end " << endl;
-
-
+		CORBA::ULong len = policies.length();
+		for (CORBA::ULong i = 0; i < len; i++)
+			policies[i]->destroy();	
+		
+		cout << "resolve_initial_references NameService " << endl;
+		CORBA::Object_var obj1=orb->resolve_initial_references("NameService");
+		assert(!CORBA::is_nil(obj1.in()));
+		
 		// Operations defined in object interface invoked via an object reference.
 		// Instance of CRequestSocketStream_i servant is initialized.
-		Server * managerImpl = new Server();
+		DrawingManagerImpl* managerImpl = new DrawingManagerImpl;
 		cout << "Instanciating the serveur end" << endl;
 
 		cout << "Obtainong object reference from servant and register in naming service " << endl;
-         PortableServer::ObjectId_var managerImpl_oid = _poa->activate_object(managerImpl);
-		 CORBA::Object_var SA_obj = managerImpl->_this();
+         PortableServer::ObjectId_var managerImpl_oid = myPOA->activate_object(managerImpl);
+		CORBA::Object_var SA_obj = myPOA->servant_to_reference(managerImpl);
+		// Get a CORBA reference with the POA through the servant
 		
 		cout << "Obtain object reference from servant and register in naming service end, SA_obj= " <<  &SA_obj << endl;
 			CORBA::String_var sior(orb->object_to_string(SA_obj.in()));
 			cerr << "'" << (char*)sior << "'" << endl;
 			
-		cout << "resolve_initial_references NameService " << endl;
-		CORBA::Object_var obj1=orb->resolve_initial_references("NameService");
-		assert(!CORBA::is_nil(obj1.in()));
+		
 		
 		cout << "Creating Serveur CosNaming" << endl;
 		CosNaming::NamingContext_var nc = CosNaming::NamingContext::_narrow(obj1.in());
@@ -54,19 +67,18 @@ int main(int argc, char **argv) {
 		nc->rebind (name,SA_obj.in());
 	  
 		cout << "Binding Serveur end " << endl;
-
-		managerImpl->_remove_ref();
 		
 		cout << "Activating the POA Manager " << endl;
-		PortableServer::POAManager_var pmgr = _poa->the_POAManager();
 		pmgr->activate();       
 	  
 	   	cout << "Activating the POA Manager end" << endl;
 
         cout << "The server is ready. Awaiting for incoming requests..." << endl;
        
+
 	   // Start the ORB
         orb->run();
+        cout << "orb stop running ..." << endl;
 
 		// If orb leaves event handling loop.
     // - currently configured never to time out (??)

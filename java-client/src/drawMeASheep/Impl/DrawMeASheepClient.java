@@ -30,9 +30,10 @@ public class DrawMeASheepClient {
 
 	public static void main(String[] args) {
 		try {
-			Properties props = new Properties(); 
+			//Properties props = new Properties(); 
 		//	props.put("org.omg.PortableInterceptor.ORBInitializerClass.teacher.MyInterceptorInitializer","teacher.MyInterceptorInitializer"); 
-			ORB orb = ORB.init(args, props);
+			ORB orb = ORB.init(args, null);
+			
 			NamingContextExt namingContext = NamingContextExtHelper.narrow(orb.resolve_initial_references("NameService"));
 			explore(args,namingContext);
 
