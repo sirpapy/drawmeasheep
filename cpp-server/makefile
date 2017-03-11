@@ -30,7 +30,7 @@ all: createDir export $(OBJECTS)
 	$(CC) $(LDFLAGS) -L$(OMNI_LIB_DIR) $(BIN)/*.o -o Server  $(LIBS)
 	
 # compile le Serveur.cpp 
-serveur.o : drawingManagerImpl.o  cercle.o ligne.o
+serveur.o : drawingManagerImpl.o  cercle.o ligne.o ellipse.o
 	$(CC) $(CPPFLAGS) $(INCLUDES) $(SRC)/Serveur.cpp -I$(GEN) -o $(BIN)/Serveur.o
 # compile le Serveur.cpp 
 cercle.o : 
@@ -38,6 +38,10 @@ cercle.o :
 # compile le Serveur.cpp 
 ligne.o : 
 	$(CC) $(CPPFLAGS) $(INCLUDES) $(SRC)/ligne.cpp -I$(GEN) -o $(BIN)/Ligne.o
+
+ellipse.o :
+	$(CC) $(CPPFLAGS) $(INCLUDES) $(SRC)/ellipse.cpp -I$(GEN) -o $(BIN)/Ellipse.o
+
 
 # compile le drawingManagerImpl.cpp
 #drawingManagerImpl.o : drawMeASheepSK.o drawMeASheepDynSK.o
