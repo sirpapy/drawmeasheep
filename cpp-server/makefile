@@ -1,9 +1,9 @@
-﻿#NDOYE Amadou Lamine
+#NDOYE Amadou Lamine
 CC		    = /usr/bin/g++
 CPPFLAGS      = -g -c
 LDFLAGS       = -g
 #OMNI_HOME     = /omni
-#OMNI_INCLUDES = -I/usr/include -I$(OMNI_HOME)/include/omniORB4  -I$(OMNI_HOME)/include/omnithread 
+#OMNI_INCLUDES = -I/usr/include -I$(OMNI_HOME)/include/omniORB4  -I$(OMNI_HOME)/include/omnithread
 #OMNI_LIB_DIR  = $(OMNI_HOME)/lib/omniidl
 #OMNIIDL       = $(OMNI_HOME)/bin//omniidl
 OMNI_HOME     = ./omni_inst
@@ -22,13 +22,12 @@ OBJECTS       = drawMeASheepSK.o drawMeASheepDynSK.o drawingManagerImpl.o serveu
 OBJECTS_PATH = $(BIN)/Serveur.o $(BIN)/drawingManagerImpl.o $(BIN)/drawMeASheepSK.o $(BIN)/drawMeASheepDynSK.o
 OMNIORB_CONFIG=./omniORB.cfg
 
-
 # genere l executable du serveur a besoin des librairy omniidl et des flags -lomniORB4 -lomnithread -lomniDynamic4
 all: createDir export $(OBJECTS)
 	$(CC) $(LDFLAGS) -L$(OMNI_LIB_DIR) $(BIN)/*.o -o Server  $(LIBS)
-	
-# compile le Serveur.cpp 
-serveur.o : drawMeASheepSK.o drawMeASheepDynSK.o drawingManagerImpl.o 
+
+# compile le Serveur.cpp
+serveur.o : drawMeASheepSK.o drawMeASheepDynSK.o drawingManagerImpl.o
 	$(CC) $(CPPFLAGS) $(INCLUDES) $(SRC)/Serveur.cpp -I$(GEN) -o $(BIN)/Serveur.o
 
 # compile le drawingManagerImpl.cpp
@@ -39,7 +38,7 @@ drawingManagerImpl.o : drawMeASheepSK.o drawMeASheepDynSK.o
 drawMeASheepSK.o: drawMeASheepSK
 	$(CC) $(CPPFLAGS) $(INCLUDES) $(GEN)/drawMeASheepSK.cc -o $(BIN)/drawMeASheepSK.o
 
-	# compile le SK.cc généré
+# compile le SK.cc généré
 drawMeASheepDynSK.o: drawMeASheepSK
 	$(CC) $(CPPFLAGS) $(INCLUDES) $(GEN)/drawMeASheepDynSK.cc -o $(BIN)/drawMeASheepDynSK.o
 
@@ -48,11 +47,11 @@ drawMeASheepSK: $(CORBA)/drawMeASheep.idl
 	$(OMNIIDL) -bcxx -Wba -Wbexample $(CORBA)/drawMeASheep.idl && mv *.cc *.hh -t $(GEN)
 
 
-	
-export :
-		export OMNIORB_CONFIG=$(OMNIORB_CONFIG)
 
-clean: 
+export :
+	export OMNIORB_CONFIG=$(OMNIORB_CONFIG)
+
+clean:
 	rm $(BIN)/*.o -f
 	rm $(GEN)/*.hh -f
 	rm $(GEN)/*.cc -f
