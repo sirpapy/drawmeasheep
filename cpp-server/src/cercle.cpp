@@ -1,22 +1,35 @@
 #include "../include/cercle.hpp"
+#include <math.h>
 
-Cercle::Cercle(const Point & centre, int rayon ):_centre( centre ), _rayon( rayon ){
+
+inline Cercle::Cercle(const drawMeASheep::generated::entity::Point & centre, ::CORBA::Double rayon ){
+		_centre = centre ;
+		_rayon = rayon;
 
 }
-Cercle::~Cercle(){
 
+::CORBA::Double Cercle::rayon(){
+	return _rayon;
 }
-
-Figure * Cercle::copy() const{
-	return new Cercle( _centre, _rayon );
+::CORBA::Double Cercle::getSurface(){
+	return M_PI * pow( _rayon , 2 );
 }
-void Cercle::deplacer(const Point & trans){
-	_centre += trans;
-}
-double Cercle::surface() const{
+::CORBA::Double Cercle::getPerimeter(){
 	return M_PI * pow( _rayon , 2 );
 }
 
-void Cercle::dessiner(ostream & os) const{
-	os << "Centre: "<<_centre<<"\tRayon: "<<_rayon<<endl;
+void Cercle::translate(const drawMeASheep::generated::entity::Point& translationPoint){
+
+}
+void Cercle::homothetie(::CORBA::Double x){
+	  
+  }
+void Cercle::rotate(::CORBA::Double angle){
+	
+}
+void Cercle::centralSymetric(const drawMeASheep::generated::entity::Point& p){
+	
+}
+void Cercle::axialSymetric(const drawMeASheep::generated::entity::Point& p1, const drawMeASheep::generated::entity::Point& p2){
+	
 }

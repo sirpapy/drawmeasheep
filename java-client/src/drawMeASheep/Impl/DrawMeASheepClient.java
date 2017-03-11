@@ -21,6 +21,7 @@ import drawMeASheep.generated.entity.Cercle;
 import drawMeASheep.generated.entity.CercleHelper;
 import drawMeASheep.generated.entity.Drawing;
 import drawMeASheep.generated.entity.Point;
+import drawMeASheep.generated.entity.PointHelper;
 import drawMeASheep.generated.manager.DrawingManager;
 import drawMeASheep.generated.manager.DrawingManagerHelper;
 
@@ -63,10 +64,10 @@ public class DrawMeASheepClient {
 			System.out.println("isFull " +serverProxy.isFull());
 			
 			Point[] listOfPoint = new Point[0];
-			Cercle cercle = CercleHelper.extract(serverProxy.createDrawing("Cercle", listOfPoint, 0));
-			
+			Any any2 = serverProxy.createDrawing("Cercle", listOfPoint, 0);
+			Point point = new Point();
 			if(!serverProxy.isFull()){
-				CercleHelper.insert(any, cercle);
+				PointHelper.insert(any, point);
 				serverProxy.add(any);
 
 			}
@@ -74,10 +75,12 @@ public class DrawMeASheepClient {
 			System.out.println("Available surface = " +serverProxy.getAvailableSurface());
 			
 			
+			/*
 			for(Drawing draw :serverProxy.map()){
 				System.out.println("interface = "+draw._get_interface_def()+ " value = "+draw.getSurface());
 				
 			}
+			*/
 			
 				
 		} catch (InvalidName e) {

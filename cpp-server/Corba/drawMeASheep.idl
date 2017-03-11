@@ -14,7 +14,7 @@ module drawMeASheep{
 			interface Drawing {
 				double getSurface();
 				double getPerimeter();
-				void translate(in double x);
+				void translate(in Point translationPoint);
 				void homothetie(in double x);
 				void rotate(in double angle);
 				void centralSymetric(in Point p);

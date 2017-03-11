@@ -14,7 +14,8 @@ using namespace std;
 }
 ::CORBA::Any* DrawingManagerImpl::createDrawing(const char* name, const drawMeASheep::generated::entity::PointSet& points, ::CORBA::Double rayon){
    		cout << "createDrawing " << endl;
-   return NULL;
+		
+   return new CORBA::Any;
 }
 ::CORBA::Boolean DrawingManagerImpl::add(const ::CORBA::Any& a){
     cout << "add " << endl;

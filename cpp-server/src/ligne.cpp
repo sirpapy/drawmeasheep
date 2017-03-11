@@ -1,35 +1,39 @@
 #include "../include/ligne.hpp"
 
-Ligne::Ligne ( const Point & a, const Point & b )
-	:_origine( a.getX() , a.getY()), _extremite( b.getX(), b.getY()){
-
+inline Ligne::Ligne ( const drawMeASheep::generated::entity::Point & origine, const drawMeASheep::generated::entity::Point & extremite){
+		_origine = origine;
+		_extremite = extremite;
 	}
 
-Ligne::~Ligne(){
-}
+  drawMeASheep::generated::entity::Point Ligne::a(){
+		return _origine;
+  }
+  drawMeASheep::generated::entity::Point Ligne::b(){
+		return _extremite;
+	  
+  }
+  ::CORBA::Double getSurface(){
+	  
+  }
+  ::CORBA::Double getPerimeter(){
+	  
+  }
+  void translate(const drawMeASheep::generated::entity::Point& translationPoint){
+	  
+  }
+  void homothetie(::CORBA::Double x){
+	  
+  }
+  void rotate(::CORBA::Double angle){
+	  
+  }
+  void centralSymetric(const drawMeASheep::generated::entity::Point& p){
+	  
+  }
+  void axialSymetric(const drawMeASheep::generated::entity::Point& p1, const drawMeASheep::generated::entity::Point& p2){
+	  
+  }
 
-Figure * Ligne::copy() const {
-	return new Ligne( _origine , _extremite );
-}
-
-void Ligne::deplacer( const Point & trans ){
-	_origine+=trans;
-	_extremite+=trans;
-}
-
-double Ligne::surface( ) const {
-	return 1;
-}
-
-int Ligne::longueur() const{
-	return 0;
-	// todo complete section
-}
-void Ligne::dessiner( ostream & os) const {
-	os << "Origine: " << _origine << "\tExtremite: "<< _extremite << endl;
-}
-
-ostream & operator<<(ostream & os, const Figure & figure){
-	figure.dessiner(os);
-	return os;
-}
+  void Ligne::translate( const drawMeASheep::generated::entity::Point & trans ){
+	
+  }

@@ -1,22 +1,26 @@
 #ifndef CERCLE_H
 #define CERCLE_H
-#include "figure.hpp"
-
+#include "../omni_inst/include/omniORB4/CORBA.h"
+#include "../generated/drawMeASheep.hh"
 using namespace std;
 
-class Cercle: public Figure
+class Cercle : public POA_drawMeASheep::generated::entity::Cercle
 {
 public:
-    Cercle(const Point & centre = Point(0,0), int rayon = 0);
+    Cercle(const drawMeASheep::generated::entity::Point & centre, ::CORBA::Double rayon);
     virtual ~Cercle();
 
-    virtual Figure * copy() const;
-    virtual void deplacer(const Point & trans);
-    virtual void dessiner(ostream & os = cout) const;
-    virtual double surface() const;
+  ::CORBA::Double rayon();
+  ::CORBA::Double getSurface();
+  ::CORBA::Double getPerimeter();
+  void translate(const drawMeASheep::generated::entity::Point& translationPoint);
+  void homothetie(::CORBA::Double x);
+  void rotate(::CORBA::Double angle);
+  void centralSymetric(const drawMeASheep::generated::entity::Point& p);
+  void axialSymetric(const drawMeASheep::generated::entity::Point& p1, const drawMeASheep::generated::entity::Point& p2);
 
 private:
-    Point _centre;
-    int _rayon;
+    drawMeASheep::generated::entity::Point _centre;
+    ::CORBA::Double _rayon;
 };
 #endif
