@@ -1,4 +1,3 @@
-
 #NDOYE Amadou Lamine
 CC		    = /usr/bin/g++
 CPPFLAGS      = -g -c
@@ -19,14 +18,11 @@ OBJECTS_PATH = $(BIN)/Serveur.o $(BIN)/managerImpl.o $(BIN)/drawMeASheepSK.o
 OMNIORB_CONFIG=./omniORB.cfg
 LD_LIBRARY_PATH=$(OMNI_LIB_DIR):$LD_LIBRARY_PATH
 
-
-
 # genere l executable du serveur a besoin des librairy omniidl et des flags -lomniORB4 -lomnithread -lomniDynamic4
 all: createDir export $(OBJECTS)
-$(CC) $(LDFLAGS) -L$(OMNI_LIB_DIR) $(OBJECTS_PATH) -o Server  $(LIBS)
+	$(CC) $(LDFLAGS) -L$(OMNI_LIB_DIR) $(OBJECTS_PATH) -o Server  $(LIBS)
 	
 # compile le Serveur.cpp 
-	
 serveur.o : managerImpl.o drawMeASheepSK.o
 	$(CC) $(CPPFLAGS) $(INCLUDES) $(SRC)/Serveur.cpp -I$(GEN) -o $(BIN)/Serveur.o
 
