@@ -42,6 +42,7 @@ public:
     };
 
  drawMeASheep::generated::entity::DrawingMap* Server::map(){
+
 	 		cout << "map " << endl;
 
     return NULL;
@@ -62,6 +63,5 @@ public:
 }
 ::CORBA::Double Server::getAvailableSurface(){
 	cout << "getAvailableSurface " << endl;
-
     return 0.0;
 }

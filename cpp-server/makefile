@@ -1,3 +1,4 @@
+
 #NDOYE Amadou Lamine
 CC		    = /usr/bin/g++
 CPPFLAGS      = -g -c
@@ -22,7 +23,7 @@ LD_LIBRARY_PATH=$(OMNI_LIB_DIR):$LD_LIBRARY_PATH
 
 # genere l executable du serveur a besoin des librairy omniidl et des flags -lomniORB4 -lomnithread -lomniDynamic4
 all: createDir export $(OBJECTS)
-	$(CC) $(LDFLAGS) -L$(OMNI_LIB_DIR) $(OBJECTS_PATH) -o Server  $(LIBS)
+$(CC) $(LDFLAGS) -L$(OMNI_LIB_DIR) $(OBJECTS_PATH) -o Server  $(LIBS)
 	
 # compile le Serveur.cpp 
 	
@@ -40,6 +41,7 @@ managerImpl.o : $(INC)/managerImpl.h
 # compile l'idl et met les fichiers générés dans le dossier generated
 drawMeASheepSK: $(CORBA)/drawMeASheep.idl
 	$(OMNI_HOME)/bin/omniidl -bcxx  $(CORBA)/drawMeASheep.idl && mv *.cc *.hh -t $(GEN)
+
 
 	
 export :
@@ -63,7 +65,7 @@ createDir:
 	mkdir $(BIN) -p
 	mkdir $(OMNI_HOME) -p
 	mkdir $(OMNI_HOME)/omniNamesLogdir -p
-
+  
 rebuild:
 	make clean
 	make

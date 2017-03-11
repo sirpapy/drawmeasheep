@@ -11,6 +11,7 @@ int main(int argc, char **argv) {
 // Declare ORB and servant object
 
     try {
+
 		cout << "Initialisation of ORB " << endl;
         // Initialize the ORB
          CORBA::ORB_var orb = CORBA::ORB_init(argc, argv);
