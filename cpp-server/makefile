@@ -2,6 +2,7 @@
 CC		    = /usr/bin/g++
 CPPFLAGS      = -g -c
 LDFLAGS       = -g
+
 #OMNI_HOME     = /usr
 #OMNI_INCLUDES = -I/usr/include -I$(OMNI_HOME)/include/omniORB4  -I$(OMNI_HOME)/include/omnithread 
 #OMNI_LIB_DIR  = $(OMNI_HOME)/lib/omniidl
@@ -29,7 +30,7 @@ all: createDir export $(OBJECTS)
 	$(CC) $(LDFLAGS) -L$(OMNI_LIB_DIR) $(BIN)/*.o -o Server  $(LIBS)
 	
 # compile le Serveur.cpp 
-serveur.o : drawingManagerImpl.o  cercle.o ligne.o
+serveur.o : drawingManagerImpl.o  cercle.o ligne.o ellipse.o
 	$(CC) $(CPPFLAGS) $(INCLUDES) $(SRC)/Serveur.cpp -I$(GEN) -o $(BIN)/Serveur.o
 # compile le Serveur.cpp 
 cercle.o : 
@@ -37,6 +38,10 @@ cercle.o :
 # compile le Serveur.cpp 
 ligne.o : 
 	$(CC) $(CPPFLAGS) $(INCLUDES) $(SRC)/ligne.cpp -I$(GEN) -o $(BIN)/Ligne.o
+
+ellipse.o :
+	$(CC) $(CPPFLAGS) $(INCLUDES) $(SRC)/ellipse.cpp -I$(GEN) -o $(BIN)/Ellipse.o
+
 
 # compile le drawingManagerImpl.cpp
 #drawingManagerImpl.o : drawMeASheepSK.o drawMeASheepDynSK.o
@@ -47,6 +52,7 @@ drawingManagerImpl.o : drawMeASheepSK.o
 drawMeASheepSK.o: drawMeASheepSK
 	$(CC) $(CPPFLAGS) $(INCLUDES) $(GEN)/drawMeASheepSK.cc -o $(BIN)/drawMeASheepSK.o
 
+
 	# compile le SK.cc généré
 #drawMeASheepDynSK.o: drawMeASheepSK
 #	$(CC) $(CPPFLAGS) $(INCLUDES) $(GEN)/drawMeASheepDynSK.cc -o $(BIN)/drawMeASheepDynSK.o
@@ -56,11 +62,11 @@ drawMeASheepSK: $(CORBA)/drawMeASheep.idl
 	$(OMNIIDL) -bcxx -Wbexample $(CORBA)/drawMeASheep.idl && mv *.cc *.hh -t $(GEN)
 
 
-	
-export :
-		export OMNIORB_CONFIG=$(OMNIORB_CONFIG)
 
-clean: 
+export :
+	export OMNIORB_CONFIG=$(OMNIORB_CONFIG)
+
+clean:
 	rm $(BIN)/*.o -f
 	rm $(GEN)/*.hh -f
 	rm $(GEN)/*.cc -f
@@ -77,7 +83,7 @@ createDir:
 	mkdir $(BIN) -p
 	mkdir $(OMNI_HOME) -p
 	mkdir $(OMNI_HOME)/omniNamesLogdir -p
-  
+
 rebuild:
 	make clean
 	make

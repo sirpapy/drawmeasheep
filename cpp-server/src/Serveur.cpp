@@ -6,8 +6,6 @@
 #include <string>
 #include "../include/drawingManagerImpl.hpp"
 
-
-using namespace std;
 //NDOYE Amadou Lamine
 using namespace std;
 
@@ -17,8 +15,8 @@ int main(int argc, char **argv) {
     // Start CORBA server:
     // --------------------------------------------------------------------------
 // Declare ORB and servant object
-
     try {
+
 
 		cout << "Initialisation of ORB " << endl;
         // Initialize the ORB
@@ -93,7 +91,6 @@ int main(int argc, char **argv) {
     // - currently configured never to time out (??)
 		orb->destroy();
        free(name[0].id); // str_dup does a malloc internally
-
     }
 
     catch (CORBA::SystemException &) {
