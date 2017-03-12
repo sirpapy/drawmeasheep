@@ -76,7 +76,7 @@ clean:
 	rm -fr core -f
 	rm -fr *.hh -f
 	rm -fr *SK.cc -f
-	rm -fr Server -f
+	rm -fr Server.exe -f
 
 createDir:
 	mkdir $(GEN) -p
