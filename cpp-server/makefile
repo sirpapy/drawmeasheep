@@ -1,4 +1,4 @@
-#NDOYE Amadou Lamine & RABEARIJAO Maminirina Thierry
+#NDOYE Amadou Lamine & RABEARIJAO Maminirina Thierry & NDIAYE Pape
 CC		    = /usr/bin/g++
 CPPFLAGS      = -g -c
 LDFLAGS       = -g
