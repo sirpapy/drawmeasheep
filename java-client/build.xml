@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- NDOYE Amadou Lamine -->
 <project basedir="." default="build" name="DrawMeASheep-JavaClient">
     <property environment="env"/>
     <property name="IDLFile" value="../Corba/drawMeASheep.idl"/>
@@ -18,7 +19,8 @@
     
 	<target name="clean">
 	        <delete dir="${bin}"/>
-	        <delete dir="${src.generated}"/>
+        	<delete dir="${src.generated}"/>
+
 	</target>
 	
 	<target name="stubs" depends ="clean">

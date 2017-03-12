@@ -1,6 +1,7 @@
+//NDOYE Amadou Lamine
+
 package drawMeASheep.Impl;
 
-import java.util.Properties;
 
 import org.omg.CORBA.Any;
 import org.omg.CORBA.ORB;
@@ -19,7 +20,6 @@ import org.omg.CosNaming.NamingContextPackage.NotFound;
 
 import drawMeASheep.generated.entity.Cercle;
 import drawMeASheep.generated.entity.CercleHelper;
-import drawMeASheep.generated.entity.Drawing;
 import drawMeASheep.generated.entity.Point;
 import drawMeASheep.generated.entity.PointHelper;
 import drawMeASheep.generated.manager.DrawingManager;
@@ -63,13 +63,15 @@ public class DrawMeASheepClient {
 
 			System.out.println("isFull " +serverProxy.isFull());
 			
-			Point[] listOfPoint = new Point[0];
-			Any any2 = serverProxy.createDrawing("Cercle", listOfPoint, 0);
-			Point point = new Point();
+			Point[] listOfPoint = new Point[1];
+			listOfPoint[0] = new Point();
+			listOfPoint[0].x = 0;
+			listOfPoint[0].y = 0; 
+			Any any2 = serverProxy.createDrawing("Cercle", listOfPoint, 10);
+			Cercle cercle = CercleHelper.extract(any2);
 			if(!serverProxy.isFull()){
-				PointHelper.insert(any, point);
+				CercleHelper.insert(any, cercle);
 				serverProxy.add(any);
-
 			}
 			
 			System.out.println("Available surface = " +serverProxy.getAvailableSurface());
@@ -97,7 +99,7 @@ public class DrawMeASheepClient {
 	
 	}
 	
-	public static void explore(String[] args,NamingContextExt namingContext){
+	public static boolean explore(String[] args,NamingContextExt namingContext){
 		try {
 			
 			BindingListHolder list = new BindingListHolder();
@@ -107,12 +109,16 @@ public class DrawMeASheepClient {
 			for(Binding holder : list.value){
 				System.out.println("type = "+holder.binding_type.value());
 				System.out.println("value: " +namingContext.to_string(holder.binding_name));
+				if(namingContext.to_string(holder.binding_name).equals("Serveur")){
+					return true;
+				}
 			}
 			
 			if(it != null){
 				BindingIterator bIt = BindingIteratorHelper.narrow(it.value);
 				if(bIt !=null) {
-					recIt(bIt,namingContext);
+					 recIt(bIt,namingContext);
+					 return true;
 
 				}else{
 					System.out.println("null it.value = " + it.value);
@@ -124,6 +130,8 @@ public class DrawMeASheepClient {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+		
+		return false;
 
 	}
 	
