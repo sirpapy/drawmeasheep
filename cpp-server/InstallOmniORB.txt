@@ -14,10 +14,11 @@ Quick Guide :
 				../configure --prefix=../../omni_inst CXX=/usr/bin/g++ PYTHON=/usr/bin/python2.7 CC=/usr/bin/gcc --enable-threads --enable-shared
 				make 
 				make install
-			else not tryed :
+				
+			else:
 				sudo apt-get install omniidl omniorb omniorb-nameserver omniorb-idl libomniorb4-dev libomniorb4-1
-
-		
+				use the makefile_aptget for running and building the server
+				
 	Build the server makefile : from cpp-server directory
 		use the server makeFile : make 
 	
