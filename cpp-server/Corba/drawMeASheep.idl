@@ -14,7 +14,7 @@ module drawMeASheep{
 			interface Drawing {
 				double getSurface();
 				double getPerimeter();
-				void translate(in double x);
+				void translate(in Point translationPoint);
 				void homothetie(in double x);
 				void rotate(in double angle);
 				void centralSymetric(in Point p);
@@ -31,10 +31,11 @@ module drawMeASheep{
 			};
 			interface Cercle : Drawing {
 				readonly attribute double rayon;	
+				readonly attribute Point center;
 
 			};
-			interface Ellipse : Drawing {
-				readonly attribute PointSet points;
+			interface Ellipse : Cercle {
+				readonly attribute double largeur;
 			};
 
 			typedef sequence <Drawing> DrawingSet;

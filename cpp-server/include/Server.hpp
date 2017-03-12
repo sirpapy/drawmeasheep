@@ -10,6 +10,7 @@
 #include "../omni_inst/include/omniORB4/CORBA.h"
 #include "../generated/drawMeASheep.hh"
 #include "../include/drawingMap.hpp"
+
 //NDOYE Amadou Lamine
 using namespace std;
 
