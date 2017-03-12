@@ -10,6 +10,7 @@
 #include "../omni_inst/include/omniORB4/CORBA.h"
 #include "../generated/drawMeASheep.hh"
 #include "../include/drawingMap.hpp"
+
 //NDOYE Amadou Lamine
 using namespace std;
 
@@ -42,7 +43,6 @@ public:
     };
 
  drawMeASheep::generated::entity::DrawingMap* Server::map(){
-
 	 		cout << "map " << endl;
 
     return NULL;
@@ -63,5 +63,6 @@ public:
 }
 ::CORBA::Double Server::getAvailableSurface(){
 	cout << "getAvailableSurface " << endl;
+
     return 0.0;
 }
