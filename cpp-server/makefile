@@ -1,4 +1,4 @@
-#NDOYE Amadou Lamine
+#NDOYE Amadou Lamine & RABEARIJAO Maminirina Thierry
 CC		    = /usr/bin/g++
 CPPFLAGS      = -g -c
 LDFLAGS       = -g
@@ -41,7 +41,6 @@ ligne.o :
 
 ellipse.o :
 	$(CC) $(CPPFLAGS) $(INCLUDES) $(SRC)/ellipse.cpp -I$(GEN) -o $(BIN)/Ellipse.o
-
 
 # compile le drawingManagerImpl.cpp
 #drawingManagerImpl.o : drawMeASheepSK.o drawMeASheepDynSK.o

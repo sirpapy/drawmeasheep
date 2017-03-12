@@ -6,3 +6,4 @@ cpp-server/InstallOmniORB.txt
 cpp-server/cmake-build-debug/*
 .idea*
 cmake*
+cpp-server/Server
