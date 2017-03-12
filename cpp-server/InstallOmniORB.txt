@@ -1,24 +1,31 @@
 Create by NDOYE Amadou Lamine
 Quick Guide :
-	run the server makefile : make createDir
+
+	Installation : from cpp-server directory
+		sudo apt-get install g++
+		sudo apt-get install pk-config
+		sudo apt-get install python2.7-dev
+		unzip omni_inst.zip
+			if you want a custom install of  omniORB:
+				unzip  omniORB-4.2.0.zip
+				cd omniORB-4.2.0
+				mkdir build
+				cd build
+				../configure --prefix=../../omni_inst CXX=/usr/bin/g++ PYTHON=/usr/bin/python2.7 CC=/usr/bin/gcc --enable-threads --enable-shared
+				make 
+				make install
+			else not tryed :
+				sudo apt-get install omniidl omniorb omniorb-nameserver omniorb-idl libomniorb4-dev libomniorb4-1
+
+		
+	Build the server makefile : from cpp-server directory
+		use the server makeFile : make 
 	
-	then :
 	
-	apt-get install pk-config
-	apt-get install python2.7-dev
+	run omniNames:from cpp-server directory
+		export OMNIORB_CONFIG=./omniORB.cfg
+		omniNames -start 4333 -logdir ./omni_inst/omniNamesLogdir -errlog ./omni_inst/omniNamesError.txt
 
-	cd omniORB-4.2.0
-	mkdir build
-	$cd build
-	../configure --prefix=/mnt/c/Users/Lamine/cppCorba/omni_inst CXX=/usr/bin/g++ PYTHON=/usr/bin/python2.7 CC=/usr/bin/gcc --enable-threads --enable-shared
-
-	make 
-	make install
-
-	apt-get install omniorb-nameserver
-	export OMNIORB_CONFIG=./omniORB.cfg
-	omniNames -start -logdir /mnt/c/Users/Lamine/cppCorba/omni_inst/omniNamesLogdir -errlog /mnt/c/Users/Lamine/cppCorba/omni_inst/omniNamesError.txt
-
-
-	open a shell 
-	run the server makefile
+	run the server :  from cpp-server directory
+		export LD_LIBRARY_PATH=./omni_inst/lib:$LD_LIBRARY_PATH
+		./Server -ORBInitRef NameService=corbaloc::localhost:4333/NameService
