@@ -1,3 +1,4 @@
+/* NDOYE Amadou Lamine */
 module drawMeASheep{
 	module generated{
 
@@ -13,14 +14,14 @@ module drawMeASheep{
 			interface Drawing {
 				double getSurface();
 				double getPerimeter();
-				void translate(in double x);
+				void translate(in Point translationPoint);
 				void homothetie(in double x);
 				void rotate(in double angle);
-				void centralSymmetry(in Point p);
-				void axialSymmetry(in Point p1, in Point p2);
+				void centralSymetric(in Point p);
+				void axialSymetric(in Point p1, in Point p2);
 			};
 
-			interface Polygon : Drawing {
+			interface Polygone : Drawing {
 				readonly attribute PointSet points;
 			};
 			interface Line : Drawing {
@@ -28,12 +29,13 @@ module drawMeASheep{
 				readonly attribute Point b;	
 	
 			};
-			interface Circle : Drawing {
-				readonly attribute double radius;	
-				attribute Point center;
+			interface Cercle : Drawing {
+				readonly attribute double rayon;	
+				readonly attribute Point center;
+
 			};
-			interface Ellipse : Drawing {
-				readonly attribute PointSet points;
+			interface Ellipse : Cercle {
+				readonly attribute double largeur;
 			};
 
 			typedef sequence <Drawing> DrawingSet;

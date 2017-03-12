@@ -1,6 +1,4 @@
-
 #include "../include/ellipse.hpp"
-#include<math.h>
 
 
 //
@@ -25,7 +23,7 @@ drawMeASheep::generated::entity::PointSet* Ellipse::points()
 
 ::CORBA::Double Ellipse::getSurface()
 {
-    return 3.14 * rayon * largeur;
+    return M_PI * rayon * largeur;
 }
 
 ::CORBA::Double Ellipse::getPerimeter()
