@@ -1,11 +1,13 @@
+/** Author : RABEARIJAO Maminirina Thierry
+   * Review : 
+   */
 #include "../include/cercle.hpp"
-#include <math.h>
+
 
 
 inline Cercle::Cercle(const drawMeASheep::generated::entity::Point & centre, ::CORBA::Double rayon ){
 		_center = centre ;
 		_rayon = rayon;
-
 }
 
 ::CORBA::Double Cercle::rayon(){
@@ -28,11 +30,13 @@ void Cercle::translate(const drawMeASheep::generated::entity::Point& translation
 	_center.y = translationPoint.y + _center.y;
 
 }
+
 void Cercle::homothetie(::CORBA::Double x){
 	_rayon = _rayon * x ;
 	_center.x = x * _center.x;
 	_center.y = x * _center.y;
-  }
+}
+
 void Cercle::rotate(::CORBA::Double angle){
 	
 }
