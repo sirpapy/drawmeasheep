@@ -27,7 +27,7 @@ OMNIORB_CONFIG=./omniORB.cfg
 
 # genere l executable du serveur a besoin des librairy omniidl et des flags -lomniORB4 -lomnithread -lomniDynamic4
 all: createDir export $(OBJECTS)
-	$(CC) $(LDFLAGS) -L$(OMNI_LIB_DIR) $(BIN)/*.o -o Server  $(LIBS)
+	$(CC) $(LDFLAGS) -L$(OMNI_LIB_DIR) $(BIN)/*.o -o Server.exe  $(LIBS)
 	
 # compile le Serveur.cpp 
 serveur.o : drawingManagerImpl.o  cercle.o ligne.o ellipse.o
