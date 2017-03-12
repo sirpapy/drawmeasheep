@@ -4,7 +4,7 @@
 #include "../omni_inst/include/omniORB4/CORBA.h"
 #include "../generated/drawMeASheep.hh"
 
-//NDOYE Amadou Lamine
+//NDOYE Amadou Lamine & NDIAYE Pape
 
 class DrawingManagerImpl :  public ::POA_drawMeASheep::generated::manager::DrawingManager,
 					public PortableServer::RefCountServantBase

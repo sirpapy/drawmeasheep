@@ -6,7 +6,7 @@
 #include <string>
 #include "../include/drawingManagerImpl.hpp"
 
-//NDOYE Amadou Lamine
+//NDOYE Amadou Lamine & NDIAYE Pape
 using namespace std;
 
 
