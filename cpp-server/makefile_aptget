@@ -3,14 +3,11 @@ CC		    = /usr/bin/g++
 CPPFLAGS      = -g -c
 LDFLAGS       = -g
 
-#OMNI_HOME     = /usr
-#OMNI_INCLUDES = -I/usr/include -I$(OMNI_HOME)/include/omniORB4  -I$(OMNI_HOME)/include/omnithread 
-#OMNI_LIB_DIR  = $(OMNI_HOME)/lib/omniidl
-#OMNIIDL       = $(OMNI_HOME)/bin//omniidl
-OMNI_HOME     = ./omni_inst
-OMNI_INCLUDES = -I$(OMNI_HOME)/include
-OMNI_LIB_DIR  = $(OMNI_HOME)/lib
-OMNIIDL       = $(OMNI_HOME)/bin/omniidl
+OMNI_HOME     = /usr
+OMNI_INCLUDES = -I/usr/include -I$(OMNI_HOME)/include/omniORB4  -I$(OMNI_HOME)/include/omnithread 
+OMNI_LIB_DIR  = $(OMNI_HOME)/lib/omniidl
+OMNIIDL       = $(OMNI_HOME)/bin//omniidl
+
 
 INCLUDES      = $(OMNI_INCLUDES)
 LIBS          = $(OMNI_INCLUDES) -lomniORB4 -lomnithread -lomniDynamic4
@@ -70,8 +67,8 @@ clean:
 	rm $(BIN)/*.o -f
 	rm $(GEN)/*.hh -f
 	rm $(GEN)/*.cc -f
-	rm  $(OMNI_HOME)/omniNamesLogdir/*.bak -f
-	rm  $(OMNI_HOME)/omniNamesLogdir/*.log -f
+	rm  ./omniNamesLogdir/*.bak -f
+	rm  ./omniNamesLogdir/*.log -f
 	rm -fr *.o -f
 	rm -fr core -f
 	rm -fr *.hh -f
@@ -81,8 +78,7 @@ clean:
 createDir:
 	mkdir $(GEN) -p
 	mkdir $(BIN) -p
-	mkdir $(OMNI_HOME) -p
-	mkdir $(OMNI_HOME)/omniNamesLogdir -p
+	mkdir ./omniNamesLogdir -p
 
 rebuild:
 	make clean
