@@ -25,6 +25,7 @@ public:
 
 private:
   ::CORBA::Double _side_length;
-  ::drawMeASheep::generated::entity::PointSet &_points;
+  ::drawMeASheep::generated::entity::PointSet _points;
+  int _nb_point;
 };
 #endif

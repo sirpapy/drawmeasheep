@@ -3,11 +3,12 @@
 
 inline Polygone::Polygone( const ::CORBA::Double side, const ::CORBA::Double nb_points){
 	_side_length = side;
-	_points = new ::drawMeASheep::generated::entity::PointSet(nb_points);
+	_points = ::drawMeASheep::generated::entity::PointSet(nb_points);
+	_nb_point = nb_points;
 }	
 
 ::CORBA::Double Polygone::getSurface(){
-	return _points.size()*_side_length;
+	return _nb_point*_side_length;
 }
 ::CORBA::Double Polygone::getPerimeter(){
 }
