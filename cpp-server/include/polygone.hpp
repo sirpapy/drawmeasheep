@@ -8,26 +8,23 @@
 #include "../generated/drawMeASheep.hh"
 #include <math.h>
 using namespace std;
-using namespace drawMeASheep::generated::entity;
 
 class Polygone : public POA_drawMeASheep::generated::entity::Polygone
 {
 public:
-    Polygone(const Point & centre, ::CORBA::Double rayon);
-    virtual ~Polygone();
+  Polygone(const ::CORBA::Double side_length, ::CORBA::Double nb_points);
+  virtual ~Polygone();
 
-  ::CORBA::Double rayon();
-  Point center();
   ::CORBA::Double getSurface();
   ::CORBA::Double getPerimeter();
-  void translate(const Point& translationPoint);
+  void translate(const ::drawMeASheep::generated::entity::Point &translationPoint);
   void homothetie(::CORBA::Double x);
   void rotate(::CORBA::Double angle);
-  void centralSymetric(const Point& p);
-  void axialSymetric(const Point& p1, const Point& p2);
+  void centralSymetric(const ::drawMeASheep::generated::entity::Point &p);
+  void axialSymetric(const ::drawMeASheep::generated::entity::Point &p1, const ::drawMeASheep::generated::entity::Point &p2);
 
 private:
-    PointSet _points;
-	int _nb_points;
+  ::CORBA::Double _side_length;
+  ::drawMeASheep::generated::entity::PointSet &_points;
 };
 #endif
