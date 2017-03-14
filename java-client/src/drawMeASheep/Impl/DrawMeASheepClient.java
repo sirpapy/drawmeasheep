@@ -20,15 +20,13 @@ import org.omg.CosNaming.NamingContextPackage.NotFound;
 
 import drawMeASheep.generated.entity.Cercle;
 import drawMeASheep.generated.entity.CercleHelper;
-import drawMeASheep.generated.entity.Point;
-import drawMeASheep.generated.entity.PointHelper;
 import drawMeASheep.generated.manager.DrawingManager;
 import drawMeASheep.generated.manager.DrawingManagerHelper;
 
 
 
 public class DrawMeASheepClient {
-
+	
 	public static void main(String[] args) {
 		try {
 			//Properties props = new Properties(); 
@@ -59,15 +57,24 @@ public class DrawMeASheepClient {
 			System.out.println("name  id= " + name[0].id + " kind = " +name[0].kind);
 
 			DrawingManager serverProxy = DrawingManagerHelper.narrow(namingContext.resolve(name));
-			System.out.println("serverProxy narrow ");
+			System.out.println("serverProxy narrowed ");
+			
+			if(serverProxy!=null){
+				Drawer drawer = new Drawer(serverProxy);
+				drawer.run();
+			}else{
+				System.out.println("Could not connect to the Serveur");
+			}
+			
 
+			/*
 			System.out.println("isFull " +serverProxy.isFull());
 			
-			Point[] listOfPoint = new Point[1];
-			listOfPoint[0] = new Point();
-			listOfPoint[0].x = 0;
-			listOfPoint[0].y = 0; 
-			Any any2 = serverProxy.createDrawing("Cercle", listOfPoint, 10);
+			double[] params = {1,10} ;
+			
+			//Any any2 = serverProxy.createDrawing("Cercle", listOfPoint, 10);
+			Any any2 = serverProxy.createDrawing("Cercle",params);
+
 			Cercle cercle = CercleHelper.extract(any2);
 			if(!serverProxy.isFull()){
 				CercleHelper.insert(any, cercle);
