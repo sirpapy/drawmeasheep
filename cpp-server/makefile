@@ -1,4 +1,4 @@
-#NDOYE Amadou Lamine & RABEARIJAO Maminirina Thierry
+#NDOYE Amadou Lamine & RABEARIJAO Maminirina Thierry & NDIAYE Pape
 CC		    = /usr/bin/g++
 CPPFLAGS      = -g -c
 LDFLAGS       = -g
@@ -30,12 +30,18 @@ all: createDir export $(OBJECTS)
 	$(CC) $(LDFLAGS) -L$(OMNI_LIB_DIR) $(BIN)/*.o -o Server.exe  $(LIBS)
 	
 # compile le Serveur.cpp 
-serveur.o : drawingManagerImpl.o  cercle.o ligne.o ellipse.o
+serveur.o : drawingManagerImpl.o  cercle.o ligne.o ellipse.o polygone.o
 	$(CC) $(CPPFLAGS) $(INCLUDES) $(SRC)/Serveur.cpp -I$(GEN) -o $(BIN)/Serveur.o
-# compile le Serveur.cpp 
+
+# compile le polygone
+polygone.o : 
+	$(CC) $(CPPFLAGS) $(INCLUDES) $(SRC)/polygone.cpp -I$(GEN) -o $(BIN)/Polygone.o
+
+# compile le cercle 
 cercle.o : 
 	$(CC) $(CPPFLAGS) $(INCLUDES) $(SRC)/cercle.cpp -I$(GEN) -o $(BIN)/Cercle.o
-# compile le Serveur.cpp 
+
+# compile la ligne
 ligne.o : 
 	$(CC) $(CPPFLAGS) $(INCLUDES) $(SRC)/ligne.cpp -I$(GEN) -o $(BIN)/Ligne.o
 

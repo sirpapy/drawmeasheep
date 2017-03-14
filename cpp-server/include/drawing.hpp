@@ -1,12 +1,11 @@
-#ifndef FIGUREH
-#define FIGUREH
+#ifndef DRAWINGH
+#define DRAWINGH
 #include <iostream>
-#include "point.h"
 
 using namespace std;
 
 // classe abstraite de base
-class Figure {
+class Drawing {
 
 public:
     /**
@@ -14,9 +13,9 @@ public:
      * Par suite, une fonction virtuelle de copy est d�finie qui permet
      * la simulation de constructeurs virtuels.
      */
-    virtual Figure * copy() const = 0;
+    virtual Drawing * copy() const = 0;
 
-    virtual ~Figure();
+    virtual ~Drawing();
 
 	virtual void deplacer(const Point & trans) = 0;
 	virtual void dessiner(ostream & os = cout) const = 0;
@@ -24,7 +23,7 @@ public:
 
 	bool operator== (const Figure & f) const;
 
-    friend ostream & operator<<(ostream & os, const Figure & figure);
+    friend ostream & operator<<(ostream & os, const Drawing & drawing);
 };
 
 
