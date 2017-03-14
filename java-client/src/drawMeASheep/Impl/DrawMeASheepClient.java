@@ -28,7 +28,7 @@ import drawMeASheep.generated.manager.DrawingManagerHelper;
 
 
 public class DrawMeASheepClient {
-
+	
 	public static void main(String[] args) {
 		try {
 			//Properties props = new Properties(); 
