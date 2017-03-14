@@ -1,14 +1,14 @@
 #include "../include/ligne.hpp"
 
-inline Ligne::Ligne ( const drawMeASheep::generated::entity::Point & origine, const drawMeASheep::generated::entity::Point & extremite){
+inline Ligne::Ligne ( const Point & origine, const Point & extremite){
 		_origine = origine;
 		_extremite = extremite;
 	}
 
-  drawMeASheep::generated::entity::Point Ligne::a(){
+  Point Ligne::a(){
 		return _origine;
   }
-  drawMeASheep::generated::entity::Point Ligne::b(){
+  Point Ligne::b(){
 		return _extremite;
 	  
   }
@@ -18,7 +18,7 @@ inline Ligne::Ligne ( const drawMeASheep::generated::entity::Point & origine, co
   ::CORBA::Double getPerimeter(){
 	  
   }
-  void translate(const drawMeASheep::generated::entity::Point& translationPoint){
+  void translate(const Point& translationPoint){
 	  
   }
   void homothetie(::CORBA::Double x){
@@ -27,13 +27,13 @@ inline Ligne::Ligne ( const drawMeASheep::generated::entity::Point & origine, co
   void rotate(::CORBA::Double angle){
 	  
   }
-  void centralSymetric(const drawMeASheep::generated::entity::Point& p){
+  void centralSymetric(const Point& p){
 	  
   }
-  void axialSymetric(const drawMeASheep::generated::entity::Point& p1, const drawMeASheep::generated::entity::Point& p2){
+  void axialSymetric(const Point& p1, const Point& p2){
 	  
   }
 
-  void Ligne::translate( const drawMeASheep::generated::entity::Point & trans ){
+  void Ligne::translate( const Point & trans ){
 	
   }
