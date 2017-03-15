@@ -1,4 +1,5 @@
 Create by NDOYE Amadou Lamine
+Reviewed by RABEARIJAO Maminirina Thierry
 Quick Guide :
 
 	Installation : from cpp-server directory
@@ -11,13 +12,14 @@ Quick Guide :
 				cd omniORB-4.2.0
 				mkdir build
 				cd build
-				../configure --prefix=../../omni_inst CXX=/usr/bin/g++ PYTHON=/usr/bin/python2.7 CC=/usr/bin/gcc --enable-threads --enable-shared
+				../configure --prefix=$(pwd)/../../omni_inst CXX=/usr/bin/g++ PYTHON=/usr/bin/python2.7 CC=/usr/bin/gcc --enable-threads --enable-shared
 				make 
 				make install
-			else not tryed :
+				
+			else:
 				sudo apt-get install omniidl omniorb omniorb-nameserver omniorb-idl libomniorb4-dev libomniorb4-1
-
-		
+				use the makefile_aptget for running and building the server
+				
 	Build the server makefile : from cpp-server directory
 		use the server makeFile : make 
 	

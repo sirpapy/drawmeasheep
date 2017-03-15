@@ -1,3 +1,5 @@
 ./omnni_inst/
 ./omniORB-4.2.0/
-.Serveur
+./Serveur.exe
+./omnni_inst/*
+./omniORB-4.2.0/*

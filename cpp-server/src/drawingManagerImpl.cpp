@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <string>
 #include "../include/drawingManagerImpl.hpp"
+//NDOYE Amadou Lamine & NDIAYE Pape
 
 using namespace std;
 

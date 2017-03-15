@@ -4,7 +4,9 @@
 #include "../omni_inst/include/omniORB4/CORBA.h"
 #include "../generated/drawMeASheep.hh"
 #include <vector>
-//NDOYE Amadou Lamine
+
+
+//NDOYE Amadou Lamine & NDIAYE Pape
 
 
 using namespace std;
