@@ -1,6 +1,6 @@
 #NDOYE Amadou Lamine
 CC		    = /usr/bin/g++
-CPPFLAGS      = -g -c
+CPPFLAGS      = -g -c -std=c++11
 LDFLAGS       = -g
 
 #OMNI_HOME     = /usr

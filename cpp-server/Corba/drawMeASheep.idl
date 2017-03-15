@@ -11,7 +11,7 @@ module drawMeASheep{
 			typedef sequence <Point> PointSet;
 
 
-			interface Drawing {
+			interface Drawing{
 				double getSurface();
 				double getPerimeter();
 				void translate(in Point translationPoint);
