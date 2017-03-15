@@ -1,3 +1,4 @@
+//NDOYE Amadou Lamine
 package drawMeASheep.Impl;
 
 import java.util.HashMap;
@@ -44,9 +45,10 @@ public class Drawer {
 						System.out.println(getShapeCommand());
 						readed = scanner.nextLine();
 						if(processDraw(readed)){
-							
+							System.out.println("Shapped added to the board");
 						}else{
-							
+							System.out.println("Shapped not added to the board, retry with smaller size");
+
 						}
 						break;
 
@@ -56,9 +58,10 @@ public class Drawer {
 						System.out.println(getTransformCommand());
 						readed = scanner.nextLine();
 						if(processTransform(readed)){
-							
+							System.out.println("Transformation added to the board");
+
 						}else{
-							
+							System.out.println("Transformation not added to the board, retry with smaller size");
 						}
 						break;
 					case "viewall":
@@ -83,7 +86,7 @@ public class Drawer {
 
 
 	private boolean processDraw(String readed) {
-		
+		boolean result = false;
 		String[] readedTab = readed.split(" ");
 		switch(readedTab[0].toLowerCase()){
 		case "ligne":
@@ -101,6 +104,7 @@ public class Drawer {
 				int id = serverProxy.add(sender);
 				if(id!= -1){
 					myDrawings.put(id, line);
+					result = true;
 				}else{
 					System.out.println("could not add the drawing change");
 				}
@@ -120,6 +124,7 @@ public class Drawer {
 				int id = serverProxy.add(sender);
 				if(id!= -1){
 					myDrawings.put(id, cercle);
+					result = true;
 				}else{
 					System.out.println("could not add the drawing change");
 				}
@@ -141,6 +146,7 @@ public class Drawer {
 				int id = serverProxy.add(sender);
 				if(id!= -1){
 					myDrawings.put(id, polygone);
+					result = true;
 				}else{
 					System.out.println("could not add the drawing change");
 				}
@@ -161,6 +167,7 @@ public class Drawer {
 				int id = serverProxy.add(sender);
 				if(id!= -1){
 					myDrawings.put(id, ellipse);
+					result = true;
 				}else{
 					System.out.println("could not add the drawing change");
 				}
@@ -170,26 +177,76 @@ public class Drawer {
 			System.out.println("Unknown command ");
 			break;
 		}
-		return false;
+		params =null;
+		sender = null;
+		return result;
 	}
 	private boolean processTransform(String readed) {
 			String[] readedTab = readed.split(" ");
+			int id = -1;
+			if(readedTab.length <= 2 ){
+				System.out.println("Wrong number of arguments");
+				return false;
+			}
+			id = Integer.parseInt(readedTab[1]);
+
+			if(!myDrawings.containsKey(id)){
+				System.out.println("Unknown shape ID");
+				return false;
+			}
 			switch(readedTab[0].toLowerCase()){
-			case "transform":
+			case "translate":
+				if(readedTab.length != 4){
+					System.out.println("Wrong number of arguments");
+					break;
+				}
+				params = new double[2]; 
+				params[0]=Double.parseDouble(readedTab[2]);
+				params[1]=Double.parseDouble(readedTab[3]);
 				break;
 			case "rotate":
-				break;
-			case "symmetryC":
-				break;
-			case "symmetryA":
+				if(readedTab.length != 3){
+					System.out.println("Wrong number of arguments");
+					break;
+				}
+				params = new double[1]; 
+				params[0]=Double.parseDouble(readedTab[2]);
 				break;
 			case "homothety":
+				if(readedTab.length != 3){
+					System.out.println("Wrong number of arguments");
+					break;
+				}
+				params = new double[1]; 
+				params[0]=Double.parseDouble(readedTab[2]);
 				break;
+			case "symmetryC":
+				if(readedTab.length != 4){
+					System.out.println("Wrong number of arguments");
+					break;
+				}
+				params = new double[2]; 
+				params[0]=Double.parseDouble(readedTab[2]);
+				params[1]=Double.parseDouble(readedTab[3]);
+				break;
+			case "symmetryA":
+				if(readedTab.length != 6){
+					System.out.println("Wrong number of arguments");
+					break;
+				}
+				params = new double[4]; 
+				params[0]=Double.parseDouble(readedTab[2]);
+				params[1]=Double.parseDouble(readedTab[3]);
+				params[2]=Double.parseDouble(readedTab[4]);
+				params[3]=Double.parseDouble(readedTab[5]);
+				break;
+			
 			default :
 				System.out.println("Unknown command ");
 				break;
 			}
-			return false;
+
+			return 	serverProxy.transformDrawing(id, params);
 		}
 	
 	private String getAllMyDrawing(){
