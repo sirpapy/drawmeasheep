@@ -2,8 +2,8 @@
     Review : NDOYE Lamine
     */
 	
-#ifndef SERVER_H
-#define SERVER_H
+#ifndef DRAWINGMANAGER_H
+#define DRAWINGMANAGER_H
 //#include <CORBA.h>
 #include "../omni_inst/include/omniORB4/CORBA.h"
 #include "../generated/drawMeASheep.hh"
