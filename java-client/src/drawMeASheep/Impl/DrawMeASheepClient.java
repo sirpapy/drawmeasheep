@@ -29,12 +29,13 @@ public class DrawMeASheepClient {
 	
 	public static void main(String[] args) {
 		try {
-			//Properties props = new Properties(); 
-		//	props.put("org.omg.PortableInterceptor.ORBInitializerClass.teacher.MyInterceptorInitializer","teacher.MyInterceptorInitializer"); 
 			ORB orb = ORB.init(args, null);
 			
 			NamingContextExt namingContext = NamingContextExtHelper.narrow(orb.resolve_initial_references("NameService"));
-			explore(args,namingContext);
+			if(!explore(args,namingContext)){
+				System.out.println("Could not reach the Serveur");
+
+			}
 
 			normalClient(args,namingContext, orb);
 			
@@ -65,41 +66,13 @@ public class DrawMeASheepClient {
 			}else{
 				System.out.println("Could not connect to the Serveur");
 			}
-			
-
-			/*
-			System.out.println("isFull " +serverProxy.isFull());
-			
-			double[] params = {1,10} ;
-			
-			//Any any2 = serverProxy.createDrawing("Cercle", listOfPoint, 10);
-			Any any2 = serverProxy.createDrawing("Cercle",params);
-
-			Cercle cercle = CercleHelper.extract(any2);
-			if(!serverProxy.isFull()){
-				CercleHelper.insert(any, cercle);
-				serverProxy.add(any);
-			}
-			
-			System.out.println("Available surface = " +serverProxy.getAvailableSurface());
-			
-			
-			/*
-			for(Drawing draw :serverProxy.map()){
-				System.out.println("interface = "+draw._get_interface_def()+ " value = "+draw.getSurface());
-				
-			}
-			*/
-			
+					
 				
 		} catch (InvalidName e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		} catch (NotFound e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		} catch (CannotProceed e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 

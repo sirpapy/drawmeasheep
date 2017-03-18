@@ -52,11 +52,11 @@ module drawMeASheep{
 
 			interface DrawingManager{
 				readonly attribute entity::DrawingMap map;
-				any createDrawing( in string name ,in Params params);
+				any createDrawing( in string name ,in Params parameters);
 				long add( in any a);
 				boolean isFull();
 				double getAvailableSurface();
-				boolean transformDrawing(in double id,in Params params); 
+				boolean transformDrawing(in double id,in Params parameters); 
 
 			};
 
