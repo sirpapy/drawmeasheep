@@ -1,3 +1,7 @@
+/** Author : NDOYE Lamine
+    Review : NDIAYE Pape
+    */
+
 #ifndef DRAWINGH
 #define DRAWINGH
 #include <iostream>

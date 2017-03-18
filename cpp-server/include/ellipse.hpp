@@ -1,4 +1,6 @@
-/** Author : RABEARIJAO Maminirina Thierry*/
+/** Author : RABEARIJAO Maminirina Thierry
+    Review : NDOYE Lamine & NDIAYE Pape
+    */
 #ifndef ELLIPSE_H
 #define ELLIPSE_H
 #include "../omni_inst/include/omniORB4/CORBA.h"
@@ -6,7 +8,6 @@
 #include "point.h"
 #include <math.h>
 
-//NDOYE Amadou Lamine & NDIAYE Pape
 class Ellipse : public POA_drawMeASheep::generated::entity::Ellipse {
 private:
 	// Make sure all instances are built on the heap by making the

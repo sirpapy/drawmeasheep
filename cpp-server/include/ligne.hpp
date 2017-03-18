@@ -1,3 +1,6 @@
+/** Author : RABEARIJAO Maminirina Thierry
+    Review : NDIAYE Pape
+    */
 #ifndef LIGNE_H
 #define LIGNE_H
 #include "../omni_inst/include/omniORB4/CORBA.h"

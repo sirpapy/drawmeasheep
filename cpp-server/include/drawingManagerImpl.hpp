@@ -1,3 +1,7 @@
+/** Author :  NDIAYE Pape
+    Review : NDOYE Lamine
+    */
+	
 #ifndef SERVER_H
 #define SERVER_H
 //#include <CORBA.h>
@@ -5,8 +9,6 @@
 #include "../generated/drawMeASheep.hh"
 #include <vector>
 
-
-//NDOYE Amadou Lamine & NDIAYE Pape
 
 
 using namespace std;
