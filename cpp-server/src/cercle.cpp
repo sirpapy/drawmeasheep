@@ -1,9 +1,7 @@
 /** Author : RABEARIJAO Maminirina Thierry
-   * Review : 
+   * Review : Pape NDIAYE
    */
 #include "../include/cercle.hpp"
-
-//Pape NDIAYE
 
 inline Cercle::Cercle(const drawMeASheep::generated::entity::Point & centre, ::CORBA::Double rayon ){
 		_center = centre ;

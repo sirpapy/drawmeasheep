@@ -5,7 +5,9 @@
 #ifndef DRAWINGH
 #define DRAWINGH
 #include <iostream>
-
+/** Author : Pape NDIAYE
+   * Review :
+*/
 using namespace std;
 
 // classe abstraite de base

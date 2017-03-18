@@ -1,5 +1,7 @@
 #include "../include/ligne.hpp"
-
+/** Author : RABEARIJAO Maminirina Thierry
+   * Review : Pape NDIAYE
+*/
 inline Ligne::Ligne ( const Point & origine, const Point & extremite){
 		_origine = origine;
 		_extremite = extremite;

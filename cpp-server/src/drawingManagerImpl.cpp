@@ -3,7 +3,11 @@
 #include <string>
 #include "../include/drawingManagerImpl.hpp"
 #include "../include/drawing.hpp"
-//NDOYE Amadou Lamine & NDIAYE Pape
+
+
+/** Author : Pape NDIAYE
+*/
+
 
 using namespace std;
 

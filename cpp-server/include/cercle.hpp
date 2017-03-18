@@ -1,6 +1,7 @@
 /** Author : RABEARIJAO Maminirina Thierry
     Review : NDOYE Lamine
-    */
+*/
+
 #ifndef CERCLE_H
 #define CERCLE_H
 #include "../omni_inst/include/omniORB4/CORBA.h"

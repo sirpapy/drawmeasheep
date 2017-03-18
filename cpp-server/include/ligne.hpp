@@ -7,7 +7,6 @@
 #include "../generated/drawMeASheep.hh"
 
 using namespace drawMeASheep::generated::entity;
-//NDOYE Amadou Lamine & NDIAYE Pape
 
 class Ligne : public POA_drawMeASheep::generated::entity::Line
 {

@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!-- NDOYE Amadou Lamine -->
+<!--
+/** Author : NDOYE Amadou Lamine
+*/ -->
 <project basedir="." default="build" name="DrawMeASheep-JavaClient">
     <property environment="env"/>
     <property name="IDLFile" value="../Corba/drawMeASheep.idl"/>

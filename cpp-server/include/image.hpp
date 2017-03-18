@@ -1,4 +1,5 @@
 /** Author : RABEARIJAO Maminirina Thierry
+ * review : Pape NDIAYE
     */
     
 #ifndef IMAGE_H
