@@ -1,7 +1,6 @@
 #include "../include/point.h"
 
-/** Author : RABEARIJAO Maminirina Thierry
-   * Review : NDOYE Lamine
+/** Author : NDOYE Lamine
 */
 
 Point::Point( int a, int b ):x(a), y(b){}

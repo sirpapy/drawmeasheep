@@ -1,5 +1,4 @@
-/** Author : RABEARIJAO Maminirina Thierry
-   * Review : Pape NDIAYE
+/** Author : Pape NDIAYE
 */
 #ifndef POLYGONE_H
 #define POLYGONE_H

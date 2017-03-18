@@ -1,5 +1,5 @@
-/** Author : RABEARIJAO Maminirina Thierry
-    Review : NDIAYE Pape
+/** Author : Pape NDIAYE
+
     */
 #ifndef LIGNE_H
 #define LIGNE_H

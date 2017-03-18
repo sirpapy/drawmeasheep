@@ -1,6 +1,5 @@
 #include "../include/polygone.hpp"
-/** Author : RABEARIJAO Maminirina Thierry
-   * Review : Pape NDIAYE
+/** Author : Pape NDIAYE
 */
 
 inline Polygone::Polygone( const ::CORBA::Double side, const ::CORBA::Double nb_points){
