@@ -1,9 +1,12 @@
+/** Author : RABEARIJAO Maminirina Thierry
+    */
 #ifndef POINT_H
 #define POINT_H
 #include <iostream>
 #include <math.h>
 
 using namespace std;
+//NDOYE Amadou Lamine & NDIAYE Pape
 
 class Point
 {

@@ -1,3 +1,7 @@
+/** Author : NDOYE Lamine
+    Review : NDIAYE Pape
+    */
+
 #ifndef DRAWINGH
 #define DRAWINGH
 #include <iostream>
@@ -19,7 +23,7 @@ public:
 
 	virtual void deplacer(const Point & trans) = 0;
 	virtual void dessiner(ostream & os = cout) const = 0;
-    virtual double surface() const = 0;
+    virtual double getSurface() const = 0;
 
 	bool operator== (const Figure & f) const;
 

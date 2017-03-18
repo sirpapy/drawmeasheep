@@ -1,3 +1,6 @@
+/** Author : RABEARIJAO Maminirina Thierry
+    */
+    
 #ifndef IMAGE_H
 #define IMAGE_H
 #include "figure.hpp"

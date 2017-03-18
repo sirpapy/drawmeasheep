@@ -1,9 +1,13 @@
+/** Author : RABEARIJAO Maminirina Thierry
+    Review : NDIAYE Pape
+    */
 #ifndef LIGNE_H
 #define LIGNE_H
 #include "../omni_inst/include/omniORB4/CORBA.h"
 #include "../generated/drawMeASheep.hh"
 
 using namespace drawMeASheep::generated::entity;
+//NDOYE Amadou Lamine & NDIAYE Pape
 
 class Ligne : public POA_drawMeASheep::generated::entity::Line
 {
