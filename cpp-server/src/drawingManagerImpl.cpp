@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <string>
 #include "../include/drawingManagerImpl.hpp"
+#include "../include/drawing.hpp"
 //NDOYE Amadou Lamine & NDIAYE Pape
 
 using namespace std;
@@ -36,7 +37,7 @@ using namespace std;
     double current = 0.0;
     for(int i = 0;i < drawingArray.size();i++)
     {
-        tmp = static_cast < drawMeASheep::generated::entity::Drawing&>(drawingArray[i]);
+        tmp = static_cast<drawMeASheep::generated::entity::Drawing>(drawingArray[i]);
         current += tmp.getSurface();
     }
     return MAXSURFACE - current;

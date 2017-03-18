@@ -6,7 +6,7 @@
 #include "point.h"
 #include <math.h>
 
-
+//NDOYE Amadou Lamine & NDIAYE Pape
 class Ellipse : public POA_drawMeASheep::generated::entity::Ellipse {
 private:
 	// Make sure all instances are built on the heap by making the

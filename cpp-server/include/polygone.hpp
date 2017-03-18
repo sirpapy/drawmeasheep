@@ -2,7 +2,7 @@
 #ifndef POLYGONE_H
 /** Author : RABEARIJAO Maminirina Thierry
    * Review : 
-   */
+*/
 #define POLYGONE_H
 #include "../omni_inst/include/omniORB4/CORBA.h"
 #include "../generated/drawMeASheep.hh"

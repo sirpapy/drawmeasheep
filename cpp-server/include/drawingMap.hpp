@@ -3,7 +3,7 @@
 
 
 #include "../generated/drawMeASheep.hh"
-
+//NDOYE Amadou Lamine & NDIAYE Pape
 using namespace std;
 
 class DrawingMap : public virtual ::CORBA::Object,
