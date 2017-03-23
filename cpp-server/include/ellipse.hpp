@@ -21,6 +21,7 @@ public:
 	// standard constructor
 	Ellipse(drawMeASheep::generated::entity::Point& _centre, ::CORBA::Double _rayon, ::CORBA::Double _largeur);
 	virtual ~Ellipse();
+	char* toString();
 
 	// methods corresponding to defined IDL attributes and operations
 	drawMeASheep::generated::entity::PointSet* points();

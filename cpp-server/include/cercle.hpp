@@ -19,6 +19,7 @@ public:
   drawMeASheep::generated::entity::Point center();
   ::CORBA::Double getSurface();
   ::CORBA::Double getPerimeter();
+  char* toString();
   void translate(const drawMeASheep::generated::entity::Point& translationPoint);
   void homothetie(::CORBA::Double x);
   void rotate(::CORBA::Double angle);

@@ -19,6 +19,7 @@ module drawMeASheep{
 				void rotate(in double angle);
 				void centralSymetric(in Point p);
 				void axialSymetric(in Point p1, in Point p2);
+				string toString();
 			};
 
 			interface Polygone : Drawing {
