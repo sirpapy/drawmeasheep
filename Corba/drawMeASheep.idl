@@ -55,7 +55,9 @@ module drawMeASheep{
 				long add( in entity::Drawing a);
 				boolean isFull();
 				double getAvailableSurface();
+				boolean transformDrawing(in double id,in Params params); 
 				string getDrawings();
+
 			};
 
 		};
