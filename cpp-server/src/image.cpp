@@ -1,5 +1,8 @@
 #include "../include/image.hpp"
 
+/** Author : Pape NDIAYE
+*/
+
 Image::Image( const Point & a ) :_origine( a), _nombre(0){
 
 }

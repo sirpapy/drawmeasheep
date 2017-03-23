@@ -1,5 +1,7 @@
 #include "../include/ellipse.hpp"
-
+/** Author : RABEARIJAO Maminirina Thierry
+   * Review : Pape NDIAYE
+*/
 
 //
 // Example implementation code for IDL interface 'drawMeASheep::generated::entity::Ellipse'

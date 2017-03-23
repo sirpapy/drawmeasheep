@@ -1,0 +1,15 @@
+cpp-client/bin/*.o
+<<<<<<< HEAD
+cpp-server/bin/*.o
+cpp-server/omni_*
+cpp-server/omniORB-4.2.0/*
+<<<<<<< HEAD
+cpp-server/InstallOmniORB.txt
+cpp-server/cmake-build-debug/*
+=======
+>>>>>>> 2f56c193193369f97719b8b5c047caab04670131
+.idea*
+cmake*
+=======
+.idea/*
+>>>>>>> update gitignore

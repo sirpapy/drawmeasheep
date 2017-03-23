@@ -1,5 +1,6 @@
-//NDOYE Amadou Lamine
-
+/** Author : NDOYE Amadou Lamine
+   * Review : Pape NDIAYE
+*/
 package drawMeASheep.Impl;
 
 
