@@ -20,8 +20,8 @@ using namespace std;
 //	return NULL;
 }
 
-::CORBA::Long DrawingManagerImpl::add(const char *a) {
-    cout << "Ajout de " << a << endl;
+::CORBA::Long DrawingManagerImpl::add(drawMeASheep::generated::entity::Drawing_ptr a){
+ //   cout << "Ajout de " << a << endl;
     if (this->isFull()) {
         return 0;
     }
@@ -32,8 +32,7 @@ using namespace std;
 drawMeASheep::generated::entity::Drawing_ptr DrawingManagerImpl::createDrawing(const char* name, const ::drawMeASheep::generated::manager::Params& parameters) {
     cout << "createDrawing " << endl;
     if (name == "circle") {
-        if (this->add(name)) {
-			drawMeASheep::generated::entity::Point * p1 = new drawMeASheep::generated::entity::Point();
+		drawMeASheep::generated::entity::Point * p1 = new drawMeASheep::generated::entity::Point();
 			p1->x = parameters[0];
 			p1->y = parameters[1];
 			double angle = parameters[2];
@@ -41,6 +40,8 @@ drawMeASheep::generated::entity::Drawing_ptr DrawingManagerImpl::createDrawing(c
             Cercle *cercle = new Cercle(*p1,angle );
 
             POA_drawMeASheep::generated::entity::Drawing *drawing = cercle;
+        if (this->add(drawing->_this())) {
+			
             return drawing->_this();
         }
         return NULL;
