@@ -72,9 +72,16 @@ drawMeASheep::generated::entity::Drawing_ptr DrawingManagerImpl::createDrawing(c
 
 char *DrawingManagerImpl::getDrawings() {
     char *tmp;
+    strcat(tmp, "Il y'a ");
+    strcat(tmp,this->drawingArray.size());
+    strcat(tmp," dessins");
+    double surface;
     for (int i = 0; i < this->drawingArray.size(); i++) {
-        strcat(tmp, this->drawingArray[i]);
+        surface += (this->drawingArray[i]).getSurface();
     }
+    strcat(tmp, " avec une surface de ");
+    strcat(tmp, this->drawingArray.size());
+
     return tmp;
 }
 
