@@ -31,10 +31,10 @@ using namespace std;
 drawMeASheep::generated::entity::Drawing_ptr DrawingManagerImpl::createDrawing(const char* name, const ::drawMeASheep::generated::entity::PointSet& points, ::CORBA::Double rayon){
     cout << "createDrawing " << endl;
     if(name=="circle"){
-        MyCercle* cercle = new MyCercle(points[0], rayon);
+		::drawMeASheep::generated::entity::Point center = points[0];
+        Cercle* cercle  = new Cercle(center, rayon);
 		POA_drawMeASheep::generated::entity::Drawing* drawing = cercle;
-        drawMeASheep::generated::entity::Drawing_ptr test = drawing->_this();
-		return test;
+		return  drawing->_this();
       /*	  if(this->add(name)){
             return static_cast<drawMeASheep::generated::entity::Drawing_ptr>(test);
         }

@@ -9,11 +9,11 @@
 #include <math.h>
 using namespace std;
 
-class MyCercle : public POA_drawMeASheep::generated::entity::Cercle, public drawMeASheep::generated::entity::Drawing
+class Cercle : public POA_drawMeASheep::generated::entity::Cercle
 {
 public:
-    MyCercle(const drawMeASheep::generated::entity::Point & centre, ::CORBA::Double rayon);
-    virtual ~MyCercle();
+    Cercle(const drawMeASheep::generated::entity::Point centre, double rayon);
+    virtual ~Cercle();
 
   ::CORBA::Double rayon();
   drawMeASheep::generated::entity::Point center();
