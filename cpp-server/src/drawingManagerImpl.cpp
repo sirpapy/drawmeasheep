@@ -31,14 +31,17 @@ using namespace std;
 drawMeASheep::generated::entity::Drawing_ptr DrawingManagerImpl::createDrawing(const char* name, const ::drawMeASheep::generated::entity::PointSet& points, ::CORBA::Double rayon){
     cout << "createDrawing " << endl;
     if(name=="circle"){
-        MyCercle l = MyCercle(points[0], rayon);
-        drawMeASheep::generated::entity::Drawing test =l;
-        if(this->add(name)){
+        MyCercle* cercle = new MyCercle(points[0], rayon);
+		POA_drawMeASheep::generated::entity::Drawing* drawing = cercle;
+        drawMeASheep::generated::entity::Drawing_ptr test = drawing->_this();
+		return test;
+      /*	  if(this->add(name)){
             return static_cast<drawMeASheep::generated::entity::Drawing_ptr>(test);
         }
+		*/
     }
 
-    return NULL;
+    return drawMeASheep::generated::entity::Drawing_Helper::_nil();
 }
 ::CORBA::Boolean DrawingManagerImpl::isFull(){
     ::CORBA::Boolean isF=this->drawingArray.size()==MAXDRAWING;

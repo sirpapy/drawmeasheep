@@ -8,7 +8,7 @@ inline MyCercle::MyCercle(const drawMeASheep::generated::entity::Point & centre,
 		_rayon = rayon;
 }
 
-::CORBA::Double Cercle::rayon(){
+::CORBA::Double MyCercle::rayon(){
 	return _rayon;
 }
 
