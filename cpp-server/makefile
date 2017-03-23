@@ -20,7 +20,7 @@ BIN = ./bin
 CORBA = ../Corba
 GEN = ./generated
 #OBJECTS       = drawMeASheepSK.o drawMeASheepDynSK.o drawingManagerImpl.o serveur.o
-OBJECTS       = drawMeASheepSK.o drawingManagerImpl.o serveur.o
+OBJECTS       = drawMeASheepSK.o drawingManagerImpl.o serveur.o client
 
 OBJECTS_PATH = $(BIN)/Serveur.o $(BIN)/drawingManagerImpl.o $(BIN)/drawMeASheepSK.o $(BIN)/drawMeASheepDynSK.o
 OMNIORB_CONFIG=./omniORB.cfg
@@ -48,6 +48,14 @@ ligne.o :
 ellipse.o :
 	$(CC) $(CPPFLAGS) $(INCLUDES) $(SRC)/ellipse.cpp -I$(GEN) -o $(BIN)/Ellipse.o
 
+client: client.o $(BIN)/drawMeASheepSK.o
+	$(CC) -o $@ $^ $(LIBS)
+
+client.o :
+	$(CC) $(CPPFLAGS) $(INCLUDES) $(SRC)/Client.cpp -I$(GEN) -o $(BIN)/client.o
+
+
+
 # compile le drawingManagerImpl.cpp
 #drawingManagerImpl.o : drawMeASheepSK.o drawMeASheepDynSK.o
 drawingManagerImpl.o : drawMeASheepSK.o 
@@ -61,6 +69,8 @@ drawMeASheepSK.o: drawMeASheepSK
 	# compile le SK.cc généré
 #drawMeASheepDynSK.o: drawMeASheepSK
 #	$(CC) $(CPPFLAGS) $(INCLUDES) $(GEN)/drawMeASheepDynSK.cc -o $(BIN)/drawMeASheepDynSK.o
+
+
 
 # compile l'idl et met les fichiers générés dans le dossier generated
 drawMeASheepSK: $(CORBA)/drawMeASheep.idl
@@ -92,3 +102,9 @@ createDir:
 rebuild:
 	make clean
 	make
+
+.cpp.o:
+	$(CXX) $(CXXFLAGS) -o $@ -c $< $(INCLUDES)
+
+.cc.o:
+	$(CXX) $(CXXFLAGS) -o $@ -c $< $(INCLUDES)
