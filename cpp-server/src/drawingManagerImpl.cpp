@@ -31,8 +31,8 @@ using namespace std;
 drawMeASheep::generated::entity::Drawing_ptr DrawingManagerImpl::createDrawing(const char* name, const ::drawMeASheep::generated::entity::PointSet& points, ::CORBA::Double rayon){
     cout << "createDrawing " << endl;
     if(name=="circle"){
-		::drawMeASheep::generated::entity::Point center = points[0];
-        Cercle* cercle  = new Cercle(center, rayon);
+        Cercle* cercle  = new Cercle(points[0], rayon);
+        
 		POA_drawMeASheep::generated::entity::Drawing* drawing = cercle;
 		return  drawing->_this();
       /*	  if(this->add(name)){

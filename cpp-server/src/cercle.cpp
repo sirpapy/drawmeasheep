@@ -11,12 +11,12 @@ Cercle::~Cercle(void ){
 
 }
 
-
 ::CORBA::Double Cercle::rayon(){
 	return _rayon;
 }
 
 ::drawMeASheep::generated::entity::Point Cercle::center(){
+  
 	  return _center;
   }
 
