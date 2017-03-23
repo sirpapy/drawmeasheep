@@ -18,16 +18,22 @@ using namespace std;
     return new drawMeASheep::generated::entity::DrawingMap();
 //	return NULL;
 }
-char* DrawingManagerImpl::createDrawing(const char* name, const ::drawMeASheep::generated::entity::PointSet& points, ::CORBA::Double rayon){
-   		cout << "createDrawing " << endl;
 
-   return const_cast<char*>(name);
-}
-::CORBA::Boolean DrawingManagerImpl::add(const char* a){
+::CORBA::Boolean DrawingManagerImpl::add(const char* a) {
     cout << "Ajout de " << a << endl;
-    this->drawingArray.push_back(a);
+    if (this->isFull()) {
+    return ::CORBA::False;
+    }
+        this->drawingArray.push_back(a);
+    return ::CORBA::True;
 }
-
+char* DrawingManagerImpl::createDrawing(const char* name, const ::drawMeASheep::generated::entity::PointSet& points, ::CORBA::Double rayon){
+    cout << "createDrawing " << endl;
+    if(this->add(name)){
+        return const_cast<char*>(name) + " added";
+    }
+    return "Couldn't add the drawing, the map is full";
+}
 ::CORBA::Boolean DrawingManagerImpl::isFull(){
     ::CORBA::Boolean isF=this->drawingArray.size()==MAXDRAWING;
 	cout << "isFull " << isF << endl;
