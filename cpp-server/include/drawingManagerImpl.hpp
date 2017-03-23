@@ -25,8 +25,8 @@ public:
 		drawingArray.reserve(MAXDRAWING);
 	}
 	drawMeASheep::generated::entity::DrawingMap* map();
-    char* createDrawing(const char* name, const ::drawMeASheep::generated::entity::PointSet& points, ::CORBA::Double rayon);
-    ::CORBA::Boolean add(const char* a);
+    drawMeASheep::generated::entity::Drawing_ptr createDrawing(const char* name, const ::drawMeASheep::generated::entity::PointSet& points, ::CORBA::Double rayon);
+    ::CORBA::Long add(const char* a);
 	::CORBA::Boolean isFull();
 	::CORBA::Double getAvailableSurface();
     char* getDrawings();

@@ -51,8 +51,8 @@ module drawMeASheep{
 
 			interface DrawingManager{
 				readonly attribute entity::DrawingMap map;
-				string createDrawing( in string name , in entity::PointSet points , in double rayon);
-				boolean add( in string a);
+				entity::Drawing createDrawing( in string name , in entity::PointSet points , in double rayon);
+				long add( in string a);
 				boolean isFull();
 				double getAvailableSurface();
 				string getDrawings();

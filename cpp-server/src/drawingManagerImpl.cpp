@@ -3,6 +3,7 @@
 #include <string>
 #include "../include/drawingManagerImpl.hpp"
 #include "../include/drawing.hpp"
+#include "../include/cercle.hpp"
 
 
 /** Author : Pape NDIAYE
@@ -19,20 +20,24 @@ using namespace std;
 //	return NULL;
 }
 
-::CORBA::Boolean DrawingManagerImpl::add(const char* a) {
+::CORBA::Long DrawingManagerImpl::add(const char* a) {
     cout << "Ajout de " << a << endl;
     if (this->isFull()) {
-    return ::CORBA::False;
+    return 0;
     }
         this->drawingArray.push_back(a);
-    return ::CORBA::True;
+    return 1;
 }
-char* DrawingManagerImpl::createDrawing(const char* name, const ::drawMeASheep::generated::entity::PointSet& points, ::CORBA::Double rayon){
+drawMeASheep::generated::entity::Drawing_ptr DrawingManagerImpl::createDrawing(const char* name, const ::drawMeASheep::generated::entity::PointSet& points, ::CORBA::Double rayon){
     cout << "createDrawing " << endl;
-    if(this->add(name)){
-        return const_cast<char*>(name) + " added";
+    if(name=="circle"){
+        drawMeASheep::generated::entity::Drawing test =
+                dynamic_cast<drawMeASheep::generated::entity::Drawing_ptr>(MyCercle(points[0], rayon));
     }
-    return "Couldn't add the drawing, the map is full";
+    if(this->add(name)){
+        return ;
+    }
+    return ;
 }
 ::CORBA::Boolean DrawingManagerImpl::isFull(){
     ::CORBA::Boolean isF=this->drawingArray.size()==MAXDRAWING;
