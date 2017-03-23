@@ -24,14 +24,12 @@ import drawMeASheep.generated.manager.DrawingManager;
 public class Drawer {
 	
 	private final DrawingManager serverProxy;
-	private Any sender;
 	private final Map<Integer, Drawing> myDrawings ;
 	private double[] params;
 	
 	public Drawer(DrawingManager serverProxy) {
 		this.serverProxy = serverProxy;
 		myDrawings = new HashMap<>();
-		sender = null ;
 	}
 	
 
@@ -99,11 +97,9 @@ public class Drawer {
 			params = new double[1]; 
 			params[0]=Double.parseDouble(readedTab[1]);
 			
-			sender = serverProxy.createDrawing("Line", params);
-			Line line = LineHelper.extract(sender);
+			Line line = (Line) serverProxy.createDrawing("Line", params);
 			if(!serverProxy.isFull()){
-				LineHelper.insert(sender, line);
-				int id = serverProxy.add(sender);
+				int id = serverProxy.add(line);
 				if(id!= -1){
 					myDrawings.put(id, line);
 					result = true;
@@ -119,11 +115,9 @@ public class Drawer {
 			}
 			params = new double[2]; 
 			params[0]=Double.parseDouble(readedTab[1]);
-			sender = serverProxy.createDrawing("Cercle", params);
-			Cercle cercle = CercleHelper.extract(sender);
+			Cercle cercle = (Cercle) serverProxy.createDrawing("Cercle", params);
 			if(!serverProxy.isFull()){
-				CercleHelper.insert(sender, cercle);
-				int id = serverProxy.add(sender);
+				int id = serverProxy.add(cercle);
 				if(id!= -1){
 					myDrawings.put(id, cercle);
 					result = true;
@@ -141,11 +135,9 @@ public class Drawer {
 			params = new double[2]; 
 			params[0]=Double.parseDouble(readedTab[1]);
 			params[1]=Double.parseDouble(readedTab[2]);
-			sender = serverProxy.createDrawing("Cercle", params);
-			Polygone polygone = PolygoneHelper.extract(sender);
+			Polygone polygone = (Polygone) serverProxy.createDrawing("Cercle", params);
 			if(!serverProxy.isFull()){
-				PolygoneHelper.insert(sender, polygone);
-				int id = serverProxy.add(sender);
+				int id = serverProxy.add(polygone);
 				if(id!= -1){
 					myDrawings.put(id, polygone);
 					result = true;
@@ -162,11 +154,9 @@ public class Drawer {
 			params = new double[2]; 
 			params[0]=Double.parseDouble(readedTab[1]);
 			params[1]=Double.parseDouble(readedTab[2]);
-			sender = serverProxy.createDrawing("Cercle", params);
-			Ellipse ellipse = EllipseHelper.extract(sender);
+			Ellipse ellipse = (Ellipse) serverProxy.createDrawing("Cercle", params);
 			if(!serverProxy.isFull()){
-				CercleHelper.insert(sender, ellipse);
-				int id = serverProxy.add(sender);
+				int id = serverProxy.add(ellipse);
 				if(id!= -1){
 					myDrawings.put(id, ellipse);
 					result = true;
@@ -180,7 +170,6 @@ public class Drawer {
 			break;
 		}
 		params =null;
-		sender = null;
 		return result;
 	}
 	private boolean processTransform(String readed) {

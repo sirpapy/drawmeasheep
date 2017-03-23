@@ -7,3 +7,4 @@ cpp-server/cmake-build-debug/*
 .idea*
 cmake*
 cpp-server/Server
+cpp-server/Server.exe
