@@ -46,6 +46,14 @@ char* DrawingManagerImpl::createDrawing(const char* name, const ::drawMeASheep::
 //    return MAXSURFACE - current;
     return MAXSURFACE - this->drawingArray.size();
 }
+char* DrawingManagerImpl::getDrawings(){
+    char* tmp;
+    for(int i = 0;i < this->drawingArray.size();i++)
+    {
+        strcat(tmp,this->drawingArray[i]);
+    }
+    return tmp;
+}
 
 double maxSurface(){
 

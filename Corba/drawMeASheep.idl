@@ -55,7 +55,7 @@ module drawMeASheep{
 				boolean add( in string a);
 				boolean isFull();
 				double getAvailableSurface();
-
+				string getDrawings();
 			};
 
 		};

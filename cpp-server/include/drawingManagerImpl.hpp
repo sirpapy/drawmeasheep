@@ -29,6 +29,7 @@ public:
     ::CORBA::Boolean add(const char* a);
 	::CORBA::Boolean isFull();
 	::CORBA::Double getAvailableSurface();
+    char* getDrawings();
 
 };
 
