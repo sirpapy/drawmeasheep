@@ -51,11 +51,11 @@ module drawMeASheep{
 			typedef sequence <double> Params;
 			interface DrawingManager{
 				readonly attribute entity::DrawingMap map;
-				entity::Drawing createDrawing( in string name , in Params params);
+				entity::Drawing createDrawing( in string name , in Params parameters);
 				long add( in entity::Drawing a);
 				boolean isFull();
 				double getAvailableSurface();
-				boolean transformDrawing(in double id,in Params params); 
+				boolean transformDrawing(in double id,in Params parameters); 
 				string getDrawings();
 			};
 
