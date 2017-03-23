@@ -29,6 +29,7 @@ public:
 	::CORBA::Long add(drawMeASheep::generated::entity::Drawing_ptr a);
 	::CORBA::Boolean isFull();
 	::CORBA::Double getAvailableSurface();
+	::CORBA::Boolean transformDrawing(::CORBA::Double id, const ::drawMeASheep::generated::manager::Params& parameters);
     char* getDrawings();
 
 };

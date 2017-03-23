@@ -48,3 +48,6 @@ void Cercle::centralSymetric(const drawMeASheep::generated::entity::Point& p){
 void Cercle::axialSymetric(const drawMeASheep::generated::entity::Point& p1, const drawMeASheep::generated::entity::Point& p2){
 	
 }
+char* Cercle::toString(){
+	return (char*)"Cercle ";
+}

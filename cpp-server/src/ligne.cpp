@@ -35,7 +35,9 @@ inline Ligne::Ligne ( const Point & origine, const Point & extremite){
   void axialSymetric(const Point& p1, const Point& p2){
 	  
   }
-
+char* Ligne::toString(){
+    return (char*)"Line ";
+}
   void Ligne::translate( const Point & trans ){
 	
   }

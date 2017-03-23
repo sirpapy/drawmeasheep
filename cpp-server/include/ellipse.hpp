@@ -5,7 +5,6 @@
 #define ELLIPSE_H
 #include "../omni_inst/include/omniORB4/CORBA.h"
 #include "../generated/drawMeASheep.hh"
-#include "point.h"
 #include <math.h>
 
 class Ellipse : public POA_drawMeASheep::generated::entity::Ellipse {

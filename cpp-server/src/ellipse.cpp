@@ -57,6 +57,10 @@ void Ellipse::centralSymetric(const drawMeASheep::generated::entity::Point& p)
     // insert code here and remove the warning
 }
 
+char* Ellipse::toString(){
+    return (char*)"Ellipse ";
+}
+
 void Ellipse::axialSymetric(const drawMeASheep::generated::entity::Point& p1, const drawMeASheep::generated::entity::Point& p2)
 {
     // insert code here and remove the warning

@@ -71,20 +71,14 @@ drawMeASheep::generated::entity::Drawing_ptr DrawingManagerImpl::createDrawing(c
 }
 
 char *DrawingManagerImpl::getDrawings() {
-    char *tmp;
-    strcat(tmp, "Il y'a ");
-    strcat(tmp,this->drawingArray.size());
-    strcat(tmp," dessins");
+    std::string tmp = "Il y'a dans l'image : ";
     double surface;
     for (int i = 0; i < this->drawingArray.size(); i++) {
-        surface += (this->drawingArray[i]).getSurface();
+        tmp = this->drawingArray[i]->toString() + string(" ");
     }
-    strcat(tmp, " avec une surface de ");
-    strcat(tmp, this->drawingArray.size());
-
-    return tmp;
+    return (char*)tmp.c_str();
 }
 
-double maxSurface() {
-
+::CORBA::Boolean DrawingManagerImpl::transformDrawing(::CORBA::Double id, const ::drawMeASheep::generated::manager::Params& parameters) {
+    return NULL;
 }
