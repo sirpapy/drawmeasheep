@@ -33,8 +33,12 @@ drawMeASheep::generated::entity::Drawing_ptr DrawingManagerImpl::createDrawing(c
     cout << "createDrawing " << endl;
     if (name == "circle") {
         if (this->add(name)) {
+			drawMeASheep::generated::entity::Point * p1 = new drawMeASheep::generated::entity::Point();
+			p1->x = parameters[0];
+			p1->y = parameters[1];
+			double angle = parameters[2];
 
-            Cercle *cercle = new Cercle(parameters[0], new Point(parameters[1],parameters[2]));
+            Cercle *cercle = new Cercle(*p1,angle );
 
             POA_drawMeASheep::generated::entity::Drawing *drawing = cercle;
             return drawing->_this();
