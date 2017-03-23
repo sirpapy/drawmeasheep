@@ -20,13 +20,13 @@ class DrawingManagerImpl :  public ::POA_drawMeASheep::generated::manager::Drawi
 {
 	CORBA::ORB_var orb;
 public:
-	vector <::CORBA::Any> drawingArray;
+	vector <const char*> drawingArray;
 	DrawingManagerImpl(){
 		drawingArray.reserve(MAXDRAWING);
 	}
 	drawMeASheep::generated::entity::DrawingMap* map();
-	::CORBA::Any* createDrawing(const char* name, const drawMeASheep::generated::entity::PointSet& points, ::CORBA::Double rayon);
-	::CORBA::Boolean add(const ::CORBA::Any& a);
+    char* createDrawing(const char* name, const ::drawMeASheep::generated::entity::PointSet& points, ::CORBA::Double rayon);
+    ::CORBA::Boolean add(const char* a);
 	::CORBA::Boolean isFull();
 	::CORBA::Double getAvailableSurface();
 

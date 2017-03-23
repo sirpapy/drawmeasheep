@@ -11,7 +11,7 @@ module drawMeASheep{
 			typedef sequence <Point> PointSet;
 
 
-			interface Drawing {
+			interface Drawing{
 				double getSurface();
 				double getPerimeter();
 				void translate(in Point translationPoint);
@@ -38,8 +38,8 @@ module drawMeASheep{
 				readonly attribute double largeur;
 			};
 
-			typedef sequence <Drawing> DrawingSet;
-			typedef sequence <Drawing> DrawingMap;
+			typedef sequence <string> DrawingSet;
+			typedef sequence <string> DrawingMap;
 
 			interface DrawingGroup:Drawing {
 				readonly attribute DrawingSet Drawings;
@@ -48,15 +48,13 @@ module drawMeASheep{
 		};
 
 		module manager{
-			typedef sequence <double> Params;
 
 			interface DrawingManager{
 				readonly attribute entity::DrawingMap map;
-				any createDrawing( in string name ,in Params parametres);
-				long add( in any a);
+				string createDrawing( in string name , in entity::PointSet points , in double rayon);
+				boolean add( in string a);
 				boolean isFull();
 				double getAvailableSurface();
-				boolean transformDrawing(in double id,in Params parametres);
 
 			};
 

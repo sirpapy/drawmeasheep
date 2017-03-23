@@ -5,13 +5,10 @@
 #ifndef DRAWINGH
 #define DRAWINGH
 #include <iostream>
-/** Author : Pape NDIAYE
-   * Review :
-*/
 using namespace std;
 
 // classe abstraite de base
-class Drawing {
+class Drawing : public POA_drawMeASheep::generated::entity::Drawing{
 
 public:
     /**
@@ -23,13 +20,13 @@ public:
 
     virtual ~Drawing();
 
-	virtual void deplacer(const Point & trans) = 0;
+	virtual void deplacer(const ::drawMeASheep::generated::entity::Point & trans) = 0;
 	virtual void dessiner(ostream & os = cout) const = 0;
     virtual double getSurface() const = 0;
 
-	bool operator== (const Figure & f) const;
+	bool operator== (const ::drawMeASheep::generated::entity::Drawing & f) const;
 
-    friend ostream & operator<<(ostream & os, const Drawing & drawing);
+    friend ostream & operator<<(ostream & os, const ::drawMeASheep::generated::entity::Drawing & drawing);
 };
 
 
