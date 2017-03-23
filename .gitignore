@@ -8,3 +8,4 @@ cpp-server/cmake-build-debug/*
 cmake*
 cpp-server/Server
 cpp-server/Server.exe
+java-client/DrawMeASheepClient.jar

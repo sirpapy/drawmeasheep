@@ -115,7 +115,7 @@ public class Drawer {
 			}
 			params = new double[2]; 
 			params[0]=Double.parseDouble(readedTab[1]);
-			Cercle cercle = (Cercle) serverProxy.createDrawing("Cercle", params);
+			Drawing cercle = serverProxy.createDrawing("Cercle", params);
 			if(!serverProxy.isFull()){
 				int id = serverProxy.add(cercle);
 				if(id!= -1){
