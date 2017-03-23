@@ -3,7 +3,7 @@
 #include <string>
 #include "../include/drawingManagerImpl.hpp"
 #include "../include/drawing.hpp"
-#include "../include/cercle.hpp"
+//#include "../include/cercle.hpp"
 
 
 /** Author : Pape NDIAYE
@@ -31,7 +31,8 @@ using namespace std;
 drawMeASheep::generated::entity::Drawing_ptr DrawingManagerImpl::createDrawing(const char* name, const ::drawMeASheep::generated::entity::PointSet& points, ::CORBA::Double rayon){
     cout << "createDrawing " << endl;
     if(name=="circle"){
-        MyCercle* cercle = new MyCercle(points[0], rayon);
+        drawMeASheep::generated::entity::Point p = points[0];
+        drawMeASheep::generated::entity::Cercle* cercle = new drawMeASheep::generated::entity::CercleCercle(p, rayon);
 		POA_drawMeASheep::generated::entity::Drawing* drawing = cercle;
         drawMeASheep::generated::entity::Drawing_ptr test = drawing->_this();
 		return test;
