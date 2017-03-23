@@ -32,9 +32,9 @@ drawMeASheep::generated::entity::Drawing_ptr DrawingManagerImpl::createDrawing(c
     cout << "createDrawing " << endl;
     if(name=="circle"){
         MyCercle l = MyCercle(points[0], rayon);
-        drawMeASheep::generated::entity::Drawing_ptr test =l;
+        drawMeASheep::generated::entity::Drawing test =l;
         if(this->add(name)){
-            return test;
+            return static_cast<drawMeASheep::generated::entity::Drawing_ptr>(test);
         }
     }
 

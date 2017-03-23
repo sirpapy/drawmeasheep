@@ -8,7 +8,7 @@
 using namespace std;
 
 // classe abstraite de base
-class Drawing : public POA_drawMeASheep::generated::entity::Drawing{
+class Drawing : public POA_drawMeASheep::generated::entity::Drawing,drawMeASheep::generated::entity::Drawing_ptr{
 
 public:
     /**
