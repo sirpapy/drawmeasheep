@@ -13,6 +13,7 @@ public:
   Polygone(const ::CORBA::Double side_length, ::CORBA::Double nb_points);
   virtual ~Polygone();
 
+  char* toString();
   ::CORBA::Double getSurface();
   ::CORBA::Double getPerimeter();
   void translate(const ::drawMeASheep::generated::entity::Point &translationPoint);

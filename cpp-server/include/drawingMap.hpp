@@ -18,6 +18,7 @@ public:
 
     };
     virtual ~DrawingMap(){};
+	char* toString();
 
 };
 
