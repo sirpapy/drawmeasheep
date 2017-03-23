@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!--
+/** Author : NDOYE Amadou Lamine
+*/ -->
+<project basedir="." default="build" name="DrawMeASheep-JavaClient">
+    <property environment="env"/>
+    <property name="IDLFile" value="../Corba/drawMeASheep.idl"/>
+    <property name="debuglevel" value="source,lines,vars"/>
+    <property name="target" value="1.8"/>
+    <property name="source" value="1.8"/>
+	<property name="jarFile" value ="./DrawMeASheepClient.jar" />
+	<property name="main" value ="drawMeASheep.Impl.DrawMeASheepClient" />
+	<property name="bin" value ="./bin/" />
+	<property name="src" value ="./src/" />
+	<property name="src.generated" value ="${src}/drawMeASheep/generated" />
+	<property name="executionArgs" value = "-ORBInitRef NameService=corbaloc::localhost:4333/NameService"/>
+
+    <path id="DrawMeASheep-JavaClient.classpath">
+    <pathelement location="${bin}"/>
+    </path>
+    
+	<target name="clean">
+	        <delete dir="${bin}"/>
+        	<delete dir="${src.generated}"/>
+
+	</target>
+	
+	<target name="stubs" depends ="clean">
+		<exec executable="idlj" >
+			<arg value="-td" />
+			<arg value="${src}"/>
+			<arg value="-emitAll" />
+			<arg value="-f" />
+			<arg value="client" />
+			<arg value="${IDLFile}"/>
+		</exec>
+	</target>
+	   
+	<target name="init" depends = "stubs">
+	        <mkdir dir="${bin}"/>
+	        <copy includeemptydirs="true" todir="${bin}">
+	            <fileset dir="${src}">
+	                <exclude name="**/*.java"/>
+	            </fileset>
+	        </copy>
+	    	
+	 </target>
+	
+    <target depends="init" name="build">
+        <echo message="${ant.project.name}: ${ant.file}"/>
+        <javac debug="true" debuglevel="${debuglevel}" destdir="${bin}" includeantruntime="false" source="${source}" target="${target}">
+            <src path="${src}"/>
+            <classpath refid="DrawMeASheep-JavaClient.classpath"/>
+        </javac>
+    </target>
+	
+	<target depends="build" name="gen-jar">
+		   <jar destfile="${jarFile}" basedir="${bin}">
+		      <manifest>
+		         <attribute name="Main-Class" value="${main}"/>
+		      </manifest>
+		   </jar>
+	    </target>
+		
+	 <target depends="clean" name="cleanall">
+	        <delete file="${jarFile}"/>
+	  </target>
+	
+    <target name="run" depends="cleanall,gen-jar">
+        <java jar="${jarFile}" fork="true" args="${executionArgs}"/>
+    </target>
+</project>

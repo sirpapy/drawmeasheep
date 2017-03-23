@@ -1,2 +1,11 @@
 cpp-client/bin/*.o
+
+cpp-server/bin/*.o
+cpp-server/omni_inst/*
+cpp-server/omniORB-4.2.0/*
+cpp-server/InstallOmniORB.txt
+cpp-server/cmake-build-debug/*
+cmake*
+cpp-server/Server
+idea
 .idea/*
