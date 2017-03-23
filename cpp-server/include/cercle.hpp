@@ -9,7 +9,7 @@
 #include <math.h>
 using namespace std;
 
-class MyCercle : public POA_drawMeASheep::generated::entity::Cercle,drawMeASheep::generated::entity::Drawing_ptr
+class MyCercle : public POA_drawMeASheep::generated::entity::Cercle, public drawMeASheep::generated::entity::Drawing
 {
 public:
     MyCercle(const drawMeASheep::generated::entity::Point & centre, ::CORBA::Double rayon);
