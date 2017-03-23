@@ -29,14 +29,12 @@ using namespace std;
     return 1;
 }
 
-drawMeASheep::generated::entity::Drawing_ptr
-DrawingManagerImpl::createDrawing(const char *name, const ::drawMeASheep::generated::entity::PointSet &points,
-                                  ::CORBA::Double rayon) {
+drawMeASheep::generated::entity::Drawing_ptr DrawingManagerImpl::createDrawing(const char* name, const ::drawMeASheep::generated::manager::Params& parameters) {
     cout << "createDrawing " << endl;
     if (name == "circle") {
         if (this->add(name)) {
 
-            Cercle *cercle = new Cercle(points[0], rayon);
+            Cercle *cercle = new Cercle(parameters[0], new Point(parameters[1],parameters[2]));
 
             POA_drawMeASheep::generated::entity::Drawing *drawing = cercle;
             return drawing->_this();

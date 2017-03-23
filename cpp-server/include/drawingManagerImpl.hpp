@@ -15,7 +15,7 @@ using namespace std;
 const int MAXDRAWING = 10;
 const int MAXSURFACE = 100;
 
-class DrawingManagerImpl :  public ::POA_drawMeASheep::generated::manager::DrawingManager,
+class DrawingManagerImpl : public POA_drawMeASheep::generated::manager::DrawingManager,
 					public PortableServer::RefCountServantBase
 {
 	CORBA::ORB_var orb;
@@ -25,7 +25,7 @@ public:
 		drawingArray.reserve(MAXDRAWING);
 	}
 	drawMeASheep::generated::entity::DrawingMap* map();
-    drawMeASheep::generated::entity::Drawing_ptr createDrawing(const char* name, const ::drawMeASheep::generated::entity::PointSet& points, ::CORBA::Double rayon);
+    drawMeASheep::generated::entity::Drawing_ptr createDrawing(const char* name, const ::drawMeASheep::generated::manager::Params& parameters);
     ::CORBA::Long add(const char* a);
 	::CORBA::Boolean isFull();
 	::CORBA::Double getAvailableSurface();
