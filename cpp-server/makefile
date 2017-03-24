@@ -28,7 +28,12 @@ OMNIORB_CONFIG=./omniORB.cfg
 # genere l executable du serveur a besoin des librairy omniidl et des flags -lomniORB4 -lomnithread -lomniDynamic4
 all: createDir export $(OBJECTS)
 	$(CC) $(LDFLAGS) -L$(OMNI_LIB_DIR) $(BIN)/*.o -o Server.exe  $(LIBS)
-	
+
+
+client: $(BIN)/client.o $(BIN)/drawMeASheepSK.o  $(BIN)/drawingManagerImpl.o
+	$(CC)  $(LDFLAGS) -L$(OMNI_LIB_DIR) -o $@ $^ $(LIBS)
+
+
 # compile le Serveur.cpp 
 serveur.o : drawingManagerImpl.o  cercle.o ligne.o ellipse.o polygone.o
 	$(CC) $(CPPFLAGS) $(INCLUDES) $(SRC)/Serveur.cpp -I$(GEN) -o $(BIN)/Serveur.o
@@ -48,8 +53,7 @@ ligne.o :
 ellipse.o :
 	$(CC) $(CPPFLAGS) $(INCLUDES) $(SRC)/ellipse.cpp -I$(GEN) -o $(BIN)/Ellipse.o
 
-client: client.o $(BIN)/drawMeASheepSK.o
-	$(CC) -o $@ $^ $(LIBS)
+
 
 client.o :
 	$(CC) $(CPPFLAGS) $(INCLUDES) $(SRC)/Client.cpp -I$(GEN) -o $(BIN)/client.o

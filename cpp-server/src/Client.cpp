@@ -1,9 +1,9 @@
 //
 // Created by Sirpapy on 23/03/2017.
 //
+#include <assert.h>
 
 #include "../include/Client.h"
-#include "../generated/drawMeASheep.hh"
 #include <iostream>
 #include "../omni_inst/include/omniORB4/CORBA.h"
 //#include <Naming.hh>
@@ -57,7 +57,7 @@ int main(int argc, char ** argv)
                 //------------------------------------------------------------------------
                 CORBA::Object_ptr obj = nc->resolve(name);
 
-                assert(!CORBA::is_nil(ns_obj.in()));
+//                assert(!CORBA::is_nil(ns_obj.in()));
                     service_server = new DrawingManagerImpl;
 
             }
@@ -72,11 +72,11 @@ int main(int argc, char ** argv)
         //------------------------------------------------------------------------
         // Do stuff
         //------------------------------------------------------------------------
-        if (!CORBA::is_nil(service_server)) {
-            char * server = service_server->send_message("Message from C++ (omniORB) client");
-            cout << "response from Server: " << server << endl;
-            CORBA::string_free(server);
-        }
+//        assert(!CORBA::is_nil(nc.in()));
+
+//        if (!CORBA::is_nil(service_server)) {
+            cout << "response from Server: " << service_server->isFull() << endl;
+//        }
 
         //------------------------------------------------------------------------
         // Destroy OBR

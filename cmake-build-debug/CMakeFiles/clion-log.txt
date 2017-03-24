@@ -1,9 +1,9 @@
 "D:\JetBrains\CLion 2016.3.3\bin\cmake\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" D:\workspace\drawmeasheep
 -- Configuring done
-CMake Error at CMakeLists.txt:2546 (add_executable):
+CMake Error at CMakeLists.txt:2545 (add_executable):
   Cannot find source file:
 
-    cpp-server/bin/managerImpl.o
+    cpp-client/generated/drawMeASheep.hh
 
   Tried extensions .c .C .c++ .cc .cpp .cxx .m .M .mm .h .hh .h++ .hm .hpp
   .hxx .in .txx
