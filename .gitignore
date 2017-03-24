@@ -9,3 +9,5 @@ cmake*
 cpp-server/Server
 idea
 .idea/*
+cpp-server/Server.exe
+java-client/DrawMeASheepClient.jar

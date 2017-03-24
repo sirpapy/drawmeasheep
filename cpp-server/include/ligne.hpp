@@ -8,14 +8,16 @@
 
 using namespace drawMeASheep::generated::entity;
 
-class Ligne : public POA_drawMeASheep::generated::entity::Line
+class Line_impl : public POA_drawMeASheep::generated::entity::Line
 {
 	 
 public:
 
-  Ligne (const Point & origine, const Point & extremite );
-  virtual ~Ligne();
+  Line_impl (const Point & origine, const Point & extremite );
+  Line_impl(){};
+  virtual ~Line_impl();
 
+  char* toString();
   drawMeASheep::generated::entity::Point a();
   drawMeASheep::generated::entity::Point b();
   ::CORBA::Double getSurface();

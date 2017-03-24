@@ -7,12 +7,15 @@
 #include <math.h>
 using namespace std;
 
-class Polygone : public POA_drawMeASheep::generated::entity::Polygone
+class Polygone_impl : public POA_drawMeASheep::generated::entity::Polygone
 {
 public:
-  Polygone(const ::CORBA::Double side_length, ::CORBA::Double nb_points);
-  virtual ~Polygone();
-
+  Polygone_impl(const ::CORBA::Double side_length, ::CORBA::Double nb_points);
+  Polygone_impl(){};
+  virtual ~Polygone_impl();
+  
+  char* toString();
+  drawMeASheep::generated::entity::PointSet* points();
   ::CORBA::Double getSurface();
   ::CORBA::Double getPerimeter();
   void translate(const ::drawMeASheep::generated::entity::Point &translationPoint);
@@ -23,7 +26,7 @@ public:
 
 private:
   ::CORBA::Double _side_length;
-  ::drawMeASheep::generated::entity::PointSet _points;
+  ::drawMeASheep::generated::entity::PointSet * _points;
   int _nb_point;
 };
 #endif

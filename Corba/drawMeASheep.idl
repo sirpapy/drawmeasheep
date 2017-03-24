@@ -19,6 +19,7 @@ module drawMeASheep{
 				void rotate(in double angle);
 				void centralSymetric(in Point p);
 				void axialSymetric(in Point p1, in Point p2);
+				string toString();
 			};
 
 			interface Polygone : Drawing {
@@ -48,13 +49,14 @@ module drawMeASheep{
 		};
 
 		module manager{
-
+			typedef sequence <double> Params;
 			interface DrawingManager{
 				readonly attribute entity::DrawingMap map;
-				string createDrawing( in string name , in entity::PointSet points , in double rayon);
-				boolean add( in string a);
+				any createDrawing( in string name , in Params parameters);
+				long add( in any toAdd);
 				boolean isFull();
 				double getAvailableSurface();
+				boolean transformDrawing(in double id,in Params parameters); 
 				string getDrawings();
 			};
 

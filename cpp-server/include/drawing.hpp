@@ -19,6 +19,7 @@ public:
     virtual Drawing * copy() const = 0;
 
     virtual ~Drawing();
+	virtual char* toString();
 
 	virtual void deplacer(const ::drawMeASheep::generated::entity::Point & trans) = 0;
 	virtual void dessiner(ostream & os = cout) const = 0;

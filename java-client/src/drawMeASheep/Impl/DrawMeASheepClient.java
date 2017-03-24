@@ -30,8 +30,6 @@ public class DrawMeASheepClient {
 	
 	public static void main(String[] args) {
 		try {
-			//Properties props = new Properties(); 
-		//	props.put("org.omg.PortableInterceptor.ORBInitializerClass.teacher.MyInterceptorInitializer","teacher.MyInterceptorInitializer"); 
 			ORB orb = ORB.init(args, null);
 			
 			NamingContextExt namingContext = NamingContextExtHelper.narrow(orb.resolve_initial_references("NameService"));
@@ -51,8 +49,6 @@ public class DrawMeASheepClient {
 	public static void normalClient(String[] args,NamingContextExt namingContext,ORB orb){
 		try{
 			System.out.println("NormalClient");
-			Any any = orb.create_any();
-			System.out.println("create Any");
 
 			NameComponent[] name = namingContext.to_name("Serveur");
 			System.out.println("name  id= " + name[0].id + " kind = " +name[0].kind);

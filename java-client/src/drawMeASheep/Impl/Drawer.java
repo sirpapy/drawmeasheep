@@ -12,11 +12,11 @@ import org.omg.CORBA.Any;
 import drawMeASheep.generated.entity.Cercle;
 import drawMeASheep.generated.entity.CercleHelper;
 import drawMeASheep.generated.entity.Drawing;
+import drawMeASheep.generated.entity.DrawingHelper;
 import drawMeASheep.generated.entity.Ellipse;
 import drawMeASheep.generated.entity.EllipseHelper;
 import drawMeASheep.generated.entity.Line;
 import drawMeASheep.generated.entity.LineHelper;
-import drawMeASheep.generated.entity.Point;
 import drawMeASheep.generated.entity.Polygone;
 import drawMeASheep.generated.entity.PolygoneHelper;
 import drawMeASheep.generated.manager.DrawingManager;
@@ -83,7 +83,7 @@ public class Drawer {
 	
 	private  String processViewAll() {
 		
-		return "path or execute open image" ;
+		return serverProxy.getDrawings() ;
 	}
 
 
@@ -99,7 +99,7 @@ public class Drawer {
 			params = new double[1]; 
 			params[0]=Double.parseDouble(readedTab[1]);
 			
-			sender = serverProxy.createDrawing("Line", params);
+			sender = serverProxy.createDrawing("line", params);
 			Line line = LineHelper.extract(sender);
 			if(!serverProxy.isFull()){
 				LineHelper.insert(sender, line);
@@ -119,7 +119,7 @@ public class Drawer {
 			}
 			params = new double[2]; 
 			params[0]=Double.parseDouble(readedTab[1]);
-			sender = serverProxy.createDrawing("Cercle", params);
+			sender = serverProxy.createDrawing("circle", params);
 			Cercle cercle = CercleHelper.extract(sender);
 			if(!serverProxy.isFull()){
 				CercleHelper.insert(sender, cercle);
@@ -141,7 +141,7 @@ public class Drawer {
 			params = new double[2]; 
 			params[0]=Double.parseDouble(readedTab[1]);
 			params[1]=Double.parseDouble(readedTab[2]);
-			sender = serverProxy.createDrawing("Cercle", params);
+			sender = serverProxy.createDrawing("polygone", params);
 			Polygone polygone = PolygoneHelper.extract(sender);
 			if(!serverProxy.isFull()){
 				PolygoneHelper.insert(sender, polygone);
@@ -162,7 +162,7 @@ public class Drawer {
 			params = new double[2]; 
 			params[0]=Double.parseDouble(readedTab[1]);
 			params[1]=Double.parseDouble(readedTab[2]);
-			sender = serverProxy.createDrawing("Cercle", params);
+			sender = serverProxy.createDrawing("ellipse", params);
 			Ellipse ellipse = EllipseHelper.extract(sender);
 			if(!serverProxy.isFull()){
 				CercleHelper.insert(sender, ellipse);

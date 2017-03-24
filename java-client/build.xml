@@ -13,7 +13,7 @@
 	<property name="bin" value ="./bin/" />
 	<property name="src" value ="./src/" />
 	<property name="src.generated" value ="${src}/drawMeASheep/generated" />
-	<property name="executionArgs" value = "-ORBInitRef NameService=corbaloc::localhost:4333/NameService"/>
+	<property name="executionArgs" value = "NameService=corbaloc::localhost:4333/NameService"/>
 
     <path id="DrawMeASheep-JavaClient.classpath">
     <pathelement location="${bin}"/>
@@ -67,6 +67,9 @@
 	  </target>
 	
     <target name="run" depends="cleanall,gen-jar">
-        <java jar="${jarFile}" fork="true" args="${executionArgs}"/>
+        <java jar="${jarFile}" fork="true">
+        	<arg value ="-ORBInitRef"/>
+        	<arg value ="${executionArgs}"/>
+        	</java>
     </target>
 </project>
