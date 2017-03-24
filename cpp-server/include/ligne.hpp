@@ -1,3 +1,6 @@
+/** Author : Pape NDIAYE
+
+    */
 #ifndef LIGNE_H
 #define LIGNE_H
 #include "../omni_inst/include/omniORB4/CORBA.h"

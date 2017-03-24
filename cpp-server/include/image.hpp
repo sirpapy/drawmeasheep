@@ -1,3 +1,7 @@
+/** Author : RABEARIJAO Maminirina Thierry
+ * review : Pape NDIAYE
+    */
+    
 #ifndef IMAGE_H
 #define IMAGE_H
 #include "figure.hpp"
