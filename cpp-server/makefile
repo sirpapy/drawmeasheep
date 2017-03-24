@@ -1,7 +1,7 @@
 #NDOYE Amadou Lamine & RABEARIJAO Maminirina Thierry & NDIAYE Pape
 CC		    = /usr/bin/g++
-CPPFLAGS      = -g -c -std=c++11 -Wall
-LDFLAGS       = -g -std=c++11 -Wall
+CPPFLAGS      = -g -c -std=c++11
+LDFLAGS       = -g -std=c++11
 
 #OMNI_HOME     = /usr
 #OMNI_INCLUDES = -I/usr/include -I$(OMNI_HOME)/include/omniORB4  -I$(OMNI_HOME)/include/omnithread 
@@ -20,7 +20,7 @@ BIN = ./bin
 CORBA = ../Corba
 GEN = ./generated
 #OBJECTS       = drawMeASheepSK.o drawMeASheepDynSK.o drawingManagerImpl.o serveur.o
-OBJECTS       = drawMeASheepSK.o drawMeASheepDynSK.o drawingManagerImpl.o serveur.o #client
+OBJECTS       = drawMeASheepSK.o drawMeASheepDynSK.o drawingManagerImpl.o serveur.o 
 
 OBJECTS_PATH = $(BIN)/Serveur.o $(BIN)/drawingManagerImpl.o $(BIN)/drawMeASheepSK.o $(BIN)/drawMeASheepDynSK.o
 OMNIORB_CONFIG=./omniORB.cfg
@@ -48,7 +48,7 @@ ligne.o :
 ellipse.o :
 	$(CC) $(CPPFLAGS) $(INCLUDES) $(SRC)/ellipse.cpp -I$(GEN) -o $(BIN)/Ellipse.o
 
-"client: client.o $(BIN)/drawMeASheepSK.o
+#client: client.o $(BIN)/drawMeASheepSK.o
 #	$(CC) -o $@ $^ $(LIBS)
 
 #client.o :

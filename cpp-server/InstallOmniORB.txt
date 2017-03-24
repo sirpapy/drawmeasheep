@@ -30,4 +30,4 @@ Quick Guide :
 
 	run the server :  from cpp-server directory
 		export LD_LIBRARY_PATH=./omni_inst/lib:$LD_LIBRARY_PATH
-		./Server -ORBInitRef NameService=corbaloc::localhost:4333/NameService
+		./Server.exe -ORBInitRef NameService=corbaloc::localhost:4333/NameService
