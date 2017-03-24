@@ -7,8 +7,6 @@
 //#include <CORBA.h>
 #include "../omni_inst/include/omniORB4/CORBA.h"
 #include "../generated/drawMeASheep.hh"
-#include <vector>
-
 
 
 using namespace std;
@@ -19,14 +17,21 @@ class DrawingManagerImpl : public POA_drawMeASheep::generated::manager::DrawingM
 					public PortableServer::RefCountServantBase
 {
 	CORBA::ORB_var orb;
+private : 
+	 ::CORBA::Any* _drawingArray;
+	 int _index ;
 public:
-	vector <drawMeASheep::generated::entity::Drawing_ptr> drawingArray;
 	DrawingManagerImpl(){
-		drawingArray.reserve(MAXDRAWING);
-	}
+		_drawingArray = new ::CORBA::Any[MAXDRAWING];
+		_index = 0;
+	};
+	virtual ~DrawingManagerImpl(){
+		
+	};
+		
 	drawMeASheep::generated::entity::DrawingMap* map();
-    drawMeASheep::generated::entity::Drawing_ptr createDrawing(const char* name, const ::drawMeASheep::generated::manager::Params& parameters);
-	::CORBA::Long add(drawMeASheep::generated::entity::Drawing_ptr a);
+	::CORBA::Any* createDrawing(const char* name, const drawMeASheep::generated::manager::Params& parameters);
+	::CORBA::Long add(const ::CORBA::Any& a);
 	::CORBA::Boolean isFull();
 	::CORBA::Double getAvailableSurface();
 	::CORBA::Boolean transformDrawing(::CORBA::Double id, const ::drawMeASheep::generated::manager::Params& parameters);

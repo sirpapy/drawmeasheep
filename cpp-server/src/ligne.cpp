@@ -2,42 +2,43 @@
 /** Author : RABEARIJAO Maminirina Thierry
    * Review : Pape NDIAYE
 */
-inline Ligne::Ligne ( const Point & origine, const Point & extremite){
-		_origine = origine;
-		_extremite = extremite;
-	}
+Line_impl::Line_impl ( const Point & origine, const Point & extremite){
+	_origine = origine;
+	_extremite = extremite;
+}
+Line_impl::~Line_impl ( void){
+	
+}
 
-  Point Ligne::a(){
+  Point Line_impl::a(){
 		return _origine;
   }
-  Point Ligne::b(){
+  Point Line_impl::b(){
 		return _extremite;
 	  
   }
-  ::CORBA::Double getSurface(){
+  ::CORBA::Double Line_impl::getSurface(){
+	  return 0 ;
+  }
+  ::CORBA::Double Line_impl::getPerimeter(){
+	  return 0;
+  }
+  void Line_impl::translate(const Point& translationPoint){
 	  
   }
-  ::CORBA::Double getPerimeter(){
+  void Line_impl::homothetie(::CORBA::Double x){
 	  
   }
-  void translate(const Point& translationPoint){
+  void Line_impl::rotate(::CORBA::Double angle){
 	  
   }
-  void homothetie(::CORBA::Double x){
+  void Line_impl::centralSymetric(const Point& p){
 	  
   }
-  void rotate(::CORBA::Double angle){
+  void Line_impl::axialSymetric(const Point& p1, const Point& p2){
 	  
   }
-  void centralSymetric(const Point& p){
-	  
-  }
-  void axialSymetric(const Point& p1, const Point& p2){
-	  
-  }
-char* Ligne::toString(){
+char* Line_impl::toString(){
     return (char*)"Line ";
 }
-  void Ligne::translate( const Point & trans ){
-	
-  }
+ 
