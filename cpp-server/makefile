@@ -20,7 +20,7 @@ BIN = ./bin
 CORBA = ../Corba
 GEN = ./generated
 #OBJECTS       = drawMeASheepSK.o drawMeASheepDynSK.o drawingManagerImpl.o serveur.o
-OBJECTS       = drawMeASheepSK.o drawMeASheepDynSK.o drawingManagerImpl.o serveur.o #client
+OBJECTS       = drawMeASheepSK.o drawMeASheepDynSK.o drawingManagerImpl.o serveur.o client
 
 OBJECTS_PATH = $(BIN)/Serveur.o $(BIN)/drawingManagerImpl.o $(BIN)/drawMeASheepSK.o $(BIN)/drawMeASheepDynSK.o
 OMNIORB_CONFIG=./omniORB.cfg
@@ -48,11 +48,11 @@ ligne.o :
 ellipse.o :
 	$(CC) $(CPPFLAGS) $(INCLUDES) $(SRC)/ellipse.cpp -I$(GEN) -o $(BIN)/Ellipse.o
 
-"client: client.o $(BIN)/drawMeASheepSK.o
-#	$(CC) -o $@ $^ $(LIBS)
+client:  drawMeASheepSK.o drawMeASheepDynSK.o
+	$(CC) $(LDFLAGS) -L$(OMNI_LIB_DIR) $(BIN)/*.o -o Client.exe  $(LIBS)
 
-#client.o :
-#	$(CC) $(CPPFLAGS) $(INCLUDES) $(SRC)/Client.cpp -I$(GEN) -o $(BIN)/client.o
+client.o :
+	$(CC) $(CPPFLAGS) $(INCLUDES) $(SRC)/Client.cpp -I$(GEN) -o $(BIN)/client.o
 
 
 
